@@ -1,0 +1,1952 @@
+[
+  {
+    "iso3": "AFG",
+    "iso2": "AF",
+    "name_fr": "Afghanistan",
+    "capital": "Kaboul",
+    "currency": "Afghani",
+    "language": "Pachto / Dari",
+    "level": "Formel",
+    "page_url": "./pages/af.aspx"
+  },
+  {
+    "iso3": "ZAF",
+    "iso2": "ZA",
+    "name_fr": "Afrique du Sud",
+    "capital": "Pretoria",
+    "currency": "Rand",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/za.aspx"
+  },
+  {
+    "iso3": "ALB",
+    "iso2": "AL",
+    "name_fr": "Albanie",
+    "capital": "Tirana",
+    "currency": "Lek",
+    "language": "Albanais",
+    "level": "Normale",
+    "page_url": "./pages/al.aspx"
+  },
+  {
+    "iso3": "DZA",
+    "iso2": "DZ",
+    "name_fr": "Algérie",
+    "capital": "Alger",
+    "currency": "Dinar algérien",
+    "language": "Arabe",
+    "level": "Vigilance",
+    "page_url": "./pages/dz.aspx"
+  },
+  {
+    "iso3": "DEU",
+    "iso2": "DE",
+    "name_fr": "Allemagne",
+    "capital": "Berlin",
+    "currency": "Euro",
+    "language": "Allemand",
+    "level": "Normale",
+    "page_url": "./pages/de.aspx"
+  },
+  {
+    "iso3": "AND",
+    "iso2": "AD",
+    "name_fr": "Andorre",
+    "capital": "Andorre-la-Vieille",
+    "currency": "Euro",
+    "language": "Catalan",
+    "level": "Normale",
+    "page_url": "./pages/ad.aspx"
+  },
+  {
+    "iso3": "AGO",
+    "iso2": "AO",
+    "name_fr": "Angola",
+    "capital": "Luanda",
+    "currency": "Kwanza",
+    "language": "Portugais",
+    "level": "Vigilance",
+    "page_url": "./pages/ao.aspx"
+  },
+  {
+    "iso3": "ATG",
+    "iso2": "AG",
+    "name_fr": "Antigua-et-Barbuda",
+    "capital": "Saint John's",
+    "currency": "Dollar des Caraïbes",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/ag.aspx"
+  },
+  {
+    "iso3": "SAU",
+    "iso2": "SA",
+    "name_fr": "Arabie saoudite",
+    "capital": "Riyad",
+    "currency": "Riyal saoudien",
+    "language": "Arabe",
+    "level": "Normale",
+    "page_url": "./pages/sa.aspx"
+  },
+  {
+    "iso3": "ARG",
+    "iso2": "AR",
+    "name_fr": "Argentine",
+    "capital": "Buenos Aires",
+    "currency": "Peso argentin",
+    "language": "Espagnol",
+    "level": "Normale",
+    "page_url": "./pages/ar.aspx"
+  },
+  {
+    "iso3": "ARM",
+    "iso2": "AM",
+    "name_fr": "Arménie",
+    "capital": "Erevan",
+    "currency": "Dram",
+    "language": "Arménien",
+    "level": "Normale",
+    "page_url": "./pages/am.aspx"
+  },
+  {
+    "iso3": "AUS",
+    "iso2": "AU",
+    "name_fr": "Australie",
+    "capital": "Canberra",
+    "currency": "Dollar australien",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/au.aspx"
+  },
+  {
+    "iso3": "AUT",
+    "iso2": "AT",
+    "name_fr": "Autriche",
+    "capital": "Vienne",
+    "currency": "Euro",
+    "language": "Allemand",
+    "level": "Normale",
+    "page_url": "./pages/at.aspx"
+  },
+  {
+    "iso3": "AZE",
+    "iso2": "AZ",
+    "name_fr": "Azerbaïdjan",
+    "capital": "Bakou",
+    "currency": "Manat",
+    "language": "Azéri",
+    "level": "Normale",
+    "page_url": "./pages/az.aspx"
+  },
+  {
+    "iso3": "BHS",
+    "iso2": "BS",
+    "name_fr": "Bahamas",
+    "capital": "Nassau",
+    "currency": "Dollar bahaméen",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/bs.aspx"
+  },
+  {
+    "iso3": "BHR",
+    "iso2": "BH",
+    "name_fr": "Bahreïn",
+    "capital": "Manama",
+    "currency": "Dinar bahreïni",
+    "language": "Arabe",
+    "level": "Normale",
+    "page_url": "./pages/bh.aspx"
+  },
+  {
+    "iso3": "BGD",
+    "iso2": "BD",
+    "name_fr": "Bangladesh",
+    "capital": "Dacca",
+    "currency": "Taka",
+    "language": "Bengali",
+    "level": "Vigilance",
+    "page_url": "./pages/bd.aspx"
+  },
+  {
+    "iso3": "BRB",
+    "iso2": "BB",
+    "name_fr": "Barbade",
+    "capital": "Bridgetown",
+    "currency": "Dollar barbadien",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/bb.aspx"
+  },
+  {
+    "iso3": "BEL",
+    "iso2": "BE",
+    "name_fr": "Belgique",
+    "capital": "Bruxelles",
+    "currency": "Euro",
+    "language": "Néerlandais / Français",
+    "level": "Normale",
+    "page_url": "./pages/be.aspx"
+  },
+  {
+    "iso3": "BLZ",
+    "iso2": "BZ",
+    "name_fr": "Belize",
+    "capital": "Belmopan",
+    "currency": "Dollar bélizien",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/bz.aspx"
+  },
+  {
+    "iso3": "BTN",
+    "iso2": "BT",
+    "name_fr": "Bhoutan",
+    "capital": "Thimphou",
+    "currency": "Ngultrum",
+    "language": "Dzongkha",
+    "level": "Normale",
+    "page_url": "./pages/bt.aspx"
+  },
+  {
+    "iso3": "MMR",
+    "iso2": "MM",
+    "name_fr": "Birmanie (Myanmar)",
+    "capital": "Naypyidaw",
+    "currency": "Kyat",
+    "language": "Birman",
+    "level": "Déconseillé",
+    "page_url": "./pages/mm.aspx"
+  },
+  {
+    "iso3": "BLR",
+    "iso2": "BY",
+    "name_fr": "Biélorussie",
+    "capital": "Minsk",
+    "currency": "Rouble biélorusse",
+    "language": "Biélorusse / Russe",
+    "level": "Vigilance",
+    "page_url": "./pages/by.aspx"
+  },
+  {
+    "iso3": "BOL",
+    "iso2": "BO",
+    "name_fr": "Bolivie",
+    "capital": "Sucre",
+    "currency": "Boliviano",
+    "language": "Espagnol",
+    "level": "Vigilance",
+    "page_url": "./pages/bo.aspx"
+  },
+  {
+    "iso3": "BIH",
+    "iso2": "BA",
+    "name_fr": "Bosnie-Herzégovine",
+    "capital": "Sarajevo",
+    "currency": "Mark convertible",
+    "language": "Bosnien",
+    "level": "Normale",
+    "page_url": "./pages/ba.aspx"
+  },
+  {
+    "iso3": "BWA",
+    "iso2": "BW",
+    "name_fr": "Botswana",
+    "capital": "Gaborone",
+    "currency": "Pula",
+    "language": "Anglais / Tswana",
+    "level": "Normale",
+    "page_url": "./pages/bw.aspx"
+  },
+  {
+    "iso3": "BRN",
+    "iso2": "BN",
+    "name_fr": "Brunei",
+    "capital": "Bandar Seri Begawan",
+    "currency": "Dollar de Brunei",
+    "language": "Malais",
+    "level": "Normale",
+    "page_url": "./pages/bn.aspx"
+  },
+  {
+    "iso3": "BRA",
+    "iso2": "BR",
+    "name_fr": "Brésil",
+    "capital": "Brasília",
+    "currency": "Real",
+    "language": "Portugais",
+    "level": "Vigilance",
+    "page_url": "./pages/br.aspx"
+  },
+  {
+    "iso3": "BGR",
+    "iso2": "BG",
+    "name_fr": "Bulgarie",
+    "capital": "Sofia",
+    "currency": "Lev",
+    "language": "Bulgare",
+    "level": "Normale",
+    "page_url": "./pages/bg.aspx"
+  },
+  {
+    "iso3": "BFA",
+    "iso2": "BF",
+    "name_fr": "Burkina Faso",
+    "capital": "Ouagadougou",
+    "currency": "Franc CFA",
+    "language": "Français",
+    "level": "Déconseillé",
+    "page_url": "./pages/bf.aspx"
+  },
+  {
+    "iso3": "BDI",
+    "iso2": "BI",
+    "name_fr": "Burundi",
+    "capital": "Gitega",
+    "currency": "Franc burundais",
+    "language": "Français / Kirundi",
+    "level": "Normale",
+    "page_url": "./pages/bi.aspx"
+  },
+  {
+    "iso3": "BEN",
+    "iso2": "BJ",
+    "name_fr": "Bénin",
+    "capital": "Porto-Novo",
+    "currency": "Franc CFA",
+    "language": "Français",
+    "level": "Normale",
+    "page_url": "./pages/bj.aspx"
+  },
+  {
+    "iso3": "KHM",
+    "iso2": "KH",
+    "name_fr": "Cambodge",
+    "capital": "Phnom Penh",
+    "currency": "Riel",
+    "language": "Khmer",
+    "level": "Vigilance",
+    "page_url": "./pages/kh.aspx"
+  },
+  {
+    "iso3": "CMR",
+    "iso2": "CM",
+    "name_fr": "Cameroun",
+    "capital": "Yaoundé",
+    "currency": "Franc CFA",
+    "language": "Français / Anglais",
+    "level": "Normale",
+    "page_url": "./pages/cm.aspx"
+  },
+  {
+    "iso3": "CAN",
+    "iso2": "CA",
+    "name_fr": "Canada",
+    "capital": "Ottawa",
+    "currency": "Dollar canadien",
+    "language": "Anglais / Français",
+    "level": "Normale",
+    "page_url": "./pages/ca.aspx"
+  },
+  {
+    "iso3": "CPV",
+    "iso2": "CV",
+    "name_fr": "Cap-Vert",
+    "capital": "Praia",
+    "currency": "Escudo",
+    "language": "Portugais",
+    "level": "Normale",
+    "page_url": "./pages/cv.aspx"
+  },
+  {
+    "iso3": "CHL",
+    "iso2": "CL",
+    "name_fr": "Chili",
+    "capital": "Santiago",
+    "currency": "Peso chilien",
+    "language": "Espagnol",
+    "level": "Normale",
+    "page_url": "./pages/cl.aspx"
+  },
+  {
+    "iso3": "CHN",
+    "iso2": "CN",
+    "name_fr": "Chine",
+    "capital": "Pékin",
+    "currency": "Yuan",
+    "language": "Mandarin",
+    "level": "Vigilance",
+    "page_url": "./pages/cn.aspx"
+  },
+  {
+    "iso3": "CYP",
+    "iso2": "CY",
+    "name_fr": "Chypre",
+    "capital": "Nicosie",
+    "currency": "Euro",
+    "language": "Grec / Turc",
+    "level": "Normale",
+    "page_url": "./pages/cy.aspx"
+  },
+  {
+    "iso3": "COL",
+    "iso2": "CO",
+    "name_fr": "Colombie",
+    "capital": "Bogotá",
+    "currency": "Peso colombien",
+    "language": "Espagnol",
+    "level": "Vigilance",
+    "page_url": "./pages/co.aspx"
+  },
+  {
+    "iso3": "COM",
+    "iso2": "KM",
+    "name_fr": "Comores",
+    "capital": "Moroni",
+    "currency": "Franc comorien",
+    "language": "Arabe / Français",
+    "level": "Normale",
+    "page_url": "./pages/km.aspx"
+  },
+  {
+    "iso3": "COG",
+    "iso2": "CG",
+    "name_fr": "Congo (Brazzaville)",
+    "capital": "Brazzaville",
+    "currency": "Franc CFA",
+    "language": "Français",
+    "level": "Normale",
+    "page_url": "./pages/cg.aspx"
+  },
+  {
+    "iso3": "COD",
+    "iso2": "CD",
+    "name_fr": "Congo (RDC)",
+    "capital": "Kinshasa",
+    "currency": "Franc congolais",
+    "language": "Français",
+    "level": "Normale",
+    "page_url": "./pages/cd.aspx"
+  },
+  {
+    "iso3": "PRK",
+    "iso2": "KP",
+    "name_fr": "Corée du Nord",
+    "capital": "Pyongyang",
+    "currency": "Won nord-coréen",
+    "language": "Coréen",
+    "level": "Formel",
+    "page_url": "./pages/kp.aspx"
+  },
+  {
+    "iso3": "KOR",
+    "iso2": "KR",
+    "name_fr": "Corée du Sud",
+    "capital": "Séoul",
+    "currency": "Won",
+    "language": "Coréen",
+    "level": "Normale",
+    "page_url": "./pages/kr.aspx"
+  },
+  {
+    "iso3": "CRI",
+    "iso2": "CR",
+    "name_fr": "Costa Rica",
+    "capital": "San José",
+    "currency": "Colón",
+    "language": "Espagnol",
+    "level": "Normale",
+    "page_url": "./pages/cr.aspx"
+  },
+  {
+    "iso3": "HRV",
+    "iso2": "HR",
+    "name_fr": "Croatie",
+    "capital": "Zagreb",
+    "currency": "Euro",
+    "language": "Croate",
+    "level": "Normale",
+    "page_url": "./pages/hr.aspx"
+  },
+  {
+    "iso3": "CUB",
+    "iso2": "CU",
+    "name_fr": "Cuba",
+    "capital": "La Havane",
+    "currency": "Peso cubain",
+    "language": "Espagnol",
+    "level": "Normale",
+    "page_url": "./pages/cu.aspx"
+  },
+  {
+    "iso3": "CIV",
+    "iso2": "CI",
+    "name_fr": "Côte d'Ivoire",
+    "capital": "Yamoussoukro",
+    "currency": "Franc CFA",
+    "language": "Français",
+    "level": "Vigilance",
+    "page_url": "./pages/ci.aspx"
+  },
+  {
+    "iso3": "DNK",
+    "iso2": "DK",
+    "name_fr": "Danemark",
+    "capital": "Copenhague",
+    "currency": "Couronne danoise",
+    "language": "Danois",
+    "level": "Normale",
+    "page_url": "./pages/dk.aspx"
+  },
+  {
+    "iso3": "DJI",
+    "iso2": "DJ",
+    "name_fr": "Djibouti",
+    "capital": "Djibouti",
+    "currency": "Franc djiboutien",
+    "language": "Français / Arabe",
+    "level": "Normale",
+    "page_url": "./pages/dj.aspx"
+  },
+  {
+    "iso3": "DMA",
+    "iso2": "DM",
+    "name_fr": "Dominique",
+    "capital": "Roseau",
+    "currency": "Dollar des Caraïbes",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/dm.aspx"
+  },
+  {
+    "iso3": "ESP",
+    "iso2": "ES",
+    "name_fr": "Espagne",
+    "capital": "Madrid",
+    "currency": "Euro",
+    "language": "Espagnol",
+    "level": "Normale",
+    "page_url": "./pages/es.aspx"
+  },
+  {
+    "iso3": "EST",
+    "iso2": "EE",
+    "name_fr": "Estonie",
+    "capital": "Tallinn",
+    "currency": "Euro",
+    "language": "Estonien",
+    "level": "Normale",
+    "page_url": "./pages/ee.aspx"
+  },
+  {
+    "iso3": "SWZ",
+    "iso2": "SZ",
+    "name_fr": "Eswatini",
+    "capital": "Mbabane",
+    "currency": "Lilangeni",
+    "language": "Anglais / Swati",
+    "level": "Normale",
+    "page_url": "./pages/sz.aspx"
+  },
+  {
+    "iso3": "FJI",
+    "iso2": "FJ",
+    "name_fr": "Fidji",
+    "capital": "Suva",
+    "currency": "Dollar fidjien",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/fj.aspx"
+  },
+  {
+    "iso3": "FIN",
+    "iso2": "FI",
+    "name_fr": "Finlande",
+    "capital": "Helsinki",
+    "currency": "Euro",
+    "language": "Finnois / Suédois",
+    "level": "Normale",
+    "page_url": "./pages/fi.aspx"
+  },
+  {
+    "iso3": "FRA",
+    "iso2": "FR",
+    "name_fr": "France",
+    "capital": "Paris",
+    "currency": "Euro",
+    "language": "Français",
+    "level": "Normale",
+    "page_url": "./pages/fr.aspx"
+  },
+  {
+    "iso3": "GAB",
+    "iso2": "GA",
+    "name_fr": "Gabon",
+    "capital": "Libreville",
+    "currency": "Franc CFA",
+    "language": "Français",
+    "level": "Normale",
+    "page_url": "./pages/ga.aspx"
+  },
+  {
+    "iso3": "GMB",
+    "iso2": "GM",
+    "name_fr": "Gambie",
+    "capital": "Banjul",
+    "currency": "Dalasi",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/gm.aspx"
+  },
+  {
+    "iso3": "GHA",
+    "iso2": "GH",
+    "name_fr": "Ghana",
+    "capital": "Accra",
+    "currency": "Cedi",
+    "language": "Anglais",
+    "level": "Vigilance",
+    "page_url": "./pages/gh.aspx"
+  },
+  {
+    "iso3": "GRD",
+    "iso2": "GD",
+    "name_fr": "Grenade",
+    "capital": "Saint-Georges",
+    "currency": "Dollar des Caraïbes",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/gd.aspx"
+  },
+  {
+    "iso3": "GRC",
+    "iso2": "GR",
+    "name_fr": "Grèce",
+    "capital": "Athènes",
+    "currency": "Euro",
+    "language": "Grec",
+    "level": "Normale",
+    "page_url": "./pages/gr.aspx"
+  },
+  {
+    "iso3": "GTM",
+    "iso2": "GT",
+    "name_fr": "Guatemala",
+    "capital": "Guatemala",
+    "currency": "Quetzal",
+    "language": "Espagnol",
+    "level": "Vigilance",
+    "page_url": "./pages/gt.aspx"
+  },
+  {
+    "iso3": "GIN",
+    "iso2": "GN",
+    "name_fr": "Guinée",
+    "capital": "Conakry",
+    "currency": "Franc guinéen",
+    "language": "Français",
+    "level": "Normale",
+    "page_url": "./pages/gn.aspx"
+  },
+  {
+    "iso3": "GNQ",
+    "iso2": "GQ",
+    "name_fr": "Guinée équatoriale",
+    "capital": "Malabo",
+    "currency": "Franc CFA",
+    "language": "Espagnol / Français",
+    "level": "Normale",
+    "page_url": "./pages/gq.aspx"
+  },
+  {
+    "iso3": "GNB",
+    "iso2": "GW",
+    "name_fr": "Guinée-Bissau",
+    "capital": "Bissau",
+    "currency": "Franc CFA",
+    "language": "Portugais",
+    "level": "Normale",
+    "page_url": "./pages/gw.aspx"
+  },
+  {
+    "iso3": "GUY",
+    "iso2": "GY",
+    "name_fr": "Guyana",
+    "capital": "Georgetown",
+    "currency": "Dollar du Guyana",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/gy.aspx"
+  },
+  {
+    "iso3": "GEO",
+    "iso2": "GE",
+    "name_fr": "Géorgie",
+    "capital": "Tbilissi",
+    "currency": "Lari",
+    "language": "Géorgien",
+    "level": "Normale",
+    "page_url": "./pages/ge.aspx"
+  },
+  {
+    "iso3": "HTI",
+    "iso2": "HT",
+    "name_fr": "Haïti",
+    "capital": "Port-au-Prince",
+    "currency": "Gourde",
+    "language": "Français / Créole",
+    "level": "Déconseillé",
+    "page_url": "./pages/ht.aspx"
+  },
+  {
+    "iso3": "HND",
+    "iso2": "HN",
+    "name_fr": "Honduras",
+    "capital": "Tegucigalpa",
+    "currency": "Lempira",
+    "language": "Espagnol",
+    "level": "Vigilance",
+    "page_url": "./pages/hn.aspx"
+  },
+  {
+    "iso3": "HUN",
+    "iso2": "HU",
+    "name_fr": "Hongrie",
+    "capital": "Budapest",
+    "currency": "Forint",
+    "language": "Hongrois",
+    "level": "Normale",
+    "page_url": "./pages/hu.aspx"
+  },
+  {
+    "iso3": "IND",
+    "iso2": "IN",
+    "name_fr": "Inde",
+    "capital": "New Delhi",
+    "currency": "Roupie indienne",
+    "language": "Hindi / Anglais",
+    "level": "Vigilance",
+    "page_url": "./pages/in.aspx"
+  },
+  {
+    "iso3": "IDN",
+    "iso2": "ID",
+    "name_fr": "Indonésie",
+    "capital": "Jakarta",
+    "currency": "Roupie indonésienne",
+    "language": "Indonésien",
+    "level": "Vigilance",
+    "page_url": "./pages/id.aspx"
+  },
+  {
+    "iso3": "IRQ",
+    "iso2": "IQ",
+    "name_fr": "Irak",
+    "capital": "Bagdad",
+    "currency": "Dinar irakien",
+    "language": "Arabe / Kurde",
+    "level": "Formel",
+    "page_url": "./pages/iq.aspx"
+  },
+  {
+    "iso3": "IRN",
+    "iso2": "IR",
+    "name_fr": "Iran",
+    "capital": "Téhéran",
+    "currency": "Rial",
+    "language": "Persan",
+    "level": "Formel",
+    "page_url": "./pages/ir.aspx"
+  },
+  {
+    "iso3": "IRL",
+    "iso2": "IE",
+    "name_fr": "Irlande",
+    "capital": "Dublin",
+    "currency": "Euro",
+    "language": "Anglais / Irlandais",
+    "level": "Normale",
+    "page_url": "./pages/ie.aspx"
+  },
+  {
+    "iso3": "ISL",
+    "iso2": "IS",
+    "name_fr": "Islande",
+    "capital": "Reykjavik",
+    "currency": "Couronne islandaise",
+    "language": "Islandais",
+    "level": "Normale",
+    "page_url": "./pages/is.aspx"
+  },
+  {
+    "iso3": "ISR",
+    "iso2": "IL",
+    "name_fr": "Israël",
+    "capital": "Jérusalem",
+    "currency": "Shekel",
+    "language": "Hébreu / Arabe",
+    "level": "Normale",
+    "page_url": "./pages/il.aspx"
+  },
+  {
+    "iso3": "ITA",
+    "iso2": "IT",
+    "name_fr": "Italie",
+    "capital": "Rome",
+    "currency": "Euro",
+    "language": "Italien",
+    "level": "Normale",
+    "page_url": "./pages/it.aspx"
+  },
+  {
+    "iso3": "JAM",
+    "iso2": "JM",
+    "name_fr": "Jamaïque",
+    "capital": "Kingston",
+    "currency": "Dollar jamaïcain",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/jm.aspx"
+  },
+  {
+    "iso3": "JPN",
+    "iso2": "JP",
+    "name_fr": "Japon",
+    "capital": "Tokyo",
+    "currency": "Yen",
+    "language": "Japonais",
+    "level": "Normale",
+    "page_url": "./pages/jp.aspx"
+  },
+  {
+    "iso3": "JOR",
+    "iso2": "JO",
+    "name_fr": "Jordanie",
+    "capital": "Amman",
+    "currency": "Dinar jordanien",
+    "language": "Arabe",
+    "level": "Vigilance",
+    "page_url": "./pages/jo.aspx"
+  },
+  {
+    "iso3": "KAZ",
+    "iso2": "KZ",
+    "name_fr": "Kazakhstan",
+    "capital": "Astana",
+    "currency": "Tenge",
+    "language": "Kazakh / Russe",
+    "level": "Normale",
+    "page_url": "./pages/kz.aspx"
+  },
+  {
+    "iso3": "KEN",
+    "iso2": "KE",
+    "name_fr": "Kenya",
+    "capital": "Nairobi",
+    "currency": "Shilling kenyan",
+    "language": "Swahili / Anglais",
+    "level": "Vigilance",
+    "page_url": "./pages/ke.aspx"
+  },
+  {
+    "iso3": "KGZ",
+    "iso2": "KG",
+    "name_fr": "Kirghizistan",
+    "capital": "Bichkek",
+    "currency": "Som",
+    "language": "Kirghiz / Russe",
+    "level": "Normale",
+    "page_url": "./pages/kg.aspx"
+  },
+  {
+    "iso3": "KIR",
+    "iso2": "KI",
+    "name_fr": "Kiribati",
+    "capital": "Tarawa",
+    "currency": "Dollar australien",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/ki.aspx"
+  },
+  {
+    "iso3": "XKX",
+    "iso2": "XK",
+    "name_fr": "Kosovo",
+    "capital": "Pristina",
+    "currency": "Euro",
+    "language": "Albanais / Serbe",
+    "level": "Normale",
+    "page_url": "./pages/xk.aspx"
+  },
+  {
+    "iso3": "KWT",
+    "iso2": "KW",
+    "name_fr": "Koweït",
+    "capital": "Koweït",
+    "currency": "Dinar koweïtien",
+    "language": "Arabe",
+    "level": "Normale",
+    "page_url": "./pages/kw.aspx"
+  },
+  {
+    "iso3": "LAO",
+    "iso2": "LA",
+    "name_fr": "Laos",
+    "capital": "Vientiane",
+    "currency": "Kip",
+    "language": "Lao",
+    "level": "Normale",
+    "page_url": "./pages/la.aspx"
+  },
+  {
+    "iso3": "LSO",
+    "iso2": "LS",
+    "name_fr": "Lesotho",
+    "capital": "Maseru",
+    "currency": "Loti",
+    "language": "Anglais / Sesotho",
+    "level": "Normale",
+    "page_url": "./pages/ls.aspx"
+  },
+  {
+    "iso3": "LVA",
+    "iso2": "LV",
+    "name_fr": "Lettonie",
+    "capital": "Riga",
+    "currency": "Euro",
+    "language": "Letton",
+    "level": "Normale",
+    "page_url": "./pages/lv.aspx"
+  },
+  {
+    "iso3": "LBN",
+    "iso2": "LB",
+    "name_fr": "Liban",
+    "capital": "Beyrouth",
+    "currency": "Livre libanaise",
+    "language": "Arabe",
+    "level": "Vigilance",
+    "page_url": "./pages/lb.aspx"
+  },
+  {
+    "iso3": "LBY",
+    "iso2": "LY",
+    "name_fr": "Libye",
+    "capital": "Tripoli",
+    "currency": "Dinar libyen",
+    "language": "Arabe",
+    "level": "Formel",
+    "page_url": "./pages/ly.aspx"
+  },
+  {
+    "iso3": "LBR",
+    "iso2": "LR",
+    "name_fr": "Libéria",
+    "capital": "Monrovia",
+    "currency": "Dollar libérien",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/lr.aspx"
+  },
+  {
+    "iso3": "LIE",
+    "iso2": "LI",
+    "name_fr": "Liechtenstein",
+    "capital": "Vaduz",
+    "currency": "Franc suisse",
+    "language": "Allemand",
+    "level": "Normale",
+    "page_url": "./pages/li.aspx"
+  },
+  {
+    "iso3": "LTU",
+    "iso2": "LT",
+    "name_fr": "Lituanie",
+    "capital": "Vilnius",
+    "currency": "Euro",
+    "language": "Lituanien",
+    "level": "Normale",
+    "page_url": "./pages/lt.aspx"
+  },
+  {
+    "iso3": "LUX",
+    "iso2": "LU",
+    "name_fr": "Luxembourg",
+    "capital": "Luxembourg",
+    "currency": "Euro",
+    "language": "Luxembourgeois / Français / Allemand",
+    "level": "Normale",
+    "page_url": "./pages/lu.aspx"
+  },
+  {
+    "iso3": "MKD",
+    "iso2": "MK",
+    "name_fr": "Macédoine du Nord",
+    "capital": "Skopje",
+    "currency": "Denar",
+    "language": "Macédonien",
+    "level": "Normale",
+    "page_url": "./pages/mk.aspx"
+  },
+  {
+    "iso3": "MDG",
+    "iso2": "MG",
+    "name_fr": "Madagascar",
+    "capital": "Antananarivo",
+    "currency": "Ariary",
+    "language": "Malgache / Français",
+    "level": "Normale",
+    "page_url": "./pages/mg.aspx"
+  },
+  {
+    "iso3": "MYS",
+    "iso2": "MY",
+    "name_fr": "Malaisie",
+    "capital": "Kuala Lumpur",
+    "currency": "Ringgit",
+    "language": "Malais",
+    "level": "Normale",
+    "page_url": "./pages/my.aspx"
+  },
+  {
+    "iso3": "MWI",
+    "iso2": "MW",
+    "name_fr": "Malawi",
+    "capital": "Lilongwe",
+    "currency": "Kwacha",
+    "language": "Anglais / Chichewa",
+    "level": "Normale",
+    "page_url": "./pages/mw.aspx"
+  },
+  {
+    "iso3": "MDV",
+    "iso2": "MV",
+    "name_fr": "Maldives",
+    "capital": "Malé",
+    "currency": "Rufiyaa",
+    "language": "Dhivehi",
+    "level": "Normale",
+    "page_url": "./pages/mv.aspx"
+  },
+  {
+    "iso3": "MLI",
+    "iso2": "ML",
+    "name_fr": "Mali",
+    "capital": "Bamako",
+    "currency": "Franc CFA",
+    "language": "Français",
+    "level": "Formel",
+    "page_url": "./pages/ml.aspx"
+  },
+  {
+    "iso3": "MLT",
+    "iso2": "MT",
+    "name_fr": "Malte",
+    "capital": "La Valette",
+    "currency": "Euro",
+    "language": "Maltais / Anglais",
+    "level": "Normale",
+    "page_url": "./pages/mt.aspx"
+  },
+  {
+    "iso3": "MAR",
+    "iso2": "MA",
+    "name_fr": "Maroc",
+    "capital": "Rabat",
+    "currency": "Dirham marocain",
+    "language": "Arabe / Berbère",
+    "level": "Vigilance",
+    "page_url": "./pages/ma.aspx"
+  },
+  {
+    "iso3": "MHL",
+    "iso2": "MH",
+    "name_fr": "Marshall (îles)",
+    "capital": "Majuro",
+    "currency": "Dollar US",
+    "language": "Anglais / Marshallais",
+    "level": "Normale",
+    "page_url": "./pages/mh.aspx"
+  },
+  {
+    "iso3": "MUS",
+    "iso2": "MU",
+    "name_fr": "Maurice",
+    "capital": "Port-Louis",
+    "currency": "Roupie mauricienne",
+    "language": "Anglais / Français",
+    "level": "Normale",
+    "page_url": "./pages/mu.aspx"
+  },
+  {
+    "iso3": "MRT",
+    "iso2": "MR",
+    "name_fr": "Mauritanie",
+    "capital": "Nouakchott",
+    "currency": "Ouguiya",
+    "language": "Arabe",
+    "level": "Normale",
+    "page_url": "./pages/mr.aspx"
+  },
+  {
+    "iso3": "MEX",
+    "iso2": "MX",
+    "name_fr": "Mexique",
+    "capital": "Mexico",
+    "currency": "Peso mexicain",
+    "language": "Espagnol",
+    "level": "Vigilance",
+    "page_url": "./pages/mx.aspx"
+  },
+  {
+    "iso3": "FSM",
+    "iso2": "FM",
+    "name_fr": "Micronésie",
+    "capital": "Palikir",
+    "currency": "Dollar US",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/fm.aspx"
+  },
+  {
+    "iso3": "MDA",
+    "iso2": "MD",
+    "name_fr": "Moldavie",
+    "capital": "Chișinău",
+    "currency": "Leu moldave",
+    "language": "Roumain",
+    "level": "Normale",
+    "page_url": "./pages/md.aspx"
+  },
+  {
+    "iso3": "MCO",
+    "iso2": "MC",
+    "name_fr": "Monaco",
+    "capital": "Monaco",
+    "currency": "Euro",
+    "language": "Français",
+    "level": "Normale",
+    "page_url": "./pages/mc.aspx"
+  },
+  {
+    "iso3": "MNG",
+    "iso2": "MN",
+    "name_fr": "Mongolie",
+    "capital": "Oulan-Bator",
+    "currency": "Tugrik",
+    "language": "Mongol",
+    "level": "Normale",
+    "page_url": "./pages/mn.aspx"
+  },
+  {
+    "iso3": "MNE",
+    "iso2": "ME",
+    "name_fr": "Monténégro",
+    "capital": "Podgorica",
+    "currency": "Euro",
+    "language": "Monténégrin",
+    "level": "Normale",
+    "page_url": "./pages/me.aspx"
+  },
+  {
+    "iso3": "MOZ",
+    "iso2": "MZ",
+    "name_fr": "Mozambique",
+    "capital": "Maputo",
+    "currency": "Metical",
+    "language": "Portugais",
+    "level": "Vigilance",
+    "page_url": "./pages/mz.aspx"
+  },
+  {
+    "iso3": "NAM",
+    "iso2": "NA",
+    "name_fr": "Namibie",
+    "capital": "Windhoek",
+    "currency": "Dollar namibien",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/na.aspx"
+  },
+  {
+    "iso3": "NRU",
+    "iso2": "NR",
+    "name_fr": "Nauru",
+    "capital": "Yaren",
+    "currency": "Dollar australien",
+    "language": "Nauruan / Anglais",
+    "level": "Normale",
+    "page_url": "./pages/nr.aspx"
+  },
+  {
+    "iso3": "NIC",
+    "iso2": "NI",
+    "name_fr": "Nicaragua",
+    "capital": "Managua",
+    "currency": "Córdoba",
+    "language": "Espagnol",
+    "level": "Normale",
+    "page_url": "./pages/ni.aspx"
+  },
+  {
+    "iso3": "NER",
+    "iso2": "NE",
+    "name_fr": "Niger",
+    "capital": "Niamey",
+    "currency": "Franc CFA",
+    "language": "Français",
+    "level": "Déconseillé",
+    "page_url": "./pages/ne.aspx"
+  },
+  {
+    "iso3": "NGA",
+    "iso2": "NG",
+    "name_fr": "Nigeria",
+    "capital": "Abuja",
+    "currency": "Naira",
+    "language": "Anglais",
+    "level": "Vigilance",
+    "page_url": "./pages/ng.aspx"
+  },
+  {
+    "iso3": "NOR",
+    "iso2": "NO",
+    "name_fr": "Norvège",
+    "capital": "Oslo",
+    "currency": "Couronne norvégienne",
+    "language": "Norvégien",
+    "level": "Normale",
+    "page_url": "./pages/no.aspx"
+  },
+  {
+    "iso3": "NZL",
+    "iso2": "NZ",
+    "name_fr": "Nouvelle-Zélande",
+    "capital": "Wellington",
+    "currency": "Dollar néo-zélandais",
+    "language": "Anglais / Maori",
+    "level": "Normale",
+    "page_url": "./pages/nz.aspx"
+  },
+  {
+    "iso3": "NPL",
+    "iso2": "NP",
+    "name_fr": "Népal",
+    "capital": "Katmandou",
+    "currency": "Roupie népalaise",
+    "language": "Népalais",
+    "level": "Normale",
+    "page_url": "./pages/np.aspx"
+  },
+  {
+    "iso3": "OMN",
+    "iso2": "OM",
+    "name_fr": "Oman",
+    "capital": "Mascate",
+    "currency": "Rial omanais",
+    "language": "Arabe",
+    "level": "Normale",
+    "page_url": "./pages/om.aspx"
+  },
+  {
+    "iso3": "UGA",
+    "iso2": "UG",
+    "name_fr": "Ouganda",
+    "capital": "Kampala",
+    "currency": "Shilling ougandais",
+    "language": "Anglais / Swahili",
+    "level": "Normale",
+    "page_url": "./pages/ug.aspx"
+  },
+  {
+    "iso3": "UZB",
+    "iso2": "UZ",
+    "name_fr": "Ouzbékistan",
+    "capital": "Tachkent",
+    "currency": "Sum",
+    "language": "Ouzbek",
+    "level": "Normale",
+    "page_url": "./pages/uz.aspx"
+  },
+  {
+    "iso3": "PAK",
+    "iso2": "PK",
+    "name_fr": "Pakistan",
+    "capital": "Islamabad",
+    "currency": "Roupie pakistanaise",
+    "language": "Ourdou / Anglais",
+    "level": "Déconseillé",
+    "page_url": "./pages/pk.aspx"
+  },
+  {
+    "iso3": "PLW",
+    "iso2": "PW",
+    "name_fr": "Palaos",
+    "capital": "Ngerulmud",
+    "currency": "Dollar US",
+    "language": "Anglais / Paluan",
+    "level": "Normale",
+    "page_url": "./pages/pw.aspx"
+  },
+  {
+    "iso3": "PSE",
+    "iso2": "PS",
+    "name_fr": "Palestine",
+    "capital": "Jérusalem-Est / Ramallah",
+    "currency": "Shekel",
+    "language": "Arabe",
+    "level": "Normale",
+    "page_url": "./pages/ps.aspx"
+  },
+  {
+    "iso3": "PAN",
+    "iso2": "PA",
+    "name_fr": "Panama",
+    "capital": "Panama",
+    "currency": "Balboa / Dollar US",
+    "language": "Espagnol",
+    "level": "Normale",
+    "page_url": "./pages/pa.aspx"
+  },
+  {
+    "iso3": "PNG",
+    "iso2": "PG",
+    "name_fr": "Papouasie-Nouvelle-Guinée",
+    "capital": "Port Moresby",
+    "currency": "Kina",
+    "language": "Anglais / Tok Pisin",
+    "level": "Normale",
+    "page_url": "./pages/pg.aspx"
+  },
+  {
+    "iso3": "PRY",
+    "iso2": "PY",
+    "name_fr": "Paraguay",
+    "capital": "Asunción",
+    "currency": "Guaraní",
+    "language": "Espagnol / Guaraní",
+    "level": "Normale",
+    "page_url": "./pages/py.aspx"
+  },
+  {
+    "iso3": "NLD",
+    "iso2": "NL",
+    "name_fr": "Pays-Bas",
+    "capital": "Amsterdam",
+    "currency": "Euro",
+    "language": "Néerlandais",
+    "level": "Normale",
+    "page_url": "./pages/nl.aspx"
+  },
+  {
+    "iso3": "PHL",
+    "iso2": "PH",
+    "name_fr": "Philippines",
+    "capital": "Manille",
+    "currency": "Peso philippin",
+    "language": "Filipino / Anglais",
+    "level": "Vigilance",
+    "page_url": "./pages/ph.aspx"
+  },
+  {
+    "iso3": "POL",
+    "iso2": "PL",
+    "name_fr": "Pologne",
+    "capital": "Varsovie",
+    "currency": "Złoty",
+    "language": "Polonais",
+    "level": "Normale",
+    "page_url": "./pages/pl.aspx"
+  },
+  {
+    "iso3": "PRT",
+    "iso2": "PT",
+    "name_fr": "Portugal",
+    "capital": "Lisbonne",
+    "currency": "Euro",
+    "language": "Portugais",
+    "level": "Normale",
+    "page_url": "./pages/pt.aspx"
+  },
+  {
+    "iso3": "PER",
+    "iso2": "PE",
+    "name_fr": "Pérou",
+    "capital": "Lima",
+    "currency": "Sol",
+    "language": "Espagnol",
+    "level": "Vigilance",
+    "page_url": "./pages/pe.aspx"
+  },
+  {
+    "iso3": "QAT",
+    "iso2": "QA",
+    "name_fr": "Qatar",
+    "capital": "Doha",
+    "currency": "Riyal qatari",
+    "language": "Arabe",
+    "level": "Normale",
+    "page_url": "./pages/qa.aspx"
+  },
+  {
+    "iso3": "ROU",
+    "iso2": "RO",
+    "name_fr": "Roumanie",
+    "capital": "Bucarest",
+    "currency": "Leu roumain",
+    "language": "Roumain",
+    "level": "Normale",
+    "page_url": "./pages/ro.aspx"
+  },
+  {
+    "iso3": "GBR",
+    "iso2": "GB",
+    "name_fr": "Royaume-Uni",
+    "capital": "Londres",
+    "currency": "Livre sterling",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/gb.aspx"
+  },
+  {
+    "iso3": "RUS",
+    "iso2": "RU",
+    "name_fr": "Russie",
+    "capital": "Moscou",
+    "currency": "Rouble",
+    "language": "Russe",
+    "level": "Vigilance",
+    "page_url": "./pages/ru.aspx"
+  },
+  {
+    "iso3": "RWA",
+    "iso2": "RW",
+    "name_fr": "Rwanda",
+    "capital": "Kigali",
+    "currency": "Franc rwandais",
+    "language": "Kinyarwanda / Français / Anglais",
+    "level": "Normale",
+    "page_url": "./pages/rw.aspx"
+  },
+  {
+    "iso3": "CAF",
+    "iso2": "CF",
+    "name_fr": "République centrafricaine",
+    "capital": "Bangui",
+    "currency": "Franc CFA",
+    "language": "Français / Sango",
+    "level": "Déconseillé",
+    "page_url": "./pages/cf.aspx"
+  },
+  {
+    "iso3": "CZE",
+    "iso2": "CZ",
+    "name_fr": "République tchèque",
+    "capital": "Prague",
+    "currency": "Couronne tchèque",
+    "language": "Tchèque",
+    "level": "Normale",
+    "page_url": "./pages/cz.aspx"
+  },
+  {
+    "iso3": "KNA",
+    "iso2": "KN",
+    "name_fr": "Saint-Christophe-et-Niévès",
+    "capital": "Basseterre",
+    "currency": "Dollar des Caraïbes",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/kn.aspx"
+  },
+  {
+    "iso3": "SMR",
+    "iso2": "SM",
+    "name_fr": "Saint-Marin",
+    "capital": "Saint-Marin",
+    "currency": "Euro",
+    "language": "Italien",
+    "level": "Normale",
+    "page_url": "./pages/sm.aspx"
+  },
+  {
+    "iso3": "VCT",
+    "iso2": "VC",
+    "name_fr": "Saint-Vincent-et-les-Grenadines",
+    "capital": "Kingstown",
+    "currency": "Dollar des Caraïbes",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/vc.aspx"
+  },
+  {
+    "iso3": "LCA",
+    "iso2": "LC",
+    "name_fr": "Sainte-Lucie",
+    "capital": "Castries",
+    "currency": "Dollar des Caraïbes",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/lc.aspx"
+  },
+  {
+    "iso3": "SLB",
+    "iso2": "SB",
+    "name_fr": "Salomon (îles)",
+    "capital": "Honiara",
+    "currency": "Dollar des Salomon",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/sb.aspx"
+  },
+  {
+    "iso3": "SLV",
+    "iso2": "SV",
+    "name_fr": "Salvador",
+    "capital": "San Salvador",
+    "currency": "Dollar US",
+    "language": "Espagnol",
+    "level": "Vigilance",
+    "page_url": "./pages/sv.aspx"
+  },
+  {
+    "iso3": "WSM",
+    "iso2": "WS",
+    "name_fr": "Samoa",
+    "capital": "Apia",
+    "currency": "Tala",
+    "language": "Samoan / Anglais",
+    "level": "Normale",
+    "page_url": "./pages/ws.aspx"
+  },
+  {
+    "iso3": "STP",
+    "iso2": "ST",
+    "name_fr": "Sao Tomé-et-Principe",
+    "capital": "São Tomé",
+    "currency": "Dobra",
+    "language": "Portugais",
+    "level": "Normale",
+    "page_url": "./pages/st.aspx"
+  },
+  {
+    "iso3": "SRB",
+    "iso2": "RS",
+    "name_fr": "Serbie",
+    "capital": "Belgrade",
+    "currency": "Dinar serbe",
+    "language": "Serbe",
+    "level": "Normale",
+    "page_url": "./pages/rs.aspx"
+  },
+  {
+    "iso3": "SYC",
+    "iso2": "SC",
+    "name_fr": "Seychelles",
+    "capital": "Victoria",
+    "currency": "Roupie seychelloise",
+    "language": "Anglais / Français / Créole",
+    "level": "Normale",
+    "page_url": "./pages/sc.aspx"
+  },
+  {
+    "iso3": "SLE",
+    "iso2": "SL",
+    "name_fr": "Sierra Leone",
+    "capital": "Freetown",
+    "currency": "Leone",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/sl.aspx"
+  },
+  {
+    "iso3": "SGP",
+    "iso2": "SG",
+    "name_fr": "Singapour",
+    "capital": "Singapour",
+    "currency": "Dollar de Singapour",
+    "language": "Anglais / Mandarin / Malais",
+    "level": "Normale",
+    "page_url": "./pages/sg.aspx"
+  },
+  {
+    "iso3": "SVK",
+    "iso2": "SK",
+    "name_fr": "Slovaquie",
+    "capital": "Bratislava",
+    "currency": "Euro",
+    "language": "Slovaque",
+    "level": "Normale",
+    "page_url": "./pages/sk.aspx"
+  },
+  {
+    "iso3": "SVN",
+    "iso2": "SI",
+    "name_fr": "Slovénie",
+    "capital": "Ljubljana",
+    "currency": "Euro",
+    "language": "Slovène",
+    "level": "Normale",
+    "page_url": "./pages/si.aspx"
+  },
+  {
+    "iso3": "SOM",
+    "iso2": "SO",
+    "name_fr": "Somalie",
+    "capital": "Mogadiscio",
+    "currency": "Shilling somalien",
+    "language": "Somali / Arabe",
+    "level": "Formel",
+    "page_url": "./pages/so.aspx"
+  },
+  {
+    "iso3": "SDN",
+    "iso2": "SD",
+    "name_fr": "Soudan",
+    "capital": "Khartoum",
+    "currency": "Livre soudanaise",
+    "language": "Arabe",
+    "level": "Déconseillé",
+    "page_url": "./pages/sd.aspx"
+  },
+  {
+    "iso3": "SSD",
+    "iso2": "SS",
+    "name_fr": "Soudan du Sud",
+    "capital": "Djouba",
+    "currency": "Livre sud-soudanaise",
+    "language": "Anglais",
+    "level": "Formel",
+    "page_url": "./pages/ss.aspx"
+  },
+  {
+    "iso3": "LKA",
+    "iso2": "LK",
+    "name_fr": "Sri Lanka",
+    "capital": "Colombo / Sri Jayawardenapura",
+    "currency": "Roupie srilankaise",
+    "language": "Cinghalais / Tamoul",
+    "level": "Vigilance",
+    "page_url": "./pages/lk.aspx"
+  },
+  {
+    "iso3": "CHE",
+    "iso2": "CH",
+    "name_fr": "Suisse",
+    "capital": "Berne",
+    "currency": "Franc suisse",
+    "language": "Allemand / Français / Italien",
+    "level": "Normale",
+    "page_url": "./pages/ch.aspx"
+  },
+  {
+    "iso3": "SUR",
+    "iso2": "SR",
+    "name_fr": "Suriname",
+    "capital": "Paramaribo",
+    "currency": "Dollar surinamais",
+    "language": "Néerlandais",
+    "level": "Normale",
+    "page_url": "./pages/sr.aspx"
+  },
+  {
+    "iso3": "SWE",
+    "iso2": "SE",
+    "name_fr": "Suède",
+    "capital": "Stockholm",
+    "currency": "Couronne suédoise",
+    "language": "Suédois",
+    "level": "Normale",
+    "page_url": "./pages/se.aspx"
+  },
+  {
+    "iso3": "SYR",
+    "iso2": "SY",
+    "name_fr": "Syrie",
+    "capital": "Damas",
+    "currency": "Livre syrienne",
+    "language": "Arabe",
+    "level": "Formel",
+    "page_url": "./pages/sy.aspx"
+  },
+  {
+    "iso3": "SEN",
+    "iso2": "SN",
+    "name_fr": "Sénégal",
+    "capital": "Dakar",
+    "currency": "Franc CFA",
+    "language": "Français",
+    "level": "Vigilance",
+    "page_url": "./pages/sn.aspx"
+  },
+  {
+    "iso3": "TJK",
+    "iso2": "TJ",
+    "name_fr": "Tadjikistan",
+    "capital": "Douchanbé",
+    "currency": "Somoni",
+    "language": "Tadjik",
+    "level": "Normale",
+    "page_url": "./pages/tj.aspx"
+  },
+  {
+    "iso3": "TZA",
+    "iso2": "TZ",
+    "name_fr": "Tanzanie",
+    "capital": "Dodoma",
+    "currency": "Shilling tanzanien",
+    "language": "Swahili / Anglais",
+    "level": "Vigilance",
+    "page_url": "./pages/tz.aspx"
+  },
+  {
+    "iso3": "TCD",
+    "iso2": "TD",
+    "name_fr": "Tchad",
+    "capital": "N'Djaména",
+    "currency": "Franc CFA",
+    "language": "Français / Arabe",
+    "level": "Déconseillé",
+    "page_url": "./pages/td.aspx"
+  },
+  {
+    "iso3": "THA",
+    "iso2": "TH",
+    "name_fr": "Thaïlande",
+    "capital": "Bangkok",
+    "currency": "Baht",
+    "language": "Thaï",
+    "level": "Vigilance",
+    "page_url": "./pages/th.aspx"
+  },
+  {
+    "iso3": "TLS",
+    "iso2": "TL",
+    "name_fr": "Timor oriental",
+    "capital": "Dili",
+    "currency": "Dollar US",
+    "language": "Tétoum / Portugais",
+    "level": "Normale",
+    "page_url": "./pages/tl.aspx"
+  },
+  {
+    "iso3": "TGO",
+    "iso2": "TG",
+    "name_fr": "Togo",
+    "capital": "Lomé",
+    "currency": "Franc CFA",
+    "language": "Français",
+    "level": "Normale",
+    "page_url": "./pages/tg.aspx"
+  },
+  {
+    "iso3": "TON",
+    "iso2": "TO",
+    "name_fr": "Tonga",
+    "capital": "Nukuʻalofa",
+    "currency": "Paʻanga",
+    "language": "Tongien / Anglais",
+    "level": "Normale",
+    "page_url": "./pages/to.aspx"
+  },
+  {
+    "iso3": "TTO",
+    "iso2": "TT",
+    "name_fr": "Trinité-et-Tobago",
+    "capital": "Port-d'Espagne",
+    "currency": "Dollar trinidadien",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/tt.aspx"
+  },
+  {
+    "iso3": "TUN",
+    "iso2": "TN",
+    "name_fr": "Tunisie",
+    "capital": "Tunis",
+    "currency": "Dinar tunisien",
+    "language": "Arabe",
+    "level": "Vigilance",
+    "page_url": "./pages/tn.aspx"
+  },
+  {
+    "iso3": "TKM",
+    "iso2": "TM",
+    "name_fr": "Turkménistan",
+    "capital": "Achgabat",
+    "currency": "Manat",
+    "language": "Turkmène",
+    "level": "Normale",
+    "page_url": "./pages/tm.aspx"
+  },
+  {
+    "iso3": "TUR",
+    "iso2": "TR",
+    "name_fr": "Turquie",
+    "capital": "Ankara",
+    "currency": "Livre turque",
+    "language": "Turc",
+    "level": "Vigilance",
+    "page_url": "./pages/tr.aspx"
+  },
+  {
+    "iso3": "TUV",
+    "iso2": "TV",
+    "name_fr": "Tuvalu",
+    "capital": "Funafuti",
+    "currency": "Dollar australien",
+    "language": "Tuvaluan / Anglais",
+    "level": "Normale",
+    "page_url": "./pages/tv.aspx"
+  },
+  {
+    "iso3": "UKR",
+    "iso2": "UA",
+    "name_fr": "Ukraine",
+    "capital": "Kiev",
+    "currency": "Hryvnia",
+    "language": "Ukrainien",
+    "level": "Vigilance",
+    "page_url": "./pages/ua.aspx"
+  },
+  {
+    "iso3": "URY",
+    "iso2": "UY",
+    "name_fr": "Uruguay",
+    "capital": "Montevideo",
+    "currency": "Peso uruguayen",
+    "language": "Espagnol",
+    "level": "Normale",
+    "page_url": "./pages/uy.aspx"
+  },
+  {
+    "iso3": "VUT",
+    "iso2": "VU",
+    "name_fr": "Vanuatu",
+    "capital": "Port-Vila",
+    "currency": "Vatu",
+    "language": "Bichlamar / Anglais / Français",
+    "level": "Normale",
+    "page_url": "./pages/vu.aspx"
+  },
+  {
+    "iso3": "VAT",
+    "iso2": "VA",
+    "name_fr": "Vatican",
+    "capital": "Vatican",
+    "currency": "Euro",
+    "language": "Italien / Latin",
+    "level": "Normale",
+    "page_url": "./pages/va.aspx"
+  },
+  {
+    "iso3": "VEN",
+    "iso2": "VE",
+    "name_fr": "Venezuela",
+    "capital": "Caracas",
+    "currency": "Bolivar",
+    "language": "Espagnol",
+    "level": "Déconseillé",
+    "page_url": "./pages/ve.aspx"
+  },
+  {
+    "iso3": "VNM",
+    "iso2": "VN",
+    "name_fr": "Vietnam",
+    "capital": "Hanoï",
+    "currency": "Dong",
+    "language": "Vietnamien",
+    "level": "Vigilance",
+    "page_url": "./pages/vn.aspx"
+  },
+  {
+    "iso3": "YEM",
+    "iso2": "YE",
+    "name_fr": "Yémen",
+    "capital": "Sanaa",
+    "currency": "Rial yéménite",
+    "language": "Arabe",
+    "level": "Formel",
+    "page_url": "./pages/ye.aspx"
+  },
+  {
+    "iso3": "ZMB",
+    "iso2": "ZM",
+    "name_fr": "Zambie",
+    "capital": "Lusaka",
+    "currency": "Kwacha zambien",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/zm.aspx"
+  },
+  {
+    "iso3": "ZWE",
+    "iso2": "ZW",
+    "name_fr": "Zimbabwe",
+    "capital": "Harare",
+    "currency": "Dollar zimbabwéen",
+    "language": "Anglais",
+    "level": "Vigilance",
+    "page_url": "./pages/zw.aspx"
+  },
+  {
+    "iso3": "EGY",
+    "iso2": "EG",
+    "name_fr": "Égypte",
+    "capital": "Le Caire",
+    "currency": "Livre égyptienne",
+    "language": "Arabe",
+    "level": "Vigilance",
+    "page_url": "./pages/eg.aspx"
+  },
+  {
+    "iso3": "ARE",
+    "iso2": "AE",
+    "name_fr": "Émirats arabes unis",
+    "capital": "Abou Dabi",
+    "currency": "Dirham",
+    "language": "Arabe",
+    "level": "Normale",
+    "page_url": "./pages/ae.aspx"
+  },
+  {
+    "iso3": "ECU",
+    "iso2": "EC",
+    "name_fr": "Équateur",
+    "capital": "Quito",
+    "currency": "Dollar US",
+    "language": "Espagnol",
+    "level": "Vigilance",
+    "page_url": "./pages/ec.aspx"
+  },
+  {
+    "iso3": "ERI",
+    "iso2": "ER",
+    "name_fr": "Érythrée",
+    "capital": "Asmara",
+    "currency": "Nakfa",
+    "language": "Tigrinya / Arabe",
+    "level": "Déconseillé",
+    "page_url": "./pages/er.aspx"
+  },
+  {
+    "iso3": "USA",
+    "iso2": "US",
+    "name_fr": "États-Unis",
+    "capital": "Washington",
+    "currency": "Dollar US",
+    "language": "Anglais",
+    "level": "Normale",
+    "page_url": "./pages/us.aspx"
+  },
+  {
+    "iso3": "ETH",
+    "iso2": "ET",
+    "name_fr": "Éthiopie",
+    "capital": "Addis-Abeba",
+    "currency": "Birr",
+    "language": "Amharique",
+    "level": "Vigilance",
+    "page_url": "./pages/et.aspx"
+  }
+]
