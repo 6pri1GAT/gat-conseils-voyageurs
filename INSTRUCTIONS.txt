@@ -1,0 +1,155 @@
+============================================================
+DOSSIER FINAL — REPARTIR DE ZERO SUR GITHUB
+============================================================
+
+Ce dossier contient TOUS les fichiers à mettre sur :
+https://github.com/6pri1gat/gat-conseils-voyageurs
+
+Date de génération : 2026-05-06
+
+CONTENU (8 éléments)
+--------------------
+.nojekyll              : fichier vide (DESACTIVE Jekyll qui plante)
+index.html             : carte mondiale avec zoom + panoramique
+countries.json         : base 195 pays (URLs pages/xx.html)
+countries.csv          : même base format Excel
+country-template.html  : gabarit vide de page pays
+pages/mx.html          : page Mexique COMPLETE (préambule + popups vaccinales)
+README.md              : description GitHub
+INSTRUCTIONS.txt       : ce fichier
+
+============================================================
+PROCEDURE — REPARTIR DE ZERO PROPREMENT
+============================================================
+
+PHASE 1 — VIDER LE REPO ACTUEL
+-------------------------------
+Sur https://github.com/6pri1gat/gat-conseils-voyageurs
+
+1. Cliquer sur chaque fichier UN PAR UN (sauf .git et .github)
+2. Cliquer l'icône poubelle 🗑 en haut à droite
+3. Cliquer "Commit changes" en bas
+4. Répéter pour chaque fichier visible
+
+Pour le dossier "pages", cliquer dedans, supprimer mx.html
+puis revenir et le dossier disparaît automatiquement.
+
+A la fin, le repo doit être VIDE (juste le README qui se
+recrée automatiquement, ou alors complètement vide).
+
+PHASE 2 — UPLOADER LES NOUVEAUX FICHIERS
+-----------------------------------------
+ORDRE IMPORTANT :
+
+1. UPLOADER .nojekyll EN PREMIER (le fichier vide)
+
+   - Sur GitHub, cliquer "Add file" → "Create new file"
+   - Dans le champ nom, taper EXACTEMENT : .nojekyll
+     (avec le point au début, sans extension)
+   - Laisser la zone de contenu COMPLÈTEMENT VIDE
+   - Descendre en bas, cliquer "Commit new file"
+
+   ⚠ Ce fichier est CRITIQUE. Sans lui, GitHub Pages active
+     Jekyll qui plante sur le JavaScript de la carte.
+
+2. UPLOADER LES AUTRES FICHIERS
+
+   Méthode rapide : "Add file" → "Upload files"
+
+   Glisser-déposer ces 4 fichiers depuis votre dossier local
+   GITHUB-A-UPLOADER (sans le sous-dossier pages) :
+     - index.html
+     - countries.json
+     - countries.csv
+     - country-template.html
+     - README.md (optionnel mais recommandé)
+
+   Vérifier que les noms affichés sont en MINUSCULES
+   (pas INDEX~1.HTM ni autre tronqué).
+
+   Si un nom est tronqué : annuler et utiliser
+   "Create new file" + copier-coller du contenu via Bloc-notes.
+
+   Cliquer "Commit changes" en bas.
+
+3. UPLOADER pages/mx.html
+
+   - Cliquer "Add file" → "Create new file"
+   - Dans le champ nom, taper EXACTEMENT : pages/mx.html
+     (avec le slash pour créer le dossier)
+   - Sur votre PC, ouvrir GITHUB-A-UPLOADER\pages\mx.html
+     avec le BLOC-NOTES (clic droit → Ouvrir avec → Bloc-notes)
+   - Ctrl+A puis Ctrl+C pour copier
+   - Revenir sur GitHub, coller dans la zone vide avec Ctrl+V
+   - Vérifier que la dernière ligne est </html>
+   - Cliquer "Commit new file"
+
+PHASE 3 — VERIFIER LE DEPLOIEMENT
+----------------------------------
+1. Aller sur :
+   https://github.com/6pri1gat/gat-conseils-voyageurs/actions
+
+2. Attendre que le dernier workflow ait un ROND VERT ✅
+   (peut prendre 1 à 5 minutes en heures normales)
+
+   Si le workflow timeout après 15 min ("Cancelled after 15m") :
+   GitHub a une file d'attente surchargée.
+   Solutions :
+     a) Réessayer plus tard (heures creuses, soir, week-end)
+     b) Retenter en faisant un mini-commit
+        (modifier README.md → ajouter un espace → commit)
+     c) Si ça persiste, utiliser SharePoint à la place
+        (voir les autres méthodes proposées)
+
+PHASE 4 — TESTER
+-----------------
+Ouvrir en NAVIGATION PRIVEE (Ctrl+Shift+N) :
+https://6pri1gat.github.io/gat-conseils-voyageurs/
+
+Vous devez voir :
+  [ ] Bandeau "GAT - Conseils aux voyageurs"
+  [ ] Carte mondiale avec pays colorés
+  [ ] Boutons de zoom + / - / reset en haut à droite
+  [ ] Liste alphabétique des 195 pays en bas
+  [ ] Au clic sur un pays, panneau détaillé
+  [ ] Bouton "Ouvrir le livret" mène au pays
+  [ ] La page Mexique a un préambule des obligations
+      en 3 phases avec barre dégradée bleu/orange/rouge
+  [ ] Au survol d'un vaccin, popup noire avec règles
+  [ ] Section 6 "Retour France" avec encadré rouge
+  [ ] Bouton flottant "Démarches retour France →"
+      visible en bas à droite
+
+Si tout est OK : terminé ! Vous pouvez intégrer dans SharePoint.
+
+Si problème : capture d'écran + console F12 et on debug.
+
+============================================================
+FALLBACK SI GITHUB CONTINUE DE TIMEOUT
+============================================================
+
+Si après plusieurs essais les workflows GitHub Actions
+continuent de s'annuler à 15 minutes, GitHub a un problème
+de capacité côté plan gratuit.
+
+Plan B : déposer les fichiers dans une bibliothèque
+SharePoint. Demander la procédure si nécessaire.
+
+Plan C : utiliser Azure Static Web Apps (gratuit, native
+Microsoft 365). Demander la procédure si nécessaire.
+
+============================================================
+CONTENU DU DOSSIER — RAPPEL
+============================================================
+
+Tous ces fichiers sont à JOUR au 2026-05-06 :
+
+- .nojekyll                  (0 octets, fichier vide)
+- index.html                 (~23 ko - carte interactive)
+- countries.json             (~42 ko - 195 pays)
+- countries.csv              (~14 ko - même au format Excel)
+- country-template.html      (~28 ko - gabarit pays vide)
+- pages/mx.html              (~52 ko - page Mexique complète)
+- README.md                  (description)
+
+Bonne dernière chance !
