@@ -92,7 +92,7 @@
 </style>
 </head>
 <body>
-
+ 
 <header>
   <div class="brand">
     <div class="brand-mark">GAT</div>
@@ -105,16 +105,16 @@
     <input id="search" type="search" placeholder="Rechercher un pays..." autocomplete="off" />
   </div>
 </header>
-
+ 
 <main>
-
+ 
   <div class="intro">
     <h2>Sélectionnez votre pays de mission</h2>
     <p>Cliquez sur un pays pour accéder à son livret de mission complet : sécurité, santé, formalités, contacts d'urgence et procédures de retour en France. Sources : France Diplomatie (MEAE), Europ Assistance, AXA.</p>
   </div>
-
+ 
   <div class="layout">
-
+ 
     <div class="map-panel">
       <div class="map-header">
         <div class="map-title">Carte mondiale des niveaux de vigilance</div>
@@ -139,7 +139,7 @@
         <span>Données à mettre à jour selon France Diplomatie</span>
       </div>
     </div>
-
+ 
     <aside class="country-panel" id="country-panel">
       <div class="country-panel-empty" id="empty-state">
         Sélectionnez un pays sur la carte ou dans la liste pour afficher son livret de mission.
@@ -173,18 +173,18 @@
       </div>
     </aside>
   </div>
-
+ 
   <div class="country-list">
     <h3>Tous les pays (<span id="count">0</span>)</h3>
     <div class="country-grid" id="grid"></div>
   </div>
-
+ 
 </main>
-
+ 
 <footer>
   GAT International — Livrets de mission internationaux. Sources : France Diplomatie, Europ Assistance, AXA Assistance, Ameli.fr.
 </footer>
-
+ 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 <script>
@@ -192,13 +192,13 @@
   // Numeric ISO -> ISO-A3 mapping for the most common world atlas (Natural Earth via topojson-atlas)
   // The world-atlas dataset uses numeric ISO codes; we map them to ISO-A3 from our DB.
   var COUNTRIES = []; // populated by fetch
-
+ 
   // Slugify level for CSS class
   function levelSlug(lvl) {
     if (lvl === 'Déconseillé') return 'Deconseille';
     return lvl;
   }
-
+ 
   // Mapping numeric ISO 3166 to ISO-A3 (subset is enough for visible features)
   // For robustness we'll use a complete map embedded below.
   var NUMERIC_TO_A3 = {
@@ -227,7 +227,7 @@
     "796":"TCA","798":"TUV","800":"UGA","804":"UKR","807":"MKD","818":"EGY","826":"GBR","831":"GGY","832":"JEY","833":"IMN",
     "834":"TZA","840":"USA","850":"VIR","854":"BFA","858":"URY","860":"UZB","862":"VEN","876":"WLF","882":"WSM","887":"YEM","894":"ZMB"
   };
-
+ 
   Promise.all([
     fetch('countries.json').then(r => r.json()).catch(function(e){
       console.error('Erreur chargement countries.json :', e);
@@ -243,24 +243,24 @@
       '<div style="padding:40px;text-align:center;color:#999;font-size:13px;">Impossible de charger la carte. Vérifiez la connexion ou ouvrez via un serveur local.</div>';
     console.error(err);
   });
-
+ 
   function init(topo) {
     var byA3 = {};
     COUNTRIES.forEach(function(c){ byA3[c.iso3] = c; });
-
+ 
     var container = document.getElementById('map-container');
     var w = container.clientWidth;
     var h = container.clientHeight;
-
+ 
     var svg = d3.select(container).append('svg').attr('class','world').attr('viewBox','0 0 '+w+' '+h);
     var zoomLayer = svg.append('g').attr('class', 'zoom-layer');
     var projection = d3.geoNaturalEarth1().fitSize([w, h], topojson.feature(topo, topo.objects.countries));
     var path = d3.geoPath().projection(projection);
     var features = topojson.feature(topo, topo.objects.countries).features;
-
+ 
     var tooltip = document.getElementById('tooltip');
     var zoomLevel = document.getElementById('zoom-level');
-
+ 
     var paths = zoomLayer.selectAll('path.country')
       .data(features)
       .enter().append('path')
@@ -287,7 +287,7 @@
       .on('click', function(event, f){
         if (f._country) selectCountry(f._country);
       });
-
+ 
     // Zoom & pan behavior
     var zoom = d3.zoom()
       .scaleExtent([1, 8])
@@ -300,7 +300,7 @@
       })
       .on('end', function(){ svg.classed('dragging', false); });
     svg.call(zoom);
-
+ 
     document.getElementById('zoom-in').addEventListener('click', function(){
       svg.transition().duration(300).call(zoom.scaleBy, 1.6);
     });
@@ -310,14 +310,14 @@
     document.getElementById('zoom-reset').addEventListener('click', function(){
       svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity);
     });
-
+ 
     // Initialise zoom-out disabled
     document.getElementById('zoom-out').disabled = true;
-
+ 
     // Render the country list
     renderGrid(COUNTRIES);
     document.getElementById('count').textContent = COUNTRIES.length;
-
+ 
     // Search
     var search = document.getElementById('search');
     search.addEventListener('input', function(){
@@ -328,7 +328,7 @@
       });
       renderGrid(filtered);
     });
-
+ 
     // Legend filtering
     var activeLevels = new Set(['Normale','Vigilance','Déconseillé','Formel']);
     document.querySelectorAll('#legend .legend-item').forEach(function(item){
@@ -339,7 +339,7 @@
         applyFilter();
       });
     });
-
+ 
     function applyFilter() {
       zoomLayer.selectAll('path.country').classed('dimmed', function(f){
         if (!f._country) return false;
@@ -347,7 +347,7 @@
       });
     }
   }
-
+ 
   function renderGrid(list) {
     var grid = document.getElementById('grid');
     grid.innerHTML = '';
@@ -360,7 +360,7 @@
       grid.appendChild(item);
     });
   }
-
+ 
   function selectCountry(c) {
     document.getElementById('empty-state').style.display = 'none';
     document.getElementById('country-detail').style.display = 'block';
