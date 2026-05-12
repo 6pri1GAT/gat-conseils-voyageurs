@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espagne — Livret de Mission GAT International</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1a1a1a; background: #ffffff; line-height: 1.55; }
+  .topbar { background: #1a1a1a; color: #fff; padding: 10px 32px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: #fff; text-decoration: none; opacity: 0.85; }
+  .topbar-actions { display: flex; align-items: center; gap: 14px; }
+  .btn-pdf { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.35); padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 11.5px; font-family: inherit; }
+  .btn-pdf:hover { background: rgba(255,255,255,0.28); }
+  header.cover { background: #ffffff; padding: 32px 32px 24px; border-bottom: 1px solid #e5e5e5; }
+  .cover-grid { display: grid; grid-template-columns: 1fr auto; gap: 32px; max-width: 1100px; margin: 0 auto; align-items: end; }
+  .breadcrumb { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .cover h1 { margin: 0 0 6px; font-size: 32px; font-weight: 600; }
+  .cover .subtitle { margin: 0; font-size: 14px; color: #666; }
+  .cover-flag { width: 120px; height: 80px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; }
+  .cover-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .meta-bar { max-width: 1100px; margin: 16px auto 0; display: grid; grid-template-columns: repeat(6, 1fr); border: 1px solid #e5e5e5; border-radius: 4px; overflow: hidden; }
+  .meta-bar > div { padding: 10px 14px; border-right: 1px solid #e5e5e5; }
+  .meta-bar > div:last-child { border-right: none; }
+  .meta-bar .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .meta-bar .value { font-size: 13px; font-weight: 500; margin-top: 2px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 28px 32px 60px; }
+  .toc { background: #f7f7f5; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px 24px; margin-bottom: 32px; }
+  .toc-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 8px; }
+  .toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; font-size: 14px; }
+  .toc a { color: #1a1a1a; text-decoration: none; }
+  .toc a:hover { border-bottom: 1px solid #1a1a1a; }
+  section { margin: 0 0 44px; scroll-margin-top: 20px; }
+  section h2 { font-size: 22px; font-weight: 600; margin: 0 0 6px; padding: 0 0 6px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-right: 40px; }
+  section h2 .num { color: #999; margin-right: 12px; font-weight: 400; }
+  section h3 { font-size: 16px; font-weight: 600; margin: 22px 0 10px; }
+  section p { margin: 8px 0; font-size: 14px; }
+  .vigilance-banner { padding: 14px 18px; border-radius: 6px; border-left: 4px solid; margin: 14px 0 22px; font-size: 14px; }
+  .vigilance-Vigilance { background: #fbf0d3; border-color: #d4a23a; color: #5a4307; }
+  .vigilance-banner strong { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+  .alert { padding: 14px 18px; border-radius: 6px; background: #fff8e6; border: 1px solid #f0d680; margin: 14px 0; font-size: 13.5px; }
+  .alert.danger { background: #fdecec; border-color: #e8b1ad; }
+  .alert strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+  .alert ul { margin: 0; padding-left: 18px; }
+  .alert li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #ececec; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: #555; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+  .col-card { background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px; padding: 14px 18px; }
+  .col-card.do { border-left: 3px solid #5d8a3a; }
+  .col-card.dont { border-left: 3px solid #a83232; }
+  .col-card h4 { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; }
+  .col-card ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .col-card li { margin: 4px 0; }
+  .risk-grid { display: grid; gap: 8px; margin: 14px 0; }
+  .risk-row { display: grid; grid-template-columns: 240px 1fr 60px; gap: 14px; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+  .risk-bar { height: 6px; background: #ececec; border-radius: 3px; overflow: hidden; }
+  .risk-fill { height: 100%; background: linear-gradient(90deg, #5d8a3a 0%, #d4a23a 50%, #a83232 100%); }
+  .risk-score { font-size: 13px; color: #555; text-align: right; }
+  .step-list { counter-reset: step; padding: 0; list-style: none; margin: 14px 0; }
+  .step-list li { counter-increment: step; padding: 12px 14px 12px 50px; position: relative; border-left: 2px solid #e0e0e0; margin-left: 14px; }
+  .step-list li::before { content: counter(step); position: absolute; left: -16px; top: 12px; width: 30px; height: 30px; background: #1a1a1a; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+  .step-list li strong { display: block; font-size: 14px; margin-bottom: 4px; }
+  .step-list li p { margin: 0; font-size: 13px; color: #555; }
+  .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; margin: 14px 0; font-size: 13.5px; }
+  .checklist label { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; cursor: pointer; }
+  .checklist input { margin-top: 3px; }
+  .source { font-size: 11px; color: #888; font-style: italic; margin-top: -4px; margin-bottom: 16px; }
+  .footer-cta { background: #1a1a1a; color: #fff; padding: 22px 28px; border-radius: 6px; margin-top: 32px; font-size: 13px; }
+  .footer-cta h3 { margin: 0 0 6px; font-size: 16px; color: #fff; }
+  .obligations-preamble { max-width: 1100px; margin: 22px auto 0; background: #fffaf5; border: 2px solid #f0d9c5; border-radius: 10px; padding: 24px 28px; }
+  .obligations-header { margin-bottom: 22px; }
+  .obligations-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 10px; }
+  .obligations-header h2 { margin: 0 0 6px; font-size: 22px; font-weight: 600; border: none; }
+  .obligations-header p { margin: 0; font-size: 13.5px; color: #555; max-width: 800px; }
+  .obligations-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; position: relative; }
+  .obligations-timeline::before { content: ""; position: absolute; top: 24px; left: 14%; right: 14%; height: 2px; background: linear-gradient(90deg, #185FA5 0%, #BA7517 50%, #993C1D 100%); z-index: 0; }
+  .obl-phase { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 18px 20px; position: relative; z-index: 1; }
+  .obl-phase.before { border-top: 3px solid #185FA5; }
+  .obl-phase.during { border-top: 3px solid #BA7517; }
+  .obl-phase.after { border-top: 3px solid #993C1D; }
+  .obl-step { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .obl-phase.before .obl-step { background: #185FA5; }
+  .obl-phase.during .obl-step { background: #BA7517; }
+  .obl-phase.after .obl-step { background: #993C1D; }
+  .obl-phase h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; }
+  .obl-phase .obl-when { display: block; font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+  .obl-phase ul { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; }
+  .obl-phase ul li strong { color: #993C1D; }
+  .obl-phase ul li.priority { background: #fff0eb; border-left: 3px solid #993C1D; padding: 4px 8px; list-style: none; margin-left: -22px; padding-left: 14px; border-radius: 0 4px 4px 0; }
+  .obl-phase ul li a.section-link { display: inline-block; margin-left: 6px; width: 18px; height: 18px; text-align: center; border-radius: 50%; background: #ececec; color: #555; text-decoration: none; font-size: 11px; line-height: 18px; font-weight: 600; vertical-align: middle; }
+  .obl-phase ul li a.section-link:hover { background: #993C1D; color: #fff; }
+  .vaccine-cell { position: relative; cursor: help; }
+  .info-marker { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: #888; color: #fff; font-size: 11px; font-weight: 600; font-style: normal; margin-left: 6px; vertical-align: middle; }
+  .vaccine-cell:hover .info-marker { background: #185FA5; }
+  .vaccine-popup { position: absolute; left: 0; top: calc(100% + 10px); background: #1a1a1a; color: #fff; padding: 16px 20px; border-radius: 8px; width: 380px; max-width: 92vw; font-size: 12.5px; line-height: 1.6; opacity: 0; pointer-events: none; transition: opacity 0.18s; z-index: 200; box-shadow: 0 6px 24px rgba(0,0,0,0.25); }
+  .vaccine-popup::before { content: ""; position: absolute; top: -7px; left: 24px; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid #1a1a1a; }
+  .vaccine-cell:hover .vaccine-popup { opacity: 1; pointer-events: auto; }
+  .vaccine-popup .vp-title { display: block; font-size: 14px; font-weight: 600; margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.15); }
+  .vaccine-popup ul { margin: 0; padding: 0; list-style: none; }
+  .vaccine-popup li { padding: 4px 0; }
+  .vaccine-popup li strong { display: inline-block; min-width: 100px; color: #f0d99a; font-weight: 600; }
+  .vaccine-popup .vp-warn { display: block; margin-top: 10px; padding: 8px 10px; background: rgba(216,90,48,0.18); border-left: 3px solid #D85A30; font-size: 12px; color: #ffd0bd; }
+  .vaccine-popup .vp-source { display: block; margin-top: 12px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 11px; color: rgba(255,255,255,0.55); font-style: italic; }
+  .float-return { position: fixed; right: 22px; bottom: 24px; z-index: 100; background: #993C1D; color: #fff; padding: 12px 18px; border-radius: 999px; text-decoration: none; font-size: 13px; font-weight: 600; box-shadow: 0 4px 14px rgba(153,60,29,0.35); display: flex; align-items: center; gap: 10px; }
+  .float-return:hover { background: #7a2e15; }
+  section.return-section { background: linear-gradient(180deg, #fdf3ef 0%, #ffffff 200px); border: 1px solid #e8c5b3; border-radius: 10px; padding: 28px 32px; margin: 30px 0 44px; position: relative; }
+  section.return-section::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #993C1D, #C04A20, #D85A30); border-radius: 10px 10px 0 0; }
+  section.return-section h2 { color: #993C1D; border-bottom-color: #993C1D; }
+  .critical-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 12px; }
+  .deadline-card { background: #fff; border: 2px solid #993C1D; border-radius: 8px; padding: 18px 22px; margin: 18px 0; display: grid; grid-template-columns: 100px 1fr; gap: 22px; align-items: center; }
+  .deadline-number { font-size: 56px; font-weight: 700; color: #993C1D; line-height: 1; text-align: center; }
+  .deadline-number small { display: block; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+  .deadline-text strong { display: block; font-size: 15px; margin-bottom: 4px; color: #993C1D; }
+
+  .official-sources { margin: 18px 0 28px; }
+  .sources-title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; font-weight: 600; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5; }
+  .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cta-card { display: block; padding: 18px 22px; border-radius: 8px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; border: 1px solid; }
+  .cta-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .cta-card .cta-tag { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px; }
+  .cta-card .cta-title { display: block; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+  .cta-card p { margin: 0 0 12px; font-size: 13px; line-height: 1.5; }
+  .cta-card .cta-link { font-size: 13px; font-weight: 600; }
+  .cta-card.cta-diplomatie { background: #e6f1fb; border-color: #b5d4f4; color: #0c447c; }
+  .cta-card.cta-diplomatie .cta-tag { background: #185fa5; color: #fff; }
+  .cta-card.cta-diplomatie .cta-link { color: #185fa5; }
+  .cta-card.cta-ariane { background: #fdecec; border-color: #e8b1ad; color: #791f1f; }
+  .cta-card.cta-ariane .cta-tag.cta-tag-priority { background: #a32d2d; color: #fff; }
+  .cta-card.cta-ariane .cta-link { color: #a32d2d; }
+  .ariane-why { background: #fffaf5; border: 1px solid #f0d9c5; border-radius: 8px; padding: 20px 24px; margin-top: 16px; }
+  .ariane-why h4 { margin: 0 0 10px; font-size: 15px; font-weight: 600; }
+  .ariane-why > p { margin: 0 0 14px; font-size: 13.5px; line-height: 1.6; color: #444; }
+  .ariane-why > p strong { color: #993C1D; }
+  .ariane-scenarios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 16px; margin: 12px 0; }
+  .ariane-scenarios .scenario { padding: 10px 12px; background: #fff; border-radius: 4px; border-left: 3px solid #c47140; font-size: 12.5px; line-height: 1.5; color: #555; }
+  .ariane-scenarios .scenario .scenario-label { display: block; font-size: 11px; font-weight: 600; color: #993C1D; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
+  .ariane-stat { margin: 14px 0 0 !important; padding: 12px 16px; background: #fff8e6; border-left: 3px solid #BA7517; border-radius: 0 4px 4px 0; font-size: 13px; font-style: italic; color: #5a4307 !important; }
+
+  /* Alerte virus santé spécifique Espagne */
+  .virus-alert { background: #fdecec; border: 2px solid #e24b4a; border-radius: 8px; padding: 18px 22px; margin: 16px 0 22px; }
+  .virus-alert .va-tag { display: inline-block; background: #a32d2d; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px; }
+  .virus-alert h4 { margin: 0 0 8px; font-size: 16px; color: #791f1f; font-weight: 600; }
+  .virus-alert p { margin: 4px 0; font-size: 13.5px; color: #4a1313; line-height: 1.55; }
+  .virus-alert ul { margin: 8px 0 0 18px; padding: 0; font-size: 13px; color: #4a1313; }
+
+  footer { padding: 24px 32px; text-align: center; font-size: 11px; color: #888; border-top: 1px solid #e5e5e5; background: #fafafa; }
+  .pdf-footnote { display: none; }
+  @media (max-width: 720px) { .meta-bar, .obligations-timeline, .two-col, .checklist, .deadline-card, .cover-grid, .cta-grid, .ariane-scenarios { grid-template-columns: 1fr; } .toc ol { columns: 1; } .obligations-timeline::before { display: none; } }
+  @media print { .topbar, .float-return, .btn-pdf { display: none !important; } .vaccine-popup, .info-marker { display: none !important; } body { background: #fff; } main, header.cover { padding: 16px 24px !important; } section { page-break-inside: avoid; } .pdf-footnote { display: block !important; text-align: center; font-size: 10px; color: #666; margin: 8px 0 16px; padding: 8px; border: 1px dashed #ccc; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><a href="../index.html">← Retour à la carte</a> · Conseils aux voyageurs · GAT International</span>
+  <span class="topbar-actions">
+    <button class="btn-pdf" onclick="window.print()" title="Imprimer ou enregistrer en PDF">Imprimer / PDF</button>
+    Document interne · Version 2026
+  </span>
+</div>
+
+<header class="cover">
+  <div class="cover-grid">
+    <div>
+      <div class="breadcrumb"><a href="../index.html">Conseils aux voyageurs</a> › <span>Espagne</span></div>
+      <h1>Espagne</h1>
+      <p class="subtitle">Reino de España — Livret de Mission. Guide pratique pour les collaborateurs en déplacement professionnel en Espagne.</p>
+    </div>
+    <div class="cover-flag">
+      <img src="https://flagcdn.com/w320/es.png" alt="Drapeau Espagne">
+    </div>
+  </div>
+  <div class="meta-bar">
+    <div><div class="label">Capitale</div><div class="value">Madrid</div></div>
+    <div><div class="label">Fuseau horaire</div><div class="value">UTC+1 / UTC+2</div></div>
+    <div><div class="label">Langue officielle</div><div class="value">Espagnol (+ régionales)</div></div>
+    <div><div class="label">Monnaie</div><div class="value">Euro (EUR)</div></div>
+    <div><div class="label">Code ISO</div><div class="value">ESP</div></div>
+    <div><div class="label">Créée le</div><div class="value">12 mai 2026</div></div>
+  </div>
+
+  <p class="pdf-footnote">Document figé extrait du site dynamique le <span id="print-date"></span> — La version en ligne peut avoir évolué depuis.</p>
+
+  <div class="obligations-preamble">
+    <div class="obligations-header">
+      <span class="obligations-badge">À respecter absolument</span>
+      <h2>Vos obligations pour cette mission en Espagne</h2>
+      <p>Synthèse des démarches incontournables avant, pendant et après la mission. Vigilance santé renforcée en 2026 (cas de dengue et virus du Nil occidental).</p>
+    </div>
+    <div class="obligations-timeline">
+
+      <div class="obl-phase before"><span class="obl-step">1</span>
+        <h3>Avant le départ</h3>
+        <span class="obl-when">Au moins 2 semaines avant · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li>Inscription <strong>Ariane</strong> recommandée <a class="section-link" href="#s5">▸</a></li>
+          <li><strong>Carte d'identité</strong> ou passeport valide <a class="section-link" href="#s4">▸</a></li>
+          <li><strong>Carte européenne d'assurance maladie</strong> (CEAM) <a class="section-link" href="#s2">▸</a></li>
+          <li>Vaccin <strong>Tétanos / DTP</strong> à jour <a class="section-link" href="#s2">▸</a></li>
+          <li><strong>Répulsif moustiques</strong> (alerte dengue / virus du Nil) <a class="section-link" href="#s2">▸</a></li>
+          <li>Référent GAT informé des dates et coordonnées <a class="section-link" href="#s5">▸</a></li>
+          <li>Assurance santé vérifiée (AXA / Europ Assistance) <a class="section-link" href="#s5">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase during"><span class="obl-step">2</span>
+        <h3>À l'arrivée et pendant la mission</h3>
+        <span class="obl-when">Tout au long du séjour</span>
+        <ul>
+          <li>Pièce d'identité sur soi (contrôles possibles) <a class="section-link" href="#s4">▸</a></li>
+          <li><strong>Protection anti-moustiques</strong> en été (DEET 30%+) <a class="section-link" href="#s2">▸</a></li>
+          <li>Vigilance pickpockets dans zones touristiques <a class="section-link" href="#s1">▸</a></li>
+          <li>EPI obligatoires sur chantier (casque, chaussures) <a class="section-link" href="#s4">▸</a></li>
+          <li>Référent GAT informé du check-in / check-out hôtel <a class="section-link" href="#s5">▸</a></li>
+          <li>Astreinte GAT prévenue dans les <strong>15 minutes</strong> en cas d'urgence <a class="section-link" href="#s5">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase after"><span class="obl-step">3</span>
+        <h3>Au retour en France</h3>
+        <span class="obl-when">Délais à respecter impérativement</span>
+        <ul>
+          <li class="priority"><strong>Réinscription CPAM + carte Vitale sous 8 jours</strong> <a class="section-link" href="#cpam">▸</a></li>
+          <li><strong>Portabilité mutuelle</strong> via OWELLO (si ARE France Travail) <a class="section-link" href="#owello">▸</a></li>
+          <li>Pendant 3 mois : feuille de soins CERFA sur espace CFE <a class="section-link" href="#cfe">▸</a></li>
+          <li>Restitution équipements sous <strong>5 jours ouvrés</strong> <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Remplir le retour d'expérience sous <strong>5 jours</strong> <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Notes de frais sous <strong>30 jours</strong> <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Déclaration fiscale revenus étrangers <a class="section-link" href="#recap-demarches">▸</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <ol>
+      <li><a href="#s1">Risques pays &amp; sécurité</a></li>
+      <li><a href="#s2">Santé &amp; alerte virus 2026</a></li>
+      <li><a href="#s3">Pratiques culturelles</a></li>
+      <li><a href="#s4">Logistique pratique</a></li>
+      <li><a href="#s5">Contacts d'urgence</a></li>
+      <li><a href="#s6">Retour en France</a></li>
+      <li><a href="#checklist">Checklist avant départ</a></li>
+    </ol>
+  </div>
+
+  <section id="s1">
+    <h2><span class="num">1.</span>Risques pays &amp; sécurité</h2>
+    <p class="source">Source : France Diplomatie (MEAE) — à vérifier régulièrement.</p>
+
+    <div class="vigilance-banner vigilance-Vigilance">
+      <strong>Niveau de vigilance général : Vigilance renforcée (santé)</strong>
+      L'Espagne est en vigilance normale du MEAE pour la sécurité, mais en <strong>vigilance renforcée sanitaire</strong> en 2026 du fait d'épidémies de dengue (Andalousie, Catalogne) et de cas de virus du Nil occidental (Estrémadure, Andalousie).<br>
+      <em>Vérifier les zones précises sur France Diplomatie avant départ.</em>
+    </div>
+
+    <div class="official-sources">
+      <h3 class="sources-title">Sources officielles à consulter</h3>
+
+      <div class="cta-grid">
+        <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/espagne/" target="_blank" rel="noopener" class="cta-card cta-diplomatie">
+          <span class="cta-tag">Source officielle MEAE</span>
+          <span class="cta-title">France Diplomatie — Espagne</span>
+          <p>Niveau de vigilance officiel à jour, alertes sanitaires en cours (dengue, virus du Nil), recommandations sécuritaires. Source de référence avant tout départ.</p>
+          <span class="cta-link">Consulter la fiche Espagne →</span>
+        </a>
+
+        <a href="https://pastel.diplomatie.gouv.fr" target="_blank" rel="noopener" class="cta-card cta-ariane">
+          <span class="cta-tag cta-tag-priority">Recommandé avant départ</span>
+          <span class="cta-title">Ariane — Inscription des voyageurs</span>
+          <p>Gratuit, 5 minutes. Permet à l'ambassade de France de vous localiser et vous contacter immédiatement en cas de crise (alerte sanitaire, attentat, séisme).</p>
+          <span class="cta-link">S'inscrire sur Ariane →</span>
+        </a>
+      </div>
+
+      <div class="ariane-why">
+        <h4>Pourquoi Ariane reste essentiel même en zone Schengen</h4>
+        <p>L'Espagne fait partie de l'espace Schengen, mais cela ne dispense pas d'Ariane. <strong>Les crises sanitaires, attentats, catastrophes naturelles et événements climatiques peuvent toucher l'Espagne</strong> comme tout autre pays.</p>
+        <div class="ariane-scenarios">
+          <div class="scenario"><span class="scenario-label">Pandémies / Épidémies</span>Dengue 2024-2025 (Andalousie), virus du Nil (Estrémadure), COVID-19 (2020-2022)</div>
+          <div class="scenario"><span class="scenario-label">Attentats</span>Atocha 2004, Las Ramblas 2017 — risque terroriste réel</div>
+          <div class="scenario"><span class="scenario-label">Événements climatiques</span>DANA Valence octobre 2024 (200+ morts), feux de forêt récurrents été</div>
+          <div class="scenario"><span class="scenario-label">Urgence individuelle</span>Accident, agression, perte de papiers — l'ambassade accompagne plus vite</div>
+        </div>
+        <p class="ariane-stat">Les inondations de Valence en octobre 2024 ont causé plus de 200 morts. Les Français inscrits sur Ariane ont été contactés en 48h. Les autres ont parfois mis plusieurs semaines à se signaler.</p>
+      </div>
+    </div>
+
+    <h3>Niveaux de risque par catégorie</h3>
+    <div class="risk-grid">
+      <div class="risk-row"><span>Criminalité (pickpockets touristiques)</span><div class="risk-bar"><div class="risk-fill" style="width:40%;"></div></div><span class="risk-score">2/5</span></div>
+      <div class="risk-row"><span>Risque terroriste</span><div class="risk-bar"><div class="risk-fill" style="width:60%;"></div></div><span class="risk-score">3/5</span></div>
+      <div class="risk-row"><span>Instabilité politique</span><div class="risk-bar"><div class="risk-fill" style="width:20%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Enlèvements / extorsion</span><div class="risk-bar"><div class="risk-fill" style="width:20%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Risques naturels (feux, inondations DANA)</span><div class="risk-bar"><div class="risk-fill" style="width:60%;"></div></div><span class="risk-score">3/5</span></div>
+      <div class="risk-row"><span>Risque sanitaire (virus moustiques 2026)</span><div class="risk-bar"><div class="risk-fill" style="width:60%;"></div></div><span class="risk-score">3/5</span></div>
+    </div>
+
+    <h3>Règles de comportement essentielles</h3>
+    <div class="alert danger">
+      <strong>Règles absolues à respecter</strong>
+      <ul>
+        <li><strong>Protection anti-moustiques systématique</strong> en été (mai-octobre) : DEET 30%+, manches longues le soir.</li>
+        <li>Pickpockets très actifs dans le métro de Madrid / Barcelone, Las Ramblas, Puerta del Sol.</li>
+        <li>Surveiller ses affaires en terrasse de café (sacs au sol, téléphones).</li>
+        <li>Pas d'objets de valeur visibles dans une voiture en stationnement.</li>
+        <li>En cas de tentative de pickpocket : protéger ses affaires sans poursuivre l'agresseur.</li>
+        <li>Connaître le numéro d'urgence européen : <strong>112</strong>.</li>
+      </ul>
+    </div>
+
+    <h3>Déplacements en ville</h3>
+    <div class="two-col">
+      <div class="col-card do"><h4>À faire</h4>
+        <ul>
+          <li>Utiliser le métro / bus / AVE (excellents).</li>
+          <li>Réserver taxis officiels (Cabify, FREE NOW, MyTaxi).</li>
+          <li>Garder sac à dos devant soi dans le métro.</li>
+          <li>Payer en carte (acceptée partout).</li>
+          <li>Boire beaucoup d'eau (chaleur intense en été).</li>
+        </ul>
+      </div>
+      <div class="col-card dont"><h4>À éviter</h4>
+        <ul>
+          <li>Sortir du métro en montrant son téléphone ouvertement.</li>
+          <li>Laisser sac sur la chaise à côté de soi en terrasse.</li>
+          <li>Accepter une « aide » non sollicitée d'un inconnu à un distributeur.</li>
+          <li>Garer une voiture avec sac visible (vols fréquents).</li>
+          <li>Sortir en short / tee-shirt dans le centre de Madrid en après-midi caniculaire.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="s2">
+    <h2><span class="num">2.</span>Santé &amp; alerte virus 2026</h2>
+    <p class="source">Sources : Institut Pasteur, Santé Publique France, Centre européen de prévention et de contrôle des maladies (ECDC), AXA Assistance, Europ Assistance.</p>
+
+    <div class="virus-alert">
+      <span class="va-tag">Alerte sanitaire 2026</span>
+      <h4>Dengue, virus du Nil occidental et hantavirus en Espagne</h4>
+
+      <p><strong>1) Dengue &amp; virus du Nil occidental</strong> — Cas autochtones depuis 2024-2025 (Andalousie, Catalogne, Valence, Estrémadure). Transmission par moustiques (<em>Aedes albopictus</em>, <em>Culex pipiens</em>).</p>
+      <p><strong>Protection en mai-octobre</strong> :</p>
+      <ul>
+        <li>Répulsif DEET 30%+ ou icaridine 20%+ matin et soir.</li>
+        <li>Manches longues, pantalons longs après 18 h.</li>
+        <li>Moustiquaire si fenêtre ouverte la nuit, ventilateur ou clim.</li>
+        <li>Pas d'eau stagnante autour du logement (gîte des moustiques).</li>
+      </ul>
+
+      <p style="margin-top:14px;"><strong>2) Hantavirus</strong> — Cas signalés en zones rurales d'Espagne (Castille-León, Castille-La Manche, Estrémadure). Transmission par contact avec déjections de rongeurs (souris, mulots) — pas d'humain à humain.</p>
+      <p><strong>Protection en zones rurales / chantiers isolés</strong> :</p>
+      <ul>
+        <li><strong>Ne pas pénétrer</strong> dans des bâtiments abandonnés sans aération préalable (granges, cabanes, locaux techniques inoccupés).</li>
+        <li>Port d'un <strong>masque FFP2</strong> et de gants lors du nettoyage de lieux poussiéreux susceptibles d'avoir abrité des rongeurs.</li>
+        <li>Humidifier la poussière avant balayage (pas d'aspirateur sec qui aérosolise les particules).</li>
+        <li>Stockage des aliments en contenants hermétiques sur chantier.</li>
+        <li>Pas de couchage à même le sol en zone rurale.</li>
+      </ul>
+
+      <p style="margin-top:14px; padding:8px 12px; background:rgba(163,45,45,0.08); border-radius:4px;"><strong>Symptômes communs aux 3 virus</strong> : fièvre brutale, maux de tête, douleurs musculaires, fatigue intense. L'hantavirus peut évoluer en syndrome pulmonaire grave en quelques jours. <strong>Consulter en urgence</strong> dès l'apparition de symptômes, en mentionnant l'exposition possible (zone, type d'activité).</p>
+    </div>
+
+    <h3>Vaccinations recommandées</h3>
+    <p style="font-size:12px; color:#888;">Survolez un vaccin pour voir le détail des règles vaccinales.</p>
+    <table>
+      <thead><tr><th>Vaccin</th><th>Statut</th><th>Remarque</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="vaccine-cell">Tétanos / DTP<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Tétanos / DTP — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Tous adultes</li>
+                <li><strong>Rappels adulte</strong>25, 45, 65 ans</li>
+                <li><strong>Après 65 ans</strong>Tous les 10 ans (75, 85, 95)</li>
+                <li><strong>Combinaison</strong>DTP (Diphtérie + Tétanos + Polio)</li>
+              </ul>
+              <span class="vp-warn">Si plaie souillée à l'étranger : si dernier rappel &gt; 10 ans, rappel anti-tétanique immédiat impératif.</span>
+              <span class="vp-source">Source : Calendrier vaccinal 2024, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Obligatoire</td>
+          <td>Mise à jour obligatoire</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">Hépatite A<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Hépatite A</span>
+              <ul><li><strong>Indication</strong>Voyageurs hors UE habituellement</li><li><strong>Statut Espagne</strong>Pas indispensable (UE)</li></ul>
+              <span class="vp-source">Source : Santé Publique France</span>
+            </div>
+          </td>
+          <td>Non requis</td>
+          <td>Espagne = UE, pas indispensable</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">Hépatite B<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Hépatite B</span>
+              <ul><li><strong>Indication</strong>Si schéma incomplet</li><li><strong>Schéma</strong>3 injections (M0, M1, M6)</li></ul>
+              <span class="vp-source">Source : HAS</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Si non à jour</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">Covid-19<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Covid-19</span>
+              <ul><li><strong>Indication</strong>Selon protocole GAT</li><li><strong>Population à risque</strong>Rappel annuel (&gt; 65 ans, comorbidités)</li></ul>
+              <span class="vp-source">Source : HAS</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Selon protocole GAT</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">Grippe saisonnière<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Grippe</span>
+              <ul><li><strong>Indication</strong>Septembre à mars · Mission longue ou personnes à risque</li><li><strong>Schéma</strong>1 injection annuelle</li></ul>
+              <span class="vp-source">Source : Santé Publique France</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Mission en hiver</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Avant le départ</strong>
+      <ul>
+        <li>Vérifier que votre Carte européenne d'assurance maladie (CEAM) est valide — gratuite, demande sur Ameli.fr.</li>
+        <li>Souscrire répulsif DEET 30%+ avant départ (plus cher en Espagne).</li>
+        <li>Vérifier votre couverture AXA / Europ Assistance.</li>
+      </ul>
+    </div>
+
+    <h3>Risques sanitaires sur place</h3>
+    <p><strong>Dengue / virus du Nil occidental.</strong> Voir l'alerte ci-dessus. Protection moustiques systématique en été.</p>
+    <p><strong>Chaleur extrême.</strong> Vagues de chaleur fréquentes (juin-août, parfois 45°C en Andalousie). Hydratation continue, éviter activité physique 12h-18h, climatisation.</p>
+    <p><strong>Feux de forêt.</strong> Été chaud et sec, feux fréquents en zones rurales (Galice, Castille, Andalousie). Suivre instructions Protección Civil.</p>
+    <p><strong>Eau du robinet.</strong> Potable dans toutes les grandes villes. Goût parfois fort à Madrid / Barcelone selon arrondissement.</p>
+  </section>
+
+  <section id="s3">
+    <h2><span class="num">3.</span>Pratiques culturelles &amp; comportement</h2>
+    <p>Culture méditerranéenne chaleureuse et conviviale. Importance du contact humain, des repas longs partagés, du relationnel professionnel. Le rythme espagnol est décalé par rapport au reste de l'Europe.</p>
+
+    <h3>Codes sociaux fondamentaux</h3>
+    <p><strong>La ponctualité.</strong> Relative en social (15 min de retard acceptable). Plus stricte en réunion professionnelle internationale, mais réunions avec partenaires espagnols peuvent commencer 10-15 min en retard.</p>
+    <p><strong>Le rythme.</strong> Petit-déjeuner 8h, déjeuner 14h-15h, dîner 21h-22h30. Pause / sieste possible entre 14h et 16h dans le sud.</p>
+    <p><strong>Le contact physique.</strong> Deux bises (un sur chaque joue) entre femmes ou femme-homme, poignée de main entre hommes. Plus tactile que la France du nord.</p>
+    <p><strong>La hiérarchie.</strong> Présente mais conviviale. Tutoiement rapide (<em>tutear</em>), prénom dès la première rencontre.</p>
+    <p><strong>Les relations.</strong> Le repas professionnel est central. Décisions souvent prises autour d'un déjeuner, pas en réunion formelle.</p>
+
+    <div class="alert danger">
+      <strong>Comportements à proscrire</strong>
+      <ul>
+        <li>Discuter de l'indépendantisme catalan, basque ou galicien sans précaution.</li>
+        <li>Comparer l'Espagne avec le Portugal de façon péjorative.</li>
+        <li>Aborder la guerre civile / Franco / la transition démocratique.</li>
+        <li>Manger ou boire dans la rue en zone touristique (mal vu).</li>
+        <li>Refuser une <em>tapa</em> ou un verre offert par un partenaire d'affaires.</li>
+      </ul>
+    </div>
+
+    <h3>Codes vestimentaires</h3>
+    <table>
+      <thead><tr><th>Contexte</th><th>Tenue recommandée</th></tr></thead>
+      <tbody>
+        <tr><td>Réunion client / bureau</td><td>Smart casual à formel. Costume sans cravate fréquent.</td></tr>
+        <tr><td>Chantier terrain</td><td>EPI complets + vêtements légers (chaleur), crème solaire</td></tr>
+        <tr><td>Repas d'affaires</td><td>Smart casual. Veste légère acceptable.</td></tr>
+        <tr><td>Visite église / cathédrale</td><td>Épaules couvertes pour les femmes, pas de short</td></tr>
+        <tr><td>Soirée informelle</td><td>Décontracté soigné. Espagnols souvent bien habillés en sortie.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Quelques mots utiles en espagnol</h3>
+    <table>
+      <thead><tr><th>Français</th><th>Espagnol</th><th>Prononciation</th></tr></thead>
+      <tbody>
+        <tr><td>Bonjour (matin)</td><td>Buenos días</td><td>Bouénos diyas</td></tr>
+        <tr><td>Bonsoir</td><td>Buenas tardes</td><td>Bouénas tardès</td></tr>
+        <tr><td>Merci</td><td>Gracias</td><td>Grasyass</td></tr>
+        <tr><td>S'il vous plaît</td><td>Por favor</td><td>Por favor</td></tr>
+        <tr><td>Où est… ?</td><td>¿Dónde está… ?</td><td>Dondé ésta ?</td></tr>
+        <tr><td>À l'aide !</td><td>¡Ayuda!</td><td>Ayouda !</td></tr>
+        <tr><td>Appelez la police</td><td>Llame a la policía</td><td>Yamé a la polizia</td></tr>
+        <tr><td>Au secours</td><td>¡Socorro!</td><td>Sokorro !</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="s4">
+    <h2><span class="num">4.</span>Logistique pratique</h2>
+
+    <h3>Visa &amp; formalités d'entrée</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Visa</th><td>Non requis pour ressortissants UE. Espace Schengen, pas de contrôle à la frontière terrestre.</td></tr>
+        <tr><th>Document d'identité</th><td>Carte d'identité OU passeport valide. À conserver sur soi (la police espagnole peut demander).</td></tr>
+        <tr><th>CEAM</th><td>Carte européenne d'assurance maladie obligatoire pour soins santé sans avance de frais.</td></tr>
+        <tr><th>Douane</th><td>Déclaration espèces &gt; 10 000 EUR à l'entrée comme à la sortie de l'UE.</td></tr>
+        <tr><th>Permis de travail</th><td>Non requis pour ressortissants UE.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Monnaie &amp; finances</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Monnaie</th><td>Euro (EUR) — pas de change à prévoir</td></tr>
+        <tr><th>Retrait d'espèces</th><td>ATM partout (Santander, BBVA, CaixaBank). Frais légers ou nuls selon votre banque.</td></tr>
+        <tr><th>Carte bancaire</th><td>Visa / Mastercard acceptées partout. Apple Pay / Google Pay très répandus.</td></tr>
+        <tr><th>Pourboires</th><td>Optionnels — 5-10 % au restaurant si service. Arrondir le taxi.</td></tr>
+        <tr><th>Reçus / factures</th><td>Demander <em>factura con NIF</em> pour notes de frais.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Transports</h3>
+    <p><strong>Aéroports.</strong> Madrid Barajas (MAD), Barcelone El Prat (BCN), Málaga (AGP), Valence (VLC). Excellents transports vers le centre-ville (métro, train rapide).</p>
+    <p><strong>En ville.</strong> Métro Madrid / Barcelone / Valence très efficaces. Bus urbains et tramways. Cabify et Uber disponibles.</p>
+    <p><strong>Interurbain.</strong> Train à grande vitesse <strong>AVE</strong> excellent (Madrid-Barcelone 2h30, Madrid-Séville 2h30). Réseau Renfe et OUIGO low-cost. Avion peu nécessaire en métropole.</p>
+    <p><strong>Location de voiture.</strong> Permis français accepté. Conduite à droite. Autoroutes payantes (peajes) bien indiquées. Vitesse strictement contrôlée.</p>
+
+    <h3>Hébergement</h3>
+    <p>Quartiers à privilégier : Madrid (Salamanca, Chamberí, centre), Barcelone (Eixample, Gracia), Valence (Ruzafa, centre historique), Séville (Santa Cruz, centre). Éviter les quartiers très touristiques pour mission longue (bruit nocturne).</p>
+
+    <h3>Connectivité &amp; téléphonie</h3>
+    <div class="alert">
+      <strong>Communication sur place</strong>
+      <ul>
+        <li>Roaming UE : votre forfait français fonctionne sans surcoût (« Roam Like at Home »).</li>
+        <li>Pas besoin de SIM locale.</li>
+        <li>WhatsApp universel pour les locaux.</li>
+        <li>Wi-Fi gratuit dans la plupart des cafés, restaurants, hôtels.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="s5">
+    <h2><span class="num">5.</span>Contacts d'urgence &amp; procédures</h2>
+
+    <div class="alert danger">
+      <strong>En cas d'urgence immédiate</strong>
+      <ul>
+        <li>Mettez-vous en sécurité AVANT tout appel.</li>
+        <li>Appelez le <strong>112</strong> (numéro d'urgence européen unique — police, pompiers, SAMU).</li>
+        <li>Prévenez votre référent GAT International dans les 15 minutes.</li>
+        <li>Ne négociez JAMAIS directement — laissez GAT prendre en charge.</li>
+      </ul>
+    </div>
+
+    <h3>Numéros d'urgence Espagne</h3>
+    <table>
+      <thead><tr><th>Service</th><th>Numéro</th><th>Disponibilité</th></tr></thead>
+      <tbody>
+        <tr><td>Urgences européennes (112)</td><td>112</td><td>24h/24</td></tr>
+        <tr><td>Police nationale</td><td>091</td><td>24h/24</td></tr>
+        <tr><td>Police locale</td><td>092</td><td>24h/24</td></tr>
+        <tr><td>Guardia Civil (zones rurales)</td><td>062</td><td>24h/24</td></tr>
+        <tr><td>SAMU / Ambulance</td><td>061</td><td>24h/24</td></tr>
+        <tr><td>Pompiers</td><td>080</td><td>24h/24</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Santé prévoyance — assistance &amp; assurance</h3>
+    <p style="font-size:13.5px; margin-bottom:14px;">Les contacts ci-dessous activent votre prise en charge médicale, votre assurance voyage et votre rapatriement. L'annuaire complet (Europ Assistance, AXA, et autres organismes de prévoyance) est maintenu à jour en temps réel par la Direction sur SharePoint.</p>
+
+    <div style="background:#f0f7fc; border:1px solid #c8dcec; border-left:4px solid #185fa5; border-radius:8px; padding:18px 22px; margin-bottom:16px;">
+      <div style="display:flex; flex-wrap:wrap; gap:18px;">
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Médical &amp; rapatriement</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">Europ Assistance</div>
+          <a href="tel:+33141858585" style="display:inline-block; background:#1a1a1a; color:#fff; padding:7px 14px; border-radius:5px; text-decoration:none; font-size:14px; font-weight:600;">+33 1 41 85 85 85</a>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">24h/24, 7j/7 — hospitalisation, rapatriement sanitaire, frais médicaux à l'étranger</div>
+        </div>
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Assurance voyage</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">AXA Assistance</div>
+          <a href="tel:+33155922692" style="display:inline-block; background:#1a1a1a; color:#fff; padding:7px 14px; border-radius:5px; text-decoration:none; font-size:14px; font-weight:600;">+33 1 55 92 26 92</a>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">Bagages, accident, annulation, responsabilité civile à l'étranger</div>
+        </div>
+      </div>
+      <div style="margin-top:16px; padding-top:14px; border-top:1px solid #c8dcec;">
+        <a href="https://gerib69.sharepoint.com/sites/GATNET/conseilauxgatinternationaux/Contacts-internes/assurance-gat-sharepoint-dynamique.html" target="_top" style="display:inline-block; background:#185fa5; color:#fff; padding:9px 18px; border-radius:6px; text-decoration:none; font-size:13.5px; font-weight:600;">
+          Voir l'annuaire complet santé prévoyance (mis à jour en temps réel) →
+        </a>
+        <div style="font-size:11.5px; color:#666; margin-top:8px; font-style:italic;">
+          Authentification SharePoint requise. Cette page reflète instantanément les modifications de la Liste « Assistance et assurance ».
+        </div>
+      </div>
+    </div>
+
+    <div class="alert">
+      <strong>En cas de rapatriement — conditions de prise en charge par AXA</strong>
+      <p>Pour que le rapatriement soit pris en charge et que vos frais soient intégralement remboursés, trois étapes sont essentielles. L'assureur conditionne sa prise en charge à leur respect — c'est la seule raison pour laquelle nous insistons sur ces points.</p>
+      <p>Le collaborateur, ou à défaut son chargé d'affaires, doit impérativement :</p>
+      <ul>
+        <li><strong>Obtenir l'accord préalable du Centre d'assistance AXA</strong> avant de prendre toute initiative ou d'engager toute dépense (transport, hospitalisation, hôtel). Un simple appel suffit à activer le dossier — c'est ce qui déclenche la prise en charge directe et évite d'avancer les frais.</li>
+        <li><strong>Se conformer aux solutions préconisées par le Centre d'assistance AXA</strong> (choix de l'établissement, mode de transport, calendrier). AXA négocie et prépaye directement auprès des prestataires : c'est ainsi que les sommes — parfois très importantes — sont prises en charge sans avance de votre part.</li>
+        <li><strong>Conserver et transmettre dès que possible tous les justificatifs originaux</strong> des dépenses engagées pour le compte du Centre d'assistance AXA (factures, ordonnances, billets, plaintes de police le cas échéant). Sans ces originaux, le remboursement ne peut pas être instruit.</li>
+      </ul>
+      <p>À noter : si GAT a dû assurer à ses frais un voyage retour qui aurait pu être organisé via les titres de transport déjà détenus par le collaborateur, l'entreprise pourra utiliser ou demander le remboursement de ces titres. Cette disposition évite simplement une double facturation pour un même trajet.</p>
+    </div>
+
+    <h3>Ambassade &amp; consulats de France en Espagne</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Ambassade (Madrid)</th><td>+34 91 423 89 00</td></tr>
+        <tr><th>Adresse</th><td>Calle de Salustiano Olózaga 9, 28001 Madrid</td></tr>
+        <tr><th>Urgence consulaire</th><td>+34 91 700 78 00 (24h/24)</td></tr>
+        <tr><th>Site Ariane</th><td><a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a></td></tr>
+        <tr><th>Consulat Barcelone</th><td>+34 93 270 30 00</td></tr>
+        <tr><th>Consulat Bilbao</th><td>+34 94 425 51 91</td></tr>
+        <tr><th>Consulat Séville</th><td>+34 95 429 32 00</td></tr>
+        <tr><th>Consulat Valence</th><td>+34 96 326 25 00</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Inscription Ariane — recommandée</strong>
+      <ul>
+        <li>Inscrivez-vous sur <a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a> avant tout départ.</li>
+        <li>Même en zone Schengen, utile en cas de crise sanitaire, attentat, catastrophe naturelle.</li>
+      </ul>
+    </div>
+
+    <h3>Procédure en cas d'incident</h3>
+    <ol class="step-list">
+      <li><strong>Agression / vol.</strong><p>1. Sécurité. 2. 112. 3. Référent GAT. 4. Plainte au commissariat (denuncia). 5. Conserver le PV pour assurance.</p></li>
+      <li><strong>Accident de chantier.</strong><p>1. Stop travaux. 2. 112 si blessé. 3. Prévenir chef de chantier + référent GAT. 4. NE PAS déplacer un blessé grave.</p></li>
+      <li><strong>Symptômes virus (fièvre, douleurs).</strong><p>Consulter immédiatement (urgences hôpital public ou clinique privée si CEAM). Signaler à AXA / Europ Assistance.</p></li>
+      <li><strong>Hospitalisation.</strong><p>Présenter CEAM ou demander prise en charge AXA / Europ Assistance.</p></li>
+      <li><strong>Perte / vol passeport.</strong><p>1. Plainte police. 2. Contactez consulat. 3. Laissez-passer consulaire. 4. Informez GAT RH.</p></li>
+    </ol>
+  </section>
+
+  <section id="s6" class="return-section">
+    <span class="critical-badge">Étape critique · Identique pour tous les pays</span>
+    <h2><span class="num">6.</span>Fin de mission &amp; retour en France</h2>
+    <p class="source">Sources : Ameli.fr, CFE, OWELLO, URSSAF, impots.gouv.fr — section commune à tous les livrets.</p>
+
+    <p>Le retour en France marque la fin de votre statut de travailleur détaché. Plusieurs démarches administratives sont obligatoires dès votre retour pour préserver vos droits sociaux.</p>
+
+    <div class="deadline-card">
+      <div class="deadline-number">8<small>jours</small></div>
+      <div class="deadline-text"><strong>Délai maximal pour vous réinscrire à la CPAM</strong>Au-delà, vos soins médicaux ne sont plus remboursés et la régularisation devient longue.</div>
+    </div>
+
+    <h3 id="cpam">Couverture maladie — réinscription à la CPAM et carte Vitale</h3>
+    <div class="alert danger">
+      <strong>Démarche prioritaire à votre retour</strong>
+      <ul>
+        <li>Vous perdez votre couverture maladie internationale dès la fin de mission.</li>
+        <li>Réinscrivez-vous à la CPAM dans les 8 jours suivant votre retour en France.</li>
+        <li><strong>Mettez à jour votre carte Vitale</strong> en borne pharmacie ou CPAM.</li>
+        <li>Sans réinscription, vos soins médicaux ne seront pas remboursés.</li>
+        <li>Cette démarche est individuelle — GAT ne peut pas la faire à votre place.</li>
+      </ul>
+    </div>
+
+    <h3>Comment se réinscrire à la CPAM</h3>
+    <ol class="step-list">
+      <li><strong>Préparez vos documents.</strong><p>Pièce d'identité, justificatif de domicile, RIB, certificat de fin de détachement GAT.</p></li>
+      <li><strong>Rendez-vous sur Ameli.fr.</strong><p>Rubrique « Ma situation » › « Je reprends une activité en France ». Ou 36 46.</p></li>
+      <li><strong>Demande d'affiliation.</strong><p>GAT signale la fin de détachement à l'URSSAF. CPAM prend le relai sous 8 à 15 jours.</p></li>
+      <li><strong>Attestation de droits + mise à jour carte Vitale.</strong><p>Téléchargez l'attestation sur Ameli.fr. Mettez à jour la carte Vitale en borne pharmacie.</p></li>
+    </ol>
+
+    <h3 id="cfe">Couverture par la CFE pendant la transition (3 mois)</h3>
+    <div class="alert">
+      <strong>Maintien des droits par la Caisse des Français de l'Étranger</strong>
+      <ul>
+        <li>Pendant les <strong>3 premiers mois après votre retour</strong>, la CFE maintient vos droits.</li>
+        <li>Pour chaque consultation : feuille de soins CERFA déposée sur <strong>espace CFE en ligne</strong>.</li>
+        <li>Une fois la Sécu ouverte : utilisez votre carte Vitale normalement.</li>
+      </ul>
+    </div>
+
+    <h3 id="owello">Portabilité de la complémentaire santé (mutuelle AXA via OWELLO)</h3>
+    <div class="alert">
+      <strong>Maintien de votre mutuelle après la fin du contrat de travail</strong>
+      <ul>
+        <li>Portabilité de la mutuelle d'entreprise après la fin du contrat GAT.</li>
+        <li><strong>Condition</strong> : France Travail doit vous verser l'allocation ARE.</li>
+        <li>Chaque mois, transmettre à OWELLO l'attestation France Travail.</li>
+        <li>Espace : <a href="https://login.owello-insurance.com/login">login.owello-insurance.com/login</a></li>
+      </ul>
+    </div>
+
+    <h3>Remboursement des frais de soins — procédure complète</h3>
+    <ol class="step-list">
+      <li><strong>Pendant les 3 premiers mois (couverture CFE).</strong><p>Feuille de soins CERFA → espace CFE.</p></li>
+      <li><strong>Une fois la Sécu ouverte.</strong><p>Carte Vitale → télétransmission automatique.</p></li>
+      <li><strong>Pour le complément mutuelle.</strong><p>Décompte CPAM → OWELLO pour complément.</p></li>
+    </ol>
+
+    <div class="alert">
+      <strong>Contacts et liens utiles au retour</strong>
+      <ul>
+        <li><a href="https://www.ameli.fr">Ameli.fr</a> — portail Assurance Maladie · <strong>36 46</strong></li>
+        <li><a href="https://www.cfe.fr">CFE.fr</a> — Caisse des Français de l'Étranger</li>
+        <li><a href="https://login.owello-insurance.com/login">OWELLO</a> — portabilité mutuelle AXA</li>
+        <li><a href="https://www.francetravail.fr">France Travail</a> — inscription ARE si chômage</li>
+        <li><a href="https://www.impots.gouv.fr">Impots.gouv.fr</a> — déclaration revenus étrangers</li>
+      </ul>
+    </div>
+
+    <h3 id="recap-demarches">Récapitulatif des démarches administratives au retour</h3>
+    <table>
+      <thead><tr><th>Démarche</th><th>Délai</th><th>Où ?</th></tr></thead>
+      <tbody>
+        <tr><td>Réinscription CPAM</td><td>Sous 8 jours</td><td>ameli.fr / CPAM locale</td></tr>
+        <tr><td>Mise à jour carte Vitale</td><td>Dès droits ouverts</td><td>Borne pharmacie / CPAM</td></tr>
+        <tr><td>Inscription France Travail (si chômage)</td><td>Sous 12 mois</td><td>francetravail.fr</td></tr>
+        <tr><td>Portabilité mutuelle AXA via OWELLO</td><td>Dès fin de contrat</td><td><a href="https://login.owello-insurance.com/login">login.owello-insurance.com</a></td></tr>
+        <tr><td>Transmission attestation France Travail à OWELLO</td><td>Tous les mois</td><td>Espace OWELLO</td></tr>
+        <tr><td>Feuille de soins CERFA → CFE</td><td>Pendant 3 mois après retour</td><td>Espace CFE en ligne</td></tr>
+        <tr><td>Décompte CPAM → OWELLO (complément mutuelle)</td><td>À chaque soin</td><td>Espace OWELLO</td></tr>
+        <tr><td>Déclaration fiscale (revenus étrangers)</td><td>Calendrier fiscal</td><td>impots.gouv.fr</td></tr>
+        <tr><td>Restitution équipements (ordinateur et outillage)</td><td>Sous 5 jours ouvrés</td><td>Référent GAT</td></tr>
+        <tr><td>Remplir le retour d'expérience</td><td>Sous 5 jours</td><td>Chargée QSE GAT</td></tr>
+        <tr><td>Notes de frais en attente</td><td>Sous 30 jours</td><td>Comptabilité GAT</td></tr>
+        <tr><td>Résiliation abonnement téléphone local</td><td>Avant / dès retour</td><td>Opérateur local</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="checklist">
+    <h2>Checklist avant départ Espagne</h2>
+    <h3>Documents</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Carte d'identité OU passeport valide</label>
+      <label><input type="checkbox"> Carte européenne d'assurance maladie (CEAM)</label>
+      <label><input type="checkbox"> Carte bancaire (Visa / Mastercard)</label>
+      <label><input type="checkbox"> Contacts hôtel et programme imprimés</label>
+      <label><input type="checkbox"> Inscription Ariane effectuée</label>
+    </div>
+    <h3>Santé (alerte virus 2026)</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> <strong>Répulsif DEET 30%+</strong> ou icaridine 20%+</label>
+      <label><input type="checkbox"> Vêtements longs (manches, pantalon) pour le soir</label>
+      <label><input type="checkbox"> Vaccins à jour (DTP minimum)</label>
+      <label><input type="checkbox"> Médicaments personnels avec ordonnance</label>
+      <label><input type="checkbox"> Crème solaire SPF 50+ (chaleur intense été)</label>
+    </div>
+    <h3>Sécurité &amp; logistique</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Roaming UE actif (automatique pour forfaits français)</label>
+      <label><input type="checkbox"> Référent GAT informé des dates et coordonnées</label>
+      <label><input type="checkbox"> Quelques espèces (~50 EUR) pour démarrage</label>
+      <label><input type="checkbox"> Adaptateur secteur Type F (prise européenne standard)</label>
+    </div>
+  </section>
+
+  <div class="footer-cta"><h3>Bon voyage et bonne mission.</h3>L'équipe GAT International est disponible à tout moment.<br><a href="https://www.gat.fr">www.gat.fr</a></div>
+</main>
+
+<footer>
+  GAT International — Livret de mission Espagne · Créée le 12 mai 2026 · Document interne confidentiel.<br>
+  Sources : France Diplomatie (MEAE), ECDC, Santé Publique France, Europ Assistance, AXA Assistance, Ameli.fr, CFE, OWELLO.
+</footer>
+
+<a href="#s6" class="float-return" title="Voir les démarches CPAM et retour France">
+  Démarches retour France <span>→</span>
+</a>
+
+<script>
+  window.addEventListener('beforeprint', function() {
+    var d = new Date();
+    var dateStr = d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' });
+    var el = document.getElementById('print-date');
+    if (el) el.textContent = dateStr;
+  });
+</script>
+
+</body>
+</html>

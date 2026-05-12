@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mexique — Livret de Mission GAT International</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #1a1a1a; background: #ffffff; line-height: 1.55; }
+  .topbar { background: #1a1a1a; color: #fff; padding: 10px 32px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: #fff; text-decoration: none; opacity: 0.85; }
+  .topbar a:hover { opacity: 1; }
+  header.cover { background: #ffffff; padding: 32px 32px 24px; border-bottom: 1px solid #e5e5e5; }
+  .cover-grid { display: grid; grid-template-columns: 1fr auto; gap: 32px; max-width: 1100px; margin: 0 auto; align-items: end; }
+  .breadcrumb { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #1a1a1a; }
+  .cover h1 { margin: 0 0 6px; font-size: 32px; font-weight: 600; letter-spacing: -0.5px; }
+  .cover .subtitle { margin: 0; font-size: 14px; color: #666; }
+  .cover-flag { width: 120px; height: 80px; background: #f0f0f0; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; }
+  .cover-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .meta-bar { max-width: 1100px; margin: 16px auto 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; border: 1px solid #e5e5e5; border-radius: 4px; overflow: hidden; }
+  .meta-bar > div { padding: 10px 14px; border-right: 1px solid #e5e5e5; }
+  .meta-bar > div:last-child { border-right: none; }
+  .meta-bar .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .meta-bar .value { font-size: 13px; color: #1a1a1a; font-weight: 500; margin-top: 2px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 28px 32px 60px; }
+  .toc { background: #f7f7f5; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px 24px; margin-bottom: 32px; }
+  .toc-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 8px; }
+  .toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; font-size: 14px; }
+  .toc li { padding: 4px 0; break-inside: avoid; }
+  .toc a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; }
+  .toc a:hover { border-bottom-color: #1a1a1a; }
+  section { margin: 0 0 44px; scroll-margin-top: 20px; }
+  section h2 { font-size: 22px; font-weight: 600; margin: 0 0 6px; padding: 0 0 6px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-right: 40px; }
+  section h2 .num { color: #999; margin-right: 12px; font-weight: 400; }
+  section h3 { font-size: 16px; font-weight: 600; margin: 22px 0 10px; }
+  section p { margin: 8px 0; font-size: 14px; }
+  .vigilance-banner { padding: 14px 18px; border-radius: 6px; border-left: 4px solid; margin: 14px 0 22px; font-size: 14px; }
+  .vigilance-Vigilance { background: #fbf0d3; border-color: #d4a23a; color: #5a4307; }
+  .vigilance-banner strong { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+  .alert { padding: 14px 18px; border-radius: 6px; background: #fff8e6; border: 1px solid #f0d680; margin: 14px 0; font-size: 13.5px; }
+  .alert.danger { background: #fdecec; border-color: #e8b1ad; }
+  .alert strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; color: #1a1a1a; }
+  .alert ul { margin: 0; padding-left: 18px; }
+  .alert li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #ececec; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: #555; border-bottom: 1px solid #d5d5d5; }
+  tr:last-child td { border-bottom: none; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+  .col-card { background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px; padding: 14px 18px; }
+  .col-card.do { border-left: 3px solid #5d8a3a; }
+  .col-card.dont { border-left: 3px solid #a83232; }
+  .col-card h4 { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; }
+  .col-card ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .col-card li { margin: 4px 0; }
+  .risk-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 14px 0; }
+  .risk-row { display: grid; grid-template-columns: 240px 1fr 60px; gap: 14px; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+  .risk-bar { height: 6px; background: #ececec; border-radius: 3px; overflow: hidden; position: relative; }
+  .risk-fill { height: 100%; background: linear-gradient(90deg, #5d8a3a 0%, #d4a23a 50%, #a83232 100%); border-radius: 3px; }
+  .risk-score { font-size: 13px; color: #555; text-align: right; }
+  .step-list { counter-reset: step; padding: 0; list-style: none; margin: 14px 0; }
+  .step-list li { counter-increment: step; padding: 12px 14px 12px 50px; position: relative; border-left: 2px solid #e0e0e0; margin-left: 14px; }
+  .step-list li::before { content: counter(step); position: absolute; left: -16px; top: 12px; width: 30px; height: 30px; background: #1a1a1a; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+  .step-list li strong { display: block; font-size: 14px; margin-bottom: 4px; }
+  .step-list li p { margin: 0; font-size: 13px; color: #555; }
+  .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; margin: 14px 0; font-size: 13.5px; }
+  .checklist label { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; cursor: pointer; }
+  .checklist input { margin-top: 3px; }
+  .source { font-size: 11px; color: #888; font-style: italic; margin-top: -4px; margin-bottom: 16px; }
+  .footer-cta { background: #1a1a1a; color: #fff; padding: 22px 28px; border-radius: 6px; margin-top: 32px; font-size: 13px; }
+  .footer-cta h3 { margin: 0 0 6px; font-size: 16px; color: #fff; }
+  .footer-cta a { color: #fff; border-bottom: 1px solid rgba(255,255,255,0.4); text-decoration: none; }
+
+  /* Préambule des obligations en haut de page */
+  .obligations-preamble { max-width: 1100px; margin: 22px auto 0; background: #fffaf5; border: 2px solid #f0d9c5; border-radius: 10px; padding: 24px 28px; }
+  .obligations-header { margin-bottom: 22px; }
+  .obligations-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 10px; }
+  .obligations-header h2 { margin: 0 0 6px; font-size: 22px; font-weight: 600; color: #1a1a1a; border: none; }
+  .obligations-header p { margin: 0; font-size: 13.5px; color: #555; max-width: 800px; line-height: 1.55; }
+  .obligations-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; position: relative; }
+  .obligations-timeline::before { content: ""; position: absolute; top: 24px; left: 14%; right: 14%; height: 2px; background: linear-gradient(90deg, #185FA5 0%, #BA7517 50%, #993C1D 100%); z-index: 0; }
+  .obl-phase { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 18px 20px; position: relative; z-index: 1; }
+  .obl-phase.before { border-top: 3px solid #185FA5; }
+  .obl-phase.during { border-top: 3px solid #BA7517; }
+  .obl-phase.after { border-top: 3px solid #993C1D; }
+  .obl-step { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .obl-phase.before .obl-step { background: #185FA5; }
+  .obl-phase.during .obl-step { background: #BA7517; }
+  .obl-phase.after .obl-step { background: #993C1D; }
+  .obl-phase h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; color: #1a1a1a; }
+  .obl-phase .obl-when { display: block; font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+  .obl-phase ul { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; }
+  .obl-phase ul li { margin: 5px 0; }
+  .obl-phase ul li strong { color: #993C1D; }
+  .obl-phase ul li.priority { background: #fff0eb; border-left: 3px solid #993C1D; padding: 4px 8px; list-style: none; margin-left: -22px; padding-left: 14px; border-radius: 0 4px 4px 0; }
+  .obl-phase ul li a.section-link { display: inline-block; margin-left: 6px; width: 18px; height: 18px; text-align: center; border-radius: 50%; background: #ececec; color: #555; text-decoration: none; font-size: 11px; line-height: 18px; transition: all 0.15s; font-weight: 600; vertical-align: middle; }
+  .obl-phase ul li a.section-link:hover { background: #993C1D; color: #fff; transform: translateX(2px); }
+  .obl-phase ul li.priority a.section-link { background: rgba(153,60,29,0.15); color: #993C1D; }
+  .obl-phase ul li.priority a.section-link:hover { background: #993C1D; color: #fff; }
+
+  /* Sources officielles — CTA France Diplomatie + Ariane */
+  .official-sources { margin: 18px 0 28px; }
+  .sources-title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; font-weight: 600; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5; }
+  .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cta-card { display: block; padding: 18px 22px; border-radius: 8px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; border: 1px solid; }
+  .cta-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .cta-card .cta-tag { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px; }
+  .cta-card .cta-title { display: block; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+  .cta-card p { margin: 0 0 12px; font-size: 13px; line-height: 1.5; }
+  .cta-card .cta-link { font-size: 13px; font-weight: 600; }
+  .cta-card.cta-diplomatie { background: #e6f1fb; border-color: #b5d4f4; color: #0c447c; }
+  .cta-card.cta-diplomatie .cta-tag { background: #185fa5; color: #fff; }
+  .cta-card.cta-diplomatie .cta-link { color: #185fa5; }
+  .cta-card.cta-diplomatie:hover { border-color: #378add; }
+  .cta-card.cta-ariane { background: #fdecec; border-color: #e8b1ad; color: #791f1f; }
+  .cta-card.cta-ariane .cta-tag.cta-tag-priority { background: #a32d2d; color: #fff; }
+  .cta-card.cta-ariane .cta-link { color: #a32d2d; }
+  .cta-card.cta-ariane:hover { border-color: #e24b4a; }
+
+  /* Pourquoi Ariane — bloc pédagogique */
+  .ariane-why { background: #fffaf5; border: 1px solid #f0d9c5; border-radius: 8px; padding: 20px 24px; margin-top: 16px; }
+  .ariane-why h4 { margin: 0 0 10px; font-size: 15px; font-weight: 600; color: #1a1a1a; }
+  .ariane-why > p { margin: 0 0 14px; font-size: 13.5px; line-height: 1.6; color: #444; }
+  .ariane-why > p strong { color: #993C1D; }
+  .ariane-scenarios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 16px; margin: 12px 0; }
+  .ariane-scenarios .scenario { padding: 10px 12px; background: #fff; border-radius: 4px; border-left: 3px solid #c47140; font-size: 12.5px; line-height: 1.5; color: #555; }
+  .ariane-scenarios .scenario .scenario-label { display: block; font-size: 11px; font-weight: 600; color: #993C1D; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
+  .ariane-stat { margin: 14px 0 0 !important; padding: 12px 16px; background: #fff8e6; border-left: 3px solid #BA7517; border-radius: 0 4px 4px 0; font-size: 13px; font-style: italic; color: #5a4307 !important; }
+
+  @media (max-width: 720px) { .cta-grid, .ariane-scenarios { grid-template-columns: 1fr; } }
+
+  /* Carte régionale des zones sensibles */
+  .region-map-wrapper { background: #f7f7f5; border: 1px solid #e5e5e5; border-radius: 8px; padding: 18px; margin: 14px 0 22px; }
+  .region-map-title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; font-weight: 600; margin-bottom: 12px; }
+  .region-map-svg { width: 100%; max-width: 600px; margin: 0 auto; display: block; height: auto; background: #eef4f8; border-radius: 4px; }
+  .region-map-svg .state { fill: #d6e3ec; stroke: #fff; stroke-width: 1.5; transition: filter 0.15s, fill 0.15s; cursor: help; }
+  .region-map-svg .state:hover { filter: brightness(1.1); stroke: #1a1a1a; stroke-width: 2; }
+  .region-map-svg .state.lvl-Normale { fill: #c8d9b3; }
+  .region-map-svg .state.lvl-Vigilance { fill: #f0d99a; }
+  .region-map-svg .state.lvl-Deconseille { fill: #e6b495; }
+  .region-map-svg .state.lvl-Formel { fill: #e89a96; }
+  .region-map-svg .state-label { font-size: 10px; font-weight: 600; fill: #1a1a1a; text-anchor: middle; pointer-events: none; }
+  .region-map-svg .state-label-risk { fill: #6a2f0c; }
+  .region-map-svg .country-border { fill: none; stroke: #888; stroke-width: 2; }
+  .region-map-svg .water-label { font-size: 11px; font-style: italic; fill: #6a8da3; }
+  .region-map-legend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; justify-content: center; font-size: 11px; }
+  .region-map-legend span { display: inline-flex; align-items: center; gap: 5px; }
+  .region-map-legend i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; border: 1px solid rgba(0,0,0,0.1); }
+  .region-map-note { font-size: 11.5px; color: #666; margin-top: 10px; text-align: center; font-style: italic; }
+
+  /* Popups vaccinales au survol */
+  .vaccine-cell { position: relative; cursor: help; }
+  .info-marker { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: #888; color: #fff; font-size: 11px; font-weight: 600; font-style: normal; margin-left: 6px; vertical-align: middle; transition: background 0.15s; }
+  .vaccine-cell:hover .info-marker { background: #185FA5; }
+  .vaccine-popup { position: absolute; left: 0; top: calc(100% + 10px); background: #1a1a1a; color: #fff; padding: 16px 20px; border-radius: 8px; width: 380px; max-width: 92vw; font-size: 12.5px; line-height: 1.6; opacity: 0; pointer-events: none; transition: opacity 0.18s, transform 0.18s; transform: translateY(-4px); z-index: 200; box-shadow: 0 6px 24px rgba(0,0,0,0.25); text-transform: none; letter-spacing: 0; font-weight: 400; }
+  .vaccine-popup::before { content: ""; position: absolute; top: -7px; left: 24px; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid #1a1a1a; }
+  .vaccine-cell:hover .vaccine-popup { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .vaccine-popup .vp-title { display: block; font-size: 14px; font-weight: 600; color: #fff; margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.15); }
+  .vaccine-popup ul { margin: 0; padding: 0; list-style: none; }
+  .vaccine-popup li { padding: 4px 0; color: rgba(255,255,255,0.92); }
+  .vaccine-popup li strong { display: inline-block; min-width: 100px; color: #f0d99a; font-weight: 600; }
+  .vaccine-popup .vp-warn { display: block; margin-top: 10px; padding: 8px 10px; background: rgba(216, 90, 48, 0.18); border-left: 3px solid #D85A30; border-radius: 0 4px 4px 0; font-size: 12px; color: #ffd0bd; }
+  .vaccine-popup .vp-source { display: block; margin-top: 12px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 11px; color: rgba(255,255,255,0.55); font-style: italic; }
+
+  /* Bouton flottant fixe sur le côté droit */
+  .float-return { position: fixed; right: 22px; bottom: 24px; z-index: 100; background: #993C1D; color: #fff; padding: 12px 18px; border-radius: 999px; text-decoration: none; font-size: 13px; font-weight: 600; box-shadow: 0 4px 14px rgba(153, 60, 29, 0.35); display: flex; align-items: center; gap: 10px; transition: all 0.2s; }
+  .float-return:hover { background: #7a2e15; transform: translateY(-2px); box-shadow: 0 6px 18px rgba(153, 60, 29, 0.45); }
+  .float-return-arrow { font-size: 16px; line-height: 1; }
+
+  /* Section 6 — encadré renforcé */
+  section.return-section { background: linear-gradient(180deg, #fdf3ef 0%, #ffffff 200px); border: 1px solid #e8c5b3; border-radius: 10px; padding: 28px 32px; margin: 30px 0 44px; position: relative; }
+  section.return-section::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #993C1D, #C04A20, #D85A30); border-radius: 10px 10px 0 0; }
+  section.return-section h2 { color: #993C1D; border-bottom-color: #993C1D; }
+  section.return-section h2 .num { color: #c47140; }
+  .critical-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 12px; }
+  .deadline-card { background: #fff; border: 2px solid #993C1D; border-radius: 8px; padding: 18px 22px; margin: 18px 0; display: grid; grid-template-columns: 100px 1fr; gap: 22px; align-items: center; }
+  .deadline-number { font-size: 56px; font-weight: 700; color: #993C1D; line-height: 1; text-align: center; }
+  .deadline-number small { display: block; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; color: #993C1D; }
+  .deadline-text { font-size: 14px; color: #1a1a1a; }
+  .deadline-text strong { display: block; font-size: 15px; margin-bottom: 4px; color: #993C1D; }
+
+  footer { padding: 24px 32px; text-align: center; font-size: 11px; color: #888; border-top: 1px solid #e5e5e5; background: #fafafa; }
+
+  /* Bouton PDF dans la topbar */
+  .topbar-actions { display: flex; align-items: center; gap: 14px; }
+  .btn-pdf { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.35); padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 11.5px; font-family: inherit; transition: all 0.15s; }
+  .btn-pdf:hover { background: rgba(255,255,255,0.28); border-color: rgba(255,255,255,0.6); }
+
+  @media (max-width: 720px) { .meta-bar { grid-template-columns: 1fr 1fr; } .meta-bar > div { border-right: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; } .two-col, .checklist { grid-template-columns: 1fr; } .toc ol { columns: 1; } .cover-grid { grid-template-columns: 1fr; } .obligations-timeline { grid-template-columns: 1fr; } .obligations-timeline::before { display: none; } .deadline-card { grid-template-columns: 1fr; text-align: center; } }
+
+  @media print {
+    .topbar, .float-return, .btn-pdf, .footer-cta a { display: none !important; }
+    .vaccine-popup, .info-marker { display: none !important; }
+    body { background: #fff; }
+    main, header.cover { padding: 16px 24px !important; }
+    section { page-break-inside: avoid; }
+    .obligations-preamble { page-break-after: avoid; border-width: 1px; }
+    .obl-phase { break-inside: avoid; }
+    table { page-break-inside: avoid; font-size: 11px; }
+    .obligations-timeline::before { display: none; }
+    .footer-cta { background: #fff !important; color: #000 !important; border: 1px solid #999; }
+    .footer-cta h3 { color: #000 !important; }
+    .pdf-footnote { display: block !important; text-align: center; font-size: 10px; color: #666; margin: 8px 0 16px; padding: 8px; border: 1px dashed #ccc; }
+  }
+  .pdf-footnote { display: none; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><a href="../index.html">← Retour à la carte</a> · Conseils aux voyageurs · GAT International</span>
+  <span class="topbar-actions">
+    <button class="btn-pdf" onclick="window.print()" title="Imprimer ou enregistrer en PDF — choisir 'Enregistrer au format PDF' dans la fenêtre d'impression">Imprimer / PDF</button>
+    Document interne · Version 2026
+  </span>
+</div>
+
+<header class="cover">
+  <div class="cover-grid">
+    <div>
+      <div class="breadcrumb"><a href="../index.html">Conseils aux voyageurs</a> › <span>Mexique</span></div>
+      <h1>Mexique</h1>
+      <p class="subtitle">Estados Unidos Mexicanos — Livret de Mission. Guide pratique à l'attention des collaborateurs en déplacement professionnel au Mexique.</p>
+    </div>
+    <div class="cover-flag">
+      <img src="https://flagcdn.com/w320/mx.png" alt="Drapeau Mexique" onerror="this.style.display='none';">
+    </div>
+  </div>
+  <div class="meta-bar">
+    <div><div class="label">Capitale</div><div class="value">Mexico (Ciudad de México)</div></div>
+    <div><div class="label">Fuseau horaire</div><div class="value">UTC-6 / UTC-5</div></div>
+    <div><div class="label">Langue officielle</div><div class="value">Espagnol</div></div>
+    <div><div class="label">Monnaie</div><div class="value">Peso mexicain (MXN)</div></div>
+    <div><div class="label">Code ISO</div><div class="value">MEX</div></div>
+    <div><div class="label">Créée le</div><div class="value">06 mai 2026</div></div>
+  </div>
+
+  <p class="pdf-footnote">Document figé extrait du site dynamique le <span id="print-date"></span> — La version en ligne peut avoir évolué depuis.</p>
+
+  <!-- Préambule des obligations -->
+  <div class="obligations-preamble">
+    <div class="obligations-header">
+      <span class="obligations-badge">À respecter absolument</span>
+      <h2>Vos obligations pour cette mission au Mexique</h2>
+      <p>Synthèse des démarches incontournables avant, pendant et après la mission. Le non-respect peut compromettre votre couverture sociale, votre assurance, ou la régularité de votre séjour. Cliquez sur chaque ligne pour aller au détail.</p>
+    </div>
+    <div class="obligations-timeline">
+
+      <div class="obl-phase before">
+        <span class="obl-step">1</span>
+        <h3>Avant le départ</h3>
+        <span class="obl-when">Au moins 4 semaines avant · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li>Inscription <strong>Ariane</strong> (<a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a>) <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+          <li>Passeport valide <strong>6 mois minimum</strong> après date retour <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Vaccin <strong>Hépatite A</strong> obligatoire <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Vaccin <strong>Tétanos / DTP</strong> à jour <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Consultation Centre de Vaccinations Internationales (CVI) <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Carnet international de vaccination en poche <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Permis de travail demandé (GAT s'en charge) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Référent GAT informé des dates et coordonnées <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+          <li>Assurance santé internationale vérifiée (AXA / Europ Assistance) <a class="section-link" href="#s5" title="Voir section Contacts &amp; assurance">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase during">
+        <span class="obl-step">2</span>
+        <h3>À l'arrivée et pendant la mission</h3>
+        <span class="obl-when">Tout au long du séjour · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li><strong>FMM</strong> (Forma Migratoria Múltiple) à compléter à l'arrivée <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>FMM à conserver sur soi <strong>en permanence</strong> (amende à la sortie sinon) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Déclaration douanière si espèces &gt; 10&nbsp;000 USD <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li><strong>EPI obligatoires</strong> sur chantier (casque, chaussures, gilet) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Référent GAT informé du check-in / check-out hôtel <a class="section-link" href="#s5" title="Voir section Contacts">▸</a></li>
+          <li>Astreinte GAT prévenue dans les <strong>15 minutes</strong> en cas d'urgence <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+          <li>Aucune négociation directe en cas d'agression — laisser GAT gérer <a class="section-link" href="#s1" title="Voir section Sécurité">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase after">
+        <span class="obl-step">3</span>
+        <h3>Au retour en France</h3>
+        <span class="obl-when">Délais à respecter impérativement · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li class="priority"><strong>Réinscription CPAM + mise à jour carte Vitale sous 8 jours</strong> <a class="section-link" href="#cpam" title="Voir section CPAM">▸</a></li>
+          <li><strong>Portabilité mutuelle</strong> via OWELLO (si ARE France Travail) <a class="section-link" href="#owello" title="Voir section Portabilité OWELLO">▸</a></li>
+          <li>Pendant 3 mois : feuille de soins CERFA sur espace CFE <a class="section-link" href="#cfe" title="Voir section CFE">▸</a></li>
+          <li>Restitution équipements sous <strong>5 jours ouvrés</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Remplir le retour d'expérience sous <strong>5 jours</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Notes de frais sous <strong>30 jours</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Déclaration fiscale revenus étrangers <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <ol>
+      <li><a href="#s1">Risques pays &amp; sécurité</a></li>
+      <li><a href="#s2">Santé &amp; recommandations sanitaires</a></li>
+      <li><a href="#s3">Pratiques culturelles &amp; comportement</a></li>
+      <li><a href="#s4">Logistique pratique</a></li>
+      <li><a href="#s5">Contacts d'urgence &amp; procédures</a></li>
+      <li><a href="#s6">Fin de mission &amp; retour en France</a></li>
+      <li><a href="#checklist">Checklist avant départ</a></li>
+    </ol>
+  </div>
+
+  <!-- ====== SECTION 1 — RISQUES PAYS & SÉCURITÉ ====== -->
+  <section id="s1">
+    <h2><span class="num">1.</span>Risques pays &amp; sécurité</h2>
+    <p class="source">Source : France Diplomatie (MEAE) — Conseils aux voyageurs · Mise à jour à vérifier régulièrement.</p>
+
+    <div class="vigilance-banner vigilance-Vigilance">
+      <strong>Niveau de vigilance général : Vigilance renforcée</strong>
+      Le Mexique fait l'objet d'une vigilance renforcée (niveau 3/4) du MEAE (Quai d'Orsay). Certains États sont en « déconseillé sauf raison impérative » (niveau 3).<br>
+      <strong style="display:inline; text-transform:none; letter-spacing:0; font-weight:600;">Évitez absolument les États suivants :</strong> Guerrero, Sinaloa, Tamaulipas, Michoacán, Jalisco. <em>Liste à vérifier sur France Diplomatie avant départ — peut évoluer.</em>
+    </div>
+
+    <div class="official-sources">
+      <h3 class="sources-title">Sources officielles à consulter</h3>
+
+      <div class="cta-grid">
+        <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/mexique/" target="_blank" rel="noopener" class="cta-card cta-diplomatie">
+          <span class="cta-tag">Source officielle MEAE</span>
+          <span class="cta-title">France Diplomatie — Mexique</span>
+          <p>Niveau de vigilance officiel à jour, zones précises à risque par État, recommandations sécuritaires en cours. Source unique de référence avant tout départ.</p>
+          <span class="cta-link">Consulter la fiche Mexique →</span>
+        </a>
+
+        <a href="https://pastel.diplomatie.gouv.fr" target="_blank" rel="noopener" class="cta-card cta-ariane">
+          <span class="cta-tag cta-tag-priority">Obligatoire avant départ</span>
+          <span class="cta-title">Ariane — Inscription des voyageurs</span>
+          <p>Gratuit, 5 minutes. Permet à l'ambassade de France de vous localiser et de vous contacter immédiatement en cas de crise (attentat, séisme, conflit, pandémie).</p>
+          <span class="cta-link">S'inscrire sur Ariane →</span>
+        </a>
+      </div>
+
+      <div class="ariane-why">
+        <h4>Pourquoi Ariane est devenu essentiel</h4>
+        <p>Les dernières années ont montré combien les crises peuvent surgir rapidement et toucher n'importe quel pays, même réputé stable. <strong>Sans inscription Ariane, l'ambassade de France ignore votre présence sur place</strong> — et ne peut donc pas vous prévenir, organiser votre évacuation, ni vous mettre en sécurité.</p>
+
+        <div class="ariane-scenarios">
+          <div class="scenario">
+            <span class="scenario-label">Conflits armés</span>
+            Ukraine 2022, Israël &middot; Gaza &middot; Liban 2023-2024, Soudan 2023, Yémen — évacuations urgentes des ressortissants.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Pandémies &amp; épidémies</span>
+            COVID-19 (plus de 350 000 Français rapatriés en 2020), Mpox, dengue, choléra, fièvre jaune.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Séismes &amp; tsunamis</span>
+            Turquie / Syrie 2023, Maroc 2023, Japon Noto 2024, Mexique récurrent — recherche de ressortissants.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Événements climatiques</span>
+            Ouragans Caraïbes (Beryl 2024), inondations Valence 2024, feux Canada / Grèce, vagues de chaleur.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Coups d'État &amp; instabilité</span>
+            Niger 2023, Burkina Faso 2022, Gabon 2023, Mali 2021 — frontières fermées, vols annulés.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Urgence individuelle</span>
+            Accident, maladie grave, agression, perte de papiers — l'ambassade vous accompagne beaucoup plus vite si elle sait que vous êtes là.
+          </div>
+        </div>
+
+        <p class="ariane-stat">En 2020, l'inscription Ariane a permis à la France d'organiser le plus grand rapatriement de citoyens depuis 1962 : plus de 350 000 personnes ramenées de 180 pays en quelques semaines. Sans inscription, la majorité n'aurait pas pu être contactée à temps.</p>
+      </div>
+    </div>
+
+    <h3>Niveaux de risque par catégorie</h3>
+    <div class="risk-grid">
+      <div class="risk-row"><span>Criminalité &amp; insécurité urbaine</span><div class="risk-bar"><div class="risk-fill" style="width:80%;"></div></div><span class="risk-score">4/5</span></div>
+      <div class="risk-row"><span>Risque terroriste / attentats</span><div class="risk-bar"><div class="risk-fill" style="width:20%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Instabilité politique</span><div class="risk-bar"><div class="risk-fill" style="width:40%;"></div></div><span class="risk-score">2/5</span></div>
+      <div class="risk-row"><span>Enlèvements / extorsion</span><div class="risk-bar"><div class="risk-fill" style="width:80%;"></div></div><span class="risk-score">4/5</span></div>
+      <div class="risk-row"><span>Risques naturels (séismes, ouragans)</span><div class="risk-bar"><div class="risk-fill" style="width:60%;"></div></div><span class="risk-score">3/5</span></div>
+      <div class="risk-row"><span>Corruption &amp; contrôles routiers</span><div class="risk-bar"><div class="risk-fill" style="width:80%;"></div></div><span class="risk-score">4/5</span></div>
+    </div>
+
+    <h3>Règles de comportement essentielles</h3>
+    <div class="alert danger">
+      <strong>Règles absolues à respecter</strong>
+      <ul>
+        <li>Ne jamais exhiber bijoux, montres, appareils photo coûteux en public.</li>
+        <li>Utiliser uniquement des taxis officiels ou applications (Uber, DiDi).</li>
+        <li>Ne jamais voyager de nuit sur route, même sur axe majeur.</li>
+        <li>Ne pas résister en cas d'agression — priorité à votre intégrité physique.</li>
+        <li>Éviter les distributeurs automatiques de nuit ou isolés.</li>
+        <li>Ne pas mentionner publiquement votre employeur ou mission.</li>
+      </ul>
+    </div>
+
+    <h3>Déplacements en ville</h3>
+    <div class="two-col">
+      <div class="col-card do">
+        <h4>À faire</h4>
+        <ul>
+          <li>Utiliser Uber / DiDi.</li>
+          <li>Partager votre itinéraire à un référent.</li>
+          <li>Rester dans les zones touristiques balisées.</li>
+          <li>Conserver une copie de passeport séparée.</li>
+          <li>Payer en monnaie locale dans les marchés.</li>
+        </ul>
+      </div>
+      <div class="col-card dont">
+        <h4>À éviter</h4>
+        <ul>
+          <li>Prendre un taxi de rue hélé.</li>
+          <li>Voyager seul en zone isolée.</li>
+          <li>Sortir la nuit dans les quartiers inconnus.</li>
+          <li>Laisser vos documents dans la chambre.</li>
+          <li>Afficher carte bancaire en public.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 2 — SANTÉ ====== -->
+  <section id="s2">
+    <h2><span class="num">2.</span>Santé &amp; recommandations sanitaires</h2>
+    <p class="source">Sources : Institut Pasteur, Centre de Vaccinations Internationales (CVI), AXA Assistance, Europ Assistance.</p>
+
+    <h3>Vaccinations recommandées</h3>
+    <p style="font-size:12px; color:#888; margin-bottom:8px;">Survolez un vaccin pour voir le détail des règles vaccinales (schéma, rappels, durée de protection).</p>
+    <table>
+      <thead><tr><th>Vaccin</th><th>Statut</th><th>Remarque</th></tr></thead>
+      <tbody>
+
+        <tr>
+          <td class="vaccine-cell">Hépatite A<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Hépatite A — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Tous voyageurs en zone à risque sanitaire</li>
+                <li><strong>Schéma</strong>1 injection, rappel à 6-12 mois</li>
+                <li><strong>Protection</strong>À vie après le rappel</li>
+                <li><strong>Délai action</strong>15 jours après la 1ère injection</li>
+                <li><strong>Rappels</strong>Aucun supplémentaire si schéma complet</li>
+              </ul>
+              <span class="vp-warn">Vaccin combiné Twinrix possible (Hépatite A + B). À discuter avec le médecin.</span>
+              <span class="vp-source">Source : Calendrier des vaccinations 2024, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Obligatoire</td>
+          <td>Avant tout départ</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Hépatite B<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Hépatite B — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Missions &gt; 1 mois, contact possible avec sang/fluides</li>
+                <li><strong>Schéma classique</strong>3 injections : M0, M1, M6</li>
+                <li><strong>Schéma rapide</strong>J0, J7, J21 + rappel à 12 mois</li>
+                <li><strong>Protection</strong>À vie après schéma complet</li>
+                <li><strong>Rappels</strong>Aucun chez l'adulte immunocompétent</li>
+              </ul>
+              <span class="vp-warn">Vérifier carnet : souvent reçu pendant l'enfance (vaccin obligatoire depuis 2018).</span>
+              <span class="vp-source">Source : HAS &amp; Calendrier vaccinal 2024</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Surtout missions longues</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Typhoïde<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Typhoïde — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Zones à hygiène précaire, séjour &gt; 1 mois</li>
+                <li><strong>Schéma</strong>1 injection unique (Typhim Vi)</li>
+                <li><strong>Protection</strong>3 ans</li>
+                <li><strong>Rappels</strong>Tous les 3 ans en cas d'exposition continue</li>
+                <li><strong>Délai action</strong>15 jours</li>
+              </ul>
+              <span class="vp-warn">Efficacité ≈ 70%. Ne dispense PAS des règles d'hygiène alimentaire stricte (eau, glaçons, fruits pelés).</span>
+              <span class="vp-source">Source : Institut Pasteur, OMS</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Eau &amp; alimentation</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Fièvre jaune<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Fièvre jaune — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Zones tropicales définies (carte OMS)</li>
+                <li><strong>Schéma</strong>1 injection unique</li>
+                <li><strong>Protection</strong>À vie depuis 2016</li>
+                <li><strong>Délai action</strong>10 jours minimum avant départ</li>
+                <li><strong>Rappels</strong>Aucun (sauf grossesse, immunodéprimé)</li>
+              </ul>
+              <span class="vp-warn">Vaccin VIVANT atténué : contre-indications strictes (immunodéprimés, grossesse, &gt; 60 ans 1ère vaccination). VACCINATION OBLIGATOIRE en centre agréé fièvre jaune (CVI). Carnet jaune international délivré.</span>
+              <span class="vp-source">Source : OMS, Centre des Vaccinations Internationales</span>
+            </div>
+          </td>
+          <td>Selon zone</td>
+          <td>Régions tropicales</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Dengue (Dengvaxia)<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Dengue — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Zones d'endémie ET ATCD de dengue confirmé</li>
+                <li><strong>Schéma</strong>3 doses : M0, M6, M12</li>
+                <li><strong>Préalable</strong>Sérologie obligatoire pour confirmer ATCD</li>
+                <li><strong>Sans ATCD</strong>Vaccin DÉCONSEILLÉ (peut aggraver une 1ère infection)</li>
+              </ul>
+              <span class="vp-warn">Alternative principale : prévention par répulsif DEET 30%+, manches longues, moustiquaire. La protection comportementale reste la priorité.</span>
+              <span class="vp-source">Source : ANSM, OMS</span>
+            </div>
+          </td>
+          <td>À évaluer</td>
+          <td>Avec médecin du voyage</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Rage<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Rage — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Zones rurales, contact possible animaux, séjour &gt; 1 mois</li>
+                <li><strong>Schéma préventif</strong>3 injections : J0, J7, J21 (ou J28)</li>
+                <li><strong>Protection</strong>Plusieurs années (rappel selon exposition)</li>
+                <li><strong>En cas de morsure</strong>Traitement post-exposition OBLIGATOIRE même si vacciné</li>
+              </ul>
+              <span class="vp-warn">Si vacciné préventivement : 2 injections post-exposition seulement. Sans vaccin préalable : immunoglobulines + 4-5 injections (lourd, parfois indisponibles localement).</span>
+              <span class="vp-source">Source : Institut Pasteur, OMS</span>
+            </div>
+          </td>
+          <td>À évaluer</td>
+          <td>Zones rurales / animaux</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Tétanos / DTP<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Tétanos / DTP — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Tous adultes, sans exception</li>
+                <li><strong>Rappels adulte</strong>25 ans, 45 ans, 65 ans</li>
+                <li><strong>Après 65 ans</strong>Tous les 10 ans (75, 85, 95)</li>
+                <li><strong>Protection</strong>Durable entre les rappels</li>
+                <li><strong>Combinaison</strong>DTP (Diphtérie + Tétanos + Polio)</li>
+              </ul>
+              <span class="vp-warn">Si plaie souillée à l'étranger : vérifier date du dernier rappel. Si &gt; 10 ans (ou &gt; 5 ans pour plaie majeure), rappel anti-tétanique immédiat impératif.</span>
+              <span class="vp-source">Source : Calendrier vaccinal 2024, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Obligatoire</td>
+          <td>Mise à jour obligatoire</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Covid-19<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Covid-19 — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Selon protocole GAT et médecin du travail</li>
+                <li><strong>Schéma</strong>Variable selon âge, comorbidités, dernière dose</li>
+                <li><strong>Population à risque</strong>Rappel annuel recommandé (&gt; 65 ans, comorbidités)</li>
+                <li><strong>Voyageurs</strong>À évaluer selon variants en circulation</li>
+              </ul>
+              <span class="vp-warn">À valider lors de la consultation pré-départ. Certains pays peuvent encore demander un certificat ou test PCR.</span>
+              <span class="vp-source">Source : HAS, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Selon protocole GAT</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Avant le départ</strong>
+      <ul>
+        <li>Consultez le centre de vaccinations internationales (CVI) au moins 4 semaines avant le départ.</li>
+        <li>Emportez votre carnet de vaccination international.</li>
+        <li>Vérifiez votre couverture assurance santé internationale (GAT prend en charge via AXA / Europ Assistance).</li>
+      </ul>
+    </div>
+
+    <h3>Risques sanitaires sur place</h3>
+    <div class="alert danger">
+      <strong>Eau &amp; alimentation — vigilance maximale</strong>
+      <ul>
+        <li>Ne jamais boire l'eau du robinet — eau en bouteille capsulée uniquement.</li>
+        <li>Éviter les glaçons dans les restaurants de rue.</li>
+        <li>Peler systématiquement les fruits et légumes.</li>
+        <li>Préférer les restaurants avec vitrine de cuisine visible.</li>
+      </ul>
+    </div>
+
+    <h3>Autres risques</h3>
+    <p><strong>Dengue / Zika / Chikungunya.</strong> Moustiques actifs surtout en saison des pluies (juin–octobre). Répulsif DEET 30%+, manches longues le soir, moustiquaire si nécessaire.</p>
+    <p><strong>Altitude (Mexico = 2 240 m).</strong> Mal des montagnes possible. Repos les premiers jours, éviter l'alcool, boire beaucoup d'eau. Consultez si symptômes (maux de tête, nausées).</p>
+    <p><strong>Soleil &amp; chaleur.</strong> Indice UV très élevé. Crème SPF 50+, chapeau, hydratation continue.</p>
+    <p><strong>Scorpions &amp; serpents.</strong> Zones rurales. Vérifier les chaussures et vêtements chaque matin.</p>
+
+    <h3>Pharmacie de voyage recommandée</h3>
+    <ul>
+      <li>Antidiarrhéique (Imodium) + sels de réhydratation.</li>
+      <li>Antipaludéen si zones à risque (sur ordonnance médecin).</li>
+      <li>Répulsif moustiques DEET 30%+.</li>
+      <li>Antihistaminique + crème antihistaminique.</li>
+      <li>Désinfectant cutané + pansements stériles.</li>
+      <li>Thermomètre + anti-douleur / anti-fièvre.</li>
+      <li>Médicaments personnels en quantité suffisante + ordonnance.</li>
+      <li>Crème solaire SPF 50+ et après-soleil.</li>
+    </ul>
+  </section>
+
+  <!-- ====== SECTION 3 — PRATIQUES CULTURELLES ====== -->
+  <section id="s3">
+    <h2><span class="num">3.</span>Pratiques culturelles &amp; comportement</h2>
+
+    <p>Le Mexique est une culture chaleureuse et relationnelle. Comprendre les codes locaux facilite la collaboration et évite les malentendus.</p>
+
+    <h3>Codes sociaux fondamentaux</h3>
+    <p><strong>La ponctualité.</strong> Relative dans le milieu social, plus stricte en entreprise. Prévoir un délai de 15 à 30 min de tolérance dans les réunions informelles.</p>
+    <p><strong>Le contact physique.</strong> Poignée de main systématique + accolade (<em>abrazo</em>) entre hommes. Bise sur la joue avec les femmes, y compris en contexte professionnel.</p>
+    <p><strong>Le « oui » mexicain.</strong> Un « <em>sí</em> » peut signifier « j'ai entendu » mais pas nécessairement un engagement. Reformulez et confirmez par écrit les accords importants.</p>
+    <p><strong>La hiérarchie.</strong> Forte culture du respect des supérieurs. S'adresser au « <em>Licenciado</em> » ou « <em>Ingeniero</em> » (titres professionnels) montre le respect.</p>
+    <p><strong>Les relations.</strong> Les Mexicains font confiance aux personnes avant les institutions. Investir du temps en conversation personnelle est indispensable.</p>
+
+    <div class="alert danger">
+      <strong>Comportements à proscrire</strong>
+      <ul>
+        <li>Critiquer le Mexique ou les institutions mexicaines en public.</li>
+        <li>Confondre le Mexique avec d'autres pays d'Amérique latine.</li>
+        <li>Discuter de politique, drogue, cartels ou religion en réunion.</li>
+        <li>Prendre des photos sans permission dans les lieux cultuels.</li>
+        <li>Payer trop cher sans négocier (signifie que vous ne respectez pas les codes).</li>
+      </ul>
+    </div>
+
+    <h3>Codes vestimentaires</h3>
+    <table>
+      <thead><tr><th>Contexte</th><th>Tenue recommandée</th></tr></thead>
+      <tbody>
+        <tr><td>Réunion client / chantier bureau</td><td>Chemise, pantalon chino, chaussures fermées</td></tr>
+        <tr><td>Chantier terrain</td><td>EPI complets + vêtements couvrants (soleil)</td></tr>
+        <tr><td>Repas d'affaires</td><td>Chemise / veste — éviter jean et t-shirt</td></tr>
+        <tr><td>Visite de site religieux</td><td>Épaules couvertes, pas de short</td></tr>
+        <tr><td>Soirée informelle</td><td>Tenue décontractée soignée — pas de short en ville</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Quelques mots utiles en espagnol</h3>
+    <table>
+      <thead><tr><th>Français</th><th>Espagnol</th><th>Prononciation</th></tr></thead>
+      <tbody>
+        <tr><td>Bonjour (matin)</td><td>Buenos días</td><td>Bouénos diyas</td></tr>
+        <tr><td>Bonsoir</td><td>Buenas tardes</td><td>Bouénas tardès</td></tr>
+        <tr><td>Merci</td><td>Gracias</td><td>Grasyass</td></tr>
+        <tr><td>S'il vous plaît</td><td>Por favor</td><td>Por favor</td></tr>
+        <tr><td>Où est… ?</td><td>¿Dónde está… ?</td><td>Dondé ésta ?</td></tr>
+        <tr><td>À l'aide !</td><td>¡Auxilio!</td><td>Aouksilyo !</td></tr>
+        <tr><td>Appelez la police</td><td>Llame a la policía</td><td>Yamé a la polizia</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====== SECTION 4 — LOGISTIQUE ====== -->
+  <section id="s4">
+    <h2><span class="num">4.</span>Logistique pratique</h2>
+
+    <h3>Visa &amp; formalités d'entrée</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Visa</th><td>Non requis pour ressortissants UE (séjour ≤ 180 jours)</td></tr>
+        <tr><th>Passeport</th><td>Valide minimum 6 mois après la date de retour</td></tr>
+        <tr><th>FMM (carte touriste)</th><td>À compléter à l'arrivée — conservez-la jusqu'au départ</td></tr>
+        <tr><th>Douane</th><td>Déclaration obligatoire si espèces &gt; 10 000 USD</td></tr>
+        <tr><th>Permis de travail</th><td>Requis pour tout travail rémunéré — GAT s'en charge</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Document essentiel</strong>
+      <ul>
+        <li>La FMM (Forma Migratoria Múltiple) doit être gardée sur vous en permanence.</li>
+        <li>Sa perte est sanctionnée d'une amende à la sortie du territoire.</li>
+        <li>Faites immédiatement une copie scannée dans vos emails.</li>
+      </ul>
+    </div>
+
+    <h3>Monnaie &amp; finances</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Monnaie</th><td>Peso mexicain (MXN) — 1 EUR ≈ 20–22 MXN (2026)</td></tr>
+        <tr><th>Retrait d'espèces</th><td>Privilégier banques officielles, en journée</td></tr>
+        <tr><th>Carte bancaire</th><td>Mastercard / Visa acceptées en ville — prévoir cash en zone rurale</td></tr>
+        <tr><th>Pourboires</th><td>Obligatoire culturellement — 10–15 % au restaurant, 20–50 MXN taxi</td></tr>
+        <tr><th>Reçus / factures</th><td>Demander systématiquement la <em>factura</em> pour notes de frais</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Transports</h3>
+    <p><strong>Aéroport México (AICM / NAICM).</strong> Prendre uniquement taxis officiels SITEUR au comptoir officiel (hall d'arrivée). Prix fixe par zone. Éviter les propositions non sollicitées.</p>
+    <p><strong>En ville — Mexico.</strong> Uber et DiDi sont fortement recommandés. Le métro (24 lignes) est efficace mais éviter aux heures de pointe (7 h–9 h, 18 h–20 h) et porter le sac devant vous.</p>
+    <p><strong>Transports interurbains.</strong> Bus ADO / ETN pour trajets longue distance (confortables, fiables). Éviter les trajets nocturnes sur route. Privilégier l'avion au-delà de 4 h.</p>
+    <p><strong>Location de voiture.</strong> Possible mais déconseillée hors des grandes villes. Jamais de nuit. Assurance tous risques obligatoire avec couverture Mexique.</p>
+
+    <h3>Hébergement &amp; chantier</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Hôtel</th><td>Toujours dans quartiers identifiés : Polanco, Condesa, Roma (Mexico)</td></tr>
+        <tr><th>Confirmation</th><td>Conserver numéro de réservation et adresse en version papier</td></tr>
+        <tr><th>Coffre</th><td>Utiliser le coffre de chambre pour passeport et argent liquide</td></tr>
+        <tr><th>Check-in / out</th><td>Informer systématiquement le référent GAT de votre arrivée</td></tr>
+        <tr><th>Chantier</th><td>Port des EPI obligatoire — veste haute visibilité, casque, chaussures</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Connectivité &amp; téléphonie</h3>
+    <div class="alert">
+      <strong>Communication sur place</strong>
+      <ul>
+        <li>Activer le roaming international auprès de votre opérateur avant le départ.</li>
+        <li>Alternative : acheter une SIM locale Telcel ou AT&amp;T Mexique (aéroport).</li>
+        <li>WhatsApp est le moyen de communication standard pour les locaux.</li>
+        <li>VPN recommandé pour les connexions Wi-Fi publiques.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 5 — CONTACTS D'URGENCE ====== -->
+  <section id="s5">
+    <h2><span class="num">5.</span>Contacts d'urgence &amp; procédures</h2>
+
+    <div class="alert danger">
+      <strong>En cas d'urgence immédiate</strong>
+      <ul>
+        <li>Mettez-vous en sécurité AVANT tout appel.</li>
+        <li>Appelez le <strong>911</strong> (urgences Mexique — police, pompiers, SAMU).</li>
+        <li>Prévenez votre référent GAT International dans les 15 minutes.</li>
+        <li>Ne négociez JAMAIS directement — laissez GAT prendre en charge.</li>
+      </ul>
+    </div>
+
+    <h3>Numéros d'urgence Mexique</h3>
+    <table>
+      <thead><tr><th>Service</th><th>Numéro</th><th>Disponibilité</th></tr></thead>
+      <tbody>
+        <tr><td>Urgences générales (911)</td><td>911</td><td>24h/24</td></tr>
+        <tr><td>Police touristique Mexico</td><td>+52 55 5533 5533</td><td>24h/24</td></tr>
+        <tr><td>Ambulance ERUM</td><td>+52 55 5588 1100</td><td>24h/24</td></tr>
+        <tr><td>Pompiers Mexico</td><td>068</td><td>24h/24</td></tr>
+        <tr><td>Assistance routière (Green Angels)</td><td>078</td><td>7 h–19 h</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Santé prévoyance — assistance &amp; assurance</h3>
+    <p style="font-size:13.5px; margin-bottom:14px;">Les contacts ci-dessous activent votre prise en charge médicale, votre assurance voyage et votre rapatriement. L'annuaire complet (Europ Assistance, AXA, et autres organismes de prévoyance) est maintenu à jour en temps réel par la Direction sur SharePoint.</p>
+
+    <div style="background:#f0f7fc; border:1px solid #c8dcec; border-left:4px solid #185fa5; border-radius:8px; padding:18px 22px; margin-bottom:16px;">
+      <div style="display:flex; flex-wrap:wrap; gap:18px;">
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Médical &amp; rapatriement</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">Europ Assistance</div>
+          <a href="tel:+33141858585" style="display:inline-block; background:#1a1a1a; color:#fff; padding:7px 14px; border-radius:5px; text-decoration:none; font-size:14px; font-weight:600;">+33 1 41 85 85 85</a>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">24h/24, 7j/7 — hospitalisation, rapatriement sanitaire, frais médicaux à l'étranger</div>
+        </div>
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Assurance voyage</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">AXA Assistance</div>
+          <a href="tel:+33155922692" style="display:inline-block; background:#1a1a1a; color:#fff; padding:7px 14px; border-radius:5px; text-decoration:none; font-size:14px; font-weight:600;">+33 1 55 92 26 92</a>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">Bagages, accident, annulation, responsabilité civile à l'étranger</div>
+        </div>
+      </div>
+      <div style="margin-top:16px; padding-top:14px; border-top:1px solid #c8dcec;">
+        <a href="https://gerib69.sharepoint.com/sites/GATNET/conseilauxgatinternationaux/Contacts-internes/assurance-gat-sharepoint-dynamique.html" target="_top" style="display:inline-block; background:#185fa5; color:#fff; padding:9px 18px; border-radius:6px; text-decoration:none; font-size:13.5px; font-weight:600;">
+          Voir l'annuaire complet santé prévoyance (mis à jour en temps réel) →
+        </a>
+        <div style="font-size:11.5px; color:#666; margin-top:8px; font-style:italic;">
+          Authentification SharePoint requise. Cette page reflète instantanément les modifications de la Liste « Assistance et assurance ».
+        </div>
+      </div>
+    </div>
+
+    <div class="alert">
+      <strong>En cas de rapatriement — conditions de prise en charge par AXA</strong>
+      <p>Pour que le rapatriement soit pris en charge et que vos frais soient intégralement remboursés, trois étapes sont essentielles. L'assureur conditionne sa prise en charge à leur respect — c'est la seule raison pour laquelle nous insistons sur ces points.</p>
+      <p>Le collaborateur, ou à défaut son chargé d'affaires, doit impérativement :</p>
+      <ul>
+        <li><strong>Obtenir l'accord préalable du Centre d'assistance AXA</strong> avant de prendre toute initiative ou d'engager toute dépense (transport, hospitalisation, hôtel). Un simple appel suffit à activer le dossier — c'est ce qui déclenche la prise en charge directe et évite d'avancer les frais.</li>
+        <li><strong>Se conformer aux solutions préconisées par le Centre d'assistance AXA</strong> (choix de l'établissement, mode de transport, calendrier). AXA négocie et prépaye directement auprès des prestataires : c'est ainsi que les sommes — parfois très importantes — sont prises en charge sans avance de votre part.</li>
+        <li><strong>Conserver et transmettre dès que possible tous les justificatifs originaux</strong> des dépenses engagées pour le compte du Centre d'assistance AXA (factures, ordonnances, billets, plaintes de police le cas échéant). Sans ces originaux, le remboursement ne peut pas être instruit.</li>
+      </ul>
+      <p>À noter : si GAT a dû assurer à ses frais un voyage retour qui aurait pu être organisé via les titres de transport déjà détenus par le collaborateur, l'entreprise pourra utiliser ou demander le remboursement de ces titres. Cette disposition évite simplement une double facturation pour un même trajet.</p>
+    </div>
+
+    <h3>Ambassade &amp; consulats de France au Mexique</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Ambassade (Mexico)</th><td>+52 55 9171 9700</td></tr>
+        <tr><th>Adresse</th><td>Campos Elíseos 339, Polanco, CDMX</td></tr>
+        <tr><th>Urgence consulaire</th><td>+52 55 9171 9705</td></tr>
+        <tr><th>Site Ariane (inscription)</th><td><a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a></td></tr>
+        <tr><th>Consulat Cancún</th><td>+52 998 884 0641</td></tr>
+        <tr><th>Consulat Guadalajara</th><td>+52 33 3630 1783</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Inscription Ariane — obligatoire</strong>
+      <ul>
+        <li>Inscrivez-vous sur le portail Ariane avant tout départ (<a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a>).</li>
+        <li>Permet à l'ambassade de vous localiser et de vous contacter en cas de crise.</li>
+        <li>Mentionnez vos dates de séjour et coordonnées locales.</li>
+      </ul>
+    </div>
+
+    <h3>Procédure en cas d'incident</h3>
+    <ol class="step-list">
+      <li><strong>Agression / vol.</strong><p>1. Mettez-vous en sécurité. 2. Appelez le 911. 3. Appelez votre référent GAT. 4. Déposez plainte (<em>denuncia</em>) avec interprète. 5. Conservez le numéro de plainte pour assurance.</p></li>
+      <li><strong>Accident de chantier.</strong><p>1. Stop travaux — sécuriser la zone. 2. Appel 911 si blessé. 3. Prévenir chef de chantier + référent GAT immédiatement. 4. NE PAS déplacer un blessé grave sans secours qualifiés.</p></li>
+      <li><strong>Hospitalisation.</strong><p>Demander une prise en charge directe auprès de l'assurance GAT (Europ Assistance / AXA). Conserver TOUS les documents médicaux et factures pour remboursement.</p></li>
+      <li><strong>Perte / vol de passeport.</strong><p>1. Déposez plainte police. 2. Contactez l'ambassade de France. 3. Demandez un laissez-passer consulaire. 4. Informez GAT RH.</p></li>
+    </ol>
+  </section>
+
+  <!-- ====== SECTION 6 — RETOUR EN FRANCE (CONSTANT) ====== -->
+  <section id="s6" class="return-section">
+    <span class="critical-badge">Étape critique · Identique pour tous les pays</span>
+    <h2><span class="num">6.</span>Fin de mission &amp; retour en France</h2>
+    <p class="source">Sources : Ameli.fr (Assurance Maladie), URSSAF, impots.gouv.fr — section commune à tous les livrets, à ne pas modifier sans validation RH.</p>
+
+    <p>Le retour en France marque la fin de votre statut de travailleur détaché. Plusieurs démarches administratives sont obligatoires dès votre retour pour préserver vos droits sociaux.</p>
+
+    <div class="deadline-card">
+      <div class="deadline-number">8<small>jours</small></div>
+      <div class="deadline-text">
+        <strong>Délai maximal pour vous réinscrire à la CPAM</strong>
+        Au-delà de 8 jours, vos soins médicaux ne sont plus remboursés et la régularisation devient longue. Démarche à lancer dès le lendemain de votre retour.
+      </div>
+    </div>
+
+    <h3 id="cpam">Couverture maladie — réinscription à la CPAM et carte Vitale</h3>
+    <div class="alert danger">
+      <strong>Démarche prioritaire à votre retour</strong>
+      <ul>
+        <li>Vous perdez votre couverture maladie internationale dès la fin de mission.</li>
+        <li>Réinscrivez-vous à la CPAM dans les 8 jours suivant votre retour en France.</li>
+        <li><strong>Mettez à jour votre carte Vitale</strong> en borne pharmacie ou CPAM (la mise à jour active vos droits actualisés).</li>
+        <li>Sans réinscription, vos soins médicaux ne seront pas remboursés.</li>
+        <li>Cette démarche est individuelle — GAT ne peut pas la faire à votre place.</li>
+      </ul>
+    </div>
+
+    <h3>Comment se réinscrire à la CPAM</h3>
+    <ol class="step-list">
+      <li><strong>Préparez vos documents.</strong><p>Pièce d'identité, justificatif de domicile (-3 mois), relevé de situation CAF si applicable, RIB, et le cas échéant votre certificat de fin de détachement ou attestation de fin de contrat fournie par GAT.</p></li>
+      <li><strong>Rendez-vous sur Ameli.fr.</strong><p>Connectez-vous ou créez votre compte sur ameli.fr. Rubrique « Ma situation » › « Je reprends une activité en France ». Vous pouvez également contacter le 36 46 (service CPAM, gratuit depuis la France).</p></li>
+      <li><strong>Demande d'affiliation.</strong><p>Si vous étiez salarié de GAT en détachement, votre employeur signale la fin de détachement à l'URSSAF. Votre CPAM de rattachement (celle de votre domicile) prend le relai automatiquement sous 8 à 15 jours.</p></li>
+      <li><strong>Attestation de droits + mise à jour carte Vitale.</strong><p>Une fois affilié, téléchargez votre attestation de droits sur Ameli.fr. Mettez à jour votre carte Vitale dans une borne en pharmacie ou à la CPAM (gratuit, 30 secondes).</p></li>
+    </ol>
+
+    <h3 id="cfe">Couverture par la CFE pendant la transition (3 mois)</h3>
+    <div class="alert">
+      <strong>Maintien des droits par la Caisse des Français de l'Étranger</strong>
+      <ul>
+        <li>Pendant les <strong>3 premiers mois après votre retour</strong>, la CFE maintient vos droits (le temps que la Sécurité sociale prenne le relai).</li>
+        <li>Pour chaque consultation ou soin : faire compléter une <strong>feuille de soins CERFA</strong> par le praticien.</li>
+        <li>Déposez ces feuilles de soins sur votre <strong>espace CFE en ligne</strong>.</li>
+        <li>Une fois vos droits Sécu ouverts (sous 8-15 jours après réinscription) : utilisez votre carte Vitale normalement, ou transmettez la feuille de soins à la CPAM.</li>
+      </ul>
+    </div>
+
+    <h3 id="owello">Portabilité de la complémentaire santé (mutuelle AXA via OWELLO)</h3>
+    <div class="alert">
+      <strong>Maintien de votre mutuelle après la fin du contrat de travail</strong>
+      <ul>
+        <li>Vous pouvez bénéficier de la <strong>portabilité</strong> de la complémentaire santé (mutuelle d'entreprise) après la fin de votre contrat de travail GAT.</li>
+        <li><strong>Condition</strong> : France Travail doit vous verser l'allocation d'aide au retour à l'emploi (ARE).</li>
+        <li>Chaque mois, transmettez à <strong>OWELLO</strong> votre attestation de versement des allocations France Travail.</li>
+        <li>Espace en ligne OWELLO : <a href="https://login.owello-insurance.com/login">login.owello-insurance.com/login</a></li>
+      </ul>
+    </div>
+
+    <h3>Remboursement des frais de soins — procédure complète</h3>
+    <ol class="step-list">
+      <li><strong>Pendant les 3 premiers mois (couverture CFE).</strong><p>Faire compléter une feuille de soins CERFA par le praticien. Déposez-la sur votre <strong>espace CFE</strong>. La CFE rembourse selon les taux de la Sécurité sociale.</p></li>
+      <li><strong>Une fois la Sécu ouverte.</strong><p>Utilisez votre <strong>carte Vitale</strong> à jour. Le pharmacien / médecin transmet directement à la CPAM (tiers payant ou télétransmission).</p></li>
+      <li><strong>Pour le complément mutuelle.</strong><p>Téléchargez votre décompte de remboursement CPAM sur Ameli.fr → transmettez-le à <strong>OWELLO</strong> via votre <a href="https://login.owello-insurance.com/login">espace OWELLO</a>. OWELLO complète selon votre contrat.</p></li>
+    </ol>
+
+    <div class="alert">
+      <strong>Contacts et liens utiles au retour</strong>
+      <ul>
+        <li><a href="https://www.ameli.fr">Ameli.fr</a> — portail Assurance Maladie · <strong>36 46</strong> (lun-ven 8h-20h, sam 9h-12h)</li>
+        <li><a href="https://www.cfe.fr">CFE.fr</a> — Caisse des Français de l'Étranger (couverture 3 mois transition)</li>
+        <li><a href="https://login.owello-insurance.com/login">OWELLO</a> — portabilité mutuelle AXA (transmission attestations France Travail)</li>
+        <li><a href="https://www.francetravail.fr">France Travail</a> — inscription ARE si chômage</li>
+        <li><a href="https://www.impots.gouv.fr">Impots.gouv.fr</a> — déclaration revenus étrangers</li>
+      </ul>
+    </div>
+
+    <h3 id="recap-demarches">Récapitulatif des démarches administratives au retour</h3>
+    <table>
+      <thead><tr><th>Démarche</th><th>Délai</th><th>Où ?</th></tr></thead>
+      <tbody>
+        <tr><td>Réinscription CPAM</td><td>Sous 8 jours</td><td>ameli.fr / CPAM locale</td></tr>
+        <tr><td>Mise à jour carte Vitale</td><td>Dès droits ouverts</td><td>Borne pharmacie / CPAM</td></tr>
+        <tr><td>Inscription France Travail (si chômage)</td><td>Sous 12 mois</td><td>francetravail.fr</td></tr>
+        <tr><td>Portabilité mutuelle AXA via OWELLO</td><td>Dès fin de contrat</td><td><a href="https://login.owello-insurance.com/login">login.owello-insurance.com</a></td></tr>
+        <tr><td>Transmission attestation France Travail à OWELLO</td><td>Tous les mois</td><td>Espace OWELLO</td></tr>
+        <tr><td>Feuille de soins CERFA → CFE</td><td>Pendant 3 mois après retour</td><td>Espace CFE en ligne</td></tr>
+        <tr><td>Décompte CPAM → OWELLO (complément mutuelle)</td><td>À chaque soin</td><td>Espace OWELLO</td></tr>
+        <tr><td>Déclaration fiscale (revenus étrangers)</td><td>Calendrier fiscal</td><td>impots.gouv.fr</td></tr>
+        <tr><td>Restitution équipements (ordinateur et outillage)</td><td>Sous 5 jours ouvrés</td><td>Référent GAT</td></tr>
+        <tr><td>Remplir le retour d'expérience</td><td>Sous 5 jours</td><td>Chargée QSE GAT</td></tr>
+        <tr><td>Notes de frais en attente</td><td>Sous 30 jours</td><td>Comptabilité GAT</td></tr>
+        <tr><td>Résiliation abonnement téléphone local</td><td>Avant / dès retour</td><td>Opérateur local</td></tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- ====== CHECKLIST ====== -->
+  <section id="checklist">
+    <h2>Checklist avant départ Mexique</h2>
+
+    <h3>Documents</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Passeport valide 6+ mois après retour</label>
+      <label><input type="checkbox"> Copie numérique passeport (email / cloud)</label>
+      <label><input type="checkbox"> Assurance voyage internationale (carte Gold ou GAT)</label>
+      <label><input type="checkbox"> Contacts d'urgence imprimés et mémorisés</label>
+      <label><input type="checkbox"> Carnet de vaccination international</label>
+      <label><input type="checkbox"> Coordonnées hôtel et chantier (papier)</label>
+    </div>
+
+    <h3>Santé</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Vaccins à jour (hépatite A, DTP minimum)</label>
+      <label><input type="checkbox"> Consultation médecin du voyage si zones rurales</label>
+      <label><input type="checkbox"> Pharmacie de voyage complète</label>
+      <label><input type="checkbox"> Médicaments personnels + ordonnance en quantité suffisante</label>
+      <label><input type="checkbox"> Répulsif moustiques DEET 30%+ emballé en soute</label>
+    </div>
+
+    <h3>Sécurité &amp; logistique</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Inscription Ariane effectuée (pastel.diplomatie.gouv.fr)</label>
+      <label><input type="checkbox"> Roaming international activé ou SIM locale prévue</label>
+      <label><input type="checkbox"> Référent GAT informé des dates et coordonnées</label>
+      <label><input type="checkbox"> Taxi / transfert aéroport réservé (SITEUR ou hôtel)</label>
+      <label><input type="checkbox"> Espèces MXN ou EUR pour les premiers jours</label>
+      <label><input type="checkbox"> Adaptateur secteur Type A/B (prises américaines)</label>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h3>Bon voyage et bonne mission.</h3>
+    L'équipe GAT International est disponible à tout moment pour vous accompagner.<br>
+    <a href="https://www.gat.fr">www.gat.fr</a> — Tous vos documents de mission en ligne.
+  </div>
+
+</main>
+
+<footer>
+  GAT International — Livret de mission Mexique · Version 2026 · Document interne confidentiel.<br>
+  Sources : France Diplomatie (MEAE), Europ Assistance, AXA Assistance, Ameli.fr, Institut Pasteur.
+</footer>
+
+<!-- Bouton flottant fixe — toujours visible -->
+<a href="#s6" class="float-return" title="Voir les démarches CPAM, fiscalité et restitution équipements">
+  Démarches retour France <span class="float-return-arrow">→</span>
+</a>
+
+<script>
+  // Injecte la date d'impression dans le footnote PDF
+  window.addEventListener('beforeprint', function() {
+    var d = new Date();
+    var dateStr = d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' });
+    var el = document.getElementById('print-date');
+    if (el) el.textContent = dateStr;
+  });
+</script>
+
+</body>
+</html>
