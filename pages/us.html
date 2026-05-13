@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>États-Unis — Livret de Mission GAT International</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #1a1a1a; background: #fafafa; line-height: 1.55; font-size: 15px; }
+  .topbar { background: #1a1a1a; color: #fff; padding: 10px 32px; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; }
+  .topbar a { color: #fff; text-decoration: none; }
+  .btn-pdf { background: #fff; color: #1a1a1a; padding: 6px 14px; border-radius: 4px; font-weight: 600; font-size: 12px; border: none; cursor: pointer; }
+  .btn-pdf:hover { background: #e5e5e5; }
+  header.cover { background: #ffffff; padding: 32px 32px 24px; border-bottom: 1px solid #e5e5e5; }
+  .cover-grid { display: grid; grid-template-columns: 1fr auto; gap: 32px; max-width: 1100px; margin: 0 auto; align-items: end; }
+  .breadcrumb { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .cover h1 { margin: 0 0 6px; font-size: 32px; font-weight: 600; letter-spacing: -0.5px; }
+  .contract-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 7px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; }
+  .contract-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; }
+  .contract-badge.contract-france { background: #e9f4e2; color: #2f5f12; border: 1px solid #c5e0b1; }
+  .contract-badge.contract-france::before { background: #5d8a3a; }
+  .contract-badge.contract-detachement { background: #e6f1fb; color: #0c447c; border: 1px solid #b3d0e9; }
+  .contract-badge.contract-detachement::before { background: #185fa5; }
+  .contract-badge.contract-expat { background: #fdf0e1; color: #7a3f0d; border: 1px solid #f0d09a; }
+  .contract-badge.contract-expat::before { background: #BA7517; }
+  .contract-detail { font-weight: 400; opacity: 0.85; margin-left: 4px; }
+  .cover .subtitle { margin: 0; font-size: 14px; color: #666; }
+  .cover-flag { width: 120px; height: 80px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; }
+  .cover-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .meta-bar { max-width: 1100px; margin: 16px auto 0; display: grid; grid-template-columns: repeat(6, 1fr); border: 1px solid #e5e5e5; border-radius: 4px; overflow: hidden; }
+  .meta-bar > div { padding: 10px 14px; border-right: 1px solid #e5e5e5; }
+  .meta-bar > div:last-child { border-right: none; }
+  .meta-bar .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .meta-bar .value { font-size: 13px; font-weight: 500; margin-top: 2px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 32px; }
+  section { background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; padding: 28px 32px; margin-bottom: 24px; }
+  section h2 { margin: 0 0 18px; font-size: 22px; font-weight: 600; padding-bottom: 12px; border-bottom: 2px solid #1a1a1a; display: flex; align-items: center; gap: 14px; }
+  section h2 .num { background: #1a1a1a; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600; }
+  section h3 { margin: 22px 0 12px; font-size: 16px; font-weight: 600; }
+  section p, section li { font-size: 14px; }
+  .source { font-size: 11.5px; color: #888; font-style: italic; margin: -8px 0 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 8px 0 16px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #ececec; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.4px; color: #555; }
+  tr:last-child td { border-bottom: none; }
+  ul, ol { padding-left: 22px; margin: 8px 0 16px; }
+  li { margin: 4px 0; }
+  .alert { background: #fffbe8; border: 1px solid #e8d680; border-radius: 8px; padding: 14px 18px; margin: 14px 0; }
+  .alert strong { display: block; font-size: 12.5px; color: #7a5a0d; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .alert ul { margin: 6px 0; }
+  .alert.danger { background: #fdecec; border-color: #e8b1ad; }
+  .alert.danger strong { color: #791f1f; }
+  .obligations-preamble { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 24px 28px; margin: 24px auto 0; max-width: 1100px; }
+  .obligations-header { margin-bottom: 18px; }
+  .obligations-badge { display: inline-block; background: #BA7517; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 8px; }
+  .obligations-header h2 { margin: 0 0 6px; font-size: 20px; font-weight: 600; }
+  .obligations-header p { margin: 0; font-size: 13.5px; color: #666; }
+  .obligations-timeline { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; position: relative; }
+  .obligations-timeline::before { content: ''; position: absolute; top: 32px; left: 16%; right: 16%; height: 2px; background: #e0e0e0; z-index: 0; }
+  .obl-phase { background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px; position: relative; z-index: 1; }
+  .obl-phase.before { border-top: 3px solid #5d8a3a; }
+  .obl-phase.during { border-top: 3px solid #185fa5; }
+  .obl-phase.after { border-top: 3px solid #BA7517; }
+  .obl-step { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #1a1a1a; color: #fff; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .obl-phase h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; }
+  .obl-when { font-size: 11px; color: #888; margin-bottom: 8px; display: block; }
+  .obl-phase ul { padding-left: 18px; margin: 0; font-size: 12.5px; }
+  .obl-phase li { margin: 4px 0; }
+  .obl-phase li.priority { font-weight: 600; color: #791f1f; }
+  .section-link { color: #185fa5; text-decoration: none; font-weight: 600; margin-left: 4px; font-size: 11px; }
+  .section-link:hover { text-decoration: underline; }
+  .toc { background: #f7f7f5; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px 22px; margin-bottom: 24px; }
+  .toc-title { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 8px; }
+  .toc ol { columns: 2; column-gap: 32px; padding-left: 22px; margin: 0; font-size: 13.5px; }
+  .toc a { color: #1a1a1a; text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .return-section { background: #fdf6ee; border-color: #f0d09a; }
+  .critical-badge { display: inline-block; background: #BA7517; color: #fff; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 8px; }
+  .step-list { padding-left: 0; list-style: none; counter-reset: stepcount; }
+  .step-list > li { counter-increment: stepcount; position: relative; padding: 10px 14px 10px 50px; margin: 6px 0; background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 13.5px; }
+  .step-list > li::before { content: counter(stepcount); position: absolute; left: 12px; top: 10px; width: 26px; height: 26px; background: #1a1a1a; color: #fff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+  .step-list > li p { margin: 4px 0 0; font-size: 13px; color: #555; }
+  .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; font-size: 13.5px; margin: 12px 0; }
+  .checklist label { display: flex; align-items: flex-start; gap: 8px; padding: 5px 8px; border-radius: 4px; cursor: pointer; }
+  .checklist label:hover { background: #f7f7f5; }
+  .checklist input[type="checkbox"] { margin-top: 4px; }
+  .footer-cta { background: #1a1a1a; color: #fff; padding: 24px 32px; border-radius: 8px; text-align: center; margin: 32px 0; }
+  .footer-cta h3 { margin: 0 0 8px; font-size: 18px; font-weight: 600; }
+  .footer-cta a { color: #fff; }
+  footer { text-align: center; padding: 24px 32px; color: #888; font-size: 12px; }
+  .pdf-footnote { display: none; }
+  .float-return { position: fixed; bottom: 24px; right: 24px; background: #BA7517; color: #fff; padding: 12px 20px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 13.5px; box-shadow: 0 6px 20px rgba(186,117,23,0.4); display: inline-flex; align-items: center; gap: 10px; z-index: 100; }
+  .float-return:hover { background: #9a5f12; }
+  .deadline-card { background: #fdecec; border: 1px solid #e8b1ad; border-radius: 8px; padding: 16px 20px; margin: 16px 0; display: flex; gap: 20px; align-items: center; }
+  .deadline-number { background: #a32d2d; color: #fff; padding: 10px 16px; border-radius: 6px; font-weight: 700; font-size: 22px; text-align: center; min-width: 70px; }
+  .deadline-number small { display: block; font-size: 9px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; opacity: 0.7; }
+  .deadline-text { font-size: 13px; line-height: 1.5; }
+  .deadline-text strong { display: block; font-size: 13.5px; margin-bottom: 4px; }
+  .visa-callout { background: linear-gradient(135deg, #fff4e6 0%, #ffe5c2 100%); border: 2px solid #BA7517; border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+  .visa-callout h3 { margin: 0 0 10px; font-size: 17px; color: #7a3f0d; }
+  .visa-callout table { background: #fff; }
+  @media (max-width: 720px) { .meta-bar, .obligations-timeline, .checklist, .cover-grid { grid-template-columns: 1fr; } .toc ol { columns: 1; } .obligations-timeline::before { display: none; } }
+  @media print { .topbar, .float-return, .btn-pdf { display: none !important; } body { background: #fff; } main, header.cover { padding: 16px 24px !important; } section { page-break-inside: avoid; } .pdf-footnote { display: block !important; text-align: center; font-size: 10px; color: #666; margin: 8px 0 16px; padding: 8px; border: 1px dashed #ccc; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><a href="../index.html">← Retour à la carte des destinations</a></span>
+  <button class="btn-pdf" onclick="window.print()">Imprimer / Sauvegarder en PDF</button>
+</div>
+
+<header class="cover">
+  <div class="cover-grid">
+    <div>
+      <div class="breadcrumb"><a href="../index.html">Conseils aux voyageurs</a> › <span>États-Unis</span></div>
+      <h1>États-Unis d'Amérique</h1>
+      <p class="subtitle">United States of America — Livret de mission. Guide pratique pour les collaborateurs en déplacement professionnel aux États-Unis.</p>
+      <span class="contract-badge contract-expat">Expatriation hors UE<span class="contract-detail">· Contrat expatrié · CFE · AXA Complémentaire &amp; Prévoyance via OWELLO · Europ Assistance · Visa B1 affaires</span></span>
+    </div>
+    <div class="cover-flag">
+      <img src="https://flagcdn.com/w320/us.png" alt="Drapeau États-Unis">
+    </div>
+  </div>
+  <div class="meta-bar">
+    <div><div class="label">Capitale</div><div class="value">Washington D.C.</div></div>
+    <div><div class="label">Fuseau horaire</div><div class="value">UTC-5 à UTC-10 (6 zones)</div></div>
+    <div><div class="label">Langue officielle</div><div class="value">Anglais (de facto)</div></div>
+    <div><div class="label">Monnaie</div><div class="value">Dollar US (USD)</div></div>
+    <div><div class="label">Code ISO</div><div class="value">USA</div></div>
+    <div><div class="label">Créée le</div><div class="value">13 mai 2026</div></div>
+  </div>
+
+  <p class="pdf-footnote">Document figé extrait du site dynamique le <span id="print-date"></span> — La version en ligne peut avoir évolué depuis.</p>
+
+  <div class="obligations-preamble">
+    <div class="obligations-header">
+      <span class="obligations-badge">À respecter absolument</span>
+      <h2>Vos obligations pour cette mission aux États-Unis</h2>
+      <p>Mission aux États-Unis : statut d'<strong>expatrié hors UE</strong> avec affiliation à la CFE, AXA Complémentaire &amp; Prévoyance via OWELLO, et Europ Assistance pour toute l'assistance et le rapatriement. <strong>Visa B1 affaires obligatoire pour les missions techniques</strong> (ESTA insuffisant pour certaines activités professionnelles — voir section logistique).</p>
+    </div>
+    <div class="obligations-timeline">
+
+      <div class="obl-phase before"><span class="obl-step">1</span>
+        <h3>Avant le départ</h3>
+        <span class="obl-when">Au moins 4 à 6 semaines avant</span>
+        <ul>
+          <li class="priority"><strong>Visa B1 (ou ESTA selon mission)</strong> validé <a class="section-link" href="#s4">▸</a></li>
+          <li>Passeport valide au moins <strong>6 mois</strong> après retour <a class="section-link" href="#s4">▸</a></li>
+          <li>Inscription <strong>Ariane</strong> France Diplomatie <a class="section-link" href="#s5">▸</a></li>
+          <li>Vaccins routine à jour (DTP, MMR, hépatites) <a class="section-link" href="#s2">▸</a></li>
+          <li><strong>Carte d'assuré CFE + carte AXA OWELLO</strong> dans portefeuille <a class="section-link" href="#s2">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase during"><span class="obl-step">2</span>
+        <h3>Pendant la mission</h3>
+        <span class="obl-when">Tout au long du séjour</span>
+        <ul>
+          <li>Passeport sur soi en permanence (contrôles ICE possibles) <a class="section-link" href="#s4">▸</a></li>
+          <li><strong>NE JAMAIS se faire hospitaliser sans appeler Europ Assistance d'abord</strong> — coûts énormes <a class="section-link" href="#s2">▸</a></li>
+          <li>EPI obligatoires sur chantier (normes OSHA strictes) <a class="section-link" href="#s1">▸</a></li>
+          <li>Respect strict du code de la route (limitations basses, tolérance zéro alcool) <a class="section-link" href="#s1">▸</a></li>
+          <li><strong>Chargé d'affaires ou référent GAT</strong> prévenu en priorité dès qu'une urgence est sous contrôle (Direction GAT en escalation) <a class="section-link" href="#s5">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase after"><span class="obl-step">3</span>
+        <h3>Au retour en France</h3>
+        <span class="obl-when">Délais à respecter impérativement</span>
+        <ul>
+          <li class="priority"><strong>Réinscription CPAM + carte Vitale sous 8 jours</strong> <a class="section-link" href="#cpam">▸</a></li>
+          <li><strong>Portabilité mutuelle</strong> via OWELLO (si ARE France Travail) <a class="section-link" href="#owello">▸</a></li>
+          <li>Pendant 3 mois : feuille de soins CERFA sur espace CFE <a class="section-link" href="#cfe">▸</a></li>
+          <li>Restitution équipements sous <strong>5 jours ouvrés</strong> <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Remplir le retour d'expérience sous <strong>5 jours</strong> <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Notes de frais sous <strong>30 jours</strong> <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Déclaration fiscale revenus étrangers <a class="section-link" href="#recap-demarches">▸</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <ol>
+      <li><a href="#s1">Risques pays &amp; sécurité</a></li>
+      <li><a href="#s2">Santé &amp; coûts médicaux</a></li>
+      <li><a href="#s3">Pratiques culturelles &amp; business</a></li>
+      <li><a href="#s4">Logistique pratique &amp; visa B1</a></li>
+      <li><a href="#s5">Contacts d'urgence</a></li>
+      <li><a href="#s6">Fin de mission &amp; retour en France</a></li>
+    </ol>
+  </div>
+
+  <!-- ====== SECTION 1 — RISQUES PAYS & SÉCURITÉ ====== -->
+  <section id="s1">
+    <h2><span class="num">1.</span>Risques pays &amp; sécurité</h2>
+    <p class="source">Sources : France Diplomatie (MEAE) — Conseils aux voyageurs États-Unis, US Department of State, OSHA, FBI Crime Data — à jour mai 2026.</p>
+
+    <p>Les États-Unis sont classés en <strong>vigilance normale</strong> par France Diplomatie pour la majorité du territoire, avec quelques zones urbaines à éviter (centre-ville Detroit, Oakland, Memphis selon quartiers). Les risques principaux sont liés à la criminalité urbaine localisée, aux armes à feu en circulation, et aux phénomènes naturels selon les régions.</p>
+
+    <h3>Criminalité urbaine</h3>
+    <p>Le niveau de criminalité varie <strong>énormément d'un quartier à l'autre</strong>, parfois dans la même ville. Renseignez-vous toujours sur le quartier de votre hébergement et de votre lieu de mission avant le départ. Quelques principes :</p>
+    <ul>
+      <li>Évitez de marcher seul la nuit dans les centres-villes ou quartiers déserts (downtown LA, South Side Chicago, Baltimore, parts of NYC outside Manhattan).</li>
+      <li>Privilégiez Uber/Lyft plutôt que la marche dans les zones inconnues.</li>
+      <li>Ne laissez aucun objet visible dans un véhicule en stationnement (smash-and-grab fréquent).</li>
+      <li>En cas d'agression, <strong>ne résistez jamais</strong> — donnez ce qui est demandé. Les armes sont en circulation libre.</li>
+    </ul>
+
+    <h3>Armes à feu — règle absolue</h3>
+    <div class="alert danger">
+      <strong>Ne touchez jamais à une arme, même à titre récréatif</strong>
+      <ul>
+        <li>Les armes circulent légalement dans la plupart des États (port ouvert ou caché selon les lois locales).</li>
+        <li>Une dispute banale peut dégénérer : <strong>désengagez-vous immédiatement</strong>, ne provoquez jamais.</li>
+        <li>Si la police vous interpelle : gardez les mains visibles, mouvements lents, n'attrapez RIEN dans la voiture ou les poches sans annoncer.</li>
+        <li>Tirs en lieu public (« active shooter ») : <strong>RUN, HIDE, FIGHT</strong> — fuyez, sinon cachez-vous, en dernier recours combattez.</li>
+      </ul>
+    </div>
+
+    <h3>Sécurité chantier (normes OSHA)</h3>
+    <p>Les normes <strong>OSHA</strong> (Occupational Safety and Health Administration) sont strictes et appliquées rigoureusement sur les sites. Pénalités lourdes en cas de non-respect — pour vous et pour le donneur d'ordre.</p>
+    <ul>
+      <li>EPI obligatoires sur tout chantier : casque, lunettes, chaussures S3, gilet haute visibilité, gants adaptés.</li>
+      <li>Plans de prévention (Safety Data Sheets) à lire avant intervention.</li>
+      <li>Travaux en hauteur : harnais antichute obligatoire au-delà de 6 ft (~1,80 m) — règle OSHA 1926.501.</li>
+      <li>Tolérance zéro alcool / stupéfiants sur site.</li>
+    </ul>
+
+    <h3>Risques naturels selon région et saison</h3>
+    <table>
+      <thead><tr><th>Risque</th><th>Période</th><th>Régions</th><th>Précaution</th></tr></thead>
+      <tbody>
+        <tr><td>Ouragans (hurricanes)</td><td>Juin – novembre</td><td>Floride, Louisiane, Texas, côte Atlantique Sud-Est</td><td>Suivre NOAA et autorités locales, évacuation si ordonnée</td></tr>
+        <tr><td>Tornades</td><td>Avril – juin</td><td>Tornado Alley (Texas, Oklahoma, Kansas, Nebraska, Iowa)</td><td>Abri souterrain en cas d'alerte, application FEMA</td></tr>
+        <tr><td>Séismes</td><td>Toute l'année</td><td>Californie, Pacific Northwest, Alaska</td><td>Connaître la procédure « Drop, Cover, Hold On »</td></tr>
+        <tr><td>Feux de forêt (wildfires)</td><td>Été – automne</td><td>Californie, Oregon, Washington, Colorado, Arizona</td><td>Surveiller indice qualité air (AQI), application Watch Duty</td></tr>
+        <tr><td>Blizzards / froid extrême</td><td>Décembre – mars</td><td>Midwest, Northeast, Alaska, Rocheuses</td><td>Vêtements adaptés, kit véhicule d'urgence</td></tr>
+        <tr><td>Inondations soudaines (flash floods)</td><td>Printemps – été</td><td>Sud-Ouest désertique, Texas, Vallée du Mississippi</td><td>Ne jamais traverser une zone inondée en voiture</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Conduite</h3>
+    <ul>
+      <li>Conduite à droite. Permis français valide jusqu'à 1 an dans la plupart des États ; <strong>permis international recommandé</strong>.</li>
+      <li>Limitations basses : 65–75 mph (105–120 km/h) sur autoroutes, 25–35 mph (40–55 km/h) en zones urbaines, 15 mph (25 km/h) écoles.</li>
+      <li><strong>Tolérance zéro alcool</strong> dans plusieurs États ; limite légale 0,08 g/L mais contrôles aléatoires fréquents.</li>
+      <li>Tournés à droite au feu rouge autorisés sauf indication contraire (« No turn on red »).</li>
+      <li>Ne pas dépasser un school bus à l'arrêt avec feux clignotants (interdit dans tous les États).</li>
+    </ul>
+  </section>
+
+  <!-- ====== SECTION 2 — SANTÉ ====== -->
+  <section id="s2">
+    <h2><span class="num">2.</span>Santé &amp; coûts médicaux</h2>
+    <p class="source">Sources : CDC (Centers for Disease Control), Institut Pasteur, Ameli.fr, France Diplomatie — à jour mai 2026.</p>
+
+    <div class="alert danger">
+      <strong>⚠ Coûts médicaux exorbitants aux États-Unis</strong>
+      <p>Une visite aux urgences (ER) peut coûter <strong>$1 500 à $10 000+</strong>. Une nuit d'hospitalisation : $5 000 à $30 000. Une intervention chirurgicale : jusqu'à $200 000. <strong>NE JAMAIS se faire hospitaliser sans avoir d'abord activé Europ Assistance</strong> — c'est ce qui déclenche la prise en charge directe et évite l'avance de sommes potentiellement ruineuses.</p>
+    </div>
+
+    <h3>Avant le départ</h3>
+    <p>Aucun vaccin spécifique n'est exigé pour entrer aux États-Unis (sauf retour depuis pays à risque fièvre jaune). Vérifiez que vos vaccinations routine sont à jour auprès d'un centre de vaccinations internationales (CVI) ou de votre médecin traitant :</p>
+    <ul>
+      <li><strong>DTP</strong> (Diphtérie-Tétanos-Poliomyélite) : rappel à jour</li>
+      <li><strong>ROR</strong> (Rougeole-Oreillons-Rubéole) : 2 doses pour les adultes nés après 1980</li>
+      <li><strong>Hépatite A et B</strong> : recommandées</li>
+      <li><strong>COVID-19</strong> : rappel récent recommandé</li>
+      <li><strong>Grippe saisonnière</strong> (octobre-mars) : fortement recommandée</li>
+    </ul>
+
+    <h3>Procédure médicale aux USA</h3>
+    <ol class="step-list">
+      <li><strong>Pour un problème léger (consultation simple, médicament).</strong><p>Pharmacie (CVS, Walgreens, Rite Aid) pour soins de base. Walk-in clinics (MinuteClinic, Urgent Care) pour consultations rapides $100-200. Conserver factures pour remboursement CFE/AXA au retour.</p></li>
+      <li><strong>Pour une urgence sérieuse (douleur thoracique, accident, fièvre élevée).</strong><p>1. Appelez le <strong>911</strong> pour secours immédiats. 2. AVANT toute hospitalisation prolongée ou intervention, faites appeler <strong>Europ Assistance (+33 1 41 85 85 85)</strong> par un proche ou un collègue.</p></li>
+      <li><strong>Pour un accident du travail sur site.</strong><p>1. Premiers secours immédiats. 2. Notification au superviseur OSHA + chargé d'affaires GAT. 3. Déclaration AT à la RH GAT sous 24 h.</p></li>
+    </ol>
+
+    <h3>Couverture santé pendant la mission</h3>
+    <table>
+      <thead><tr><th>Organisme</th><th>Rôle</th><th>Contact</th></tr></thead>
+      <tbody>
+        <tr><td><strong>CFE</strong> (Caisse des Français de l'Étranger)</td><td>Sécurité sociale internationale — vous y êtes affilié pendant l'expatriation</td><td><a href="https://www.cfe.fr">cfe.fr</a></td></tr>
+        <tr><td><strong>AXA Complémentaire &amp; Prévoyance</strong> via OWELLO</td><td>Mutuelle santé d'entreprise + prévoyance (décès, invalidité)</td><td><a href="https://login.owello-insurance.com/login">login.owello-insurance.com</a></td></tr>
+        <tr><td><strong>Europ Assistance</strong></td><td>Assistance médicale, voyage &amp; rapatriement — 24h/24</td><td>+33 1 41 85 85 85</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Maladies endémiques selon région</h3>
+    <ul>
+      <li><strong>Maladie de Lyme</strong> (Nord-Est, Midwest) : risque tiques en été dans zones boisées. Manches longues, répulsif DEET, inspection.</li>
+      <li><strong>Virus du Nil occidental</strong> : moustiques en été dans la majorité des États. Répulsif efficace.</li>
+      <li><strong>Hantavirus</strong> : Sud-Ouest désertique, contact avec rongeurs. Précautions en zones rurales isolées.</li>
+      <li><strong>Rage</strong> : faune sauvage (renards, ratons laveurs, chauves-souris) — ne pas toucher.</li>
+    </ul>
+  </section>
+
+  <!-- ====== SECTION 3 — PRATIQUES CULTURELLES ====== -->
+  <section id="s3">
+    <h2><span class="num">3.</span>Pratiques culturelles &amp; business</h2>
+    <p class="source">Sources : Cultural Atlas, Business etiquette US sources, expérience GAT retour mission — à jour mai 2026.</p>
+
+    <h3>Communication professionnelle</h3>
+    <ul>
+      <li><strong>Direct mais courtois</strong> : les Américains valorisent la clarté et la concision. Allez droit au but, mais avec un sourire et un échange de small talk d'ouverture (météo, sport, voyage).</li>
+      <li><strong>Optimisme et positivité</strong> : présentez les problèmes avec des solutions. Le « can-do attitude » est culturellement attendu.</li>
+      <li><strong>Réseautage</strong> : LinkedIn omniprésent, échanges de cartes professionnelles encore courants.</li>
+      <li><strong>Ponctualité stricte</strong> : arriver 5 à 10 minutes en avance pour une réunion. Tout retard doit être anticipé par message.</li>
+    </ul>
+
+    <h3>Pourboires (tipping)</h3>
+    <div class="alert">
+      <strong>Le pourboire n'est pas optionnel</strong>
+      <ul>
+        <li><strong>Restaurants</strong> : 15-20 % du total (avant taxe). 25 % pour service exceptionnel ou groupe.</li>
+        <li><strong>Bars</strong> : $1-2 par boisson, ou 15-20 % de l'addition.</li>
+        <li><strong>Taxi / Uber</strong> : 15-20 %.</li>
+        <li><strong>Hôtel</strong> : $1-2 par bagage pour le porteur, $3-5 par nuit pour la femme de chambre.</li>
+        <li><strong>Coiffeur, massage, spa</strong> : 15-20 %.</li>
+        <li>Les serveurs sont payés en grande partie via les pourboires (salaire minimum tipped employees très bas) — un service sans pourboire est ressenti comme insultant.</li>
+      </ul>
+    </div>
+
+    <h3>Sujets à éviter et culture d'entreprise</h3>
+    <ul>
+      <li>Politique (sujet polarisé), religion, salaire, race, immigration → évitez en contexte professionnel à moins d'être engagé clairement par l'interlocuteur.</li>
+      <li>Distance physique : poignée de main ferme, pas d'embrassades sauf relation établie. Bulle d'1 mètre respectée.</li>
+      <li>Vie privée vs. vie professionnelle : séparation forte, ne posez pas de questions personnelles dans les premiers échanges.</li>
+      <li>Humour : self-deprecating, pas trop sarcastique (le sarcasme peut être mal interprété).</li>
+      <li><strong>Sexual harassment</strong> : les règles sont très strictes (compliments physiques, blagues douteuses, contacts non sollicités). Tolérance zéro en entreprise.</li>
+    </ul>
+
+    <h3>Repas et invitations</h3>
+    <ul>
+      <li>Petit-déjeuner business courant (« breakfast meeting »).</li>
+      <li>Déjeuner d'affaires plus court qu'en France (1 h max). Pas d'alcool généralement.</li>
+      <li>Dîner d'affaires moins fréquent ; quand invité, comptez tôt (18 h - 20 h).</li>
+      <li>Alcool peu présent en réunion — bière ou vin acceptés mais modérés.</li>
+      <li>Au restaurant : commande individuelle, addition généralement « splitable » entre convives.</li>
+    </ul>
+  </section>
+
+  <!-- ====== SECTION 4 — LOGISTIQUE & VISA ====== -->
+  <section id="s4">
+    <h2><span class="num">4.</span>Logistique pratique &amp; visa B1</h2>
+    <p class="source">Sources : US Embassy France, USCIS, CBP — à jour mai 2026.</p>
+
+    <div class="visa-callout">
+      <h3>🛂 Visa B1 affaires — point central</h3>
+      <p style="margin:0 0 12px;">Le visa B1 (Business Visitor) est <strong>obligatoire pour les missions techniques de longue durée ou complexes</strong>. L'ESTA (Visa Waiver Program) suffit pour des visites courtes mais pas pour toute activité professionnelle.</p>
+
+      <table>
+        <thead><tr><th>Cas d'usage</th><th>Document requis</th><th>Durée max</th></tr></thead>
+        <tbody>
+          <tr><td>Réunion client / conférence / négociation</td><td>ESTA suffisant</td><td>≤ 90 jours</td></tr>
+          <tr><td>Formation reçue (pas dispensée)</td><td>ESTA suffisant</td><td>≤ 90 jours</td></tr>
+          <tr><td>Mission technique courte (installation, audit)</td><td><strong>B1 recommandé</strong></td><td>Jusqu'à 6 mois</td></tr>
+          <tr><td>Mission technique longue (chantier, supervision)</td><td><strong>B1 obligatoire</strong></td><td>Jusqu'à 6 mois renouvelable</td></tr>
+          <tr><td>Activité rémunérée par entité US</td><td>Visa de travail (H, L, O) — pas B1 ni ESTA</td><td>Variable</td></tr>
+          <tr><td>Multiples allers-retours fréquents</td><td><strong>B1 fortement conseillé</strong> — CBP suspicieux des ESTA répétés</td><td>Validité du visa</td></tr>
+        </tbody>
+      </table>
+
+      <p style="margin:12px 0 0; font-size:13px;"><strong>Procédure B1</strong> : remplir formulaire DS-160 en ligne, prendre rendez-vous au consulat US (Paris ou Marseille), entretien sur place avec passeport et lettre d'invitation/mission. Délai : <strong>3 à 6 semaines</strong>. Coût : ~$185. Validité : jusqu'à 10 ans (multi-entrées).</p>
+    </div>
+
+    <h3>Documents et formalités d'entrée</h3>
+    <ul>
+      <li><strong>Passeport</strong> valide au moins 6 mois après la date de retour prévue.</li>
+      <li><strong>ESTA</strong> ou <strong>visa B1</strong> (selon mission) approuvé avant départ.</li>
+      <li>Lettre de mission GAT en anglais (utile à la douane CBP).</li>
+      <li>Réservation d'hôtel + billet retour imprimés (la douane peut demander).</li>
+      <li><strong>Pas de document fiscal US à remplir</strong> pour les missions B1/ESTA classiques (pas de revenus US).</li>
+    </ul>
+
+    <h3>Argent et paiements</h3>
+    <ul>
+      <li>Monnaie : <strong>Dollar US (USD, $)</strong>. Cours indicatif : 1 EUR ≈ 1,05-1,15 USD selon période.</li>
+      <li>Cartes bancaires acceptées partout (Visa, Mastercard, Amex). Vérifiez les frais hors zone euro avec votre banque.</li>
+      <li>Espèces utiles pour pourboires et certains taxis hors apps. Distributeurs ATM disponibles partout.</li>
+      <li>Apple Pay / Google Pay très répandus.</li>
+      <li>Notez : les prix affichés en magasin/restaurant sont <strong>HORS TAXES</strong>. La taxe locale (sales tax, 0-10 % selon État) s'ajoute en caisse.</li>
+    </ul>
+
+    <h3>Transports</h3>
+    <table>
+      <thead><tr><th>Mode</th><th>Usage</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Vol intérieur (Delta, United, American, Southwest)</td><td>Distances longues</td><td>Réservation 3-6 semaines avant pour tarifs raisonnables</td></tr>
+        <tr><td>Location de voiture (Hertz, Avis, Enterprise)</td><td>Mission régionale</td><td>Permis français OK 1 an, international recommandé. Assurance complète conseillée.</td></tr>
+        <tr><td>Uber / Lyft</td><td>Ville</td><td>Très répandu, applis fonctionnent partout</td></tr>
+        <tr><td>Train (Amtrak)</td><td>Corridor Boston-NYC-Washington uniquement (NEC)</td><td>Ailleurs train peu pratique, vol préféré</td></tr>
+        <tr><td>Métro / bus urbain</td><td>Grandes villes (NYC, DC, Boston, Chicago, SF)</td><td>NYC subway 24/24, autres villes horaires limités</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Communications</h3>
+    <ul>
+      <li>Réseau mobile : couverture excellente en zones urbaines, variable en zones rurales (deserts, montagnes).</li>
+      <li>Roaming international avec votre forfait français : <strong>vérifiez les frais avant départ</strong> (souvent élevés).</li>
+      <li>Alternative : carte SIM locale prepaid (T-Mobile, AT&amp;T) — magasin direct, $30-50 pour 1 mois illimité.</li>
+      <li>Wi-Fi gratuit dans la plupart des hôtels, cafés, aéroports.</li>
+    </ul>
+
+    <h3>Électricité</h3>
+    <p>Prises type A et B (broches plates). Tension <strong>110V / 60 Hz</strong> (vs 230V/50Hz en France). Adaptateur indispensable, et vérifier que vos appareils sont bi-tension (100-240V indiqué sur l'étiquette) — sinon transformateur nécessaire.</p>
+  </section>
+
+  <!-- ====== SECTION 5 — CONTACTS D'URGENCE ====== -->
+  <section id="s5">
+    <h2><span class="num">5.</span>Contacts d'urgence &amp; procédures</h2>
+
+    <div class="alert danger">
+      <strong>En cas d'urgence immédiate</strong>
+      <ul>
+        <li>Mettez-vous en sécurité AVANT tout appel.</li>
+        <li>Appelez le <strong>911</strong> (urgences USA — police, pompiers, ambulance).</li>
+        <li>Pour hospitalisation : faire appeler <strong>Europ Assistance</strong> AVANT toute admission longue.</li>
+        <li>Prévenez votre <strong>chargé d'affaires ou référent GAT en priorité</strong> dès que la situation est sous contrôle ; Direction GAT en escalation si chargé d'affaires non joignable.</li>
+      </ul>
+    </div>
+
+    <h3>Numéros d'urgence USA</h3>
+    <table>
+      <thead><tr><th>Service</th><th>Numéro</th><th>Disponibilité</th></tr></thead>
+      <tbody>
+        <tr><td><strong>911</strong> — Urgences générales (police, pompiers, ambulance)</td><td>911</td><td>24h/24</td></tr>
+        <tr><td>Poison Control</td><td>1-800-222-1222</td><td>24h/24</td></tr>
+        <tr><td>National Suicide Prevention Lifeline</td><td>988</td><td>24h/24</td></tr>
+        <tr><td>FBI (terrorisme, kidnapping)</td><td>1-800-225-5324</td><td>24h/24</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Santé prévoyance — assistance &amp; assurance</h3>
+    <p style="font-size:13.5px; margin-bottom:14px;">En tant qu'expatrié hors UE, votre couverture santé repose sur trois piliers : la <strong>CFE</strong> (sécurité sociale internationale), la <strong>complémentaire santé &amp; prévoyance AXA</strong> souscrite via la plateforme OWELLO, et <strong>Europ Assistance</strong> pour toute assistance médicale, voyage ou rapatriement. L'annuaire complet est maintenu à jour en temps réel par la Direction sur SharePoint.</p>
+
+    <div style="background:#f0f7fc; border:1px solid #c8dcec; border-left:4px solid #185fa5; border-radius:8px; padding:18px 22px; margin-bottom:16px;">
+      <div style="display:flex; flex-wrap:wrap; gap:18px;">
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Assistance, voyage &amp; rapatriement</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">Europ Assistance</div>
+          <a href="tel:+33141858585" style="display:inline-block; background:#1a1a1a; color:#fff; padding:7px 14px; border-radius:5px; text-decoration:none; font-size:14px; font-weight:600;">+33 1 41 85 85 85</a>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;"><strong>À appeler AVANT toute hospitalisation coûteuse aux USA</strong> — coûts médicaux peuvent être ruineux sans prise en charge directe.</div>
+        </div>
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Sécu internationale + mutuelle</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">CFE + AXA Complémentaire &amp; Prévoyance</div>
+          <div style="font-size:12.5px; color:#1a1a1a; margin-bottom:4px;">Gestion via la plateforme <a href="https://login.owello-insurance.com/login" target="_blank">OWELLO</a></div>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">CFE pour la sécu, AXA pour la complémentaire santé et la prévoyance. Carte d'assuré à présenter aux praticiens ou transmettre à Europ Assistance.</div>
+        </div>
+      </div>
+      <div style="margin-top:16px; padding-top:14px; border-top:1px solid #c8dcec;">
+        <a href="https://gerib69.sharepoint.com/sites/GATNET/Lists/Assistance%20et%20assurance/AllItems.aspx" target="_top" style="display:inline-block; background:#185fa5; color:#fff; padding:9px 18px; border-radius:6px; text-decoration:none; font-size:13.5px; font-weight:600;">
+          Voir l'annuaire complet santé prévoyance sur SharePoint →
+        </a>
+        <div style="font-size:11.5px; color:#666; margin-top:8px; font-style:italic;">
+          Authentification SharePoint requise. Source : Liste « Assistance et assurance » maintenue par la Direction.
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:12px; color:#7a3f0d; background:#fdf6ee; border:1px solid #f0d09a; border-left:3px solid #BA7517; border-radius:6px; padding:10px 14px; margin:0 0 16px;"><strong>Indépendants / freelance :</strong> les couvertures ci-dessus sont propres aux salariés sous contrat GAT. Si vous intervenez en tant qu'indépendant, <strong>contactez votre chargé d'affaires ou référent GAT avant tout départ</strong> pour valider ensemble votre situation (assurance santé, assistance, rapatriement, responsabilité civile professionnelle) et les règles de sécurité applicables à la mission.</p>
+
+    <div class="alert">
+      <strong>En cas de rapatriement — conditions de prise en charge par Europ Assistance</strong>
+      <p>Pour que le rapatriement soit pris en charge et que vos frais soient intégralement remboursés, trois étapes sont essentielles. L'assureur conditionne sa prise en charge à leur respect — c'est la seule raison pour laquelle nous insistons sur ces points.</p>
+      <p>Le collaborateur, ou à défaut son chargé d'affaires, doit impérativement :</p>
+      <ul>
+        <li><strong>Obtenir l'accord préalable d'Europ Assistance</strong> avant de prendre toute initiative ou d'engager toute dépense (transport, hospitalisation, hôtel). Un simple appel suffit à activer le dossier — c'est ce qui déclenche la prise en charge directe et évite d'avancer les frais.</li>
+        <li><strong>Se conformer aux solutions préconisées par Europ Assistance</strong> (choix de l'établissement, mode de transport, calendrier). Europ Assistance négocie et prépaye directement auprès des prestataires : c'est ainsi que les sommes — parfois très importantes — sont prises en charge sans avance de votre part.</li>
+        <li><strong>Conserver et transmettre dès que possible tous les justificatifs originaux</strong> des dépenses engagées pour le compte d'Europ Assistance (factures, ordonnances, billets, plaintes de police le cas échéant). Sans ces originaux, le remboursement ne peut pas être instruit.</li>
+      </ul>
+      <p>À noter : si GAT a dû assurer à ses frais un voyage retour qui aurait pu être organisé via les titres de transport déjà détenus par le collaborateur, l'entreprise pourra utiliser ou demander le remboursement de ces titres. Cette disposition évite simplement une double facturation pour un même trajet.</p>
+    </div>
+
+    <h3>Ambassade &amp; consulats de France aux États-Unis</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Ambassade (Washington D.C.)</th><td>+1 202 944 6000</td></tr>
+        <tr><th>Adresse</th><td>4101 Reservoir Rd NW, Washington, D.C. 20007</td></tr>
+        <tr><th>Urgence consulaire 24h/24</th><td>+1 202 944 6000 (touche 1)</td></tr>
+        <tr><th>Consulat New York</th><td>+1 212 606 3600</td></tr>
+        <tr><th>Consulat Los Angeles</th><td>+1 310 235 3200</td></tr>
+        <tr><th>Consulat San Francisco</th><td>+1 415 397 4330</td></tr>
+        <tr><th>Consulat Chicago</th><td>+1 312 327 5200</td></tr>
+        <tr><th>Consulat Houston</th><td>+1 713 572 2799</td></tr>
+        <tr><th>Consulat Miami</th><td>+1 305 403 4150</td></tr>
+        <tr><th>Site Ariane</th><td><a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a></td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Inscription Ariane — fortement recommandée</strong>
+      <ul>
+        <li>Inscrivez-vous sur le portail Ariane avant tout départ (<a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a>).</li>
+        <li>Permet à l'ambassade de vous localiser et de vous contacter en cas de crise (ouragan, attentat, etc.).</li>
+        <li>Mentionnez vos dates de séjour et coordonnées locales.</li>
+      </ul>
+    </div>
+
+    <h3>Procédure en cas d'incident</h3>
+    <ol class="step-list">
+      <li><strong>Agression / vol.</strong><p>1. <strong>Ne résistez pas</strong> — armes en circulation. 2. Mettez-vous en sécurité. 3. Appelez le 911. 4. Référent GAT. 5. Plainte au commissariat (« police report »). 6. Conserver le numéro de plainte pour assurance.</p></li>
+      <li><strong>Accident de chantier.</strong><p>1. Premiers secours. 2. 911 si blessé. 3. Notification OSHA + référent GAT immédiatement. 4. NE PAS déplacer un blessé grave sans secours qualifiés. 5. Déclaration AT à la RH GAT sous 24 h.</p></li>
+      <li><strong>Hospitalisation.</strong><p>Faire appeler <strong>Europ Assistance</strong> avant toute admission longue. Présenter carte CFE + AXA. Conserver TOUS les documents médicaux et factures (originaux indispensables).</p></li>
+      <li><strong>Perte / vol de passeport.</strong><p>1. Plainte police (police report). 2. Contactez consulat France le plus proche. 3. Demandez laissez-passer consulaire. 4. Informez GAT RH.</p></li>
+      <li><strong>Tir en lieu public (active shooter).</strong><p><strong>RUN</strong> (fuir si possible). <strong>HIDE</strong> (se cacher, verrouiller, éteindre lumières). <strong>FIGHT</strong> (en dernier recours, combat collectif). Appel 911 dès en sécurité.</p></li>
+    </ol>
+  </section>
+
+  <!-- ====== SECTION 6 — RETOUR EN FRANCE (TEMPLATE EXPAT) ====== -->
+  <section id="s6" class="return-section">
+    <span class="critical-badge">Étape critique · Expatriation hors UE</span>
+    <h2><span class="num">6.</span>Fin de mission &amp; retour en France</h2>
+    <p class="source">Sources : Ameli.fr, CFE, OWELLO, URSSAF, impots.gouv.fr — section commune aux fiches expatriation hors UE.</p>
+
+    <p>Le retour en France marque la fin de votre statut de travailleur expatrié. Plusieurs démarches administratives sont obligatoires dès votre retour pour préserver vos droits sociaux.</p>
+
+    <div class="deadline-card">
+      <div class="deadline-number">8<small>jours</small></div>
+      <div class="deadline-text"><strong>Délai maximal pour vous réinscrire à la CPAM</strong>Au-delà de 8 jours, vos soins médicaux ne sont plus remboursés et la régularisation devient longue.</div>
+    </div>
+
+    <h3 id="cpam">Couverture maladie — réinscription à la CPAM et carte Vitale</h3>
+    <div class="alert danger">
+      <strong>Démarche prioritaire à votre retour</strong>
+      <ul>
+        <li>Vous perdez votre couverture maladie internationale CFE dès la fin de mission.</li>
+        <li>Réinscrivez-vous à la CPAM dans les 8 jours suivant votre retour en France.</li>
+        <li><strong>Mettez à jour votre carte Vitale</strong> en borne pharmacie ou CPAM.</li>
+        <li>Sans réinscription, vos soins médicaux ne seront pas remboursés.</li>
+        <li>Cette démarche est individuelle — GAT ne peut pas la faire à votre place.</li>
+      </ul>
+    </div>
+
+    <h3>Comment se réinscrire à la CPAM</h3>
+    <ol class="step-list">
+      <li><strong>Préparez vos documents.</strong><p>Pièce d'identité, justificatif de domicile, RIB, certificat de fin d'expatriation GAT.</p></li>
+      <li><strong>Rendez-vous sur Ameli.fr.</strong><p>Rubrique « Ma situation » › « Je reprends une activité en France ». Ou 36 46.</p></li>
+      <li><strong>Demande d'affiliation.</strong><p>GAT signale la fin d'expatriation à l'URSSAF. CPAM prend le relai sous 8 à 15 jours.</p></li>
+      <li><strong>Attestation de droits + mise à jour carte Vitale.</strong><p>Téléchargez l'attestation sur Ameli.fr. Mettez à jour la carte Vitale en borne pharmacie.</p></li>
+    </ol>
+
+    <h3 id="cfe">Couverture par la CFE pendant la transition (3 mois)</h3>
+    <div class="alert">
+      <strong>Maintien des droits par la Caisse des Français de l'Étranger</strong>
+      <ul>
+        <li>Pendant les <strong>3 premiers mois après votre retour</strong>, la CFE maintient vos droits.</li>
+        <li>Pour chaque consultation : feuille de soins CERFA déposée sur <strong>espace CFE en ligne</strong>.</li>
+        <li>Une fois la Sécu ouverte : utilisez votre carte Vitale normalement.</li>
+      </ul>
+    </div>
+
+    <h3 id="owello">Portabilité de la complémentaire santé (mutuelle AXA via OWELLO)</h3>
+    <div class="alert">
+      <strong>Maintien de votre mutuelle après la fin du contrat de travail</strong>
+      <ul>
+        <li>Portabilité de la mutuelle d'entreprise après la fin du contrat GAT.</li>
+        <li><strong>Condition</strong> : France Travail doit vous verser l'allocation ARE.</li>
+        <li>Chaque mois, transmettre à OWELLO l'attestation France Travail.</li>
+        <li>Espace : <a href="https://login.owello-insurance.com/login">login.owello-insurance.com/login</a></li>
+      </ul>
+    </div>
+
+    <h3>Fiscalité — revenus étrangers</h3>
+    <div class="alert">
+      <strong>Déclaration fiscale au retour</strong>
+      <ul>
+        <li>Les revenus perçus pendant l'expatriation doivent être déclarés selon la convention fiscale France-USA.</li>
+        <li>Si vous étiez résident fiscal français : déclaration normale + crédits d'impôt pour impôts US payés.</li>
+        <li>Si vous étiez résident fiscal US : déclaration distincte selon période.</li>
+        <li>Consultez impots.gouv.fr ou un expert-comptable pour les cas complexes.</li>
+      </ul>
+    </div>
+
+    <h3 id="recap-demarches">Récapitulatif des démarches administratives au retour</h3>
+    <table>
+      <thead><tr><th>Démarche</th><th>Délai</th><th>Où ?</th></tr></thead>
+      <tbody>
+        <tr><td>Réinscription CPAM</td><td>Sous 8 jours</td><td>ameli.fr / CPAM locale</td></tr>
+        <tr><td>Mise à jour carte Vitale</td><td>Dès droits ouverts</td><td>Borne pharmacie / CPAM</td></tr>
+        <tr><td>Inscription France Travail (si chômage)</td><td>Sous 12 mois</td><td>francetravail.fr</td></tr>
+        <tr><td>Portabilité mutuelle AXA via OWELLO</td><td>Dès fin de contrat</td><td>login.owello-insurance.com</td></tr>
+        <tr><td>Feuille de soins CERFA → CFE</td><td>Pendant 3 mois après retour</td><td>Espace CFE en ligne</td></tr>
+        <tr><td>Déclaration fiscale (revenus étrangers)</td><td>Calendrier fiscal</td><td>impots.gouv.fr</td></tr>
+        <tr><td>Restitution équipements (ordinateur et outillage)</td><td>Sous 5 jours ouvrés</td><td>Référent GAT</td></tr>
+        <tr><td>Remplir le retour d'expérience</td><td>Sous 5 jours</td><td>Chargée QSE GAT</td></tr>
+        <tr><td>Notes de frais en attente</td><td>Sous 30 jours</td><td>Comptabilité GAT</td></tr>
+        <tr><td>Résiliation carte SIM locale / abonnements</td><td>Avant / dès retour</td><td>Opérateur US</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====== CHECKLIST ====== -->
+  <section id="checklist">
+    <h2>Checklist avant départ États-Unis</h2>
+    <h3>Documents</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Passeport valide 6 mois après retour</label>
+      <label><input type="checkbox"> Visa B1 OU ESTA approuvé</label>
+      <label><input type="checkbox"> Lettre de mission GAT en anglais</label>
+      <label><input type="checkbox"> Carte CFE + carte AXA Complémentaire (OWELLO)</label>
+      <label><input type="checkbox"> Permis de conduire international (si véhicule)</label>
+      <label><input type="checkbox"> Inscription Ariane effectuée</label>
+    </div>
+    <h3>Santé</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Vaccins routine à jour (DTP, ROR, hépatites)</label>
+      <label><input type="checkbox"> Médicaments personnels avec ordonnance traduite</label>
+      <label><input type="checkbox"> Trousse de premiers secours</label>
+      <label><input type="checkbox"> Coordonnées Europ Assistance + AXA dans téléphone</label>
+    </div>
+    <h3>Logistique &amp; sécurité</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Adaptateur prise type A/B + appareils bi-tension</label>
+      <label><input type="checkbox"> Forfait téléphone international vérifié</label>
+      <label><input type="checkbox"> Carte bancaire avec frais hors zone euro acceptables</label>
+      <label><input type="checkbox"> $200-300 en espèces pour les premiers jours</label>
+      <label><input type="checkbox"> Application Uber/Lyft installée</label>
+      <label><input type="checkbox"> Quartier hôtel vérifié (sécurité)</label>
+    </div>
+  </section>
+
+  <div class="footer-cta"><h3>Bon voyage et bonne mission.</h3>L'équipe GAT International est disponible à tout moment.<br><a href="https://www.gat.fr">www.gat.fr</a></div>
+</main>
+
+<footer>
+  GAT International — Livret de mission États-Unis · Créée le 13 mai 2026 · Document interne confidentiel.<br>
+  Sources : France Diplomatie (MEAE), CDC, OSHA, US Embassy France, Europ Assistance, Ameli.fr, CFE, OWELLO.
+</footer>
+
+<a href="#s6" class="float-return" title="Voir les démarches CPAM et retour France">
+  Démarches retour France <span>→</span>
+</a>
+
+<script>
+  window.addEventListener('beforeprint', function() {
+    var d = new Date();
+    var dateStr = d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' });
+    var el = document.getElementById('print-date');
+    if (el) el.textContent = dateStr;
+  });
+</script>
+
+</body>
+</html>
