@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corée du Sud — Livret de Mission GAT International</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #1a1a1a; background: #ffffff; line-height: 1.55; }
+  .topbar { background: #1a1a1a; color: #fff; padding: 10px 32px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: #fff; text-decoration: none; opacity: 0.85; }
+  .topbar a:hover { opacity: 1; }
+  header.cover { background: #ffffff; padding: 32px 32px 24px; border-bottom: 1px solid #e5e5e5; }
+  .cover-grid { display: grid; grid-template-columns: 1fr auto; gap: 32px; max-width: 1100px; margin: 0 auto; align-items: end; }
+  .breadcrumb { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #1a1a1a; }
+  .cover h1 { margin: 0 0 6px; font-size: 32px; font-weight: 600; letter-spacing: -0.5px; }
+  .contract-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 7px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; }
+  .contract-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; }
+  .contract-badge.contract-france { background: #e9f4e2; color: #2f5f12; border: 1px solid #c5e0b1; }
+  .contract-badge.contract-france::before { background: #5d8a3a; }
+  .contract-badge.contract-detachement { background: #e6f1fb; color: #0c447c; border: 1px solid #b3d0e9; }
+  .contract-badge.contract-detachement::before { background: #185fa5; }
+  .contract-badge.contract-expat { background: #fdf0e1; color: #7a3f0d; border: 1px solid #f0d09a; }
+  .contract-badge.contract-expat::before { background: #BA7517; }
+  .contract-detail { font-weight: 400; opacity: 0.85; margin-left: 4px; }
+  .cover .subtitle { margin: 0; font-size: 14px; color: #666; }
+  .cover-flag { width: 120px; height: 80px; background: #f0f0f0; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; }
+  .cover-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .meta-bar { max-width: 1100px; margin: 16px auto 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; border: 1px solid #e5e5e5; border-radius: 4px; overflow: hidden; }
+  .meta-bar > div { padding: 10px 14px; border-right: 1px solid #e5e5e5; }
+  .meta-bar > div:last-child { border-right: none; }
+  .meta-bar .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .meta-bar .value { font-size: 13px; color: #1a1a1a; font-weight: 500; margin-top: 2px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 28px 32px 60px; }
+  .toc { background: #f7f7f5; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px 24px; margin-bottom: 32px; }
+  .toc-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 8px; }
+  .toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; font-size: 14px; }
+  .toc li { padding: 4px 0; break-inside: avoid; }
+  .toc a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; }
+  .toc a:hover { border-bottom-color: #1a1a1a; }
+  section { margin: 0 0 44px; scroll-margin-top: 20px; }
+  section h2 { font-size: 22px; font-weight: 600; margin: 0 0 6px; padding: 0 0 6px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-right: 40px; }
+  section h2 .num { color: #999; margin-right: 12px; font-weight: 400; }
+  section h3 { font-size: 16px; font-weight: 600; margin: 22px 0 10px; }
+  section p { margin: 8px 0; font-size: 14px; }
+  .vigilance-banner { padding: 14px 18px; border-radius: 6px; border-left: 4px solid; margin: 14px 0 22px; font-size: 14px; }
+  .vigilance-Normale { background: #e9f4e2; border-color: #5d8a3a; color: #2f5f12; }
+  .vigilance-banner strong { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+  .alert { padding: 14px 18px; border-radius: 6px; background: #fff8e6; border: 1px solid #f0d680; margin: 14px 0; font-size: 13.5px; }
+  .alert.danger { background: #fdecec; border-color: #e8b1ad; }
+  .alert strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; color: #1a1a1a; }
+  .alert ul { margin: 0; padding-left: 18px; }
+  .alert li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #ececec; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: #555; border-bottom: 1px solid #d5d5d5; }
+  tr:last-child td { border-bottom: none; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+  .col-card { background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px; padding: 14px 18px; }
+  .col-card.do { border-left: 3px solid #5d8a3a; }
+  .col-card.dont { border-left: 3px solid #a83232; }
+  .col-card h4 { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; }
+  .col-card ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .col-card li { margin: 4px 0; }
+  .risk-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 14px 0; }
+  .risk-row { display: grid; grid-template-columns: 240px 1fr 60px; gap: 14px; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+  .risk-bar { height: 6px; background: #ececec; border-radius: 3px; overflow: hidden; position: relative; }
+  .risk-fill { height: 100%; background: linear-gradient(90deg, #5d8a3a 0%, #d4a23a 50%, #a83232 100%); border-radius: 3px; }
+  .risk-score { font-size: 13px; color: #555; text-align: right; }
+  .step-list { counter-reset: step; padding: 0; list-style: none; margin: 14px 0; }
+  .step-list li { counter-increment: step; padding: 12px 14px 12px 50px; position: relative; border-left: 2px solid #e0e0e0; margin-left: 14px; }
+  .step-list li::before { content: counter(step); position: absolute; left: -16px; top: 12px; width: 30px; height: 30px; background: #1a1a1a; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+  .step-list li strong { display: block; font-size: 14px; margin-bottom: 4px; }
+  .step-list li p { margin: 0; font-size: 13px; color: #555; }
+  .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; margin: 14px 0; font-size: 13.5px; }
+  .checklist label { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; cursor: pointer; }
+  .checklist input { margin-top: 3px; }
+  .source { font-size: 11px; color: #888; font-style: italic; margin-top: -4px; margin-bottom: 16px; }
+  .footer-cta { background: #1a1a1a; color: #fff; padding: 22px 28px; border-radius: 6px; margin-top: 32px; font-size: 13px; }
+  .footer-cta h3 { margin: 0 0 6px; font-size: 16px; color: #fff; }
+  .footer-cta a { color: #fff; border-bottom: 1px solid rgba(255,255,255,0.4); text-decoration: none; }
+
+  /* Préambule des obligations en haut de page */
+  .obligations-preamble { max-width: 1100px; margin: 22px auto 0; background: #fffaf5; border: 2px solid #f0d9c5; border-radius: 10px; padding: 24px 28px; }
+  .obligations-header { margin-bottom: 22px; }
+  .obligations-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 10px; }
+  .obligations-header h2 { margin: 0 0 6px; font-size: 22px; font-weight: 600; color: #1a1a1a; border: none; }
+  .obligations-header p { margin: 0; font-size: 13.5px; color: #555; max-width: 800px; line-height: 1.55; }
+  .obligations-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; position: relative; }
+  .obligations-timeline::before { content: ""; position: absolute; top: 24px; left: 14%; right: 14%; height: 2px; background: linear-gradient(90deg, #185FA5 0%, #BA7517 50%, #993C1D 100%); z-index: 0; }
+  .obl-phase { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 18px 20px; position: relative; z-index: 1; }
+  .obl-phase.before { border-top: 3px solid #185FA5; }
+  .obl-phase.during { border-top: 3px solid #BA7517; }
+  .obl-phase.after { border-top: 3px solid #993C1D; }
+  .obl-step { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .obl-phase.before .obl-step { background: #185FA5; }
+  .obl-phase.during .obl-step { background: #BA7517; }
+  .obl-phase.after .obl-step { background: #993C1D; }
+  .obl-phase h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; color: #1a1a1a; }
+  .obl-phase .obl-when { display: block; font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+  .obl-phase ul { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; }
+  .obl-phase ul li { margin: 5px 0; }
+  .obl-phase ul li strong { color: #993C1D; }
+  .obl-phase ul li.priority { background: #fff0eb; border-left: 3px solid #993C1D; padding: 4px 8px; list-style: none; margin-left: -22px; padding-left: 14px; border-radius: 0 4px 4px 0; }
+  .obl-phase ul li a.section-link { display: inline-block; margin-left: 6px; width: 18px; height: 18px; text-align: center; border-radius: 50%; background: #ececec; color: #555; text-decoration: none; font-size: 11px; line-height: 18px; transition: all 0.15s; font-weight: 600; vertical-align: middle; }
+  .obl-phase ul li a.section-link:hover { background: #993C1D; color: #fff; transform: translateX(2px); }
+  .obl-phase ul li.priority a.section-link { background: rgba(153,60,29,0.15); color: #993C1D; }
+  .obl-phase ul li.priority a.section-link:hover { background: #993C1D; color: #fff; }
+
+  /* Sources officielles — CTA France Diplomatie + Ariane */
+  .official-sources { margin: 18px 0 28px; }
+  .sources-title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; font-weight: 600; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5; }
+  .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cta-card { display: block; padding: 18px 22px; border-radius: 8px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; border: 1px solid; }
+  .cta-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .cta-card .cta-tag { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px; }
+  .cta-card .cta-title { display: block; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+  .cta-card p { margin: 0 0 12px; font-size: 13px; line-height: 1.5; }
+  .cta-card .cta-link { font-size: 13px; font-weight: 600; }
+  .cta-card.cta-diplomatie { background: #e6f1fb; border-color: #b5d4f4; color: #0c447c; }
+  .cta-card.cta-diplomatie .cta-tag { background: #185fa5; color: #fff; }
+  .cta-card.cta-diplomatie .cta-link { color: #185fa5; }
+  .cta-card.cta-diplomatie:hover { border-color: #378add; }
+  .cta-card.cta-ariane { background: #fdecec; border-color: #e8b1ad; color: #791f1f; }
+  .cta-card.cta-ariane .cta-tag.cta-tag-priority { background: #a32d2d; color: #fff; }
+  .cta-card.cta-ariane .cta-link { color: #a32d2d; }
+  .cta-card.cta-ariane:hover { border-color: #e24b4a; }
+
+  /* Pourquoi Ariane — bloc pédagogique */
+  .ariane-why { background: #fffaf5; border: 1px solid #f0d9c5; border-radius: 8px; padding: 20px 24px; margin-top: 16px; }
+  .ariane-why h4 { margin: 0 0 10px; font-size: 15px; font-weight: 600; color: #1a1a1a; }
+  .ariane-why > p { margin: 0 0 14px; font-size: 13.5px; line-height: 1.6; color: #444; }
+  .ariane-why > p strong { color: #993C1D; }
+  .ariane-scenarios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 16px; margin: 12px 0; }
+  .ariane-scenarios .scenario { padding: 10px 12px; background: #fff; border-radius: 4px; border-left: 3px solid #c47140; font-size: 12.5px; line-height: 1.5; color: #555; }
+  .ariane-scenarios .scenario .scenario-label { display: block; font-size: 11px; font-weight: 600; color: #993C1D; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
+  .ariane-stat { margin: 14px 0 0 !important; padding: 12px 16px; background: #fff8e6; border-left: 3px solid #BA7517; border-radius: 0 4px 4px 0; font-size: 13px; font-style: italic; color: #5a4307 !important; }
+
+  @media (max-width: 720px) { .cta-grid, .ariane-scenarios { grid-template-columns: 1fr; } }
+
+  /* Popups vaccinales au survol */
+  .vaccine-cell { position: relative; cursor: help; }
+  .info-marker { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: #888; color: #fff; font-size: 11px; font-weight: 600; font-style: normal; margin-left: 6px; vertical-align: middle; transition: background 0.15s; }
+  .vaccine-cell:hover .info-marker { background: #185FA5; }
+  .vaccine-popup { position: absolute; left: 0; top: calc(100% + 10px); background: #1a1a1a; color: #fff; padding: 16px 20px; border-radius: 8px; width: 380px; max-width: 92vw; font-size: 12.5px; line-height: 1.6; opacity: 0; pointer-events: none; transition: opacity 0.18s, transform 0.18s; transform: translateY(-4px); z-index: 200; box-shadow: 0 6px 24px rgba(0,0,0,0.25); text-transform: none; letter-spacing: 0; font-weight: 400; }
+  .vaccine-popup::before { content: ""; position: absolute; top: -7px; left: 24px; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid #1a1a1a; }
+  .vaccine-cell:hover .vaccine-popup { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .vaccine-popup .vp-title { display: block; font-size: 14px; font-weight: 600; color: #fff; margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.15); }
+  .vaccine-popup ul { margin: 0; padding: 0; list-style: none; }
+  .vaccine-popup li { padding: 4px 0; color: rgba(255,255,255,0.92); }
+  .vaccine-popup li strong { display: inline-block; min-width: 100px; color: #f0d99a; font-weight: 600; }
+  .vaccine-popup .vp-warn { display: block; margin-top: 10px; padding: 8px 10px; background: rgba(216, 90, 48, 0.18); border-left: 3px solid #D85A30; border-radius: 0 4px 4px 0; font-size: 12px; color: #ffd0bd; }
+  .vaccine-popup .vp-source { display: block; margin-top: 12px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 11px; color: rgba(255,255,255,0.55); font-style: italic; }
+
+  /* Bouton flottant fixe sur le côté droit */
+  .float-return { position: fixed; right: 22px; bottom: 24px; z-index: 100; background: #993C1D; color: #fff; padding: 12px 18px; border-radius: 999px; text-decoration: none; font-size: 13px; font-weight: 600; box-shadow: 0 4px 14px rgba(153, 60, 29, 0.35); display: flex; align-items: center; gap: 10px; transition: all 0.2s; }
+  .float-return:hover { background: #7a2e15; transform: translateY(-2px); box-shadow: 0 6px 18px rgba(153, 60, 29, 0.45); }
+  .float-return-arrow { font-size: 16px; line-height: 1; }
+
+  /* Section 6 — encadré renforcé */
+  section.return-section { background: linear-gradient(180deg, #fdf3ef 0%, #ffffff 200px); border: 1px solid #e8c5b3; border-radius: 10px; padding: 28px 32px; margin: 30px 0 44px; position: relative; }
+  section.return-section::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #993C1D, #C04A20, #D85A30); border-radius: 10px 10px 0 0; }
+  section.return-section h2 { color: #993C1D; border-bottom-color: #993C1D; }
+  section.return-section h2 .num { color: #c47140; }
+  .critical-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 12px; }
+  .deadline-card { background: #fff; border: 2px solid #993C1D; border-radius: 8px; padding: 18px 22px; margin: 18px 0; display: grid; grid-template-columns: 100px 1fr; gap: 22px; align-items: center; }
+  .deadline-number { font-size: 56px; font-weight: 700; color: #993C1D; line-height: 1; text-align: center; }
+  .deadline-number small { display: block; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; color: #993C1D; }
+  .deadline-text { font-size: 14px; color: #1a1a1a; }
+  .deadline-text strong { display: block; font-size: 15px; margin-bottom: 4px; color: #993C1D; }
+
+  footer { padding: 24px 32px; text-align: center; font-size: 11px; color: #888; border-top: 1px solid #e5e5e5; background: #fafafa; }
+
+  /* Bouton PDF dans la topbar */
+  .topbar-actions { display: flex; align-items: center; gap: 14px; }
+  .btn-pdf { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.35); padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 11.5px; font-family: inherit; transition: all 0.15s; }
+  .btn-pdf:hover { background: rgba(255,255,255,0.28); border-color: rgba(255,255,255,0.6); }
+
+  @media (max-width: 720px) { .meta-bar { grid-template-columns: 1fr 1fr; } .meta-bar > div { border-right: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; } .two-col, .checklist { grid-template-columns: 1fr; } .toc ol { columns: 1; } .cover-grid { grid-template-columns: 1fr; } .obligations-timeline { grid-template-columns: 1fr; } .obligations-timeline::before { display: none; } .deadline-card { grid-template-columns: 1fr; text-align: center; } }
+
+  @media print {
+    .topbar, .float-return, .btn-pdf, .footer-cta a { display: none !important; }
+    .vaccine-popup, .info-marker { display: none !important; }
+    body { background: #fff; }
+    main, header.cover { padding: 16px 24px !important; }
+    section { page-break-inside: avoid; }
+    .obligations-preamble { page-break-after: avoid; border-width: 1px; }
+    .obl-phase { break-inside: avoid; }
+    table { page-break-inside: avoid; font-size: 11px; }
+    .obligations-timeline::before { display: none; }
+    .footer-cta { background: #fff !important; color: #000 !important; border: 1px solid #999; }
+    .footer-cta h3 { color: #000 !important; }
+    .pdf-footnote { display: block !important; text-align: center; font-size: 10px; color: #666; margin: 8px 0 16px; padding: 8px; border: 1px dashed #ccc; }
+  }
+  .pdf-footnote { display: none; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><a href="../index.html">← Retour à la carte</a> · Conseils aux voyageurs · GAT International</span>
+  <span class="topbar-actions">
+    <button class="btn-pdf" onclick="window.print()" title="Imprimer ou enregistrer en PDF — choisir 'Enregistrer au format PDF' dans la fenêtre d'impression">Imprimer / PDF</button>
+    Document interne · Version 2026
+  </span>
+</div>
+
+<header class="cover">
+  <div class="cover-grid">
+    <div>
+      <div class="breadcrumb"><a href="../index.html">Conseils aux voyageurs</a> › <span>Corée du Sud</span></div>
+      <h1>Corée du Sud</h1>
+      <p class="subtitle">대한민국 (Daehan Minguk) — Livret de Mission. Guide pratique à l'attention des collaborateurs en déplacement professionnel en Corée du Sud.</p>
+      <span class="contract-badge contract-expat">Expatriation hors UE<span class="contract-detail">· Contrat expatrié · CFE · AXA Complémentaire &amp; Prévoyance via OWELLO · Europ Assistance · K-ETA + Visa Business</span></span>
+    </div>
+    <div class="cover-flag">
+      <img src="https://flagcdn.com/w320/kr.png" alt="Drapeau Corée du Sud" onerror="this.style.display='none';">
+    </div>
+  </div>
+  <div class="meta-bar">
+    <div><div class="label">Capitale</div><div class="value">Séoul (서울)</div></div>
+    <div><div class="label">Fuseau horaire</div><div class="value">UTC+9</div></div>
+    <div><div class="label">Langue officielle</div><div class="value">Coréen (한국어, hangeul)</div></div>
+    <div><div class="label">Monnaie</div><div class="value">Won sud-coréen (KRW, ₩)</div></div>
+    <div><div class="label">Code ISO</div><div class="value">KOR</div></div>
+    <div><div class="label">Créée le</div><div class="value">13 mai 2026</div></div>
+  </div>
+
+  <p class="pdf-footnote">Document figé extrait du site dynamique le <span id="print-date"></span> — La version en ligne peut avoir évolué depuis.</p>
+
+  <!-- Préambule des obligations -->
+  <div class="obligations-preamble">
+    <div class="obligations-header">
+      <span class="obligations-badge">À respecter absolument</span>
+      <h2>Vos obligations pour cette mission en Corée du Sud</h2>
+      <p>Synthèse des démarches incontournables avant, pendant et après la mission. Le non-respect peut compromettre votre couverture sociale, votre assurance, ou la régularité de votre séjour. Cliquez sur chaque ligne pour aller au détail.</p>
+    </div>
+    <div class="obligations-timeline">
+
+      <div class="obl-phase before">
+        <span class="obl-step">1</span>
+        <h3>Avant le départ</h3>
+        <span class="obl-when">Au moins 4 semaines avant · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li>Inscription <strong>Ariane</strong> (<a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a>) <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+          <li>Passeport valide <strong>6 mois minimum</strong> après date retour <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li><strong>K-ETA</strong> à vérifier (statut Français à confirmer sur k-eta.go.kr) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li><strong>Visa Business C-3-4</strong> ou <strong>D-7 / E-7</strong> si mission &gt; 90 jours ou activité technique <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Vaccin <strong>DTP</strong> à jour, <strong>Hépatite A et B</strong> recommandés <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Consultation Centre de Vaccinations Internationales (CVI) <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Masques N95 si voyage printemps (poussière jaune <em>hwangsa</em>) <a class="section-link" href="#s1" title="Voir section Risques">▸</a></li>
+          <li>Installer <strong>KakaoTalk</strong> avant le départ (communication standard) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Référent GAT informé des dates et coordonnées <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+          <li>Couverture CFE + complémentaire AXA OWELLO + Europ Assistance vérifiée <a class="section-link" href="#s5" title="Voir section Contacts &amp; assurance">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase during">
+        <span class="obl-step">2</span>
+        <h3>À l'arrivée et pendant la mission</h3>
+        <span class="obl-when">Tout au long du séjour · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li><strong>T-Money card</strong> à acheter dès l'arrivée (transport &amp; commerces) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>SIM locale ou pocket wifi (KT, SK Telecom, LG U+) — passeport requis <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Respect strict des <strong>codes hiérarchiques confucéens</strong> (âge, statut) <a class="section-link" href="#s3" title="Voir section Pratiques culturelles">▸</a></li>
+          <li>Cartes de visite échangées <strong>à deux mains</strong> <a class="section-link" href="#s3" title="Voir section Pratiques culturelles">▸</a></li>
+          <li><strong>EPI obligatoires</strong> sur chantier (normes KOSHA strictes) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Référent GAT informé du check-in / check-out hôtel <a class="section-link" href="#s5" title="Voir section Contacts">▸</a></li>
+          <li>Vigilance pollution PM2.5 / poussière jaune (mars-mai) <a class="section-link" href="#s1" title="Voir section Sécurité">▸</a></li>
+          <li>En cas d'incident : référent GAT prévenu dès que la situation est sous contrôle <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase after">
+        <span class="obl-step">3</span>
+        <h3>Au retour en France</h3>
+        <span class="obl-when">Délais à respecter impérativement · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li class="priority"><strong>Réinscription CPAM + mise à jour carte Vitale sous 8 jours</strong> <a class="section-link" href="#cpam" title="Voir section CPAM">▸</a></li>
+          <li><strong>Portabilité mutuelle</strong> via OWELLO (si ARE France Travail) <a class="section-link" href="#owello" title="Voir section Portabilité OWELLO">▸</a></li>
+          <li>Pendant 3 mois : feuille de soins CERFA sur espace CFE <a class="section-link" href="#cfe" title="Voir section CFE">▸</a></li>
+          <li>Restitution équipements sous <strong>5 jours ouvrés</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Remplir le retour d'expérience sous <strong>5 jours</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Notes de frais sous <strong>30 jours</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Déclaration fiscale revenus étrangers (convention France-Corée 1979) <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <ol>
+      <li><a href="#s1">Risques pays &amp; sécurité</a></li>
+      <li><a href="#s2">Santé &amp; recommandations sanitaires</a></li>
+      <li><a href="#s3">Pratiques culturelles &amp; comportement</a></li>
+      <li><a href="#s4">Logistique pratique &amp; visa</a></li>
+      <li><a href="#s5">Contacts d'urgence &amp; procédures</a></li>
+      <li><a href="#s6">Fin de mission &amp; retour en France</a></li>
+      <li><a href="#checklist">Checklist avant départ</a></li>
+    </ol>
+  </div>
+
+  <!-- ====== SECTION 1 — RISQUES PAYS & SÉCURITÉ ====== -->
+  <section id="s1">
+    <h2><span class="num">1.</span>Risques pays &amp; sécurité</h2>
+    <p class="source">Source : France Diplomatie (MEAE) — Conseils aux voyageurs · Mise à jour à vérifier régulièrement.</p>
+
+    <div class="vigilance-banner vigilance-Normale">
+      <strong>Niveau de vigilance général : Vigilance normale</strong>
+      La Corée du Sud fait l'objet d'une vigilance normale du MEAE (Quai d'Orsay). Le pays est considéré comme l'un des plus sûrs au monde — Séoul figure régulièrement dans le top mondial des métropoles sûres. La criminalité urbaine est très faible, y compris la nuit. Les principaux points de vigilance concernent les <strong>tensions inter-coréennes</strong> (à ne pas dramatiser), les <strong>risques naturels saisonniers</strong> (typhons, mousson) et la <strong>pollution atmosphérique de printemps</strong> (poussière jaune <em>hwangsa</em>).
+    </div>
+
+    <div class="official-sources">
+      <h3 class="sources-title">Sources officielles à consulter</h3>
+
+      <div class="cta-grid">
+        <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/coree-du-sud/" target="_blank" rel="noopener" class="cta-card cta-diplomatie">
+          <span class="cta-tag">Source officielle MEAE</span>
+          <span class="cta-title">France Diplomatie — Corée du Sud</span>
+          <p>Niveau de vigilance officiel à jour, contexte sécuritaire péninsulaire, recommandations en cours. Source unique de référence avant tout départ.</p>
+          <span class="cta-link">Consulter la fiche Corée du Sud →</span>
+        </a>
+
+        <a href="https://pastel.diplomatie.gouv.fr" target="_blank" rel="noopener" class="cta-card cta-ariane">
+          <span class="cta-tag cta-tag-priority">Recommandée avant départ</span>
+          <span class="cta-title">Ariane — Inscription des voyageurs</span>
+          <p>Gratuit, 5 minutes. Permet à l'ambassade de France à Séoul de vous localiser et de vous contacter immédiatement en cas de crise (tensions inter-coréennes, typhon, séisme, pandémie).</p>
+          <span class="cta-link">S'inscrire sur Ariane →</span>
+        </a>
+      </div>
+
+      <div class="ariane-why">
+        <h4>Pourquoi Ariane est essentiel — même dans un pays très sûr</h4>
+        <p>La Corée du Sud est extrêmement sûre au quotidien, mais elle se trouve géographiquement <strong>face à la Corée du Nord</strong> et reste exposée à des aléas naturels saisonniers. <strong>Sans inscription Ariane, l'ambassade de France à Séoul ignore votre présence</strong> — et ne peut donc pas vous prévenir ni organiser une mise à l'abri ou un rapatriement le cas échéant.</p>
+
+        <div class="ariane-scenarios">
+          <div class="scenario">
+            <span class="scenario-label">Tensions DPRK</span>
+            Tirs de missiles d'essai, exercices militaires conjoints, provocations frontalières. Aléas rares mais imprévisibles.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Typhons &amp; mousson</span>
+            Saison août-septembre côte sud et Jeju. Inondations mousson juillet-août. Vols intérieurs et KTX parfois suspendus.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Séismes</span>
+            Risque modéré mais réel (Pohang 2017, Gyeongju 2016). Pas de risque tsunami direct mais surveillance Japon.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Pollution &amp; santé</span>
+            Poussière jaune (<em>hwangsa</em>) mars-mai, pics PM2.5/PM10. Application AirVisual ou Naver indispensable.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Manifestations Séoul</span>
+            Politiques fréquentes (Gwanghwamun, Yeouido), généralement pacifiques. Éviter par principe.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Urgence individuelle</span>
+            Accident, maladie, perte de papiers — l'ambassade vous accompagne plus rapidement si elle sait que vous êtes là.
+          </div>
+        </div>
+
+        <p class="ariane-stat">En 2020, l'inscription Ariane a permis à la France d'organiser le plus grand rapatriement de citoyens depuis 1962 : plus de 350 000 personnes ramenées de 180 pays en quelques semaines. Sans inscription, la majorité n'aurait pas pu être contactée à temps.</p>
+      </div>
+    </div>
+
+    <h3>Niveaux de risque par catégorie</h3>
+    <div class="risk-grid">
+      <div class="risk-row"><span>Criminalité &amp; insécurité urbaine</span><div class="risk-bar"><div class="risk-fill" style="width:10%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Risque terroriste / attentats</span><div class="risk-bar"><div class="risk-fill" style="width:15%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Tensions inter-coréennes (DPRK)</span><div class="risk-bar"><div class="risk-fill" style="width:40%;"></div></div><span class="risk-score">2/5</span></div>
+      <div class="risk-row"><span>Risques naturels (typhons, séismes)</span><div class="risk-bar"><div class="risk-fill" style="width:50%;"></div></div><span class="risk-score">2,5/5</span></div>
+      <div class="risk-row"><span>Pollution air saisonnière (PM2.5, hwangsa)</span><div class="risk-bar"><div class="risk-fill" style="width:65%;"></div></div><span class="risk-score">3/5</span></div>
+      <div class="risk-row"><span>Cyber / scams numériques</span><div class="risk-bar"><div class="risk-fill" style="width:25%;"></div></div><span class="risk-score">1,5/5</span></div>
+    </div>
+
+    <h3>Tensions inter-coréennes — à comprendre sans dramatiser</h3>
+    <p>La Corée du Sud vit avec la proximité de la Corée du Nord (DPRK) comme une donnée structurelle depuis 1953. Les <strong>tirs d'essais de missiles balistiques DPRK sont fréquents</strong> (parfois plusieurs par mois) et largement couverts par les médias internationaux, mais <strong>n'affectent quasiment jamais la vie quotidienne</strong> à Séoul ou ailleurs au Sud. La DMZ (zone démilitarisée) est l'une des frontières les plus surveillées au monde et reste sécurisée.</p>
+    <p><strong>Provocations rares mais possibles</strong> : franchissements isolés, incidents en mer Jaune, exercices militaires de grande ampleur. Le système d'alerte civile sud-coréen est très efficace (sirènes publiques, alertes SMS gouvernementales en coréen et anglais). En cas d'alerte réelle, suivre les consignes locales et l'ambassade de France.</p>
+
+    <h3>Pollution atmosphérique — poussière jaune (hwangsa)</h3>
+    <div class="alert">
+      <strong>Pic saisonnier mars-mai</strong>
+      <ul>
+        <li>La <strong>poussière jaune (황사, hwangsa)</strong> provient des déserts de Mongolie et du nord de la Chine, transportée par les vents d'ouest au printemps.</li>
+        <li>Concentrations PM2.5 / PM10 souvent <strong>très élevées</strong> (parfois &gt; 150 µg/m³, soit 5-10× la norme OMS).</li>
+        <li>Symptômes : irritation des voies respiratoires, conjonctivite, toux, fatigue. Aggravation pour asthmatiques et personnes sensibles.</li>
+        <li><strong>Masques KF94 / N95 / FFP2</strong> indispensables les jours de pic — disponibles partout (pharmacies, supérettes CU/GS25, métros).</li>
+        <li>Applications utiles : <strong>AirVisual</strong>, <strong>Naver Weather</strong>, site officiel <em>airkorea.or.kr</em>.</li>
+        <li>Limiter les activités extérieures, fermer les fenêtres, ventiler avec purificateur d'air.</li>
+      </ul>
+    </div>
+
+    <h3>Risques naturels</h3>
+    <table>
+      <thead><tr><th>Aléa</th><th>Période</th><th>Recommandation</th></tr></thead>
+      <tbody>
+        <tr><td>Typhons</td><td>Août–septembre (parfois juillet)</td><td>Côte sud-ouest, île de Jeju particulièrement exposées. Vols intérieurs et KTX parfois interrompus. Suivre l'application <em>Safety Korea</em>.</td></tr>
+        <tr><td>Mousson (jangma)</td><td>Fin juin à mi-août</td><td>Pluies intenses, risques d'inondations urbaines (Séoul 2022, 2024). Éviter les sous-sols, garages enterrés, parkings en cas d'alerte.</td></tr>
+        <tr><td>Séismes</td><td>Toute l'année (faibles)</td><td>Magnitude faible à modérée (Pohang 2017 M5.4, Gyeongju 2016 M5.8). Bâtiments modernes parasismiques. Pas de risque tsunami direct.</td></tr>
+        <tr><td>Neige &amp; verglas</td><td>Décembre–février</td><td>Hiver très froid (-10 à -20°C). Tempêtes neigeuses possibles. Chaussures antidérapantes, vêtements techniques.</td></tr>
+        <tr><td>Chaleur &amp; humidité</td><td>Juillet–août</td><td>Canicules urbaines (jusqu'à 38°C, humidité 85%). Hydratation, climatisation, éviter activité au soleil 11h-15h.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Sécurité chantier &amp; normes KOSHA</h3>
+    <p>L'agence sud-coréenne <strong>KOSHA</strong> (Korea Occupational Safety and Health Agency) régule strictement la sécurité au travail. Les chantiers industriels sud-coréens sont généralement très bien encadrés : EPI obligatoires, briefings sécurité quotidiens, sanctions sévères en cas de manquement. Les missions techniques chez Samsung, LG, Hyundai, SK, POSCO impliquent souvent des règles internes très exigeantes (badges d'accès, NDA, formations sécurité pré-mission).</p>
+
+    <div class="alert">
+      <strong>Règles de comportement essentielles</strong>
+      <ul>
+        <li>Respecter scrupuleusement les briefings sécurité KOSHA et les règles internes du site client.</li>
+        <li>Port des EPI obligatoire — casque, chaussures, gilet haute visibilité, lunettes selon poste.</li>
+        <li>Ne jamais photographier un site industriel sans autorisation écrite (secret industriel — sanctions lourdes).</li>
+        <li>Pas de consommation d'alcool sur site, même hors-horaires si présent.</li>
+        <li>Respecter les consignes hiérarchiques sans contestation publique (voir section 3).</li>
+      </ul>
+    </div>
+
+    <h3>Déplacements en ville</h3>
+    <div class="two-col">
+      <div class="col-card do">
+        <h4>À faire</h4>
+        <ul>
+          <li>Utiliser le métro (très efficace, en anglais) et les bus.</li>
+          <li>Kakao Taxi ou Tada (équivalents Uber, en coréen et anglais).</li>
+          <li>T-Money card pour tout (métro, bus, taxis, certains commerces).</li>
+          <li>Marcher : Séoul est très piéton et sûre, même de nuit.</li>
+          <li>Suivre la signalétique romanisée (présente partout).</li>
+        </ul>
+      </div>
+      <div class="col-card dont">
+        <h4>À éviter</h4>
+        <ul>
+          <li>Hélé un taxi non officiel ou refusant le compteur.</li>
+          <li>Photographier sites militaires, ponts, infrastructures sensibles.</li>
+          <li>Mentionner publiquement les sujets politiques DPRK / Japon / Chine.</li>
+          <li>Tatouages visibles dans contexte business, sauna (jjimjilbang).</li>
+          <li>Conduire (permis international requis, conduite à droite mais codes locaux).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 2 — SANTÉ ====== -->
+  <section id="s2">
+    <h2><span class="num">2.</span>Santé &amp; recommandations sanitaires</h2>
+    <p class="source">Sources : Institut Pasteur, Centre de Vaccinations Internationales (CVI), Europ Assistance, CFE, ambassade de France à Séoul.</p>
+
+    <h3>Vaccinations recommandées</h3>
+    <p style="font-size:12px; color:#888; margin-bottom:8px;">Survolez un vaccin pour voir le détail des règles vaccinales (schéma, rappels, durée de protection).</p>
+    <table>
+      <thead><tr><th>Vaccin</th><th>Statut</th><th>Remarque</th></tr></thead>
+      <tbody>
+
+        <tr>
+          <td class="vaccine-cell">DTP (Diphtérie / Tétanos / Polio)<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">DTP — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Tous adultes, sans exception</li>
+                <li><strong>Rappels adulte</strong>25 ans, 45 ans, 65 ans</li>
+                <li><strong>Après 65 ans</strong>Tous les 10 ans (75, 85, 95)</li>
+                <li><strong>Protection</strong>Durable entre les rappels</li>
+                <li><strong>Combinaison</strong>DTP (Diphtérie + Tétanos + Polio)</li>
+              </ul>
+              <span class="vp-warn">Vérifier la date du dernier rappel avant tout départ — y compris pour un pays développé comme la Corée du Sud.</span>
+              <span class="vp-source">Source : Calendrier vaccinal 2024, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Obligatoire</td>
+          <td>Mise à jour systématique</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">ROR (Rougeole-Oreillons-Rubéole)<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">ROR — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Adultes nés après 1980 n'ayant pas reçu 2 doses</li>
+                <li><strong>Schéma</strong>2 doses espacées de 1 mois minimum</li>
+                <li><strong>Protection</strong>À vie après 2 doses documentées</li>
+                <li><strong>Délai action</strong>15 jours après la 2e dose</li>
+              </ul>
+              <span class="vp-warn">Épidémies de rougeole encore signalées en Asie. Vérifier le carnet de vaccination.</span>
+              <span class="vp-source">Source : HAS, Santé Publique France</span>
+            </div>
+          </td>
+          <td>À jour</td>
+          <td>Surtout &lt; 45 ans</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Hépatite A<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Hépatite A — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Voyageurs hors UE, contact alimentaire possible</li>
+                <li><strong>Schéma</strong>1 injection, rappel à 6-12 mois</li>
+                <li><strong>Protection</strong>À vie après le rappel</li>
+                <li><strong>Délai action</strong>15 jours après la 1ère injection</li>
+              </ul>
+              <span class="vp-warn">Vaccin combiné Twinrix possible (Hépatite A + B). À discuter avec le médecin.</span>
+              <span class="vp-source">Source : Institut Pasteur, Calendrier vaccinal 2024</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Hygiène globalement bonne mais prudence</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Hépatite B<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Hépatite B — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Missions &gt; 1 mois, contact possible avec sang/fluides, soins dentaires</li>
+                <li><strong>Schéma classique</strong>3 injections : M0, M1, M6</li>
+                <li><strong>Schéma rapide</strong>J0, J7, J21 + rappel à 12 mois</li>
+                <li><strong>Protection</strong>À vie après schéma complet</li>
+              </ul>
+              <span class="vp-warn">Vérifier carnet : souvent reçu pendant l'enfance (vaccin obligatoire en France depuis 2018).</span>
+              <span class="vp-source">Source : HAS &amp; Calendrier vaccinal 2024</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Missions longues</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Encéphalite japonaise<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Encéphalite japonaise — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Séjours ruraux en été, zones rizicoles, missions longues</li>
+                <li><strong>Schéma</strong>2 injections : J0, J28 (Ixiaro)</li>
+                <li><strong>Schéma rapide</strong>J0, J7 (adultes 18-65 ans)</li>
+                <li><strong>Protection</strong>1 an, rappel à 12-24 mois</li>
+                <li><strong>Délai action</strong>1 semaine après la 2e dose</li>
+              </ul>
+              <span class="vp-warn">Pas nécessaire pour une mission urbaine courte à Séoul / Busan. À évaluer pour chantier rural prolongé en été.</span>
+              <span class="vp-source">Source : Institut Pasteur, OMS</span>
+            </div>
+          </td>
+          <td>À évaluer</td>
+          <td>Rural / été uniquement</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Grippe saisonnière<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Grippe saisonnière — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Voyageurs en hiver, populations à risque</li>
+                <li><strong>Schéma</strong>1 injection annuelle (octobre-novembre idéalement)</li>
+                <li><strong>Protection</strong>1 saison (souches mises à jour chaque année)</li>
+                <li><strong>Délai action</strong>15 jours</li>
+              </ul>
+              <span class="vp-warn">Très recommandé pour missions hiver en Corée du Sud (épidémies fréquentes décembre-février).</span>
+              <span class="vp-source">Source : Santé Publique France, OMS</span>
+            </div>
+          </td>
+          <td>Recommandé hiver</td>
+          <td>Octobre à février</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Covid-19<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Covid-19 — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Selon protocole GAT et médecin du travail</li>
+                <li><strong>Schéma</strong>Variable selon âge, comorbidités, dernière dose</li>
+                <li><strong>Population à risque</strong>Rappel annuel recommandé (&gt; 65 ans, comorbidités)</li>
+              </ul>
+              <span class="vp-warn">À valider lors de la consultation pré-départ. La Corée du Sud ne demande plus de certificat depuis 2023.</span>
+              <span class="vp-source">Source : HAS, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Selon protocole GAT</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Avant le départ</strong>
+      <ul>
+        <li>Consultez le centre de vaccinations internationales (CVI) au moins 4 semaines avant le départ — surtout pour vérifier DTP et ROR.</li>
+        <li>Emportez votre carnet de vaccination international.</li>
+        <li>Vérifiez votre couverture santé internationale : CFE + AXA Complémentaire via OWELLO + Europ Assistance pour assistance/rapatriement.</li>
+      </ul>
+    </div>
+
+    <h3>Risques sanitaires sur place</h3>
+    <p><strong>Eau du robinet.</strong> Officiellement <strong>potable dans Séoul et les grandes villes</strong> (Busan, Daegu, Incheon, Daejeon) grâce à des installations modernes de filtration. La majorité des Sud-Coréens préfèrent néanmoins l'eau filtrée à domicile (purificateurs systématiques) ou l'eau en bouteille. Pour une mission courte : eau en bouteille recommandée (très accessible, peu chère).</p>
+    <p><strong>Alimentation.</strong> Hygiène alimentaire globalement excellente, y compris dans la street food (très contrôlée). Spécialités à connaître : kimchi (fermenté, piquant), banchan (petits plats partagés), samgyeopsal (porc grillé), bibimbap, soju (alcool fort). Précautions : crustacés crus (hoe), œufs crus, intestins grillés (gopchang) — à éviter si estomac sensible.</p>
+    <p><strong>Grippe hiver.</strong> Épidémies fréquentes décembre-février. Le port du masque chirurgical est culturellement normal en Corée — l'utiliser dans les transports bondés.</p>
+    <p><strong>Gastro-entérites estivales.</strong> Pic en été, surtout liées à la chaleur. Lavage des mains systématique.</p>
+    <p><strong>Pollution atmosphérique.</strong> Voir section 1 — pics PM2.5 et hwangsa mars-mai. Asthmatiques et personnes sensibles : redoubler de précaution.</p>
+
+    <h3>Système de santé sud-coréen</h3>
+    <div class="alert">
+      <strong>Hôpitaux de classe mondiale</strong>
+      <ul>
+        <li>Le système de santé sud-coréen est <strong>parmi les meilleurs au monde</strong> — tourisme médical actif (chirurgie esthétique, oncologie, cardio).</li>
+        <li>Hôpitaux universitaires de référence à Séoul :
+          <ul style="margin-top:4px;">
+            <li><strong>Severance Hospital</strong> (Yonsei University) — équipe internationale, anglais courant</li>
+            <li><strong>Asan Medical Center</strong> — l'un des plus grands d'Asie</li>
+            <li><strong>Samsung Medical Center</strong> — service international dédié</li>
+            <li><strong>Seoul National University Hospital (SNUH)</strong> — référence universitaire</li>
+          </ul>
+        </li>
+        <li>À Busan : <strong>Pusan National University Hospital</strong>, <strong>Inje University Haeundae Paik Hospital</strong>.</li>
+        <li><strong>Anglais</strong> : variable selon les médecins, courant dans les services internationaux d'Asan / Severance / SMC. Interprète possible sur demande.</li>
+        <li>En cas d'hospitalisation : <strong>appeler Europ Assistance AVANT</strong> pour activer la prise en charge directe (les frais peuvent être très élevés sans accord préalable).</li>
+      </ul>
+    </div>
+
+    <h3>Numéros médicaux clés</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Urgence médicale + pompiers</th><td><strong>119</strong> — 24h/24 (équivalent SAMU + pompiers, opérateurs anglophones disponibles)</td></tr>
+        <tr><th>Hotline touristes (interprétation 24h/24)</th><td><strong>1330</strong> — service KTO, anglais, japonais, chinois</td></tr>
+        <tr><th>Police</th><td><strong>112</strong> — 24h/24</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Pharmacie de voyage recommandée</h3>
+    <ul>
+      <li>Masques <strong>KF94 / N95 / FFP2</strong> (poussière jaune si voyage printemps) — aussi facilement disponibles sur place.</li>
+      <li>Antidiarrhéique (Imodium) + sels de réhydratation.</li>
+      <li>Antihistaminique (allergies pollens + hwangsa au printemps).</li>
+      <li>Désinfectant cutané + pansements stériles.</li>
+      <li>Thermomètre + anti-douleur / anti-fièvre.</li>
+      <li>Médicaments personnels en quantité suffisante + ordonnance (les pharmacies locales sont excellentes mais les noms commerciaux diffèrent).</li>
+      <li>Crème solaire SPF 50+ (été UV très élevé) + baume à lèvres hydratant (hiver très sec).</li>
+      <li>Pastilles pour la gorge (air sec en hiver, pollution).</li>
+    </ul>
+  </section>
+
+  <!-- ====== SECTION 3 — PRATIQUES CULTURELLES ====== -->
+  <section id="s3">
+    <h2><span class="num">3.</span>Pratiques culturelles &amp; comportement</h2>
+
+    <p>La Corée du Sud est une société profondément marquée par la <strong>tradition confucéenne</strong>, fusionnée avec une modernité technologique extrême. Comprendre les codes hiérarchiques et relationnels est <strong>indispensable</strong> pour réussir une mission professionnelle. La fierté nationale est forte — éviter à tout prix les comparaisons avec le Japon ou la Chine.</p>
+
+    <h3>Codes sociaux fondamentaux</h3>
+    <p><strong>La hiérarchie confucéenne.</strong> L'âge, le statut professionnel et la position dans l'organisation déterminent <em>tout</em> : ordre de parole, de service, d'action. Le senior parle, agit, mange et boit en premier. Cette hiérarchie est explicite — on demande très vite votre âge ou votre année de naissance pour situer la relation.</p>
+    <p><strong>La salutation (jeol / inclination).</strong> L'inclinaison du buste est le code par défaut. L'angle dépend du niveau de respect : 15° pour collègue ou client équivalent, 30° pour supérieur ou client important, 45° pour très haut dignitaire. La poignée de main est acceptée en business international, mais souvent accompagnée de la main gauche soutenant l'avant-bras droit en signe de respect. Le contact visuel doit rester discret.</p>
+    <p><strong>Les cartes de visite (myeongham).</strong> Échange rituel essentiel. <strong>À deux mains</strong>, en s'inclinant légèrement, face lisible pour le destinataire. À la réception : <strong>examiner attentivement</strong> la carte plusieurs secondes (titre, organisation), commenter brièvement, la poser visible sur la table devant soi durant la réunion. <strong>Ne jamais</strong> écrire dessus, la plier ou la ranger immédiatement en présence de la personne.</p>
+    <p><strong>Le concept de "kibun".</strong> 기분 = humeur, atmosphère, dignité du groupe. La culture coréenne <strong>évite l'affrontement direct</strong> et la perte de face. Une critique, un désaccord ou un refus se formulent indirectement (« c'est difficile », « nous allons réfléchir », silence prolongé). <strong>Faire perdre la face à un Coréen en public — surtout un senior — est extrêmement grave</strong>. Toute remarque négative doit être faite en privé, jamais devant l'équipe.</p>
+    <p><strong>L'honnêteté indirecte.</strong> Un « oui » peut signifier « j'ai entendu » plus que « je suis d'accord ». Reformuler les engagements, confirmer par écrit (KakaoTalk ou email), prévoir un délai de validation hiérarchique. La décision passe rarement par le seul interlocuteur direct : son supérieur tranchera.</p>
+    <p><strong>La vitesse "ppali ppali" (빨리 빨리).</strong> « Vite vite ! » — la Corée du Sud est l'une des sociétés les plus rapides au monde : livraisons à 30 minutes, réponses messagerie attendues immédiates, exécution des projets en sprint. Les attentes en termes de réactivité et de qualité sont très élevées. <strong>Ne pas répondre rapidement à un message professionnel coréen peut être interprété comme un manque d'intérêt.</strong></p>
+
+    <h3>Repas d'affaires et alcool</h3>
+    <p>Les repas d'affaires sont <strong>déterminants</strong> dans la construction de la relation. Le soju (alcool national, ~17%) circule abondamment. Quelques règles :</p>
+    <ul>
+      <li><strong>Verser pour l'aîné, jamais pour soi.</strong> On sert avec les deux mains (main droite tenant la bouteille, gauche soutenant l'avant-bras).</li>
+      <li><strong>Recevoir avec les deux mains.</strong> Si l'on est plus jeune, on <strong>tourne légèrement la tête</strong> en buvant pour ne pas faire face à l'aîné — c'est une marque de respect.</li>
+      <li><strong>Le toast « gunbae »</strong> (건배) initié par le senior. Ne pas vider son verre avant lui.</li>
+      <li><strong>Refus poli</strong> : possible mais à doser. Un refus systématique de boire peut être mal vu (« il ne veut pas créer la relation »). Mentionner une raison de santé ou un traitement médical est accepté.</li>
+      <li>Les repas en Corée se déroulent souvent en plusieurs lieux successifs (<em>cha</em>) : 1er <em>cha</em> restaurant, 2e <em>cha</em> bar, parfois 3e <em>cha</em> noraebang (karaoké). Décliner le 2e cha est possible mais doit rester poli.</li>
+      <li><strong>Pas de pourboire</strong> dans les restaurants — peut être interprété comme condescendant.</li>
+    </ul>
+
+    <div class="alert danger">
+      <strong>Comportements à proscrire absolument</strong>
+      <ul>
+        <li>Critiquer la Corée, la nourriture, la langue ou les institutions devant des Coréens.</li>
+        <li>Confondre la Corée avec le Japon ou la Chine — fierté nationale très forte, sensibilité historique (occupation japonaise 1910-1945).</li>
+        <li>Évoquer la Corée du Nord en termes politiques tranchés, ou plaisanter sur le sujet.</li>
+        <li>Faire perdre la face à un senior en public — critique, contradiction directe, ironie.</li>
+        <li>Refuser systématiquement les invitations à boire ou au karaoké (peut bloquer la relation).</li>
+        <li>Toucher la tête de quelqu'un, pointer du doigt, montrer la plante du pied.</li>
+        <li>Recevoir ou donner un objet d'une seule main à un senior.</li>
+        <li>Offrir un cadeau emballé en blanc ou par 4 (chiffre associé à la mort, comme en Chine et au Japon).</li>
+      </ul>
+    </div>
+
+    <h3>Cadeaux d'affaires</h3>
+    <p>Échange courant lors d'une première rencontre ou en fin de mission. Appréciés modérés (vin français, chocolat haut de gamme, produit régional emballé soigneusement). <strong>L'emballage compte autant que le contenu</strong> — privilégier un emballage rouge, doré ou rose, jamais blanc (deuil). Éviter les groupements par 4 (préférer 3, 5 ou 6 unités). Présenter et recevoir à deux mains.</p>
+
+    <h3>Tatouages, démonstrations d'affection</h3>
+    <p><strong>Tatouages.</strong> Encore <strong>mal vus en contexte business</strong>, et formellement <strong>interdits dans les bains publics (jjimjilbang)</strong>, certaines piscines, certains spas. Couvrir les tatouages avec un t-shirt ou des manches longues en environnement professionnel.</p>
+    <p><strong>Couples.</strong> Les démonstrations d'affection en public restent <strong>modérées</strong> (se tenir la main est OK, embrasser sur la bouche est rare dans la rue). Tenue vestimentaire adaptée au lieu (épaules couvertes dans les temples).</p>
+
+    <h3>Photos</h3>
+    <p>OK dans les espaces publics. <strong>Demander avant de photographier des personnes</strong>, surtout enfants ou personnes âgées. Interdit ou réglementé : sites militaires, ponts stratégiques, certains musées (à vérifier sur place). Photos de la DMZ : autorisées dans la plupart des zones touristiques organisées, mais suivre strictement les consignes du guide.</p>
+
+    <h3>Codes vestimentaires</h3>
+    <table>
+      <thead><tr><th>Contexte</th><th>Tenue recommandée</th></tr></thead>
+      <tbody>
+        <tr><td>Réunion client / bureau</td><td>Costume sombre, chemise blanche / bleu pâle, cravate (homme). Tailleur sombre, blouse (femme). Sobre et formel.</td></tr>
+        <tr><td>Chantier / industrie</td><td>EPI complets + vêtements de travail. Tatouages couverts.</td></tr>
+        <tr><td>Repas d'affaires (soir)</td><td>Tenue business maintenue. Éviter jean / sneakers.</td></tr>
+        <tr><td>Visite de temple / palais</td><td>Épaules couvertes, jambes couvertes au moins jusqu'aux genoux. Chaussures faciles à retirer.</td></tr>
+        <tr><td>Soirée informelle / KTV</td><td>Décontracté soigné. Tatouages visibles toujours problématiques.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Quelques mots utiles en coréen</h3>
+    <table>
+      <thead><tr><th>Français</th><th>Coréen (hangeul)</th><th>Romanisation / prononciation</th></tr></thead>
+      <tbody>
+        <tr><td>Bonjour (formel)</td><td>안녕하세요</td><td>Annyeong haseyo</td></tr>
+        <tr><td>Merci (formel)</td><td>감사합니다</td><td>Gamsa hamnida</td></tr>
+        <tr><td>S'il vous plaît</td><td>부탁합니다</td><td>Butak hamnida</td></tr>
+        <tr><td>Oui / Non</td><td>네 / 아니요</td><td>Ne / Aniyo</td></tr>
+        <tr><td>Désolé / Excusez-moi</td><td>죄송합니다 / 실례합니다</td><td>Joesong hamnida / Sillye hamnida</td></tr>
+        <tr><td>Où est… ?</td><td>… 어디예요?</td><td>… eodi yeyo ?</td></tr>
+        <tr><td>À l'aide ! / Urgence</td><td>도와주세요!</td><td>Dowa juseyo !</td></tr>
+        <tr><td>Appelez la police</td><td>경찰을 불러주세요</td><td>Gyeongchal-eul bulleo juseyo</td></tr>
+        <tr><td>Hôpital</td><td>병원</td><td>Byeong-won</td></tr>
+        <tr><td>Santé ! (toast)</td><td>건배 !</td><td>Gunbae !</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====== SECTION 4 — LOGISTIQUE ====== -->
+  <section id="s4">
+    <h2><span class="num">4.</span>Logistique pratique &amp; visa</h2>
+
+    <h3>Visa &amp; formalités d'entrée</h3>
+    <div class="alert danger">
+      <strong>K-ETA — Korean Electronic Travel Authorization</strong>
+      <ul>
+        <li>Depuis 2024, les ressortissants français sont <strong>temporairement exemptés de K-ETA</strong> jusqu'à fin 2025 pour les séjours touristiques / business courts (&lt; 90 jours).</li>
+        <li><strong>Le statut peut évoluer</strong> : la K-ETA peut redevenir obligatoire à tout moment. <strong>Vérifier impérativement le statut au moment de partir</strong> sur le site officiel <a href="https://www.k-eta.go.kr" target="_blank">k-eta.go.kr</a>.</li>
+        <li>Coût K-ETA si requise : ~10 000 KRW (≈ 7 €). Validité 3 ans, entrées multiples.</li>
+        <li>Procédure en ligne, 72 h avant départ minimum, photo numérique + scan passeport.</li>
+      </ul>
+    </div>
+
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Court séjour business (&lt; 90 jours)</th><td>Visa non requis pour Français (réunions, conférences, missions courtes). K-ETA à vérifier.</td></tr>
+        <tr><th>Visa Business C-3-4</th><td>Pour activités professionnelles &gt; visite simple (formation, audit prolongé, démarche commerciale), jusqu'à 90 jours. Demande à l'ambassade.</td></tr>
+        <tr><th>Visa D-7 (Intra-corporate transfer)</th><td>Pour collaborateur transféré d'une filiale étrangère vers une entité sud-coréenne du même groupe.</td></tr>
+        <tr><th>Visa E-7 (Special activity)</th><td>Pour expert technique étranger, durée longue, employeur sponsor sud-coréen requis.</td></tr>
+        <tr><th>Visa E-9 (Non-professional employment)</th><td>Pour employé non qualifié (rarement utilisé pour les missions GAT).</td></tr>
+        <tr><th>Passeport</th><td>Valide minimum 6 mois après la date de retour.</td></tr>
+        <tr><th>Vol retour</th><td>Billet retour ou continuation à présenter si demandé à l'arrivée.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Procédure visa Business / D-7 / E-7</strong>
+      <ul>
+        <li>Demande à l'<strong>ambassade de Corée du Sud à Paris</strong> (125 rue de Grenelle, 75007 Paris) ou au consulat.</li>
+        <li>Documents standards : passeport, photos, contrat ou lettre d'invitation de l'entité sud-coréenne sponsor, justificatif financier, casier judiciaire pour visa long.</li>
+        <li>Délai : 2 à 4 semaines pour visa Business, 4 à 8 semaines pour D-7 / E-7.</li>
+        <li>GAT gère la procédure administrative — anticiper au moins 6 semaines avant le départ pour visa long.</li>
+      </ul>
+    </div>
+
+    <h3>Vols France ↔ Séoul</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Durée vol direct</th><td>~ 11h30 (Paris CDG ↔ Seoul Incheon ICN)</td></tr>
+        <tr><th>Compagnies directes</th><td>Air France, Korean Air, Asiana Airlines</td></tr>
+        <tr><th>Aéroport principal</th><td>Incheon International (ICN) — référence mondiale, à 1h en train du centre de Séoul</td></tr>
+        <tr><th>Aéroport secondaire Séoul</th><td>Gimpo (GMP) — vols intérieurs + Asie proche (Tokyo, Osaka, Shanghai)</td></tr>
+        <tr><th>Aéroport Busan</th><td>Gimhae International (PUS)</td></tr>
+        <tr><th>Décalage horaire</th><td>UTC+9 — soit +7h vs France hiver, +8h vs France été. Jet-lag significatif au retour.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Transports en Corée du Sud</h3>
+    <p><strong>KTX (Korea Train eXpress).</strong> Le TGV coréen — Séoul ↔ Busan en 2h30, Séoul ↔ Daegu 1h45. Réservation via <em>letskorail.com</em> ou application Korail. Réseau dense vers la plupart des villes industrielles (Pohang, Ulsan, Gwangju, Daejeon).</p>
+    <p><strong>Métros urbains.</strong> Séoul : 23 lignes, le plus grand réseau au monde. Signalétique en hangeul + romanisation + anglais. Couvre toute la métropole + banlieue. Busan, Daegu, Incheon, Daejeon, Gwangju ont également leur métro.</p>
+    <p><strong>Bus.</strong> Réseau urbain dense (numéros et couleurs codifiées à Séoul). Bus interurbains (express et intercity) entre toutes les villes, très ponctuels.</p>
+    <p><strong>Taxis.</strong> Réguliers, taxis « deluxe » (noirs, plus chers), <strong>Kakao Taxi</strong> (application standard, en anglais) et <strong>Tada</strong>. Uber existe mais moins répandu. Paiement carte ou T-Money.</p>
+    <p><strong>T-Money card.</strong> Carte rechargeable indispensable — métros, bus, taxis (la plupart), supérettes (CU, GS25, 7-Eleven). À acheter dès l'arrivée à l'aéroport ou en supérette (3 000-5 000 KRW + recharge).</p>
+    <p><strong>Location de voiture.</strong> Possible mais peu pratique pour une mission urbaine (trafic Séoul, parking cher, codes locaux). Permis international + permis français requis. Préférer KTX / taxis.</p>
+
+    <h3>Monnaie &amp; finances</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Monnaie</th><td>Won sud-coréen (KRW, ₩) — 1 EUR ≈ 1 400 KRW (mai 2026)</td></tr>
+        <tr><th>Retrait d'espèces</th><td>DAB partout (Global ATM, KEB Hana, Shinhan, Citi acceptent cartes internationales)</td></tr>
+        <tr><th>Cartes bancaires</th><td>Visa / Mastercard acceptées quasi partout (commerces, restaurants, taxis)</td></tr>
+        <tr><th>Paiements mobiles</th><td><strong>Samsung Pay</strong>, <strong>KakaoPay</strong>, <strong>Naver Pay</strong> ultra-répandus localement</td></tr>
+        <tr><th>Pourboires</th><td>Non pratiqués — peut être mal vu. Service inclus dans les hôtels/restaurants haut de gamme</td></tr>
+        <tr><th>Reçus / factures</th><td>Toujours fournis automatiquement. Demander une facture « 세금계산서 » (tax invoice) pour notes de frais</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Connectivité &amp; téléphonie</h3>
+    <div class="alert">
+      <strong>Communication sur place — la Corée 100% connectée</strong>
+      <ul>
+        <li><strong>Réseau 5G excellent partout</strong> (Séoul, Busan, sites industriels, KTX), couverture mondiale parmi les meilleures.</li>
+        <li><strong>SIM locale</strong> : KT, SK Telecom, LG U+ — passeport requis, disponible aéroport Incheon (comptoirs 24h/24) ou en ville. Forfaits prépayés data dès 30 000 KRW / 30 jours.</li>
+        <li><strong>Pocket WiFi</strong> : location aéroport (~5 000 KRW/jour), idéal pour mission courte avec smartphone français.</li>
+        <li><strong>KakaoTalk</strong> (카카오톡) — <strong>l'application de messagerie standard en Corée</strong>, équivalent WhatsApp + bien plus (paiements, billets, services). Indispensable de l'installer avant le départ : tous les contacts business communiqueront via KakaoTalk.</li>
+        <li><strong>Naver</strong> — moteur de recherche dominant (Google est moins efficace en local). Naver Maps souvent plus précis que Google Maps en Corée.</li>
+        <li><strong>Coupang</strong> — e-commerce dominant (équivalent Amazon, livraison express).</li>
+        <li>Internet libre, ultra-rapide. Wi-Fi gratuit dans la plupart des espaces publics.</li>
+      </ul>
+    </div>
+
+    <h3>Hébergement &amp; chantier</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Hôtel Séoul</th><td>Quartiers professionnels : Gangnam, Jung-gu (centre), Yeouido (financier), Itaewon (international)</td></tr>
+        <tr><th>Confirmation</th><td>Adresse en hangeul ET romanisée à conserver (chauffeurs taxis parfois ne lisent que hangeul)</td></tr>
+        <tr><th>Coffre</th><td>Coffre de chambre pour passeport, cartes, documents sensibles</td></tr>
+        <tr><th>Check-in / out</th><td>Informer systématiquement le référent GAT de votre arrivée</td></tr>
+        <tr><th>Chantier</th><td>Port des EPI obligatoire — normes KOSHA strictes, contrôles fréquents</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Électricité &amp; adaptateurs</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Tension</th><td>220 V, 60 Hz</td></tr>
+        <tr><th>Prises</th><td>Type C et Type F (européennes, identiques aux prises françaises pour la plupart)</td></tr>
+        <tr><th>Adaptateur</th><td>Recommandé en secours (certains hôtels anciens peuvent avoir Type A) — mais France ↔ Corée compatible la plupart du temps</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Douane</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Espèces</th><td>Déclaration obligatoire si &gt; 10 000 USD (entrée et sortie)</td></tr>
+        <tr><th>Alcool</th><td>1 L autorisé par adulte hors taxes</td></tr>
+        <tr><th>Tabac</th><td>200 cigarettes ou 50 cigares</td></tr>
+        <tr><th>Interdits stricts</th><td>Drogues (sanctions très sévères), viandes / produits agricoles non déclarés, contrefaçons</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====== SECTION 5 — CONTACTS D'URGENCE ====== -->
+  <section id="s5">
+    <h2><span class="num">5.</span>Contacts d'urgence &amp; procédures</h2>
+
+    <div class="alert danger">
+      <strong>En cas d'urgence immédiate</strong>
+      <ul>
+        <li>Mettez-vous en sécurité AVANT tout appel.</li>
+        <li>Appelez le <strong>119</strong> (urgence médicale + pompiers) ou le <strong>112</strong> (police) — 24h/24, opérateurs anglophones disponibles.</li>
+        <li>En cas de difficulté de langue : appeler le <strong>1330</strong> (hotline touristes KTO, interprétation 24h/24 anglais / japonais / chinois).</li>
+        <li>Prévenez votre <strong>chargé d'affaires ou référent GAT en priorité</strong> dès que la situation est sous contrôle ; à défaut, contactez la Direction GAT en escalation.</li>
+        <li>Pour toute hospitalisation coûteuse : appeler <strong>Europ Assistance (+33 1 41 85 85 85)</strong> AVANT toute initiative.</li>
+      </ul>
+    </div>
+
+    <h3>Numéros d'urgence Corée du Sud</h3>
+    <table>
+      <thead><tr><th>Service</th><th>Numéro</th><th>Disponibilité</th></tr></thead>
+      <tbody>
+        <tr><td>Urgence médicale + pompiers</td><td><strong>119</strong></td><td>24h/24 — opérateurs anglophones disponibles</td></tr>
+        <tr><td>Police</td><td><strong>112</strong></td><td>24h/24</td></tr>
+        <tr><td>Hotline touristes (KTO, interprétation)</td><td><strong>1330</strong></td><td>24h/24 — anglais, japonais, chinois</td></tr>
+        <tr><td>Catastrophes naturelles / civil safety</td><td>1588-3650</td><td>24h/24</td></tr>
+        <tr><td>Hotline drogue / contrebande</td><td>125</td><td>Heures ouvrées</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Santé prévoyance — assistance &amp; assurance</h3>
+    <p style="font-size:13.5px; margin-bottom:14px;">En tant qu'expatrié hors UE, votre couverture santé repose sur trois piliers : la <strong>CFE</strong> (sécurité sociale internationale), la <strong>complémentaire santé &amp; prévoyance AXA</strong> souscrite via la plateforme OWELLO, et <strong>Europ Assistance</strong> pour toute assistance médicale, voyage ou rapatriement. L'annuaire complet est maintenu à jour en temps réel par la Direction sur SharePoint.</p>
+
+    <div style="background:#f0f7fc; border:1px solid #c8dcec; border-left:4px solid #185fa5; border-radius:8px; padding:18px 22px; margin-bottom:16px;">
+      <div style="display:flex; flex-wrap:wrap; gap:18px;">
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Assistance, voyage &amp; rapatriement</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">Europ Assistance</div>
+          <a href="tel:+33141858585" style="display:inline-block; background:#1a1a1a; color:#fff; padding:7px 14px; border-radius:5px; text-decoration:none; font-size:14px; font-weight:600;">+33 1 41 85 85 85</a>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">24h/24, 7j/7 — hospitalisation, rapatriement sanitaire, évacuation, bagages, accident, responsabilité civile. <strong>À appeler AVANT toute hospitalisation coûteuse.</strong></div>
+        </div>
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Sécu internationale + mutuelle</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">CFE + AXA Complémentaire &amp; Prévoyance</div>
+          <div style="font-size:12.5px; color:#1a1a1a; margin-bottom:4px;">Gestion via la plateforme <a href="https://login.owello-insurance.com/login" target="_blank">OWELLO</a></div>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">CFE pour la sécu, AXA pour la complémentaire santé et la prévoyance (décès, invalidité). Carte d'assuré à présenter aux praticiens ou à transmettre à Europ Assistance pour prise en charge directe.</div>
+        </div>
+      </div>
+      <div style="margin-top:16px; padding-top:14px; border-top:1px solid #c8dcec;">
+        <a href="https://gerib69.sharepoint.com/sites/GATNET/Lists/Assistance%20et%20assurance/AllItems.aspx" target="_top" style="display:inline-block; background:#185fa5; color:#fff; padding:9px 18px; border-radius:6px; text-decoration:none; font-size:13.5px; font-weight:600;">
+          Voir l'annuaire complet santé prévoyance sur SharePoint →
+        </a>
+        <div style="font-size:11.5px; color:#666; margin-top:8px; font-style:italic;">
+          Authentification SharePoint requise. Source : Liste « Assistance et assurance » maintenue par la Direction.
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:12px; color:#7a3f0d; background:#fdf6ee; border:1px solid #f0d09a; border-left:3px solid #BA7517; border-radius:6px; padding:10px 14px; margin:0 0 16px;"><strong>Indépendants / freelance :</strong> les couvertures ci-dessus sont propres aux salariés sous contrat GAT. Si vous intervenez en tant qu'indépendant, <strong>contactez votre chargé d'affaires ou référent GAT avant tout départ</strong> pour valider ensemble votre situation (assurance santé, assistance, rapatriement, responsabilité civile professionnelle) et les règles de sécurité applicables à la mission.</p>
+
+    <div class="alert">
+      <strong>En cas de rapatriement — conditions de prise en charge par Europ Assistance</strong>
+      <p>Pour que le rapatriement soit pris en charge et que vos frais soient intégralement remboursés, trois étapes sont essentielles. L'assureur conditionne sa prise en charge à leur respect — c'est la seule raison pour laquelle nous insistons sur ces points.</p>
+      <p>Le collaborateur, ou à défaut son chargé d'affaires, doit impérativement :</p>
+      <ul>
+        <li><strong>Obtenir l'accord préalable d'Europ Assistance</strong> avant de prendre toute initiative ou d'engager toute dépense (transport, hospitalisation, hôtel). Un simple appel suffit à activer le dossier — c'est ce qui déclenche la prise en charge directe et évite d'avancer les frais.</li>
+        <li><strong>Se conformer aux solutions préconisées par Europ Assistance</strong> (choix de l'établissement, mode de transport, calendrier). Europ Assistance négocie et prépaye directement auprès des prestataires : c'est ainsi que les sommes — parfois très importantes — sont prises en charge sans avance de votre part.</li>
+        <li><strong>Conserver et transmettre dès que possible tous les justificatifs originaux</strong> des dépenses engagées pour le compte d'Europ Assistance (factures, ordonnances, billets, plaintes de police le cas échéant). Sans ces originaux, le remboursement ne peut pas être instruit.</li>
+      </ul>
+      <p>À noter : si GAT a dû assurer à ses frais un voyage retour qui aurait pu être organisé via les titres de transport déjà détenus par le collaborateur, l'entreprise pourra utiliser ou demander le remboursement de ces titres. Cette disposition évite simplement une double facturation pour un même trajet.</p>
+    </div>
+
+    <h3>Ambassade &amp; consulats de France en Corée du Sud</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Ambassade (Séoul)</th><td>+82 2 3149 4300</td></tr>
+        <tr><th>Adresse</th><td>43-12 Seosomun-ro, Jung-gu, Séoul 04513</td></tr>
+        <tr><th>Service consulaire</th><td>+82 2 3149 4304 (heures ouvrées) — urgence consulaire 24h/24 via standard</td></tr>
+        <tr><th>Site web</th><td><a href="https://kr.ambafrance.org" target="_blank">kr.ambafrance.org</a></td></tr>
+        <tr><th>Consulat honoraire</th><td>Busan — coordonnées sur le site de l'ambassade</td></tr>
+        <tr><th>Site Ariane (inscription)</th><td><a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a></td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Inscription Ariane — recommandée</strong>
+      <ul>
+        <li>Inscrivez-vous sur le portail Ariane avant tout départ (<a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a>).</li>
+        <li>Permet à l'ambassade de France à Séoul de vous localiser et de vous contacter en cas de crise (typhon majeur, tension péninsulaire, pandémie).</li>
+        <li>Mentionnez vos dates de séjour et coordonnées locales (hôtel, KakaoTalk si applicable).</li>
+      </ul>
+    </div>
+
+    <h3>Procédure en cas d'incident</h3>
+    <ol class="step-list">
+      <li><strong>Maladie / urgence médicale.</strong><p>1. Appeler le 119 (urgence + pompiers). 2. Si difficulté de langue, demander un interprète via 1330. 3. Appeler le référent GAT dès que la situation est sous contrôle. 4. Pour hospitalisation : faire appeler Europ Assistance (+33 1 41 85 85 85) AVANT engagement de frais.</p></li>
+      <li><strong>Accident de chantier.</strong><p>1. Stop travaux — sécuriser la zone selon protocole KOSHA. 2. Appel 119 si blessé. 3. Prévenir chef de chantier + référent GAT immédiatement. 4. NE PAS déplacer un blessé grave sans secours qualifiés. 5. Coopérer avec l'enquête sécurité KOSHA / employeur sud-coréen.</p></li>
+      <li><strong>Hospitalisation.</strong><p>Faire appeler <strong>Europ Assistance (+33 1 41 85 85 85)</strong> avant tout traitement coûteux pour activer la prise en charge directe. Présenter carte CFE + AXA Complémentaire. Privilégier les hôpitaux internationaux (Severance, Asan, SMC, SNUH). Conserver TOUS les documents médicaux et factures originaux pour remboursement.</p></li>
+      <li><strong>Vol / perte de papiers.</strong><p>1. Déposer plainte au commissariat le plus proche (numéro de plainte requis pour assurance). 2. Contacter l'ambassade de France à Séoul (+82 2 3149 4300) pour laissez-passer consulaire si passeport perdu. 3. Informer GAT RH.</p></li>
+      <li><strong>Alerte civile (DPRK, typhon, séisme).</strong><p>1. Suivre les alertes SMS gouvernementales (en coréen + anglais). 2. Se conformer aux consignes locales (mise à l'abri, évacuation). 3. Application <em>Safety Korea</em> recommandée. 4. Contacter ambassade de France et référent GAT dès que possible.</p></li>
+      <li><strong>Pollution / hwangsa sévère.</strong><p>Reporter ou réduire les activités extérieures. Masques KF94 / N95. Personnes sensibles (asthme, cardiaques) : consultation rapide si symptômes. Application AirVisual / Naver Weather.</p></li>
+    </ol>
+  </section>
+
+  <!-- ====== SECTION 6 — RETOUR EN FRANCE (CONSTANT) ====== -->
+  <section id="s6" class="return-section">
+    <span class="critical-badge">Étape critique · Identique pour tous les pays</span>
+    <h2><span class="num">6.</span>Fin de mission &amp; retour en France</h2>
+    <p class="source">Sources : Ameli.fr (Assurance Maladie), URSSAF, impots.gouv.fr, convention fiscale France-Corée du Sud (1979) — section commune à tous les livrets d'expatriation, à ne pas modifier sans validation RH.</p>
+
+    <p>Le retour en France marque la fin de votre statut de travailleur expatrié. Plusieurs démarches administratives sont obligatoires dès votre retour pour préserver vos droits sociaux.</p>
+
+    <div class="deadline-card">
+      <div class="deadline-number">8<small>jours</small></div>
+      <div class="deadline-text">
+        <strong>Délai maximal pour vous réinscrire à la CPAM</strong>
+        Au-delà de 8 jours, vos soins médicaux ne sont plus remboursés et la régularisation devient longue. Démarche à lancer dès le lendemain de votre retour.
+      </div>
+    </div>
+
+    <h3 id="cpam">Couverture maladie — réinscription à la CPAM et carte Vitale</h3>
+    <div class="alert danger">
+      <strong>Démarche prioritaire à votre retour</strong>
+      <ul>
+        <li>Vous perdez votre couverture maladie internationale dès la fin de mission.</li>
+        <li>Réinscrivez-vous à la CPAM dans les 8 jours suivant votre retour en France.</li>
+        <li><strong>Mettez à jour votre carte Vitale</strong> en borne pharmacie ou CPAM (la mise à jour active vos droits actualisés).</li>
+        <li>Sans réinscription, vos soins médicaux ne seront pas remboursés.</li>
+        <li>Cette démarche est individuelle — GAT ne peut pas la faire à votre place.</li>
+      </ul>
+    </div>
+
+    <h3>Comment se réinscrire à la CPAM</h3>
+    <ol class="step-list">
+      <li><strong>Préparez vos documents.</strong><p>Pièce d'identité, justificatif de domicile (-3 mois), relevé de situation CAF si applicable, RIB, et le cas échéant votre certificat de fin de détachement ou attestation de fin de contrat fournie par GAT.</p></li>
+      <li><strong>Rendez-vous sur Ameli.fr.</strong><p>Connectez-vous ou créez votre compte sur ameli.fr. Rubrique « Ma situation » › « Je reprends une activité en France ». Vous pouvez également contacter le 36 46 (service CPAM, gratuit depuis la France).</p></li>
+      <li><strong>Demande d'affiliation.</strong><p>Si vous étiez salarié de GAT en expatriation, votre employeur signale la fin de mission à l'URSSAF. Votre CPAM de rattachement (celle de votre domicile) prend le relai automatiquement sous 8 à 15 jours.</p></li>
+      <li><strong>Attestation de droits + mise à jour carte Vitale.</strong><p>Une fois affilié, téléchargez votre attestation de droits sur Ameli.fr. Mettez à jour votre carte Vitale dans une borne en pharmacie ou à la CPAM (gratuit, 30 secondes).</p></li>
+    </ol>
+
+    <h3 id="cfe">Couverture par la CFE pendant la transition (3 mois)</h3>
+    <div class="alert">
+      <strong>Maintien des droits par la Caisse des Français de l'Étranger</strong>
+      <ul>
+        <li>Pendant les <strong>3 premiers mois après votre retour</strong>, la CFE maintient vos droits (le temps que la Sécurité sociale prenne le relai).</li>
+        <li>Pour chaque consultation ou soin : faire compléter une <strong>feuille de soins CERFA</strong> par le praticien.</li>
+        <li>Déposez ces feuilles de soins sur votre <strong>espace CFE en ligne</strong>.</li>
+        <li>Une fois vos droits Sécu ouverts (sous 8-15 jours après réinscription) : utilisez votre carte Vitale normalement, ou transmettez la feuille de soins à la CPAM.</li>
+      </ul>
+    </div>
+
+    <h3 id="owello">Portabilité de la complémentaire santé (mutuelle AXA via OWELLO)</h3>
+    <div class="alert">
+      <strong>Maintien de votre mutuelle après la fin du contrat de travail</strong>
+      <ul>
+        <li>Vous pouvez bénéficier de la <strong>portabilité</strong> de la complémentaire santé (mutuelle d'entreprise) après la fin de votre contrat de travail GAT.</li>
+        <li><strong>Condition</strong> : France Travail doit vous verser l'allocation d'aide au retour à l'emploi (ARE).</li>
+        <li>Chaque mois, transmettez à <strong>OWELLO</strong> votre attestation de versement des allocations France Travail.</li>
+        <li>Espace en ligne OWELLO : <a href="https://login.owello-insurance.com/login">login.owello-insurance.com/login</a></li>
+      </ul>
+    </div>
+
+    <h3>Remboursement des frais de soins — procédure complète</h3>
+    <ol class="step-list">
+      <li><strong>Pendant les 3 premiers mois (couverture CFE).</strong><p>Faire compléter une feuille de soins CERFA par le praticien. Déposez-la sur votre <strong>espace CFE</strong>. La CFE rembourse selon les taux de la Sécurité sociale.</p></li>
+      <li><strong>Une fois la Sécu ouverte.</strong><p>Utilisez votre <strong>carte Vitale</strong> à jour. Le pharmacien / médecin transmet directement à la CPAM (tiers payant ou télétransmission).</p></li>
+      <li><strong>Pour le complément mutuelle.</strong><p>Téléchargez votre décompte de remboursement CPAM sur Ameli.fr → transmettez-le à <strong>OWELLO</strong> via votre <a href="https://login.owello-insurance.com/login">espace OWELLO</a>. OWELLO complète selon votre contrat.</p></li>
+    </ol>
+
+    <h3>Fiscalité — convention France-Corée du Sud</h3>
+    <div class="alert">
+      <strong>Convention fiscale franco-coréenne du 19 juin 1979</strong>
+      <ul>
+        <li>La France et la Corée du Sud ont signé une <strong>convention fiscale</strong> visant à éviter les doubles impositions (signature 1979, entrée en vigueur 1981, plusieurs avenants).</li>
+        <li>Les revenus perçus pendant la mission peuvent être imposés en Corée du Sud selon les seuils de la convention. Au retour, déclaration des revenus étrangers à effectuer sur impots.gouv.fr.</li>
+        <li>Conserver tous justificatifs : bulletins de salaire coréens / français, attestation fiscale coréenne, contrat d'expatriation.</li>
+        <li>Pour les situations complexes (résidence fiscale à clarifier, double activité), consulter un fiscaliste spécialisé ou le service comptabilité GAT.</li>
+      </ul>
+    </div>
+
+    <div class="alert">
+      <strong>Contacts et liens utiles au retour</strong>
+      <ul>
+        <li><a href="https://www.ameli.fr">Ameli.fr</a> — portail Assurance Maladie · <strong>36 46</strong> (lun-ven 8h-20h, sam 9h-12h)</li>
+        <li><a href="https://www.cfe.fr">CFE.fr</a> — Caisse des Français de l'Étranger (couverture 3 mois transition)</li>
+        <li><a href="https://login.owello-insurance.com/login">OWELLO</a> — portabilité mutuelle AXA (transmission attestations France Travail)</li>
+        <li><a href="https://www.francetravail.fr">France Travail</a> — inscription ARE si chômage</li>
+        <li><a href="https://www.impots.gouv.fr">Impots.gouv.fr</a> — déclaration revenus étrangers (convention France-Corée 1979)</li>
+        <li><a href="https://kr.ambafrance.org">kr.ambafrance.org</a> — ambassade de France à Séoul (suivi administratif post-mission éventuel)</li>
+      </ul>
+    </div>
+
+    <h3 id="recap-demarches">Récapitulatif des démarches administratives au retour</h3>
+    <table>
+      <thead><tr><th>Démarche</th><th>Délai</th><th>Où ?</th></tr></thead>
+      <tbody>
+        <tr><td>Réinscription CPAM</td><td>Sous 8 jours</td><td>ameli.fr / CPAM locale</td></tr>
+        <tr><td>Mise à jour carte Vitale</td><td>Dès droits ouverts</td><td>Borne pharmacie / CPAM</td></tr>
+        <tr><td>Inscription France Travail (si chômage)</td><td>Sous 12 mois</td><td>francetravail.fr</td></tr>
+        <tr><td>Portabilité mutuelle AXA via OWELLO</td><td>Dès fin de contrat</td><td><a href="https://login.owello-insurance.com/login">login.owello-insurance.com</a></td></tr>
+        <tr><td>Transmission attestation France Travail à OWELLO</td><td>Tous les mois</td><td>Espace OWELLO</td></tr>
+        <tr><td>Feuille de soins CERFA → CFE</td><td>Pendant 3 mois après retour</td><td>Espace CFE en ligne</td></tr>
+        <tr><td>Décompte CPAM → OWELLO (complément mutuelle)</td><td>À chaque soin</td><td>Espace OWELLO</td></tr>
+        <tr><td>Déclaration fiscale (revenus étrangers Corée du Sud)</td><td>Calendrier fiscal (mai-juin)</td><td>impots.gouv.fr</td></tr>
+        <tr><td>Restitution équipements (ordinateur et outillage)</td><td>Sous 5 jours ouvrés</td><td>Référent GAT</td></tr>
+        <tr><td>Remplir le retour d'expérience</td><td>Sous 5 jours</td><td>Chargée QSE GAT</td></tr>
+        <tr><td>Notes de frais en attente</td><td>Sous 30 jours</td><td>Comptabilité GAT</td></tr>
+        <tr><td>Résiliation SIM coréenne / pocket WiFi</td><td>Avant / dès retour</td><td>Opérateur KT / SK / LG U+</td></tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- ====== CHECKLIST ====== -->
+  <section id="checklist">
+    <h2>Checklist avant départ Corée du Sud</h2>
+
+    <h3>Documents &amp; visa</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Passeport valide 6+ mois après retour</label>
+      <label><input type="checkbox"> Copie numérique passeport (email / cloud)</label>
+      <label><input type="checkbox"> Statut K-ETA vérifié sur k-eta.go.kr (exemption ou demande)</label>
+      <label><input type="checkbox"> Visa Business C-3-4 / D-7 / E-7 obtenu si requis</label>
+      <label><input type="checkbox"> Contrat d'expatriation / lettre d'invitation employeur sud-coréen</label>
+      <label><input type="checkbox"> Assurance voyage internationale (carte Gold ou GAT)</label>
+      <label><input type="checkbox"> Contacts d'urgence imprimés et mémorisés</label>
+      <label><input type="checkbox"> Carnet de vaccination international</label>
+      <label><input type="checkbox"> Adresse hôtel en hangeul ET romanisée</label>
+    </div>
+
+    <h3>Santé</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Vaccins à jour (DTP minimum, ROR si &lt; 45 ans)</label>
+      <label><input type="checkbox"> Hépatite A et B recommandés (missions longues)</label>
+      <label><input type="checkbox"> Vaccin grippe si voyage hiver</label>
+      <label><input type="checkbox"> Consultation médecin du voyage</label>
+      <label><input type="checkbox"> Pharmacie de voyage complète</label>
+      <label><input type="checkbox"> Masques KF94 / N95 si voyage mars-mai (hwangsa)</label>
+      <label><input type="checkbox"> Médicaments personnels + ordonnance en quantité suffisante</label>
+    </div>
+
+    <h3>Sécurité &amp; logistique</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Inscription Ariane effectuée (pastel.diplomatie.gouv.fr)</label>
+      <label><input type="checkbox"> Application KakaoTalk installée et compte créé</label>
+      <label><input type="checkbox"> SIM locale ou pocket WiFi prévus (KT / SK / LG U+)</label>
+      <label><input type="checkbox"> Référent GAT informé des dates et coordonnées</label>
+      <label><input type="checkbox"> Application Safety Korea / AirVisual installée</label>
+      <label><input type="checkbox"> Adaptateur Type C/F (compatible mais en secours)</label>
+      <label><input type="checkbox"> Carte bancaire internationale (Visa / Mastercard) testée</label>
+      <label><input type="checkbox"> Quelques cartes de visite professionnelles (échange à 2 mains)</label>
+    </div>
+
+    <h3>Culturel</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Briefing codes hiérarchiques confucéens (jeol, kibun)</label>
+      <label><input type="checkbox"> Quelques expressions de courtoisie en coréen</label>
+      <label><input type="checkbox"> Petit cadeau d'affaires emballé (éviter blanc + chiffre 4)</label>
+      <label><input type="checkbox"> Tatouages couvrables prévus (chemise manches longues)</label>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h3>Bon voyage et bonne mission.</h3>
+    L'équipe GAT International est disponible à tout moment pour vous accompagner.<br>
+    <a href="https://www.gat.fr">www.gat.fr</a> — Tous vos documents de mission en ligne.
+  </div>
+
+</main>
+
+<footer>
+  GAT International — Livret de mission Corée du Sud · Version 2026 · Document interne confidentiel.<br>
+  Sources : France Diplomatie (MEAE), Europ Assistance, CFE, OWELLO, Ameli.fr, Institut Pasteur, ambassade de France à Séoul, KOSHA, KTO.
+</footer>
+
+<!-- Bouton flottant fixe — toujours visible -->
+<a href="#s6" class="float-return" title="Voir les démarches CPAM, fiscalité et restitution équipements">
+  Démarches retour France <span class="float-return-arrow">→</span>
+</a>
+
+<script>
+  // Injecte la date d'impression dans le footnote PDF
+  window.addEventListener('beforeprint', function() {
+    var d = new Date();
+    var dateStr = d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' });
+    var el = document.getElementById('print-date');
+    if (el) el.textContent = dateStr;
+  });
+</script>
+
+</body>
+</html>

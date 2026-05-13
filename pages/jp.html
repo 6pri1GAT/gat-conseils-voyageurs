@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japon — Livret de Mission GAT International</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #1a1a1a; background: #ffffff; line-height: 1.55; }
+  .topbar { background: #1a1a1a; color: #fff; padding: 10px 32px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: #fff; text-decoration: none; opacity: 0.85; }
+  .topbar a:hover { opacity: 1; }
+  header.cover { background: #ffffff; padding: 32px 32px 24px; border-bottom: 1px solid #e5e5e5; }
+  .cover-grid { display: grid; grid-template-columns: 1fr auto; gap: 32px; max-width: 1100px; margin: 0 auto; align-items: end; }
+  .breadcrumb { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #1a1a1a; }
+  .cover h1 { margin: 0 0 6px; font-size: 32px; font-weight: 600; letter-spacing: -0.5px; }
+  .contract-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 7px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; }
+  .contract-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; }
+  .contract-badge.contract-france { background: #e9f4e2; color: #2f5f12; border: 1px solid #c5e0b1; }
+  .contract-badge.contract-france::before { background: #5d8a3a; }
+  .contract-badge.contract-detachement { background: #e6f1fb; color: #0c447c; border: 1px solid #b3d0e9; }
+  .contract-badge.contract-detachement::before { background: #185fa5; }
+  .contract-badge.contract-expat { background: #fdf0e1; color: #7a3f0d; border: 1px solid #f0d09a; }
+  .contract-badge.contract-expat::before { background: #BA7517; }
+  .contract-detail { font-weight: 400; opacity: 0.85; margin-left: 4px; }
+  .cover .subtitle { margin: 0; font-size: 14px; color: #666; }
+  .cover-flag { width: 120px; height: 80px; background: #f0f0f0; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; }
+  .cover-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .meta-bar { max-width: 1100px; margin: 16px auto 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; border: 1px solid #e5e5e5; border-radius: 4px; overflow: hidden; }
+  .meta-bar > div { padding: 10px 14px; border-right: 1px solid #e5e5e5; }
+  .meta-bar > div:last-child { border-right: none; }
+  .meta-bar .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .meta-bar .value { font-size: 13px; color: #1a1a1a; font-weight: 500; margin-top: 2px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 28px 32px 60px; }
+  .toc { background: #f7f7f5; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px 24px; margin-bottom: 32px; }
+  .toc-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 8px; }
+  .toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; font-size: 14px; }
+  .toc li { padding: 4px 0; break-inside: avoid; }
+  .toc a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; }
+  .toc a:hover { border-bottom-color: #1a1a1a; }
+  section { margin: 0 0 44px; scroll-margin-top: 20px; }
+  section h2 { font-size: 22px; font-weight: 600; margin: 0 0 6px; padding: 0 0 6px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-right: 40px; }
+  section h2 .num { color: #999; margin-right: 12px; font-weight: 400; }
+  section h3 { font-size: 16px; font-weight: 600; margin: 22px 0 10px; }
+  section p { margin: 8px 0; font-size: 14px; }
+  .vigilance-banner { padding: 14px 18px; border-radius: 6px; border-left: 4px solid; margin: 14px 0 22px; font-size: 14px; }
+  .vigilance-Normale { background: #e9f4e2; border-color: #5d8a3a; color: #2f5f12; }
+  .vigilance-banner strong { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+  .alert { padding: 14px 18px; border-radius: 6px; background: #fff8e6; border: 1px solid #f0d680; margin: 14px 0; font-size: 13.5px; }
+  .alert.danger { background: #fdecec; border-color: #e8b1ad; }
+  .alert strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; color: #1a1a1a; }
+  .alert ul { margin: 0; padding-left: 18px; }
+  .alert li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #ececec; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: #555; border-bottom: 1px solid #d5d5d5; }
+  tr:last-child td { border-bottom: none; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+  .col-card { background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px; padding: 14px 18px; }
+  .col-card.do { border-left: 3px solid #5d8a3a; }
+  .col-card.dont { border-left: 3px solid #a83232; }
+  .col-card h4 { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; }
+  .col-card ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .col-card li { margin: 4px 0; }
+  .risk-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 14px 0; }
+  .risk-row { display: grid; grid-template-columns: 240px 1fr 60px; gap: 14px; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+  .risk-bar { height: 6px; background: #ececec; border-radius: 3px; overflow: hidden; position: relative; }
+  .risk-fill { height: 100%; background: linear-gradient(90deg, #5d8a3a 0%, #d4a23a 50%, #a83232 100%); border-radius: 3px; }
+  .risk-score { font-size: 13px; color: #555; text-align: right; }
+  .step-list { counter-reset: step; padding: 0; list-style: none; margin: 14px 0; }
+  .step-list li { counter-increment: step; padding: 12px 14px 12px 50px; position: relative; border-left: 2px solid #e0e0e0; margin-left: 14px; }
+  .step-list li::before { content: counter(step); position: absolute; left: -16px; top: 12px; width: 30px; height: 30px; background: #1a1a1a; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+  .step-list li strong { display: block; font-size: 14px; margin-bottom: 4px; }
+  .step-list li p { margin: 0; font-size: 13px; color: #555; }
+  .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; margin: 14px 0; font-size: 13.5px; }
+  .checklist label { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; cursor: pointer; }
+  .checklist input { margin-top: 3px; }
+  .source { font-size: 11px; color: #888; font-style: italic; margin-top: -4px; margin-bottom: 16px; }
+  .footer-cta { background: #1a1a1a; color: #fff; padding: 22px 28px; border-radius: 6px; margin-top: 32px; font-size: 13px; }
+  .footer-cta h3 { margin: 0 0 6px; font-size: 16px; color: #fff; }
+  .footer-cta a { color: #fff; border-bottom: 1px solid rgba(255,255,255,0.4); text-decoration: none; }
+
+  /* Préambule des obligations en haut de page */
+  .obligations-preamble { max-width: 1100px; margin: 22px auto 0; background: #fffaf5; border: 2px solid #f0d9c5; border-radius: 10px; padding: 24px 28px; }
+  .obligations-header { margin-bottom: 22px; }
+  .obligations-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 10px; }
+  .obligations-header h2 { margin: 0 0 6px; font-size: 22px; font-weight: 600; color: #1a1a1a; border: none; }
+  .obligations-header p { margin: 0; font-size: 13.5px; color: #555; max-width: 800px; line-height: 1.55; }
+  .obligations-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; position: relative; }
+  .obligations-timeline::before { content: ""; position: absolute; top: 24px; left: 14%; right: 14%; height: 2px; background: linear-gradient(90deg, #185FA5 0%, #BA7517 50%, #993C1D 100%); z-index: 0; }
+  .obl-phase { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 18px 20px; position: relative; z-index: 1; }
+  .obl-phase.before { border-top: 3px solid #185FA5; }
+  .obl-phase.during { border-top: 3px solid #BA7517; }
+  .obl-phase.after { border-top: 3px solid #993C1D; }
+  .obl-step { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .obl-phase.before .obl-step { background: #185FA5; }
+  .obl-phase.during .obl-step { background: #BA7517; }
+  .obl-phase.after .obl-step { background: #993C1D; }
+  .obl-phase h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; color: #1a1a1a; }
+  .obl-phase .obl-when { display: block; font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+  .obl-phase ul { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; }
+  .obl-phase ul li { margin: 5px 0; }
+  .obl-phase ul li strong { color: #993C1D; }
+  .obl-phase ul li.priority { background: #fff0eb; border-left: 3px solid #993C1D; padding: 4px 8px; list-style: none; margin-left: -22px; padding-left: 14px; border-radius: 0 4px 4px 0; }
+  .obl-phase ul li a.section-link { display: inline-block; margin-left: 6px; width: 18px; height: 18px; text-align: center; border-radius: 50%; background: #ececec; color: #555; text-decoration: none; font-size: 11px; line-height: 18px; transition: all 0.15s; font-weight: 600; vertical-align: middle; }
+  .obl-phase ul li a.section-link:hover { background: #993C1D; color: #fff; transform: translateX(2px); }
+  .obl-phase ul li.priority a.section-link { background: rgba(153,60,29,0.15); color: #993C1D; }
+  .obl-phase ul li.priority a.section-link:hover { background: #993C1D; color: #fff; }
+
+  /* Sources officielles — CTA France Diplomatie + Ariane */
+  .official-sources { margin: 18px 0 28px; }
+  .sources-title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; font-weight: 600; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5; }
+  .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cta-card { display: block; padding: 18px 22px; border-radius: 8px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; border: 1px solid; }
+  .cta-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .cta-card .cta-tag { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px; }
+  .cta-card .cta-title { display: block; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+  .cta-card p { margin: 0 0 12px; font-size: 13px; line-height: 1.5; }
+  .cta-card .cta-link { font-size: 13px; font-weight: 600; }
+  .cta-card.cta-diplomatie { background: #e6f1fb; border-color: #b5d4f4; color: #0c447c; }
+  .cta-card.cta-diplomatie .cta-tag { background: #185fa5; color: #fff; }
+  .cta-card.cta-diplomatie .cta-link { color: #185fa5; }
+  .cta-card.cta-diplomatie:hover { border-color: #378add; }
+  .cta-card.cta-ariane { background: #fdecec; border-color: #e8b1ad; color: #791f1f; }
+  .cta-card.cta-ariane .cta-tag.cta-tag-priority { background: #a32d2d; color: #fff; }
+  .cta-card.cta-ariane .cta-link { color: #a32d2d; }
+  .cta-card.cta-ariane:hover { border-color: #e24b4a; }
+
+  /* Pourquoi Ariane — bloc pédagogique */
+  .ariane-why { background: #fffaf5; border: 1px solid #f0d9c5; border-radius: 8px; padding: 20px 24px; margin-top: 16px; }
+  .ariane-why h4 { margin: 0 0 10px; font-size: 15px; font-weight: 600; color: #1a1a1a; }
+  .ariane-why > p { margin: 0 0 14px; font-size: 13.5px; line-height: 1.6; color: #444; }
+  .ariane-why > p strong { color: #993C1D; }
+  .ariane-scenarios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 16px; margin: 12px 0; }
+  .ariane-scenarios .scenario { padding: 10px 12px; background: #fff; border-radius: 4px; border-left: 3px solid #c47140; font-size: 12.5px; line-height: 1.5; color: #555; }
+  .ariane-scenarios .scenario .scenario-label { display: block; font-size: 11px; font-weight: 600; color: #993C1D; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
+  .ariane-stat { margin: 14px 0 0 !important; padding: 12px 16px; background: #fff8e6; border-left: 3px solid #BA7517; border-radius: 0 4px 4px 0; font-size: 13px; font-style: italic; color: #5a4307 !important; }
+
+  @media (max-width: 720px) { .cta-grid, .ariane-scenarios { grid-template-columns: 1fr; } }
+
+  /* Bloc séisme — alerte renforcée */
+  .seism-alert { background: linear-gradient(180deg, #fdecec 0%, #fff5f5 100%); border: 2px solid #c44a3e; border-radius: 10px; padding: 22px 26px; margin: 18px 0; }
+  .seism-alert h3 { color: #791f1f; margin: 0 0 12px; font-size: 17px; }
+  .seism-alert .seism-rule { display: grid; grid-template-columns: 80px 1fr; gap: 18px; padding: 12px 0; border-bottom: 1px dashed #e8b1ad; align-items: start; }
+  .seism-alert .seism-rule:last-child { border-bottom: none; }
+  .seism-alert .seism-rule .seism-step { font-size: 22px; font-weight: 700; color: #c44a3e; text-align: center; line-height: 1.1; }
+  .seism-alert .seism-rule .seism-step small { display: block; font-size: 10px; font-weight: 500; text-transform: uppercase; color: #791f1f; margin-top: 4px; letter-spacing: 0.5px; }
+  .seism-alert .seism-rule .seism-body strong { display: block; font-size: 14px; color: #1a1a1a; margin-bottom: 4px; }
+  .seism-alert .seism-rule .seism-body { font-size: 13px; color: #444; line-height: 1.55; }
+
+  /* Popups vaccinales au survol */
+  .vaccine-cell { position: relative; cursor: help; }
+  .info-marker { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: #888; color: #fff; font-size: 11px; font-weight: 600; font-style: normal; margin-left: 6px; vertical-align: middle; transition: background 0.15s; }
+  .vaccine-cell:hover .info-marker { background: #185FA5; }
+  .vaccine-popup { position: absolute; left: 0; top: calc(100% + 10px); background: #1a1a1a; color: #fff; padding: 16px 20px; border-radius: 8px; width: 380px; max-width: 92vw; font-size: 12.5px; line-height: 1.6; opacity: 0; pointer-events: none; transition: opacity 0.18s, transform 0.18s; transform: translateY(-4px); z-index: 200; box-shadow: 0 6px 24px rgba(0,0,0,0.25); text-transform: none; letter-spacing: 0; font-weight: 400; }
+  .vaccine-popup::before { content: ""; position: absolute; top: -7px; left: 24px; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid #1a1a1a; }
+  .vaccine-cell:hover .vaccine-popup { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .vaccine-popup .vp-title { display: block; font-size: 14px; font-weight: 600; color: #fff; margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.15); }
+  .vaccine-popup ul { margin: 0; padding: 0; list-style: none; }
+  .vaccine-popup li { padding: 4px 0; color: rgba(255,255,255,0.92); }
+  .vaccine-popup li strong { display: inline-block; min-width: 100px; color: #f0d99a; font-weight: 600; }
+  .vaccine-popup .vp-warn { display: block; margin-top: 10px; padding: 8px 10px; background: rgba(216, 90, 48, 0.18); border-left: 3px solid #D85A30; border-radius: 0 4px 4px 0; font-size: 12px; color: #ffd0bd; }
+  .vaccine-popup .vp-source { display: block; margin-top: 12px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 11px; color: rgba(255,255,255,0.55); font-style: italic; }
+
+  /* Bouton flottant fixe sur le côté droit */
+  .float-return { position: fixed; right: 22px; bottom: 24px; z-index: 100; background: #993C1D; color: #fff; padding: 12px 18px; border-radius: 999px; text-decoration: none; font-size: 13px; font-weight: 600; box-shadow: 0 4px 14px rgba(153, 60, 29, 0.35); display: flex; align-items: center; gap: 10px; transition: all 0.2s; }
+  .float-return:hover { background: #7a2e15; transform: translateY(-2px); box-shadow: 0 6px 18px rgba(153, 60, 29, 0.45); }
+  .float-return-arrow { font-size: 16px; line-height: 1; }
+
+  /* Section 6 — encadré renforcé */
+  section.return-section { background: linear-gradient(180deg, #fdf3ef 0%, #ffffff 200px); border: 1px solid #e8c5b3; border-radius: 10px; padding: 28px 32px; margin: 30px 0 44px; position: relative; }
+  section.return-section::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #993C1D, #C04A20, #D85A30); border-radius: 10px 10px 0 0; }
+  section.return-section h2 { color: #993C1D; border-bottom-color: #993C1D; }
+  section.return-section h2 .num { color: #c47140; }
+  .critical-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 12px; }
+  .deadline-card { background: #fff; border: 2px solid #993C1D; border-radius: 8px; padding: 18px 22px; margin: 18px 0; display: grid; grid-template-columns: 100px 1fr; gap: 22px; align-items: center; }
+  .deadline-number { font-size: 56px; font-weight: 700; color: #993C1D; line-height: 1; text-align: center; }
+  .deadline-number small { display: block; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; color: #993C1D; }
+  .deadline-text { font-size: 14px; color: #1a1a1a; }
+  .deadline-text strong { display: block; font-size: 15px; margin-bottom: 4px; color: #993C1D; }
+
+  footer { padding: 24px 32px; text-align: center; font-size: 11px; color: #888; border-top: 1px solid #e5e5e5; background: #fafafa; }
+
+  /* Bouton PDF dans la topbar */
+  .topbar-actions { display: flex; align-items: center; gap: 14px; }
+  .btn-pdf { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.35); padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 11.5px; font-family: inherit; transition: all 0.15s; }
+  .btn-pdf:hover { background: rgba(255,255,255,0.28); border-color: rgba(255,255,255,0.6); }
+
+  @media (max-width: 720px) { .meta-bar { grid-template-columns: 1fr 1fr; } .meta-bar > div { border-right: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; } .two-col, .checklist { grid-template-columns: 1fr; } .toc ol { columns: 1; } .cover-grid { grid-template-columns: 1fr; } .obligations-timeline { grid-template-columns: 1fr; } .obligations-timeline::before { display: none; } .deadline-card { grid-template-columns: 1fr; text-align: center; } .seism-alert .seism-rule { grid-template-columns: 1fr; } }
+
+  @media print {
+    .topbar, .float-return, .btn-pdf, .footer-cta a { display: none !important; }
+    .vaccine-popup, .info-marker { display: none !important; }
+    body { background: #fff; }
+    main, header.cover { padding: 16px 24px !important; }
+    section { page-break-inside: avoid; }
+    .obligations-preamble { page-break-after: avoid; border-width: 1px; }
+    .obl-phase { break-inside: avoid; }
+    table { page-break-inside: avoid; font-size: 11px; }
+    .obligations-timeline::before { display: none; }
+    .footer-cta { background: #fff !important; color: #000 !important; border: 1px solid #999; }
+    .footer-cta h3 { color: #000 !important; }
+    .pdf-footnote { display: block !important; text-align: center; font-size: 10px; color: #666; margin: 8px 0 16px; padding: 8px; border: 1px dashed #ccc; }
+  }
+  .pdf-footnote { display: none; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><a href="../index.html">← Retour à la carte</a> · Conseils aux voyageurs · GAT International</span>
+  <span class="topbar-actions">
+    <button class="btn-pdf" onclick="window.print()" title="Imprimer ou enregistrer en PDF — choisir 'Enregistrer au format PDF' dans la fenêtre d'impression">Imprimer / PDF</button>
+    Document interne · Version 2026
+  </span>
+</div>
+
+<header class="cover">
+  <div class="cover-grid">
+    <div>
+      <div class="breadcrumb"><a href="../index.html">Conseils aux voyageurs</a> › <span>Japon</span></div>
+      <h1>Japon</h1>
+      <p class="subtitle">日本 (Nihon / Nippon) — Livret de Mission. Guide pratique à l'attention des collaborateurs en déplacement professionnel au Japon.</p>
+      <span class="contract-badge contract-expat">Expatriation hors UE<span class="contract-detail">· Contrat expatrié · CFE · AXA Complémentaire &amp; Prévoyance via OWELLO · Europ Assistance</span></span>
+    </div>
+    <div class="cover-flag">
+      <img src="https://flagcdn.com/w320/jp.png" alt="Drapeau Japon" onerror="this.style.display='none';">
+    </div>
+  </div>
+  <div class="meta-bar">
+    <div><div class="label">Capitale</div><div class="value">Tokyo (東京)</div></div>
+    <div><div class="label">Fuseau horaire</div><div class="value">UTC+9 (pas de DST)</div></div>
+    <div><div class="label">Langue officielle</div><div class="value">Japonais</div></div>
+    <div><div class="label">Monnaie</div><div class="value">Yen (JPY, ¥)</div></div>
+    <div><div class="label">Code ISO</div><div class="value">JPN</div></div>
+    <div><div class="label">Créée le</div><div class="value">13 mai 2026</div></div>
+  </div>
+
+  <p class="pdf-footnote">Document figé extrait du site dynamique le <span id="print-date"></span> — La version en ligne peut avoir évolué depuis.</p>
+
+  <!-- Préambule des obligations -->
+  <div class="obligations-preamble">
+    <div class="obligations-header">
+      <span class="obligations-badge">À respecter absolument</span>
+      <h2>Vos obligations pour cette mission au Japon</h2>
+      <p>Synthèse des démarches incontournables avant, pendant et après la mission. Le non-respect peut compromettre votre couverture sociale, votre assurance, ou la régularité de votre séjour. Cliquez sur chaque ligne pour aller au détail.</p>
+    </div>
+    <div class="obligations-timeline">
+
+      <div class="obl-phase before">
+        <span class="obl-step">1</span>
+        <h3>Avant le départ</h3>
+        <span class="obl-when">Au moins 4 semaines avant · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li>Inscription <strong>Ariane</strong> (<a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a>) <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+          <li>Passeport valide couvrant toute la durée du séjour <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li><strong>Visa</strong> selon durée et nature de la mission (exemption 90j / Business / Work Visa + COE) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Pré-enregistrement <strong>Visit Japan Web</strong> avant le vol <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Vaccins <strong>DTP, ROR</strong> à jour, hépatites A/B selon mission <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Application <strong>Safety Tips (JNTO)</strong> installée — alertes séismes <a class="section-link" href="#s1" title="Voir section Risques">▸</a></li>
+          <li>Cartes de visite (<em>meishi</em>) bilingues commandées <a class="section-link" href="#s3" title="Voir section Culture">▸</a></li>
+          <li>Référent GAT informé des dates et coordonnées <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+          <li>Couverture CFE + complémentaire AXA OWELLO + Europ Assistance vérifiée <a class="section-link" href="#s5" title="Voir section Contacts &amp; assurance">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase during">
+        <span class="obl-step">2</span>
+        <h3>À l'arrivée et pendant la mission</h3>
+        <span class="obl-when">Tout au long du séjour · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li><strong>Ponctualité absolue</strong> — arriver 5-10 min avant tout rendez-vous <a class="section-link" href="#s3" title="Voir section Culture">▸</a></li>
+          <li>Échange de <em>meishi</em> à <strong>deux mains</strong> — examiner, poser sur la table <a class="section-link" href="#s3" title="Voir section Culture">▸</a></li>
+          <li>En cas de <strong>séisme</strong> : « Drop, Cover, Hold On » <a class="section-link" href="#s1" title="Voir section Risques">▸</a></li>
+          <li>Prévoir du <strong>cash</strong> — paiement carte non systématique <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li><strong>Pas de pourboire</strong> — considéré comme insultant <a class="section-link" href="#s3" title="Voir section Culture">▸</a></li>
+          <li>Référent GAT informé du check-in / check-out hôtel <a class="section-link" href="#s5" title="Voir section Contacts">▸</a></li>
+          <li>Prévenez votre chargé d'affaires dès que la situation est sous contrôle en cas d'incident <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase after">
+        <span class="obl-step">3</span>
+        <h3>Au retour en France</h3>
+        <span class="obl-when">Délais à respecter impérativement · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li class="priority"><strong>Réinscription CPAM + mise à jour carte Vitale sous 8 jours</strong> <a class="section-link" href="#cpam" title="Voir section CPAM">▸</a></li>
+          <li><strong>Portabilité mutuelle</strong> via OWELLO (si ARE France Travail) <a class="section-link" href="#owello" title="Voir section Portabilité OWELLO">▸</a></li>
+          <li>Pendant 3 mois : feuille de soins CERFA sur espace CFE <a class="section-link" href="#cfe" title="Voir section CFE">▸</a></li>
+          <li>Restitution équipements sous <strong>5 jours ouvrés</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Remplir le retour d'expérience sous <strong>5 jours</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Notes de frais sous <strong>30 jours</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Déclaration fiscale revenus étrangers (convention France-Japon 1995) <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <ol>
+      <li><a href="#s1">Risques pays &amp; sécurité</a></li>
+      <li><a href="#s2">Santé &amp; recommandations sanitaires</a></li>
+      <li><a href="#s3">Pratiques culturelles &amp; comportement</a></li>
+      <li><a href="#s4">Logistique pratique</a></li>
+      <li><a href="#s5">Contacts d'urgence &amp; procédures</a></li>
+      <li><a href="#s6">Fin de mission &amp; retour en France</a></li>
+      <li><a href="#checklist">Checklist avant départ</a></li>
+    </ol>
+  </div>
+
+  <!-- ====== SECTION 1 — RISQUES PAYS & SÉCURITÉ ====== -->
+  <section id="s1">
+    <h2><span class="num">1.</span>Risques pays &amp; sécurité</h2>
+    <p class="source">Source : France Diplomatie (MEAE) — Conseils aux voyageurs · Japan Meteorological Agency (JMA) · JNTO. Mise à jour à vérifier régulièrement.</p>
+
+    <div class="vigilance-banner vigilance-Normale">
+      <strong>Niveau de vigilance général : Vigilance normale</strong>
+      Le Japon est classé en <strong>vigilance normale</strong> par France Diplomatie et figure parmi les pays les plus sûrs au monde. La criminalité y est quasi inexistante : il est courant de retrouver des objets oubliés (portefeuilles, téléphones) intacts. <em>Le risque principal est naturel : séismes, tsunamis, typhons et activité volcanique.</em>
+    </div>
+
+    <div class="official-sources">
+      <h3 class="sources-title">Sources officielles à consulter</h3>
+
+      <div class="cta-grid">
+        <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/japon/" target="_blank" rel="noopener" class="cta-card cta-diplomatie">
+          <span class="cta-tag">Source officielle MEAE</span>
+          <span class="cta-title">France Diplomatie — Japon</span>
+          <p>Niveau de vigilance officiel à jour, recommandations sanitaires et sécuritaires, informations sur les risques naturels en cours (typhons, activité sismique, volcans). Source unique de référence avant tout départ.</p>
+          <span class="cta-link">Consulter la fiche Japon →</span>
+        </a>
+
+        <a href="https://pastel.diplomatie.gouv.fr" target="_blank" rel="noopener" class="cta-card cta-ariane">
+          <span class="cta-tag cta-tag-priority">Obligatoire avant départ</span>
+          <span class="cta-title">Ariane — Inscription des voyageurs</span>
+          <p>Gratuit, 5 minutes. Permet à l'ambassade de France de vous localiser et de vous contacter immédiatement en cas de crise (séisme majeur, tsunami, typhon, évacuation).</p>
+          <span class="cta-link">S'inscrire sur Ariane →</span>
+        </a>
+      </div>
+
+      <div class="ariane-why">
+        <h4>Pourquoi Ariane est essentiel au Japon</h4>
+        <p>Le Japon est sûr au quotidien mais expose à des <strong>risques naturels majeurs et imprévisibles</strong>. Sans inscription Ariane, l'ambassade ignore votre présence sur place — et ne peut donc pas vous prévenir, organiser un point de rassemblement ou une évacuation lors d'une catastrophe d'ampleur (séisme Tohoku 2011, Noto 2024).</p>
+
+        <div class="ariane-scenarios">
+          <div class="scenario">
+            <span class="scenario-label">Séismes majeurs</span>
+            Tohoku 2011 (magnitude 9, accident Fukushima), Kumamoto 2016, Noto 2024 — environ 1500 séismes par an au Japon.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Tsunamis</span>
+            Côtes Pacifique en première ligne après un séisme sous-marin — alerte parfois de quelques minutes seulement.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Typhons</span>
+            Saison juillet-octobre, principalement Kyushu, Okinawa et côte Sud du Honshu — vents > 200 km/h, inondations.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Volcans</span>
+            ~110 volcans actifs (Aso, Sakurajima qui fume régulièrement, Mt Ontake 2014, Mt Fuji surveillé).
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Urgence individuelle</span>
+            Accident, hospitalisation, perte de papiers — barrière linguistique aiguë hors zones touristiques : l'ambassade accélère la prise en charge.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Application Safety Tips (JNTO)</span>
+            Application officielle gratuite à installer dès l'arrivée — alertes séismes en temps réel, tsunamis, typhons, en anglais.
+          </div>
+        </div>
+
+        <p class="ariane-stat">Lors du séisme du Tohoku de mars 2011, le tsunami a atteint les côtes en moins de 30 minutes. L'inscription Ariane permet à l'ambassade de France au Japon de relayer instantanément les alertes officielles JMA aux ressortissants présents et de coordonner les regroupements.</p>
+      </div>
+    </div>
+
+    <h3>Niveaux de risque par catégorie</h3>
+    <div class="risk-grid">
+      <div class="risk-row"><span>Criminalité &amp; insécurité urbaine</span><div class="risk-bar"><div class="risk-fill" style="width:10%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Risque terroriste / attentats</span><div class="risk-bar"><div class="risk-fill" style="width:20%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Instabilité politique</span><div class="risk-bar"><div class="risk-fill" style="width:10%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Séismes &amp; tsunamis</span><div class="risk-bar"><div class="risk-fill" style="width:95%;"></div></div><span class="risk-score">5/5</span></div>
+      <div class="risk-row"><span>Typhons &amp; risques climatiques</span><div class="risk-bar"><div class="risk-fill" style="width:70%;"></div></div><span class="risk-score">4/5</span></div>
+      <div class="risk-row"><span>Activité volcanique</span><div class="risk-bar"><div class="risk-fill" style="width:60%;"></div></div><span class="risk-score">3/5</span></div>
+      <div class="risk-row"><span>Barrière linguistique</span><div class="risk-bar"><div class="risk-fill" style="width:70%;"></div></div><span class="risk-score">4/5</span></div>
+    </div>
+
+    <h3>Risques naturels majeurs — comprendre l'environnement</h3>
+    <p>Le Japon se situe sur la « <strong>ceinture de feu du Pacifique</strong> », à la jonction de quatre plaques tectoniques. C'est l'un des pays les plus exposés aux risques telluriques au monde, mais aussi le mieux préparé : bâtiments antisismiques, alertes JMA en temps réel sur tous les téléphones, exercices d'évacuation réguliers, signalétique tsunami systématique sur les côtes.</p>
+
+    <p><strong>Séismes.</strong> Environ <strong>1 500 séismes par an</strong> sont ressentis. Les secousses de magnitude supérieure à 6 sont régulières (plusieurs par an). Les événements majeurs récents : <strong>Tohoku mars 2011</strong> (magnitude 9, tsunami, accident nucléaire de Fukushima), <strong>Kumamoto 2016</strong>, <strong>Noto janvier 2024</strong>.</p>
+
+    <p><strong>Tsunamis.</strong> Toute secousse côtière forte peut générer un tsunami. La JMA émet des alertes immédiates relayées par les sirènes côtières et l'application Safety Tips. <strong>Le délai entre alerte et impact peut être de quelques minutes seulement</strong> : la règle est de gagner les hauteurs IMMÉDIATEMENT, sans attendre confirmation visuelle.</p>
+
+    <p><strong>Typhons.</strong> Saison <strong>juillet à octobre</strong> (pic août-septembre). Concernent surtout la côte Sud (Okinawa, Kyushu, Shikoku, sud du Honshu). Vents pouvant dépasser 200 km/h, fortes pluies, inondations, glissements de terrain. Suivi via le JMA (jma.go.jp).</p>
+
+    <p><strong>Volcans.</strong> Environ <strong>110 volcans actifs</strong>. Le Sakurajima (Kyushu) fume quasi quotidiennement. Le Mt Ontake (septembre 2014) a tué 63 randonneurs sans signe avant-coureur. Le Mt Aso et le Mt Fuji sont sous surveillance continue. Respecter les périmètres d'exclusion.</p>
+
+    <div class="seism-alert">
+      <h3>Procédure en cas de séisme — « Drop, Cover, Hold On »</h3>
+      <div class="seism-rule">
+        <div class="seism-step">1<small>Drop</small></div>
+        <div class="seism-body">
+          <strong>Mettez-vous à genoux immédiatement.</strong>
+          Ne tentez pas de courir, même vers une sortie — la majorité des blessures viennent des chutes pendant la secousse. À l'intérieur, restez à l'intérieur ; à l'extérieur, restez à l'extérieur (le risque vient des façades, vitres et tuiles qui tombent).
+        </div>
+      </div>
+      <div class="seism-rule">
+        <div class="seism-step">2<small>Cover</small></div>
+        <div class="seism-body">
+          <strong>Abritez-vous sous une table solide ou un encadrement de porte porteur.</strong>
+          Éloignez-vous des fenêtres, miroirs, armoires hautes, étagères, objets suspendus. Protégez votre tête et votre nuque avec vos bras si rien d'autre n'est disponible.
+        </div>
+      </div>
+      <div class="seism-rule">
+        <div class="seism-step">3<small>Hold On</small></div>
+        <div class="seism-body">
+          <strong>Tenez fermement votre abri jusqu'à la fin complète des secousses.</strong>
+          Une secousse peut durer de quelques secondes à plus d'une minute, suivie de répliques. Ne sortez qu'après l'arrêt complet, et méfiez-vous des fissures, fils électriques, fuites de gaz.
+        </div>
+      </div>
+      <div class="seism-rule">
+        <div class="seism-step">4<small>Tsunami</small></div>
+        <div class="seism-body">
+          <strong>Si vous êtes en zone côtière : gagnez les hauteurs immédiatement.</strong>
+          Ne retournez pas chercher des affaires. Suivez les panneaux « Tsunami Evacuation » (vague stylisée). En altitude au-dessus de 10 m, ou tour de réfugement (<em>tsunami hinan biru</em>) si disponible. Attendre la fin officielle de l'alerte (plusieurs vagues possibles).
+        </div>
+      </div>
+      <div class="seism-rule">
+        <div class="seism-step">5<small>Après</small></div>
+        <div class="seism-body">
+          <strong>Prévenez votre chargé d'affaires GAT, signalez-vous via Ariane.</strong>
+          Coupez le gaz, vérifiez le compteur électrique avant de rallumer. Suivez la radio japonaise (NHK Radio 2 en anglais pour les étrangers) et l'application Safety Tips. Évitez les ascenseurs.
+        </div>
+      </div>
+    </div>
+
+    <h3>Sécurité chantier &amp; normes</h3>
+    <p>Le Japon applique strictement les normes <strong>JIS</strong> (Japanese Industrial Standards) et les normes ISO. L'encadrement chantier est extrêmement rigoureux : briefings quotidiens, échauffements collectifs (<em>rajio taisō</em>), zéro tolérance sur les EPI. Le port du casque, des chaussures de sécurité et du gilet haute visibilité est non négociable. Les accidents sont rares mais les conséquences disciplinaires d'un manquement aux règles peuvent être lourdes.</p>
+
+    <h3>Règles de comportement essentielles</h3>
+    <div class="alert">
+      <strong>Bonnes pratiques au Japon</strong>
+      <ul>
+        <li>Installer Safety Tips (JNTO) dès l'atterrissage — notifications JMA en anglais.</li>
+        <li>Repérer les sorties d'urgence et points de rassemblement à chaque hôtel / bureau / chantier.</li>
+        <li>Connaître l'altitude de son hôtel et le panneau « Tsunami Evacuation Site » le plus proche si zone côtière.</li>
+        <li>Garder une lampe torche, une bouteille d'eau et un chargeur externe accessibles.</li>
+        <li>Toujours informer le chargé d'affaires de ses déplacements internes (Shinkansen, vol intérieur).</li>
+      </ul>
+    </div>
+
+    <h3>Déplacements en ville</h3>
+    <div class="two-col">
+      <div class="col-card do">
+        <h4>À faire</h4>
+        <ul>
+          <li>Utiliser le métro et le train (réseau extrêmement dense, ponctuel).</li>
+          <li>Acquérir une carte IC (Suica, Pasmo, Icoca) dès l'arrivée.</li>
+          <li>Marcher à gauche sur les trottoirs et escalators (sauf Osaka : à droite).</li>
+          <li>Prévoir un horaire précis pour chaque rendez-vous.</li>
+          <li>Toujours conserver son passeport sur soi (contrôle police rare mais possible).</li>
+        </ul>
+      </div>
+      <div class="col-card dont">
+        <h4>À éviter</h4>
+        <ul>
+          <li>Parler fort dans les transports, téléphoner dans un train.</li>
+          <li>Manger ou boire en marchant (sauf zones dédiées).</li>
+          <li>Pointer du doigt, gestes brusques.</li>
+          <li>Ignorer une consigne d'agent de gare ou de chantier.</li>
+          <li>Conduire après avoir consommé de l'alcool — tolérance zéro absolue.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 2 — SANTÉ ====== -->
+  <section id="s2">
+    <h2><span class="num">2.</span>Santé &amp; recommandations sanitaires</h2>
+    <p class="source">Sources : Institut Pasteur, Centre de Vaccinations Internationales (CVI), Europ Assistance, CFE, ministère japonais de la Santé (MHLW).</p>
+
+    <p>Le système de santé japonais est l'un des meilleurs au monde — densité hospitalière élevée, plateaux techniques modernes, hygiène irréprochable. Le revers : les <strong>coûts moyens sont élevés</strong> (consultation 5 000 à 15 000 JPY, hospitalisation plusieurs centaines de milliers de JPY/jour) et la <strong>barrière linguistique aux urgences</strong> reste forte. La couverture CFE + AXA OWELLO + Europ Assistance est indispensable.</p>
+
+    <h3>Vaccinations recommandées</h3>
+    <p style="font-size:12px; color:#888; margin-bottom:8px;">Survolez un vaccin pour voir le détail des règles vaccinales (schéma, rappels, durée de protection).</p>
+    <table>
+      <thead><tr><th>Vaccin</th><th>Statut</th><th>Remarque</th></tr></thead>
+      <tbody>
+
+        <tr>
+          <td class="vaccine-cell">Tétanos / DTP<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Tétanos / DTP — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Tous adultes, sans exception</li>
+                <li><strong>Rappels adulte</strong>25 ans, 45 ans, 65 ans</li>
+                <li><strong>Après 65 ans</strong>Tous les 10 ans (75, 85, 95)</li>
+                <li><strong>Protection</strong>Durable entre les rappels</li>
+                <li><strong>Combinaison</strong>DTP (Diphtérie + Tétanos + Polio)</li>
+              </ul>
+              <span class="vp-warn">Si plaie souillée à l'étranger : vérifier date du dernier rappel. Si &gt; 10 ans (ou &gt; 5 ans pour plaie majeure), rappel anti-tétanique immédiat impératif.</span>
+              <span class="vp-source">Source : Calendrier vaccinal 2024, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Obligatoire</td>
+          <td>Mise à jour obligatoire</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">ROR (Rougeole, Oreillons, Rubéole)<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">ROR — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Tous adultes nés après 1980 non immunisés</li>
+                <li><strong>Schéma</strong>2 injections espacées d'au moins 1 mois</li>
+                <li><strong>Protection</strong>À vie après les 2 doses</li>
+                <li><strong>Délai action</strong>2 semaines après la 2e dose</li>
+              </ul>
+              <span class="vp-warn">Rougeole en regain régulier au Japon. Vérifier le carnet : 2 doses requises pour adulte non immunisé.</span>
+              <span class="vp-source">Source : HAS, Calendrier vaccinal 2024</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Vérifier les deux doses</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Hépatite A<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Hépatite A — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Voyageurs en zone à hygiène variable, séjour prolongé</li>
+                <li><strong>Schéma</strong>1 injection, rappel à 6-12 mois</li>
+                <li><strong>Protection</strong>À vie après le rappel</li>
+                <li><strong>Délai action</strong>15 jours après la 1ère injection</li>
+              </ul>
+              <span class="vp-warn">Risque faible au Japon (hygiène alimentaire excellente). Reste recommandé pour les séjours longs ou missions itinérantes.</span>
+              <span class="vp-source">Source : Calendrier des vaccinations 2024, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Séjours longs / itinérance</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Hépatite B<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Hépatite B — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Missions &gt; 1 mois, contact possible avec sang/fluides, risque accident chantier</li>
+                <li><strong>Schéma classique</strong>3 injections : M0, M1, M6</li>
+                <li><strong>Schéma rapide</strong>J0, J7, J21 + rappel à 12 mois</li>
+                <li><strong>Protection</strong>À vie après schéma complet</li>
+              </ul>
+              <span class="vp-warn">Vérifier carnet : souvent reçu pendant l'enfance (vaccin obligatoire depuis 2018 en France).</span>
+              <span class="vp-source">Source : HAS &amp; Calendrier vaccinal 2024</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Selon activité</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Encéphalite japonaise<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Encéphalite japonaise — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Séjour rural prolongé en saison humide (rizières, élevage porcin)</li>
+                <li><strong>Zones</strong>Surtout zones rurales d'Asie ; au Japon : risque très faible mais non nul en zone agricole d'été</li>
+                <li><strong>Schéma</strong>2 injections à 28 jours d'intervalle (Ixiaro)</li>
+                <li><strong>Protection</strong>1 à 2 ans, rappel possible</li>
+              </ul>
+              <span class="vp-warn">Inutile pour mission urbaine standard (Tokyo, Osaka, Nagoya). À évaluer au cas par cas si chantier rural en été.</span>
+              <span class="vp-source">Source : Institut Pasteur, OMS</span>
+            </div>
+          </td>
+          <td>À évaluer</td>
+          <td>Zones rurales en été</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Grippe saisonnière<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Grippe — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Tous voyageurs en hiver, surtout vols longue distance et lieux clos</li>
+                <li><strong>Schéma</strong>1 injection annuelle (souche réactualisée)</li>
+                <li><strong>Protection</strong>~6 mois</li>
+                <li><strong>Saison Japon</strong>Décembre à mars (pic janvier-février)</li>
+              </ul>
+              <span class="vp-warn">Hiver japonais marqué : grippe et rhinopharyngites fréquentes. Port du masque social courant et apprécié.</span>
+              <span class="vp-source">Source : HAS, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Si mission hivernale</td>
+        </tr>
+
+        <tr>
+          <td class="vaccine-cell">Covid-19<i class="info-marker">i</i>
+            <div class="vaccine-popup">
+              <span class="vp-title">Covid-19 — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Selon protocole GAT et médecin du travail</li>
+                <li><strong>Schéma</strong>Variable selon âge, comorbidités, dernière dose</li>
+                <li><strong>Population à risque</strong>Rappel annuel recommandé (&gt; 65 ans, comorbidités)</li>
+              </ul>
+              <span class="vp-warn">À valider lors de la consultation pré-départ. Pas de restriction d'entrée actuelle au Japon, mais protocoles entreprise possibles.</span>
+              <span class="vp-source">Source : HAS, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Selon protocole GAT</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Avant le départ</strong>
+      <ul>
+        <li>Consultez le centre de vaccinations internationales (CVI) au moins 4 semaines avant le départ.</li>
+        <li>Emportez votre carnet de vaccination international.</li>
+        <li>Vérifiez votre couverture santé internationale : CFE + AXA Complémentaire via OWELLO + Europ Assistance pour assistance/rapatriement.</li>
+        <li>Aucune maladie endémique majeure : pas de paludisme, pas de fièvre jaune, pas de risque significatif eau/alimentation.</li>
+      </ul>
+    </div>
+
+    <h3>Système de santé sur place</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Qualité des soins</th><td>Excellente — densité hospitalière élevée, plateaux techniques modernes</td></tr>
+        <tr><th>Coût consultation</th><td>5 000 à 15 000 JPY (≈ 30 à 95 €)</td></tr>
+        <tr><th>Hospitalisation</th><td>Plusieurs centaines de milliers de JPY/jour — paiement souvent demandé d'avance</td></tr>
+        <tr><th>Hygiène publique</th><td>Irréprochable — eau du robinet potable partout</td></tr>
+        <tr><th>Langue</th><td>Anglais limité aux services aux étrangers — appeler Europ Assistance pour traduction</td></tr>
+        <tr><th>Pharmacies</th><td>Nombreuses (<em>kusuri</em>), médicaments souvent sous des marques locales</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>En cas de besoin médical</strong>
+      <ul>
+        <li>Appel <strong>119</strong> (ambulance et pompiers — même numéro au Japon).</li>
+        <li>Appeler en parallèle <strong>Europ Assistance</strong> (+33 1 41 85 85 85) pour traduction et coordination avec l'hôpital.</li>
+        <li>Préférer les <strong>hôpitaux universitaires</strong> ou hôpitaux avec service « international » (Tokyo : St. Luke's, Tokyo Midtown Clinic).</li>
+        <li>Conserver TOUS les justificatifs (factures, ordonnances, comptes-rendus) pour remboursement CFE + AXA.</li>
+      </ul>
+    </div>
+
+    <h3>Autres risques sanitaires</h3>
+    <p><strong>Eau &amp; alimentation.</strong> Eau du robinet potable sur tout le territoire. Hygiène alimentaire excellente. Le risque digestif est très faible, y compris pour les sushis et sashimis dans les établissements professionnels.</p>
+    <p><strong>Pollens.</strong> Japon connaît un pic d'allergie au pollen de cèdre (<em>sugi</em>) de février à avril — touche jusqu'à 25 % de la population. Antihistaminique conseillé pour les personnes sujettes.</p>
+    <p><strong>Chaleur &amp; humidité.</strong> Été (juin-septembre) très humide, températures &gt; 35 °C avec point de rosée élevé : risque de coup de chaleur (<em>necchūshō</em>). Hydratation continue, sel, repos aux heures chaudes sur chantier.</p>
+    <p><strong>Faune.</strong> Risque très faible. Quelques espèces à connaître : ours en montagne (Hokkaidō, Honshu rural), frelons asiatiques (<em>suzumebachi</em>) en zones boisées d'été. Pas de serpents très dangereux en zone urbaine.</p>
+
+    <h3>Pharmacie de voyage recommandée</h3>
+    <ul>
+      <li>Médicaments personnels en quantité suffisante + ordonnance en anglais (certains traitements sont interdits ou strictement réglementés au Japon — vérifier la <em>Yunyu Kakunin-sho</em>).</li>
+      <li>Antalgique / antipyrétique courant (paracétamol).</li>
+      <li>Antihistaminique (pollens, piqûres d'insectes).</li>
+      <li>Antidiarrhéique préventif (changement alimentaire).</li>
+      <li>Désinfectant cutané + pansements stériles.</li>
+      <li>Crème solaire SPF 50+ (été) — protection UV élevée à la mer et en montagne.</li>
+      <li>Bouchons d'oreilles (hôtels parfois minces, métro bruyant).</li>
+    </ul>
+
+    <div class="alert danger">
+      <strong>Médicaments interdits ou réglementés au Japon</strong>
+      <ul>
+        <li>Certains médicaments courants en France contiennent des substances <strong>interdites</strong> au Japon (pseudoéphédrine, codéine, certains antidépresseurs et stimulants).</li>
+        <li>Vyvanse, Adderall, certaines préparations Vicks inhaler : interdits.</li>
+        <li>Si traitement chronique : demander un <strong>Yunyu Kakunin-sho</strong> (certificat d'importation) auprès du Ministry of Health (MHLW) avant départ.</li>
+        <li>Vérifier sur <a href="https://www.mhlw.go.jp">mhlw.go.jp</a> ou auprès de l'ambassade du Japon en France.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 3 — PRATIQUES CULTURELLES ====== -->
+  <section id="s3">
+    <h2><span class="num">3.</span>Pratiques culturelles &amp; comportement</h2>
+
+    <p>La culture professionnelle japonaise est l'une des plus codifiées au monde. Le respect strict de quelques règles fondamentales — ponctualité, échange de cartes de visite, hiérarchie, communication indirecte — fait la différence entre une mission réussie et un malentendu majeur. La société valorise l'<strong>harmonie de groupe (<em>wa</em>)</strong> et le respect des codes plus que l'initiative individuelle.</p>
+
+    <h3>Codes sociaux fondamentaux</h3>
+
+    <p><strong>La salutation — <em>ojigi</em> (courbette).</strong> Pas de poignée de main spontanée. L'inclinaison varie selon la hiérarchie :</p>
+    <ul style="font-size:13.5px;">
+      <li><strong>15°</strong> — salutation courante, entre collègues de même rang.</li>
+      <li><strong>30°</strong> — salutation respectueuse, à un client ou supérieur.</li>
+      <li><strong>45°</strong> — excuse ou remerciement appuyé.</li>
+      <li>Maintenir la courbette 1 à 2 secondes. Mains le long du corps (homme) ou jointes devant (femme).</li>
+    </ul>
+    <p>Si l'interlocuteur tend la main, la serrer doucement <strong>tout en s'inclinant légèrement</strong> — pas de poignée vigoureuse.</p>
+
+    <p><strong>La carte de visite — <em>meishi</em>.</strong> C'est le rituel le plus important. La carte représente la personne, pas un simple bout de papier.</p>
+    <div class="two-col">
+      <div class="col-card do">
+        <h4>À faire avec une meishi</h4>
+        <ul>
+          <li>La <strong>présenter et la recevoir à deux mains</strong>, côté texte vers l'interlocuteur.</li>
+          <li>S'incliner légèrement en la donnant.</li>
+          <li>L'<strong>examiner attentivement</strong> quelques secondes — lire le nom, le titre.</li>
+          <li>La <strong>poser sur la table devant soi</strong> pendant toute la réunion (ou dans un porte-cartes).</li>
+          <li>Commander des cartes <strong>bilingues</strong> japonais/anglais avant le départ.</li>
+        </ul>
+      </div>
+      <div class="col-card dont">
+        <h4>À ne JAMAIS faire</h4>
+        <ul>
+          <li>Mettre directement la carte dans sa poche arrière (manque de respect majeur).</li>
+          <li>Écrire dessus en présence de la personne.</li>
+          <li>La plier, la corner ou la salir.</li>
+          <li>L'oublier sur la table en partant.</li>
+          <li>Donner la carte d'une seule main, distraitement.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p><strong>La ponctualité — ABSOLUE.</strong> Arriver <strong>5 à 10 minutes en avance</strong> est la norme. Un retard de plus de 5 minutes est considéré comme un manquement grave. <strong>Prévenir par téléphone</strong> immédiatement si retard inévitable, même de 2 minutes. Les trains et le Shinkansen sont eux-mêmes ponctuels à la seconde près.</p>
+
+    <p><strong>La hiérarchie — sacralisée.</strong> Toujours <strong>laisser le supérieur parler en premier</strong>, s'asseoir en premier, sortir le premier de l'ascenseur. La place d'honneur (<em>kamiza</em>) est la plus éloignée de la porte. Ne jamais couper la parole d'un dirigeant.</p>
+
+    <p><strong>La communication — indirecte.</strong> Le « non » direct n'existe pratiquement pas. Apprendre à lire entre les lignes :</p>
+    <table>
+      <thead><tr><th>Ce qu'on entend</th><th>Ce que ça signifie souvent</th></tr></thead>
+      <tbody>
+        <tr><td>« Peut-être... » / <em>tabun</em></td><td>Non, mais je ne veux pas vous heurter</td></tr>
+        <tr><td>« C'est difficile » / <em>muzukashii</em></td><td>Non, impossible</td></tr>
+        <tr><td>« Nous allons étudier » / <em>kentou shimasu</em></td><td>Refus poli probable</td></tr>
+        <tr><td>« Hai » (« oui »)</td><td>« J'ai entendu » — pas forcément un accord</td></tr>
+        <tr><td>Silence prolongé en réunion</td><td>Réflexion ou désaccord — ne pas combler le silence</td></tr>
+      </tbody>
+    </table>
+    <p>Reformuler les engagements importants par écrit (email) en synthèse de réunion, pour confirmation explicite.</p>
+
+    <p><strong>La patience &amp; le consensus — <em>nemawashi</em>.</strong> Les décisions sont collectives : on consulte chaque partie prenante en amont, puis on entérine en réunion. Forcer une décision rapide est contre-productif. Les processus paraissent lents mais l'exécution post-décision est très rapide.</p>
+
+    <p><strong>Le repas business — <em>nomikai</em>.</strong> Les sorties au restaurant ou izakaya (bar) en équipe sont importantes pour la cohésion. <strong>Refuser cri ou systématiquement est mal vu</strong>, mais boire n'est jamais obligatoire (commander un soft ou bière sans alcool est accepté). Servir son voisin (jamais soi-même) avec la bouteille tenue à deux mains. Ne pas planter ses baguettes verticalement dans le riz (geste funéraire).</p>
+
+    <p><strong>Les cadeaux — appréciés mais codifiés.</strong> Apporter un présent modeste représentant la France (vin, gastronomie, spécialité régionale) au premier rendez-vous client. Emballage soigné indispensable. <strong>Éviter les chiffres 4 (<em>shi</em>) et 9 (<em>ku</em>)</strong> — associés à la mort et à la souffrance. Pas de cadeaux trop chers (gêne le destinataire).</p>
+
+    <div class="alert danger">
+      <strong>Comportements à proscrire</strong>
+      <ul>
+        <li><strong>Donner un pourboire</strong> — culturellement INSULTANT au Japon. Service inclus partout. Refuser même si l'on insiste.</li>
+        <li><strong>Se moucher en public</strong> — geste très impoli, se retirer aux toilettes.</li>
+        <li>Confondre les sandales d'intérieur, les sandales de toilettes, et marcher en chaussures sur les <em>tatamis</em>.</li>
+        <li>Pointer du doigt une personne (utiliser une main ouverte).</li>
+        <li>Tatouages visibles : encore tabou (yakuza) — bains publics (<em>onsen</em>) souvent interdits aux tatoués.</li>
+        <li>Parler fort, téléphoner dans les transports, manger en marchant.</li>
+        <li>Critiquer le Japon ou comparer défavorablement avec la Chine ou la Corée.</li>
+      </ul>
+    </div>
+
+    <h3>Codes vestimentaires</h3>
+    <table>
+      <thead><tr><th>Contexte</th><th>Tenue recommandée</th></tr></thead>
+      <tbody>
+        <tr><td>Réunion client / bureau</td><td>Costume sombre + cravate sobre (homme) · tailleur (femme) — extrêmement formel</td></tr>
+        <tr><td>Chantier terrain</td><td>EPI complets aux normes JIS + uniforme fourni ou tenue de travail nette</td></tr>
+        <tr><td>Repas d'affaires</td><td>Costume — jamais chemise dépareillée</td></tr>
+        <tr><td>Été (juin-septembre)</td><td><strong>Cool Biz</strong> : chemise manches courtes sans cravate toléré (consigne nationale)</td></tr>
+        <tr><td>Visite de site religieux (temple, sanctuaire)</td><td>Tenue couvrante, retirer les chaussures à l'entrée des bâtiments</td></tr>
+        <tr><td>Soirée informelle / izakaya</td><td>Smart casual — pas de short ni tongs en ville</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Quelques mots utiles en japonais</h3>
+    <table>
+      <thead><tr><th>Français</th><th>Japonais (rōmaji)</th><th>Prononciation</th></tr></thead>
+      <tbody>
+        <tr><td>Bonjour (matin)</td><td>Ohayō gozaimasu</td><td>Ohayo gozaïmasse</td></tr>
+        <tr><td>Bonjour (journée)</td><td>Konnichiwa</td><td>Kone-nitchi-wa</td></tr>
+        <tr><td>Bonsoir</td><td>Konbanwa</td><td>Kone-banne-wa</td></tr>
+        <tr><td>Merci</td><td>Arigatō gozaimasu</td><td>Arigato gozaïmasse</td></tr>
+        <tr><td>S'il vous plaît</td><td>Onegai shimasu</td><td>Onégaï chimasse</td></tr>
+        <tr><td>Excusez-moi / Pardon</td><td>Sumimasen</td><td>Soumimassène</td></tr>
+        <tr><td>Oui / Non</td><td>Hai / Iie</td><td>Haï / Iyé</td></tr>
+        <tr><td>Je ne comprends pas</td><td>Wakarimasen</td><td>Wakarimassène</td></tr>
+        <tr><td>Parlez-vous anglais ?</td><td>Eigo o hanasemasu ka?</td><td>Eïgo o hanassémasse ka</td></tr>
+        <tr><td>À l'aide !</td><td>Tasukete!</td><td>Tasskété !</td></tr>
+        <tr><td>Appelez la police</td><td>Keisatsu o yonde kudasai</td><td>Keï-satsou o yondé koudassaï</td></tr>
+        <tr><td>Séisme</td><td>Jishin</td><td>Jichine</td></tr>
+        <tr><td>Tsunami</td><td>Tsunami</td><td>Tsounami</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====== SECTION 4 — LOGISTIQUE ====== -->
+  <section id="s4">
+    <h2><span class="num">4.</span>Logistique pratique</h2>
+
+    <h3>Visa &amp; formalités d'entrée</h3>
+    <p>Le régime applicable dépend de la <strong>durée de la mission</strong> et de la <strong>nature de l'activité</strong> sur place. Le service RH GAT coordonne la demande avec l'entité japonaise réceptrice.</p>
+
+    <table>
+      <thead><tr><th>Situation</th><th>Régime</th><th>Démarches</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Court séjour ≤ 90 jours</strong><br>Tourisme, réunions, audits, visites client <em>sans rémunération locale</em></td>
+          <td>Exemption de visa (Français)</td>
+          <td>Passeport valide + billet retour. Pré-enregistrement <strong>Visit Japan Web</strong> recommandé.</td>
+        </tr>
+        <tr>
+          <td><strong>Mission longue &gt; 90 jours</strong> sans rémunération japonaise</td>
+          <td>Business Visa</td>
+          <td>Demande à l'ambassade du Japon en France avant départ. Lettre d'invitation entité japonaise.</td>
+        </tr>
+        <tr>
+          <td><strong>Travail rémunéré par entité japonaise</strong></td>
+          <td>Work Visa — « Engineer / Specialist in Humanities / International Services » ou « Skilled Labor »</td>
+          <td><strong>COE (Certificate of Eligibility)</strong> à obtenir par l'employeur japonais auprès du Bureau de l'Immigration, puis demande de visa à l'ambassade. Délai global : 2 à 3 mois.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Visit Japan Web — pré-enregistrement avant le vol</strong>
+      <ul>
+        <li>Plateforme officielle gratuite : <a href="https://vjw-lp.digital.go.jp/">vjw-lp.digital.go.jp</a></li>
+        <li>Permet de pré-déclarer immigration et douane avant le vol — QR codes à scanner à l'arrivée (gain de temps significatif).</li>
+        <li>À compléter dans les <strong>2 semaines précédant l'arrivée</strong>.</li>
+      </ul>
+    </div>
+
+    <h3>Monnaie &amp; finances</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Monnaie</th><td>Yen (JPY, ¥) — 1 EUR ≈ 160 JPY (2026)</td></tr>
+        <tr><th>Cash</th><td><strong>Dominant</strong> dans les petits commerces, ramen, taxis hors apps, sanctuaires</td></tr>
+        <tr><th>Cartes Visa / Mastercard</th><td>Acceptées dans hôtels, grands commerces, restaurants moyens-haut — pas systématique</td></tr>
+        <tr><th>Distributeurs (ATM)</th><td><strong>7-Eleven (Seven Bank)</strong> acceptent les cartes internationales 24/7 — réseau le plus fiable. Aussi Japan Post Bank.</td></tr>
+        <tr><th>Carte IC (Suica / Pasmo / Icoca)</th><td>Rechargeable, omniprésente pour transports, distributeurs automatiques, konbini. Suica disponible via Apple Wallet.</td></tr>
+        <tr><th>Pourboire</th><td><strong>INTERDIT culturellement</strong> — peut être ressenti comme insultant. Service inclus partout.</td></tr>
+        <tr><th>Reçus / factures</th><td>Demander <em>ryōshūsho</em> pour les notes de frais — au nom de l'entreprise si requis.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Transports</h3>
+    <p><strong>Aéroports internationaux.</strong> Tokyo : Narita (NRT) à 60 km, Haneda (HND) au sud. Osaka : Kansai (KIX). Liaisons centre-ville par train rapide (Narita Express, Haneda Monorail) ou bus limousine.</p>
+
+    <p><strong>Shinkansen (train à grande vitesse).</strong> Le moyen de transport interurbain de référence — confort, fiabilité, ponctualité à la seconde près. Réservation possible aux guichets JR (Japan Rail) ou en ligne. Le <strong>Japan Rail Pass</strong> (à <strong>acheter AVANT l'arrivée</strong> via un revendeur agréé) reste rentable pour les missions itinérantes — vérifier les conditions, les tarifs ont augmenté en 2024.</p>
+
+    <p><strong>Métro / train urbain.</strong> Tokyo possède l'un des réseaux les plus denses au monde (Metro + Toei + JR + lignes privées). Très efficace mais saturé aux heures de pointe (7h30-9h00, 18h-20h). Application <strong>Google Maps</strong> ou <strong>Navitime</strong> en anglais. Carte IC indispensable.</p>
+
+    <p><strong>Taxis.</strong> Officiels, sûrs, mais chers (compteur de base ≈ 500 JPY, +400 JPY/km). Portes arrière à <strong>ouverture automatique</strong> — ne pas la fermer manuellement. <strong>Pas de pourboire</strong>. Applications : GO, Uber (taxis officiels).</p>
+
+    <p><strong>Vols intérieurs.</strong> ANA, JAL pour les grandes distances (Tokyo-Sapporo, Tokyo-Okinawa). Réservation en ligne.</p>
+
+    <p><strong>Conduite.</strong> À <strong>GAUCHE</strong> (comme au Royaume-Uni). <strong>Permis international</strong> ET permis français à présenter. Alcoolémie : <strong>tolérance zéro absolue</strong> — sanctions sévères. Location possible mais peu utile en zone urbaine (transports en commun supérieurs).</p>
+
+    <p><strong>Couvre-feu de fait.</strong> Les transports en commun s'arrêtent entre minuit et 1h du matin (sauf taxis). Prévoir le retour à l'hôtel ou un budget taxi conséquent en cas de sortie tardive.</p>
+
+    <h3>Hébergement &amp; chantier</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Hôtel d'affaires</th><td>Standard très élevé. Quartiers d'affaires à privilégier : Shinjuku, Shibuya, Marunouchi, Ginza (Tokyo) · Umeda, Namba (Osaka)</td></tr>
+        <tr><th>Confirmation</th><td>Conserver numéro de réservation et adresse en version papier (+ en japonais pour le taxi)</td></tr>
+        <tr><th>Coffre</th><td>Utiliser le coffre de chambre — bien que le risque de vol soit quasi nul</td></tr>
+        <tr><th>Check-in / out</th><td>Informer systématiquement le référent GAT de votre arrivée</td></tr>
+        <tr><th>Chantier</th><td>EPI obligatoires aux normes JIS — uniforme entreprise souvent fourni. Échauffement collectif <em>rajio taisō</em> à respecter.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Connectivité &amp; téléphonie</h3>
+    <div class="alert">
+      <strong>Communication sur place</strong>
+      <ul>
+        <li><strong>Roaming international</strong> activé auprès de votre opérateur français avant départ — couverture excellente partout.</li>
+        <li>Alternative : <strong>SIM tourisme</strong> (Sakura Mobile, Mobal) ou <strong>eSIM</strong> (Ubigi, Airalo) — activation instantanée.</li>
+        <li><strong>Pocket Wi-Fi</strong> (location à l'aéroport ou livré à l'hôtel) — pratique pour équipe en déplacement.</li>
+        <li>Wi-Fi gratuit dans les principaux hubs (gares, Starbucks, conbini). VPN recommandé sur les Wi-Fi publics.</li>
+        <li><strong>LINE</strong> est l'app de messagerie standard (équivalent local de WhatsApp).</li>
+        <li>Application <strong>Safety Tips (JNTO)</strong> à installer obligatoirement — alertes JMA séismes/tsunamis/typhons en anglais.</li>
+      </ul>
+    </div>
+
+    <h3>Électricité</h3>
+    <p>Prises <strong>Type A / Type B</strong> (plates, comme USA), tension <strong>110V (Tokyo : 50 Hz, Osaka : 60 Hz)</strong>. Adaptateur indispensable. Vérifier que vos appareils sont bi-tension (chargeurs récents : généralement OK 100-240V).</p>
+  </section>
+
+  <!-- ====== SECTION 5 — CONTACTS D'URGENCE ====== -->
+  <section id="s5">
+    <h2><span class="num">5.</span>Contacts d'urgence &amp; procédures</h2>
+
+    <div class="alert danger">
+      <strong>En cas d'urgence immédiate</strong>
+      <ul>
+        <li>Mettez-vous en sécurité AVANT tout appel (séisme : « Drop, Cover, Hold On » — voir section 1).</li>
+        <li>Appelez le <strong>119</strong> (ambulance / pompiers — même numéro) ou <strong>110</strong> (police).</li>
+        <li>Prévenez votre <strong>chargé d'affaires ou référent GAT en priorité</strong> dès que la situation est sous contrôle ; à défaut, contactez la Direction GAT en escalation.</li>
+        <li>Activez immédiatement <strong>Europ Assistance</strong> en cas d'hospitalisation pour la traduction et la prise en charge directe.</li>
+      </ul>
+    </div>
+
+    <h3>Numéros d'urgence Japon</h3>
+    <table>
+      <thead><tr><th>Service</th><th>Numéro</th><th>Disponibilité</th></tr></thead>
+      <tbody>
+        <tr><td>Police</td><td><strong>110</strong></td><td>24h/24</td></tr>
+        <tr><td>Ambulance &amp; pompiers (même numéro)</td><td><strong>119</strong></td><td>24h/24</td></tr>
+        <tr><td>Garde-côtes (incident maritime)</td><td>118</td><td>24h/24</td></tr>
+        <tr><td>Japan Helpline (étrangers, anglais)</td><td>0570-000-911</td><td>24h/24</td></tr>
+        <tr><td>JNTO Tourist Information (anglais)</td><td>050-3816-2787</td><td>24h/24</td></tr>
+        <tr><td>Météo / alertes (Japan Meteorological Agency)</td><td><a href="https://www.jma.go.jp/jma/indexe.html">jma.go.jp</a></td><td>Temps réel</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Santé prévoyance — assistance &amp; assurance</h3>
+    <p style="font-size:13.5px; margin-bottom:14px;">En tant qu'expatrié hors UE, votre couverture santé repose sur trois piliers : la <strong>CFE</strong> (sécurité sociale internationale), la <strong>complémentaire santé &amp; prévoyance AXA</strong> souscrite via la plateforme OWELLO, et <strong>Europ Assistance</strong> pour toute assistance médicale, voyage ou rapatriement. L'annuaire complet est maintenu à jour en temps réel par la Direction sur SharePoint.</p>
+
+    <div style="background:#f0f7fc; border:1px solid #c8dcec; border-left:4px solid #185fa5; border-radius:8px; padding:18px 22px; margin-bottom:16px;">
+      <div style="display:flex; flex-wrap:wrap; gap:18px;">
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Assistance, voyage &amp; rapatriement</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">Europ Assistance</div>
+          <a href="tel:+33141858585" style="display:inline-block; background:#1a1a1a; color:#fff; padding:7px 14px; border-radius:5px; text-decoration:none; font-size:14px; font-weight:600;">+33 1 41 85 85 85</a>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">24h/24, 7j/7 — hospitalisation, rapatriement sanitaire, évacuation, bagages, accident, responsabilité civile. <strong>À appeler AVANT toute hospitalisation coûteuse</strong> (frais médicaux élevés au Japon) — service de traduction japonais ↔ français disponible.</div>
+        </div>
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Sécu internationale + mutuelle</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">CFE + AXA Complémentaire &amp; Prévoyance</div>
+          <div style="font-size:12.5px; color:#1a1a1a; margin-bottom:4px;">Gestion via la plateforme <a href="https://login.owello-insurance.com/login" target="_blank">OWELLO</a></div>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">CFE pour la sécu, AXA pour la complémentaire santé et la prévoyance (décès, invalidité). Carte d'assuré à présenter aux praticiens ou à transmettre à Europ Assistance pour prise en charge directe.</div>
+        </div>
+      </div>
+      <div style="margin-top:16px; padding-top:14px; border-top:1px solid #c8dcec;">
+        <a href="https://gerib69.sharepoint.com/sites/GATNET/Lists/Assistance%20et%20assurance/AllItems.aspx" target="_top" style="display:inline-block; background:#185fa5; color:#fff; padding:9px 18px; border-radius:6px; text-decoration:none; font-size:13.5px; font-weight:600;">
+          Voir l'annuaire complet santé prévoyance sur SharePoint →
+        </a>
+        <div style="font-size:11.5px; color:#666; margin-top:8px; font-style:italic;">
+          Authentification SharePoint requise. Source : Liste « Assistance et assurance » maintenue par la Direction.
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:12px; color:#7a3f0d; background:#fdf6ee; border:1px solid #f0d09a; border-left:3px solid #BA7517; border-radius:6px; padding:10px 14px; margin:0 0 16px;"><strong>Indépendants / freelance :</strong> les couvertures ci-dessus sont propres aux salariés sous contrat GAT. Si vous intervenez en tant qu'indépendant, <strong>contactez votre chargé d'affaires ou référent GAT avant tout départ</strong> pour valider ensemble votre situation (assurance santé, assistance, rapatriement, responsabilité civile professionnelle) et les règles de sécurité applicables à la mission.</p>
+
+    <div class="alert">
+      <strong>En cas de rapatriement — conditions de prise en charge par Europ Assistance</strong>
+      <p>Pour que le rapatriement soit pris en charge et que vos frais soient intégralement remboursés, trois étapes sont essentielles. L'assureur conditionne sa prise en charge à leur respect — c'est la seule raison pour laquelle nous insistons sur ces points.</p>
+      <p>Le collaborateur, ou à défaut son chargé d'affaires, doit impérativement :</p>
+      <ul>
+        <li><strong>Obtenir l'accord préalable d'Europ Assistance</strong> avant de prendre toute initiative ou d'engager toute dépense (transport, hospitalisation, hôtel). Un simple appel suffit à activer le dossier — c'est ce qui déclenche la prise en charge directe et évite d'avancer les frais.</li>
+        <li><strong>Se conformer aux solutions préconisées par Europ Assistance</strong> (choix de l'établissement, mode de transport, calendrier). Europ Assistance négocie et prépaye directement auprès des prestataires : c'est ainsi que les sommes — parfois très importantes — sont prises en charge sans avance de votre part.</li>
+        <li><strong>Conserver et transmettre dès que possible tous les justificatifs originaux</strong> des dépenses engagées pour le compte d'Europ Assistance (factures, ordonnances, billets, plaintes de police le cas échéant). Sans ces originaux, le remboursement ne peut pas être instruit.</li>
+      </ul>
+      <p>À noter : si GAT a dû assurer à ses frais un voyage retour qui aurait pu être organisé via les titres de transport déjà détenus par le collaborateur, l'entreprise pourra utiliser ou demander le remboursement de ces titres. Cette disposition évite simplement une double facturation pour un même trajet.</p>
+    </div>
+
+    <h3>Ambassade &amp; consulats de France au Japon</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Ambassade (Tokyo)</th><td>+81 3 5798 6000</td></tr>
+        <tr><th>Adresse</th><td>4-11-44 Minami-Azabu, Minato-ku, Tokyo 106-8514</td></tr>
+        <tr><th>Site Ariane (inscription)</th><td><a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a></td></tr>
+        <tr><th>Site officiel ambassade</th><td><a href="https://jp.ambafrance.org">jp.ambafrance.org</a></td></tr>
+        <tr><th>Consulat correspondant Osaka-Kobe-Kyoto</th><td>via ambassade Tokyo</td></tr>
+        <tr><th>Consulat correspondant Sapporo</th><td>via ambassade Tokyo</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Inscription Ariane — obligatoire</strong>
+      <ul>
+        <li>Inscrivez-vous sur le portail Ariane avant tout départ (<a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a>).</li>
+        <li>Au Japon, l'ambassade utilise Ariane pour relayer instantanément les alertes officielles JMA (séisme, tsunami, typhon).</li>
+        <li>Mentionnez vos dates de séjour et coordonnées locales (hôtel, téléphone japonais).</li>
+      </ul>
+    </div>
+
+    <h3>Procédure en cas d'incident</h3>
+    <ol class="step-list">
+      <li><strong>Séisme.</strong><p><strong>« Drop, Cover, Hold On »</strong> — voir détail section 1. À l'intérieur : sous une table solide, s'écarter des fenêtres, NE PAS courir. À l'extérieur : s'éloigner des façades. Couper le gaz dès la fin de la secousse. Suivre Safety Tips et NHK Radio 2 (anglais).</p></li>
+      <li><strong>Tsunami.</strong><p>Toute alerte = gagner les <strong>hauteurs immédiatement</strong> (au-dessus de 10 m), sans retourner chercher d'affaires. Suivre la signalétique « Tsunami Evacuation » (vague stylisée). Plusieurs vagues possibles — attendre la fin officielle de l'alerte (JMA).</p></li>
+      <li><strong>Typhon.</strong><p>Suivre les infos <strong>Japan Meteorological Agency (jma.go.jp)</strong> et Safety Tips. Annuler les déplacements non essentiels, rester à l'hôtel ou dans un bâtiment solide. Éviter façades vitrées et balcons. Provisions d'eau et lampe torche en chambre.</p></li>
+      <li><strong>Accident / blessure.</strong><p>1. Mettez-vous en sécurité. 2. Appelez le 119 (ambulance). 3. Appelez Europ Assistance (+33 1 41 85 85 85) pour traduction et prise en charge. 4. Appelez votre chargé d'affaires GAT. 5. Conservez TOUS les justificatifs médicaux.</p></li>
+      <li><strong>Hospitalisation.</strong><p>Faire appeler <strong>Europ Assistance (+33 1 41 85 85 85)</strong> avant tout traitement coûteux pour activer la prise en charge directe et la traduction. Présenter carte CFE + AXA Complémentaire. Conserver TOUS les documents médicaux et factures originaux pour remboursement.</p></li>
+      <li><strong>Perte / vol de passeport.</strong><p>1. Déposez plainte au <em>kōban</em> (poste de police de proximité — bornes bleues dans toutes les villes). 2. Contactez l'ambassade de France (+81 3 5798 6000). 3. Demandez un laissez-passer consulaire. 4. Informez GAT RH.</p></li>
+      <li><strong>Accident de chantier.</strong><p>1. Stop travaux — sécuriser la zone. 2. Appel 119 si blessé. 3. Prévenir chef de chantier + référent GAT immédiatement. 4. NE PAS déplacer un blessé grave sans secours qualifiés. Procédure JIS stricte à respecter (rapport d'accident).</p></li>
+    </ol>
+  </section>
+
+  <!-- ====== SECTION 6 — RETOUR EN FRANCE (CONSTANT) ====== -->
+  <section id="s6" class="return-section">
+    <span class="critical-badge">Étape critique · Identique pour tous les pays</span>
+    <h2><span class="num">6.</span>Fin de mission &amp; retour en France</h2>
+    <p class="source">Sources : Ameli.fr (Assurance Maladie), URSSAF, impots.gouv.fr, Convention fiscale France-Japon (1995, révisée 2008) — section commune à tous les livrets, à ne pas modifier sans validation RH.</p>
+
+    <p>Le retour en France marque la fin de votre statut de travailleur expatrié. Plusieurs démarches administratives sont obligatoires dès votre retour pour préserver vos droits sociaux.</p>
+
+    <div class="deadline-card">
+      <div class="deadline-number">8<small>jours</small></div>
+      <div class="deadline-text">
+        <strong>Délai maximal pour vous réinscrire à la CPAM</strong>
+        Au-delà de 8 jours, vos soins médicaux ne sont plus remboursés et la régularisation devient longue. Démarche à lancer dès le lendemain de votre retour.
+      </div>
+    </div>
+
+    <h3 id="cpam">Couverture maladie — réinscription à la CPAM et carte Vitale</h3>
+    <div class="alert danger">
+      <strong>Démarche prioritaire à votre retour</strong>
+      <ul>
+        <li>Vous perdez votre couverture maladie internationale dès la fin de mission.</li>
+        <li>Réinscrivez-vous à la CPAM dans les 8 jours suivant votre retour en France.</li>
+        <li><strong>Mettez à jour votre carte Vitale</strong> en borne pharmacie ou CPAM (la mise à jour active vos droits actualisés).</li>
+        <li>Sans réinscription, vos soins médicaux ne seront pas remboursés.</li>
+        <li>Cette démarche est individuelle — GAT ne peut pas la faire à votre place.</li>
+      </ul>
+    </div>
+
+    <h3>Comment se réinscrire à la CPAM</h3>
+    <ol class="step-list">
+      <li><strong>Préparez vos documents.</strong><p>Pièce d'identité, justificatif de domicile (-3 mois), relevé de situation CAF si applicable, RIB, et le cas échéant votre certificat de fin de détachement ou attestation de fin de contrat fournie par GAT.</p></li>
+      <li><strong>Rendez-vous sur Ameli.fr.</strong><p>Connectez-vous ou créez votre compte sur ameli.fr. Rubrique « Ma situation » › « Je reprends une activité en France ». Vous pouvez également contacter le 36 46 (service CPAM, gratuit depuis la France).</p></li>
+      <li><strong>Demande d'affiliation.</strong><p>Si vous étiez salarié de GAT en détachement, votre employeur signale la fin de détachement à l'URSSAF. Votre CPAM de rattachement (celle de votre domicile) prend le relai automatiquement sous 8 à 15 jours.</p></li>
+      <li><strong>Attestation de droits + mise à jour carte Vitale.</strong><p>Une fois affilié, téléchargez votre attestation de droits sur Ameli.fr. Mettez à jour votre carte Vitale dans une borne en pharmacie ou à la CPAM (gratuit, 30 secondes).</p></li>
+    </ol>
+
+    <h3 id="cfe">Couverture par la CFE pendant la transition (3 mois)</h3>
+    <div class="alert">
+      <strong>Maintien des droits par la Caisse des Français de l'Étranger</strong>
+      <ul>
+        <li>Pendant les <strong>3 premiers mois après votre retour</strong>, la CFE maintient vos droits (le temps que la Sécurité sociale prenne le relai).</li>
+        <li>Pour chaque consultation ou soin : faire compléter une <strong>feuille de soins CERFA</strong> par le praticien.</li>
+        <li>Déposez ces feuilles de soins sur votre <strong>espace CFE en ligne</strong>.</li>
+        <li>Une fois vos droits Sécu ouverts (sous 8-15 jours après réinscription) : utilisez votre carte Vitale normalement, ou transmettez la feuille de soins à la CPAM.</li>
+      </ul>
+    </div>
+
+    <h3 id="owello">Portabilité de la complémentaire santé (mutuelle AXA via OWELLO)</h3>
+    <div class="alert">
+      <strong>Maintien de votre mutuelle après la fin du contrat de travail</strong>
+      <ul>
+        <li>Vous pouvez bénéficier de la <strong>portabilité</strong> de la complémentaire santé (mutuelle d'entreprise) après la fin de votre contrat de travail GAT.</li>
+        <li><strong>Condition</strong> : France Travail doit vous verser l'allocation d'aide au retour à l'emploi (ARE).</li>
+        <li>Chaque mois, transmettez à <strong>OWELLO</strong> votre attestation de versement des allocations France Travail.</li>
+        <li>Espace en ligne OWELLO : <a href="https://login.owello-insurance.com/login">login.owello-insurance.com/login</a></li>
+      </ul>
+    </div>
+
+    <h3>Fiscalité — convention France-Japon</h3>
+    <div class="alert">
+      <strong>Convention fiscale bilatérale</strong>
+      <ul>
+        <li>La <strong>convention fiscale France-Japon du 3 mars 1995</strong> (révisée par avenant en 2008) évite la double imposition des revenus.</li>
+        <li>Les revenus perçus au Japon doivent être déclarés en France (formulaire 2047 — revenus de source étrangère).</li>
+        <li>Selon votre statut (résidence fiscale française ou japonaise), les règles d'imposition diffèrent — clarifier avec le service comptable GAT et impots.gouv.fr.</li>
+        <li>Sources : <a href="https://www.impots.gouv.fr">impots.gouv.fr</a>, <a href="https://www.jetro.go.jp/en/">JETRO</a> pour le contexte fiscal japonais.</li>
+      </ul>
+    </div>
+
+    <h3>Remboursement des frais de soins — procédure complète</h3>
+    <ol class="step-list">
+      <li><strong>Pendant les 3 premiers mois (couverture CFE).</strong><p>Faire compléter une feuille de soins CERFA par le praticien. Déposez-la sur votre <strong>espace CFE</strong>. La CFE rembourse selon les taux de la Sécurité sociale.</p></li>
+      <li><strong>Une fois la Sécu ouverte.</strong><p>Utilisez votre <strong>carte Vitale</strong> à jour. Le pharmacien / médecin transmet directement à la CPAM (tiers payant ou télétransmission).</p></li>
+      <li><strong>Pour le complément mutuelle.</strong><p>Téléchargez votre décompte de remboursement CPAM sur Ameli.fr → transmettez-le à <strong>OWELLO</strong> via votre <a href="https://login.owello-insurance.com/login">espace OWELLO</a>. OWELLO complète selon votre contrat.</p></li>
+    </ol>
+
+    <div class="alert">
+      <strong>Contacts et liens utiles au retour</strong>
+      <ul>
+        <li><a href="https://www.ameli.fr">Ameli.fr</a> — portail Assurance Maladie · <strong>36 46</strong> (lun-ven 8h-20h, sam 9h-12h)</li>
+        <li><a href="https://www.cfe.fr">CFE.fr</a> — Caisse des Français de l'Étranger (couverture 3 mois transition)</li>
+        <li><a href="https://login.owello-insurance.com/login">OWELLO</a> — portabilité mutuelle AXA (transmission attestations France Travail)</li>
+        <li><a href="https://www.francetravail.fr">France Travail</a> — inscription ARE si chômage</li>
+        <li><a href="https://www.impots.gouv.fr">Impots.gouv.fr</a> — déclaration revenus étrangers (convention France-Japon)</li>
+      </ul>
+    </div>
+
+    <h3 id="recap-demarches">Récapitulatif des démarches administratives au retour</h3>
+    <table>
+      <thead><tr><th>Démarche</th><th>Délai</th><th>Où ?</th></tr></thead>
+      <tbody>
+        <tr><td>Réinscription CPAM</td><td>Sous 8 jours</td><td>ameli.fr / CPAM locale</td></tr>
+        <tr><td>Mise à jour carte Vitale</td><td>Dès droits ouverts</td><td>Borne pharmacie / CPAM</td></tr>
+        <tr><td>Inscription France Travail (si chômage)</td><td>Sous 12 mois</td><td>francetravail.fr</td></tr>
+        <tr><td>Portabilité mutuelle AXA via OWELLO</td><td>Dès fin de contrat</td><td><a href="https://login.owello-insurance.com/login">login.owello-insurance.com</a></td></tr>
+        <tr><td>Transmission attestation France Travail à OWELLO</td><td>Tous les mois</td><td>Espace OWELLO</td></tr>
+        <tr><td>Feuille de soins CERFA → CFE</td><td>Pendant 3 mois après retour</td><td>Espace CFE en ligne</td></tr>
+        <tr><td>Décompte CPAM → OWELLO (complément mutuelle)</td><td>À chaque soin</td><td>Espace OWELLO</td></tr>
+        <tr><td>Déclaration fiscale revenus étrangers (formulaire 2047)</td><td>Calendrier fiscal</td><td>impots.gouv.fr</td></tr>
+        <tr><td>Restitution équipements (ordinateur et outillage)</td><td>Sous 5 jours ouvrés</td><td>Référent GAT</td></tr>
+        <tr><td>Remplir le retour d'expérience</td><td>Sous 5 jours</td><td>Chargée QSE GAT</td></tr>
+        <tr><td>Notes de frais en attente</td><td>Sous 30 jours</td><td>Comptabilité GAT</td></tr>
+        <tr><td>Résiliation SIM / pocket Wi-Fi japonais</td><td>Avant / dès retour</td><td>Opérateur local</td></tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- ====== CHECKLIST ====== -->
+  <section id="checklist">
+    <h2>Checklist avant départ Japon</h2>
+
+    <h3>Documents</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Passeport valide couvrant toute la durée du séjour</label>
+      <label><input type="checkbox"> Visa adapté (exemption 90j / Business / Work + COE)</label>
+      <label><input type="checkbox"> Pré-enregistrement Visit Japan Web effectué</label>
+      <label><input type="checkbox"> Copie numérique passeport (email / cloud)</label>
+      <label><input type="checkbox"> Cartes de visite (meishi) bilingues commandées</label>
+      <label><input type="checkbox"> Contacts d'urgence imprimés et mémorisés</label>
+      <label><input type="checkbox"> Coordonnées hôtel + adresse en japonais (pour taxi)</label>
+    </div>
+
+    <h3>Santé</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Vaccins à jour (DTP, ROR minimum)</label>
+      <label><input type="checkbox"> Consultation médecin du voyage si encéphalite japonaise applicable</label>
+      <label><input type="checkbox"> Yunyu Kakunin-sho si médicaments réglementés au Japon</label>
+      <label><input type="checkbox"> Médicaments personnels + ordonnance en anglais</label>
+      <label><input type="checkbox"> Carnet de vaccination international</label>
+      <label><input type="checkbox"> Pharmacie de voyage de base</label>
+    </div>
+
+    <h3>Sécurité &amp; risques naturels</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Inscription Ariane effectuée (pastel.diplomatie.gouv.fr)</label>
+      <label><input type="checkbox"> Application Safety Tips (JNTO) installée et testée</label>
+      <label><input type="checkbox"> Procédure « Drop, Cover, Hold On » mémorisée</label>
+      <label><input type="checkbox"> Repérage zone d'évacuation tsunami si côtier</label>
+      <label><input type="checkbox"> Lampe torche + chargeur externe en bagage</label>
+    </div>
+
+    <h3>Logistique</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Roaming international activé ou SIM / eSIM japonaise prévue</label>
+      <label><input type="checkbox"> Référent GAT informé des dates et coordonnées</label>
+      <label><input type="checkbox"> Japan Rail Pass acheté avant arrivée (si itinérant)</label>
+      <label><input type="checkbox"> Adaptateur secteur Type A/B + vérif bi-tension</label>
+      <label><input type="checkbox"> Espèces JPY pour les premiers jours (cash dominant)</label>
+      <label><input type="checkbox"> Carte IC (Suica via Apple Wallet) configurée</label>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h3>Bon voyage et bonne mission.</h3>
+    L'équipe GAT International est disponible à tout moment pour vous accompagner.<br>
+    <a href="https://www.gat.fr">www.gat.fr</a> — Tous vos documents de mission en ligne.
+  </div>
+
+</main>
+
+<footer>
+  GAT International — Livret de mission Japon · Version 2026 · Document interne confidentiel.<br>
+  Sources : France Diplomatie (MEAE), JNTO, Japan Meteorological Agency (JMA), Europ Assistance, CFE, OWELLO, Ameli.fr, Institut Pasteur, JETRO.
+</footer>
+
+<!-- Bouton flottant fixe — toujours visible -->
+<a href="#s6" class="float-return" title="Voir les démarches CPAM, fiscalité et restitution équipements">
+  Démarches retour France <span class="float-return-arrow">→</span>
+</a>
+
+<script>
+  // Injecte la date d'impression dans le footnote PDF
+  window.addEventListener('beforeprint', function() {
+    var d = new Date();
+    var dateStr = d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' });
+    var el = document.getElementById('print-date');
+    if (el) el.textContent = dateStr;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>France métropole — Livret de Mission GAT International</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #1a1a1a; background: #fafafa; line-height: 1.55; font-size: 15px; }
+  .topbar { background: #1a1a1a; color: #fff; padding: 10px 32px; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; }
+  .topbar a { color: #fff; text-decoration: none; }
+  .btn-pdf { background: #fff; color: #1a1a1a; padding: 6px 14px; border-radius: 4px; font-weight: 600; font-size: 12px; border: none; cursor: pointer; }
+  .btn-pdf:hover { background: #e5e5e5; }
+  header.cover { background: #ffffff; padding: 32px 32px 24px; border-bottom: 1px solid #e5e5e5; }
+  .cover-grid { display: grid; grid-template-columns: 1fr auto; gap: 32px; max-width: 1100px; margin: 0 auto; align-items: end; }
+  .breadcrumb { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .cover h1 { margin: 0 0 6px; font-size: 32px; font-weight: 600; }
+  .cover .subtitle { margin: 0; font-size: 14px; color: #666; }
+  .contract-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 7px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; }
+  .contract-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; }
+  .contract-badge.contract-france { background: #e9f4e2; color: #2f5f12; border: 1px solid #c5e0b1; }
+  .contract-badge.contract-france::before { background: #5d8a3a; }
+  .contract-detail { font-weight: 400; opacity: 0.85; margin-left: 4px; }
+  .cover-flag { width: 120px; height: 80px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; }
+  .cover-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .meta-bar { max-width: 1100px; margin: 16px auto 0; display: grid; grid-template-columns: repeat(6, 1fr); border: 1px solid #e5e5e5; border-radius: 4px; overflow: hidden; }
+  .meta-bar > div { padding: 10px 14px; border-right: 1px solid #e5e5e5; }
+  .meta-bar > div:last-child { border-right: none; }
+  .meta-bar .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .meta-bar .value { font-size: 13px; font-weight: 500; margin-top: 2px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 32px; }
+  section { background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; padding: 28px 32px; margin-bottom: 24px; }
+  section h2 { margin: 0 0 18px; font-size: 22px; font-weight: 600; padding-bottom: 12px; border-bottom: 2px solid #1a1a1a; display: flex; align-items: center; gap: 14px; }
+  section h2 .num { background: #1a1a1a; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600; }
+  section h3 { margin: 22px 0 12px; font-size: 16px; font-weight: 600; }
+  section p, section li { font-size: 14px; }
+  .source { font-size: 11.5px; color: #888; font-style: italic; margin: -8px 0 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 8px 0 16px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #ececec; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.4px; color: #555; }
+  tr:last-child td { border-bottom: none; }
+  ul, ol { padding-left: 22px; margin: 8px 0 16px; }
+  li { margin: 4px 0; }
+  .alert { background: #fffbe8; border: 1px solid #e8d680; border-radius: 8px; padding: 14px 18px; margin: 14px 0; }
+  .alert strong { display: block; font-size: 12.5px; color: #7a5a0d; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .alert ul { margin: 6px 0; }
+  .alert.danger { background: #fdecec; border-color: #e8b1ad; }
+  .alert.danger strong { color: #791f1f; }
+  .alert.green { background: #e9f4e2; border-color: #c5e0b1; }
+  .alert.green strong { color: #2f5f12; }
+  .obligations-preamble { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 24px 28px; margin: 24px auto 0; max-width: 1100px; }
+  .obligations-header { margin-bottom: 18px; }
+  .obligations-badge { display: inline-block; background: #5d8a3a; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 8px; }
+  .obligations-header h2 { margin: 0 0 6px; font-size: 20px; font-weight: 600; }
+  .obligations-header p { margin: 0; font-size: 13.5px; color: #666; }
+  .obligations-timeline { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; position: relative; }
+  .obligations-timeline::before { content: ''; position: absolute; top: 32px; left: 16%; right: 16%; height: 2px; background: #c5e0b1; z-index: 0; }
+  .obl-phase { background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px; position: relative; z-index: 1; }
+  .obl-phase.before { border-top: 3px solid #5d8a3a; }
+  .obl-phase.during { border-top: 3px solid #185fa5; }
+  .obl-phase.after { border-top: 3px solid #BA7517; }
+  .obl-step { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #1a1a1a; color: #fff; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .obl-phase h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; }
+  .obl-when { font-size: 11px; color: #888; margin-bottom: 8px; display: block; }
+  .obl-phase ul { padding-left: 18px; margin: 0; font-size: 12.5px; }
+  .obl-phase li { margin: 4px 0; }
+  .obl-phase li.priority { font-weight: 600; color: #791f1f; }
+  .section-link { color: #185fa5; text-decoration: none; font-weight: 600; margin-left: 4px; font-size: 11px; }
+  .section-link:hover { text-decoration: underline; }
+  .toc { background: #f7f7f5; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px 22px; margin-bottom: 24px; }
+  .toc-title { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 8px; }
+  .toc ol { columns: 2; column-gap: 32px; padding-left: 22px; margin: 0; font-size: 13.5px; }
+  .toc a { color: #1a1a1a; text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .return-section { background: #f5f9ee; border-color: #c5e0b1; }
+  .critical-badge { display: inline-block; background: #5d8a3a; color: #fff; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 8px; }
+  .step-list { padding-left: 0; list-style: none; counter-reset: stepcount; }
+  .step-list > li { counter-increment: stepcount; position: relative; padding: 10px 14px 10px 50px; margin: 6px 0; background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 13.5px; }
+  .step-list > li::before { content: counter(stepcount); position: absolute; left: 12px; top: 10px; width: 26px; height: 26px; background: #1a1a1a; color: #fff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+  .step-list > li p { margin: 4px 0 0; font-size: 13px; color: #555; }
+  .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; font-size: 13.5px; margin: 12px 0; }
+  .checklist label { display: flex; align-items: flex-start; gap: 8px; padding: 5px 8px; border-radius: 4px; cursor: pointer; }
+  .checklist label:hover { background: #f7f7f5; }
+  .checklist input[type="checkbox"] { margin-top: 4px; }
+  .footer-cta { background: #1a1a1a; color: #fff; padding: 24px 32px; border-radius: 8px; text-align: center; margin: 32px 0; }
+  .footer-cta h3 { margin: 0 0 8px; font-size: 18px; font-weight: 600; }
+  .footer-cta a { color: #fff; }
+  footer { text-align: center; padding: 24px 32px; color: #888; font-size: 12px; }
+  .pdf-footnote { display: none; }
+  .float-return { position: fixed; bottom: 24px; right: 24px; background: #5d8a3a; color: #fff; padding: 12px 20px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 13.5px; box-shadow: 0 6px 20px rgba(93,138,58,0.4); display: inline-flex; align-items: center; gap: 10px; z-index: 100; }
+  .float-return:hover { background: #4a6f2c; }
+  .deadline-card { background: #fffbe8; border: 1px solid #e8d680; border-radius: 8px; padding: 16px 20px; margin: 16px 0; display: flex; gap: 20px; align-items: center; }
+  .deadline-number { background: #1a1a1a; color: #fff; padding: 10px 16px; border-radius: 6px; font-weight: 700; font-size: 22px; text-align: center; min-width: 70px; }
+  .deadline-number small { display: block; font-size: 9px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; opacity: 0.7; }
+  .deadline-text { font-size: 13px; line-height: 1.5; }
+  .deadline-text strong { display: block; font-size: 13.5px; margin-bottom: 4px; }
+  @media (max-width: 720px) { .meta-bar, .obligations-timeline, .checklist, .cover-grid { grid-template-columns: 1fr; } .toc ol { columns: 1; } .obligations-timeline::before { display: none; } }
+  @media print { .topbar, .float-return, .btn-pdf { display: none !important; } body { background: #fff; } main, header.cover { padding: 16px 24px !important; } section { page-break-inside: avoid; } .pdf-footnote { display: block !important; text-align: center; font-size: 10px; color: #666; margin: 8px 0 16px; padding: 8px; border: 1px dashed #ccc; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><a href="../index.html">← Retour à la carte des destinations</a></span>
+  <button class="btn-pdf" onclick="window.print()">Imprimer / Sauvegarder en PDF</button>
+</div>
+
+<header class="cover">
+  <div class="cover-grid">
+    <div>
+      <div class="breadcrumb"><a href="../index.html">Conseils aux voyageurs</a> › <span>France métropole</span></div>
+      <h1>France métropole</h1>
+      <p class="subtitle">République française — Livret de mission pour les déplacements professionnels en France continentale et en Corse.</p>
+      <span class="contract-badge contract-france">Contrat France<span class="contract-detail">· Contrat classique · CPAM + APICIL mutuelle (si affilié GAT) · Pas d'Europ Assistance en métropole</span></span>
+    </div>
+    <div class="cover-flag">
+      <img src="https://flagcdn.com/w320/fr.png" alt="Drapeau France">
+    </div>
+  </div>
+  <div class="meta-bar">
+    <div><div class="label">Capitale</div><div class="value">Paris</div></div>
+    <div><div class="label">Fuseau horaire</div><div class="value">UTC+1 / UTC+2</div></div>
+    <div><div class="label">Langue officielle</div><div class="value">Français</div></div>
+    <div><div class="label">Monnaie</div><div class="value">Euro (EUR)</div></div>
+    <div><div class="label">Code ISO</div><div class="value">FRA</div></div>
+    <div><div class="label">Créée le</div><div class="value">13 mai 2026</div></div>
+  </div>
+
+  <p class="pdf-footnote">Document figé extrait du site dynamique le <span id="print-date"></span> — La version en ligne peut avoir évolué depuis.</p>
+
+  <div class="obligations-preamble">
+    <div class="obligations-header">
+      <span class="obligations-badge">À respecter absolument</span>
+      <h2>Vos obligations pour cette mission en France</h2>
+      <p>Cette fiche couvre les trois cas de mission en France hors résidence habituelle : <strong>chantier ou intervention technique</strong>, <strong>déplacement court</strong> (réunion, audit, formation), et <strong>détachement intra-France de longue durée</strong>. Votre statut social (Sécu, mutuelle) reste inchangé — aucune démarche administrative spécifique à effectuer.</p>
+    </div>
+    <div class="obligations-timeline">
+
+      <div class="obl-phase before"><span class="obl-step">1</span>
+        <h3>Avant le départ</h3>
+        <span class="obl-when">Au moins quelques jours avant</span>
+        <ul>
+          <li>Programme de mission et hébergement confirmés par le chargé d'affaires <a class="section-link" href="#s4">▸</a></li>
+          <li>Ordre de mission signé pour les frais professionnels <a class="section-link" href="#s4">▸</a></li>
+          <li>Vérifier visite médicale du travail à jour <a class="section-link" href="#s2">▸</a></li>
+          <li><strong>Chantier</strong> : PPSPS lu, EPI en état <a class="section-link" href="#s1">▸</a></li>
+          <li>Carte Vitale + carte APICIL dans le portefeuille <a class="section-link" href="#s2">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase during"><span class="obl-step">2</span>
+        <h3>Pendant la mission</h3>
+        <span class="obl-when">Tout au long du séjour</span>
+        <ul>
+          <li>Pièce d'identité sur soi en permanence <a class="section-link" href="#s4">▸</a></li>
+          <li><strong>EPI obligatoires</strong> sur chantier (casque, chaussures, harnais selon poste) <a class="section-link" href="#s1">▸</a></li>
+          <li>Respect strict du code de la route et temps de conduite <a class="section-link" href="#s1">▸</a></li>
+          <li>Pointage / feuille d'heures transmis selon procédure GAT <a class="section-link" href="#s4">▸</a></li>
+          <li><strong>Chargé d'affaires ou référent GAT</strong> prévenu en priorité en cas d'incident (Direction GAT en escalation) <a class="section-link" href="#s5">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase after"><span class="obl-step">3</span>
+        <h3>Au retour</h3>
+        <span class="obl-when">Clôture mission — délais simples</span>
+        <ul>
+          <li>Restitution équipements (ordinateur, outillage) sous <strong>5 jours ouvrés</strong> <a class="section-link" href="#s6">▸</a></li>
+          <li>Retour d'expérience auprès de la Chargée QSE sous <strong>5 jours</strong> <a class="section-link" href="#s6">▸</a></li>
+          <li>Notes de frais sous <strong>30 jours</strong> avec justificatifs <a class="section-link" href="#s6">▸</a></li>
+          <li>Si arrêt maladie pendant mission : volet 3 employeur à transmettre à la RH <a class="section-link" href="#s6">▸</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <ol>
+      <li><a href="#s1">Risques mission &amp; sécurité</a></li>
+      <li><a href="#s2">Santé &amp; médecine du travail</a></li>
+      <li><a href="#s3">Particularités régionales</a></li>
+      <li><a href="#s4">Logistique pratique</a></li>
+      <li><a href="#s5">Contacts d'urgence</a></li>
+      <li><a href="#s6">Clôture mission</a></li>
+    </ol>
+  </div>
+
+  <!-- ====== SECTION 1 — RISQUES MISSION & SÉCURITÉ ====== -->
+  <section id="s1">
+    <h2><span class="num">1.</span>Risques mission &amp; sécurité</h2>
+    <p class="source">Sources : INRS, OPPBTP, Sécurité routière, Code du travail (titre IV) — données à jour mai 2026.</p>
+
+    <p>La France métropolitaine est un environnement de travail à risque sécuritaire faible mais les risques professionnels classiques restent présents — sur chantier en particulier. Cette section synthétise les points de vigilance des trois types de mission couverts par cette fiche.</p>
+
+    <h3>Mission chantier ou intervention technique</h3>
+    <div class="alert">
+      <strong>EPI obligatoires sur tout site BTP / industriel</strong>
+      <ul>
+        <li>Casque, chaussures de sécurité (S3 minimum), gants adaptés à l'activité, lunettes de protection</li>
+        <li>Harnais antichute pour travaux en hauteur (formation à jour exigée)</li>
+        <li>Vêtements haute visibilité sur chantiers routiers ou ferroviaires</li>
+        <li>Protection auditive si exposition &gt; 80 dB(A)</li>
+      </ul>
+    </div>
+
+    <p>Avant toute intervention sur site externe : prendre connaissance du <strong>PPSPS</strong> (Plan Particulier de Sécurité et de Protection de la Santé) remis par le donneur d'ordre, ou du <strong>plan de prévention</strong> en intervention sur site industriel. En cas de doute sur un risque ou un mode opératoire, droit d'alerte et de retrait — prévenez immédiatement la Chargée QSE GAT.</p>
+
+    <h3>Sécurité routière</h3>
+    <p>Le risque routier reste la première cause d'accidents du travail mortels en France. Pour les missions impliquant des trajets longs ou nocturnes :</p>
+    <ul>
+      <li><strong>Temps de conduite</strong> : pause obligatoire de 15 minutes toutes les 2 heures, max. 4h30 de conduite continue (règles européennes pour les véhicules &gt; 3,5 t — bonne pratique pour les VL).</li>
+      <li><strong>Alcool et stupéfiants</strong> : tolérance zéro avant et pendant la mission. Contrôle aléatoire possible sur certains sites donneurs d'ordre.</li>
+      <li><strong>Téléphone au volant</strong> : interdit, même en kit mains-libres sur certains sites. Privilégier les arrêts pour communiquer.</li>
+      <li><strong>Conditions hivernales</strong> : équipements obligatoires (pneus neige ou chaînes) dans 48 départements de montagne du 1<sup>er</sup> novembre au 31 mars — vérifiez avant départ.</li>
+    </ul>
+
+    <h3>Risque climatique selon région et saison</h3>
+    <table>
+      <thead><tr><th>Risque</th><th>Période</th><th>Régions principales</th><th>Précaution</th></tr></thead>
+      <tbody>
+        <tr><td>Canicule</td><td>Juin – septembre</td><td>Sud-Est, vallée du Rhône, Sud-Ouest</td><td>Hydratation, horaires décalés, pauses fraîcheur, vigilance Météo France</td></tr>
+        <tr><td>Vent fort (Mistral, Tramontane)</td><td>Toute l'année</td><td>Vallée du Rhône, Languedoc, Provence</td><td>Sécurisation matériel chantier, vigilance échafaudages</td></tr>
+        <tr><td>Inondations / orages violents</td><td>Automne (Cévennes), printemps</td><td>Sud-Est, Massif Central, montagnes</td><td>Vigilance Météo France, éviter les zones inondables</td></tr>
+        <tr><td>Neige / verglas</td><td>Décembre – mars</td><td>Massif central, Alpes, Pyrénées, Vosges, Jura</td><td>Équipements hivernaux obligatoires sur certains axes</td></tr>
+        <tr><td>Tiques (Lyme)</td><td>Avril – octobre</td><td>Zones forestières (Est, Centre, Massif central)</td><td>Manches longues, répulsif, inspection en fin de journée si chantier en forêt</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Sécurité personnelle</h3>
+    <p>La France métropolitaine est globalement sûre. Quelques précautions standards en zones urbaines denses ou touristiques :</p>
+    <ul>
+      <li>Vigilance pickpockets dans les transports en commun parisiens (RER, ligne 1, gares).</li>
+      <li>Cambriolages opportunistes : ne pas laisser de matériel professionnel visible dans un véhicule en stationnement.</li>
+      <li>Manifestations ou mouvements sociaux : éviter les zones, suivre les consignes des forces de l'ordre.</li>
+    </ul>
+  </section>
+
+  <!-- ====== SECTION 2 — SANTÉ & MÉDECINE DU TRAVAIL ====== -->
+  <section id="s2">
+    <h2><span class="num">2.</span>Santé &amp; médecine du travail</h2>
+    <p class="source">Sources : Ameli.fr, Santé Publique France, Code du travail (art. R. 4624-10 et suiv.) — à jour mai 2026.</p>
+
+    <p>Vous restez affilié à votre <strong>CPAM française d'origine</strong> pendant toute la mission. Votre carte Vitale et votre mutuelle d'entreprise fonctionnent normalement sur tout le territoire métropolitain. Aucune démarche administrative santé n'est requise pour une mission domestique.</p>
+
+    <h3>Visite médicale du travail</h3>
+    <div class="alert">
+      <strong>Aptitude médicale exigée avant tout chantier</strong>
+      <ul>
+        <li>Visite d'information et de prévention (VIP) : tous les 5 ans, ou 3 ans si poste à risque.</li>
+        <li>Examen médical d'aptitude (EMA) : tous les 2 ans pour poste à risque particulier (hauteur, conduite, manutention, exposition chimique, amiante).</li>
+        <li>Vérifiez la validité de votre dernière attestation avant la mission — la médecine du travail GAT peut programmer un rendez-vous si périmé.</li>
+      </ul>
+    </div>
+
+    <h3>Vaccinations recommandées</h3>
+    <ul>
+      <li><strong>DTP</strong> (Diphtérie, Tétanos, Poliomyélite) : rappel tous les 20 ans entre 25 et 65 ans, puis tous les 10 ans. Indispensable pour tout travail manuel (risque tétanos).</li>
+      <li><strong>Leptospirose</strong> : recommandée pour les travaux en milieu humide (égouts, rivières, zones rongeurs).</li>
+      <li><strong>Hépatite A et B</strong> : pour certaines activités à risque (travailleurs sociaux, salubrité).</li>
+      <li>Grippe saisonnière : recommandée pour les missions hivernales en milieu fermé.</li>
+    </ul>
+
+    <h3>En cas de problème de santé pendant la mission</h3>
+    <table>
+      <thead><tr><th>Situation</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td>Urgence vitale (douleur thoracique, perte de connaissance, hémorragie)</td><td><strong>SAMU 15</strong> ou <strong>112</strong> immédiatement. Prévenir la Direction GAT dès que possible.</td></tr>
+        <tr><td>Accident du travail</td><td>Soins immédiats. <strong>Déclaration sous 24 h</strong> à la Chargée QSE GAT. Conserver certificat médical initial pour la déclaration d'AT.</td></tr>
+        <tr><td>Maladie / arrêt court</td><td>Consultation médecin généraliste (cabinet local, SOS Médecins au 3624, ou téléconsultation Doctolib). Volet 3 employeur à la RH GAT sous 48 h.</td></tr>
+        <tr><td>Achat médicaments</td><td>Pharmacie sur présentation ordonnance + carte Vitale. Remboursement automatique par télétransmission.</td></tr>
+        <tr><td>Hospitalisation</td><td>Carte Vitale + carte APICIL pour prise en charge directe. Prévenir la Direction GAT.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Stress, fatigue, surcharge — droits du salarié</h3>
+    <p>En détachement intra-France de longue durée, les facteurs psychosociaux peuvent s'accumuler (éloignement famille, hébergement temporaire, isolement). N'hésitez pas à signaler à la Chargée QSE ou au médecin du travail. Possibilité de téléconsultation psychologique via la mutuelle d'entreprise.</p>
+  </section>
+
+  <!-- ====== SECTION 3 — PARTICULARITÉS RÉGIONALES ====== -->
+  <section id="s3">
+    <h2><span class="num">3.</span>Particularités régionales</h2>
+    <p class="source">Sources : Légifrance, mairies, ARS régionales — à jour mai 2026.</p>
+
+    <p>La France métropolitaine présente quelques spécificités régionales qui peuvent surprendre lors d'une mission hors région d'origine.</p>
+
+    <h3>Jours fériés et droit local</h3>
+    <ul>
+      <li><strong>Alsace-Moselle</strong> (Bas-Rhin, Haut-Rhin, Moselle) : <strong>2 jours fériés supplémentaires</strong> — Vendredi Saint et 26 décembre (Saint-Étienne). Régime concordataire (cultes salariés par l'État).</li>
+      <li><strong>Pâques et Pentecôte</strong> : jours fériés nationaux mais la Pentecôte est devenue « journée de solidarité » dans de nombreuses entreprises — vérifiez le calendrier GAT.</li>
+    </ul>
+
+    <h3>Langues régionales et accents</h3>
+    <p>Le français standard est compris partout. Cependant, certains accents (sud, nord, alsacien) peuvent demander un temps d'adaptation. Quelques expressions locales utiles :</p>
+    <ul>
+      <li><strong>Sud-Ouest / Provence</strong> : « peuchère » (compassion), « pitchoune » (petit), « cagnard » (soleil tapant).</li>
+      <li><strong>Nord / Hauts-de-France</strong> : « biloute » (ami), « ducasse » (fête foraine), « braderie » (vide-grenier).</li>
+      <li><strong>Bretagne</strong> : « kenavo » (au revoir), « pesketour » (pêcheur), « ar mor » (la mer).</li>
+      <li><strong>Alsace</strong> : « hopla » (allez), « schluss » (fini). Quelques panneaux bilingues alsacien/français.</li>
+    </ul>
+
+    <h3>Code de la route — variations régionales</h3>
+    <ul>
+      <li><strong>Zones à faibles émissions (ZFE)</strong> : Paris, Lyon, Marseille, Toulouse, Grenoble, Nice, Strasbourg, Rouen, Reims, Montpellier — vignette Crit'Air obligatoire. Restrictions selon la classe du véhicule, à vérifier avant déplacement.</li>
+      <li><strong>Pneus neige / chaînes obligatoires</strong> (1<sup>er</sup> novembre – 31 mars) : 48 départements de massifs montagneux. Liste à jour sur securite-routiere.gouv.fr.</li>
+      <li><strong>Stationnement payant</strong> : applications MoovApp, Flowbird ; éviter horodateurs hors zones touristiques.</li>
+      <li><strong>Péages</strong> : badge Liber-t ou Bip&amp;Go pour gagner du temps sur autoroutes payantes.</li>
+    </ul>
+
+    <h3>Climat et habitudes locales</h3>
+    <ul>
+      <li><strong>Sud-Est (Provence, Côte d'Azur)</strong> : pause méridienne longue (12 h – 14 h ou 14 h 30) en été. Activité décalée le matin tôt et le soir.</li>
+      <li><strong>Nord et Est en hiver</strong> : journée courte, prévoir éclairage et chauffage. Repas chauds réguliers conseillés.</li>
+      <li><strong>Bretagne, Normandie</strong> : pluie possible toute l'année — vêtements imperméables professionnels recommandés.</li>
+    </ul>
+  </section>
+
+  <!-- ====== SECTION 4 — LOGISTIQUE PRATIQUE ====== -->
+  <section id="s4">
+    <h2><span class="num">4.</span>Logistique pratique</h2>
+    <p class="source">Sources : SNCF Connect, hôtels et plateformes de réservation pro, charte frais professionnels GAT.</p>
+
+    <h3>Transports</h3>
+    <table>
+      <thead><tr><th>Mode</th><th>Plateforme / outil</th><th>Bonnes pratiques GAT</th></tr></thead>
+      <tbody>
+        <tr><td>TGV / Intercités / TER</td><td><a href="https://www.sncf-connect.com">SNCF Connect</a> · Trainline</td><td>Réserver en 2<sup>de</sup> classe (pro tier), Pro Première autorisée sur trajets &gt; 4 h.</td></tr>
+        <tr><td>Avion intérieur (Paris-Nice, Paris-Marseille, etc.)</td><td>Air France, easyJet, Transavia</td><td>Réservation centralisée par la chargée d'affaires. Bagage cabine privilégié.</td></tr>
+        <tr><td>Location de véhicule</td><td>Europcar, Avis, Hertz</td><td>Permis B valide. Carburant : note de frais avec justificatif.</td></tr>
+        <tr><td>Véhicule personnel</td><td>Indemnités kilométriques (barème URSSAF)</td><td>Justificatifs trajets + relevé kilométrique mensuel.</td></tr>
+        <tr><td>Taxi / VTC</td><td>G7, Uber, Bolt</td><td>Reçu obligatoire pour remboursement. Privilégier transports en commun en ville.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Hébergement</h3>
+    <p>Pour les missions de quelques jours à plusieurs mois :</p>
+    <ul>
+      <li><strong>Court séjour (1 – 7 nuits)</strong> : hôtel pro (Mercure, Ibis, B&amp;B Hôtels). Réservation via plateforme entreprise quand disponible.</li>
+      <li><strong>Moyen séjour (1 semaine – 1 mois)</strong> : Appart'hôtels (Adagio, Sejours&amp;Affaires), résidences avec kitchenette. Plus économique.</li>
+      <li><strong>Détachement long (&gt; 1 mois)</strong> : location meublée temporaire (Airbnb Pro, MagicStay, Spotahome), studio professionnel. Bail mobilité possible (1 à 10 mois).</li>
+    </ul>
+
+    <div class="alert">
+      <strong>Frais d'hébergement — plafonds GAT</strong>
+      <p>Le plafond de frais d'hébergement varie selon la zone (Paris/Lyon/Marseille = zone tendue, autres villes = zone standard). Demandez le barème actuel à votre chargé d'affaires avant la mission pour éviter les dépassements.</p>
+    </div>
+
+    <h3>Restauration</h3>
+    <ul>
+      <li><strong>Indemnité repas</strong> : barème URSSAF applicable (montant à jour à demander à la comptabilité GAT).</li>
+      <li><strong>Restaurants conventionnés</strong> : titres-restaurants (Edenred, Up, Swile) acceptés dans la plupart des restaurants et certaines superettes pour les courses.</li>
+      <li>Conservez tous les justificatifs (factures &gt; 25 € EUR avec mention TVA pour la déduction).</li>
+    </ul>
+
+    <h3>Connexion et communication</h3>
+    <ul>
+      <li><strong>4G/5G</strong> : couverture quasi totale en métropole. Forfaits français standards fonctionnent sans réglages.</li>
+      <li><strong>Wi-Fi pro</strong> : la plupart des hôtels offrent un Wi-Fi de base gratuit. Hot-spot 4G du téléphone professionnel si besoin de bande passante sécurisée.</li>
+      <li><strong>VPN GAT</strong> : obligatoire pour accéder aux ressources internes hors réseau bureau.</li>
+    </ul>
+  </section>
+
+  <!-- ====== SECTION 5 — CONTACTS D'URGENCE ====== -->
+  <section id="s5">
+    <h2><span class="num">5.</span>Contacts d'urgence &amp; procédures</h2>
+
+    <div class="alert danger">
+      <strong>En cas d'urgence immédiate</strong>
+      <ul>
+        <li>Mettez-vous en sécurité AVANT tout appel.</li>
+        <li>Appelez le service compétent : <strong>15 (SAMU)</strong>, <strong>18 (pompiers)</strong>, <strong>17 (police)</strong> ou <strong>112 (numéro européen unifié)</strong>.</li>
+        <li>Prévenez votre <strong>chargé d'affaires ou référent GAT en priorité</strong> dès que la situation est sous contrôle ; Direction GAT en escalation si non joignable.</li>
+      </ul>
+    </div>
+
+    <h3>Numéros d'urgence France</h3>
+    <table>
+      <thead><tr><th>Service</th><th>Numéro</th><th>Disponibilité</th></tr></thead>
+      <tbody>
+        <tr><td><strong>SAMU</strong> (urgences médicales)</td><td>15</td><td>24h/24</td></tr>
+        <tr><td><strong>Pompiers</strong> (incendie, accident, secours)</td><td>18</td><td>24h/24</td></tr>
+        <tr><td><strong>Police / Gendarmerie</strong></td><td>17</td><td>24h/24</td></tr>
+        <tr><td><strong>112</strong> — numéro européen d'urgence unifié</td><td>112</td><td>24h/24</td></tr>
+        <tr><td>SOS Médecins (médecin à domicile)</td><td>3624</td><td>24h/24</td></tr>
+        <tr><td>Centre antipoison</td><td>+33 1 40 05 48 48</td><td>24h/24</td></tr>
+        <tr><td>Numéro européen enfants disparus</td><td>116 000</td><td>24h/24</td></tr>
+        <tr><td>Violences femmes</td><td>3919</td><td>Lun-ven 8h-22h, w-e 10h-20h</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Santé prévoyance — CPAM + APICIL</h3>
+    <div style="background:#e9f4e2; border:1px solid #c5e0b1; border-left:4px solid #5d8a3a; border-radius:8px; padding:18px 22px; margin-bottom:16px;">
+      <p style="margin:0 0 12px; font-size:13.5px;">En mission domestique en France métropolitaine, votre couverture santé est celle de votre <strong>contrat de travail classique GAT</strong> : <strong>CPAM</strong> (carte Vitale) + <strong>mutuelle APICIL</strong> (si vous êtes affilié à la mutuelle GAT) + <strong>prévoyance APICIL</strong>. Pas d'Europ Assistance corporate sur la métropole — les services d'urgence nationaux (15, 18, 112) sont suffisants.</p>
+      <ul style="margin:0; padding-left:22px; font-size:13px;">
+        <li><strong>Soins courants</strong> : médecin généraliste local, carte Vitale, télétransmission automatique CPAM + APICIL.</li>
+        <li><strong>Hospitalisation</strong> : carte Vitale + carte mutuelle APICIL au guichet admission. Prise en charge directe selon les conventions.</li>
+        <li><strong>Accident du travail</strong> : déclaration AT auprès de la RH GAT sous 24 h. La Sécu prend en charge à 100 % les frais liés.</li>
+        <li><strong>Prévoyance (arrêt long, invalidité, décès)</strong> : APICIL gère les indemnités complémentaires aux IJSS — déclaration via le SIRH ou la RH.</li>
+      </ul>
+    </div>
+
+    <p style="font-size:12px; color:#7a3f0d; background:#fdf6ee; border:1px solid #f0d09a; border-left:3px solid #BA7517; border-radius:6px; padding:10px 14px; margin:0 0 16px;"><strong>Indépendants / freelance :</strong> les couvertures ci-dessus sont propres aux salariés sous contrat GAT. Si vous intervenez en tant qu'indépendant, <strong>contactez votre chargé d'affaires ou référent GAT avant tout démarrage de mission</strong> pour valider ensemble votre situation (assurance santé, prévoyance, responsabilité civile professionnelle) et les règles de sécurité applicables (PPSPS, EPI, code de la route, médecine du travail).</p>
+
+    <h3>Contacts internes GAT</h3>
+    <p style="font-size:13.5px;">En cas d'incident, prévenez en priorité votre <strong>chargé d'affaires ou référent GAT</strong> (selon votre affectation) — il est le mieux placé pour relayer la situation. La Direction GAT prend le relais en escalation si votre chargé d'affaires n'est pas joignable. Pour les questions techniques chantier ou sécurité, contactez la Chargée QSE.</p>
+    <table>
+      <thead><tr><th>Contact</th><th>Rôle</th><th>Téléphone</th><th>Email</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Jean-Marc CERESNE</strong></td><td>Chargé d'affaires (priorité selon affectation)</td><td><a href="tel:+33662545185">+33 6 62 54 51 85</a></td><td><a href="mailto:jean-marc.ceresne@geribgroup.com">jean-marc.ceresne@geribgroup.com</a></td></tr>
+        <tr><td><strong>Christopher LUMBRERAS</strong></td><td>Chargé d'affaires (priorité selon affectation)</td><td><a href="tel:+33782659481">+33 7 82 65 94 81</a></td><td><a href="mailto:christopher.lumbreras@geribgroup.com">christopher.lumbreras@geribgroup.com</a></td></tr>
+        <tr><td><strong>Roxane PORETTI</strong></td><td>Chargée QSE — sécurité, AT, retour d'expérience</td><td><a href="tel:+33469844210">+33 4 69 84 42 10</a></td><td>—</td></tr>
+        <tr><td><strong>Rachel RIOUX</strong></td><td>Direction RH (escalation)</td><td><a href="tel:+33614609468">+33 6 14 60 94 68</a></td><td><a href="mailto:rachel.rioux@geribgroup.com">rachel.rioux@geribgroup.com</a></td></tr>
+        <tr><td><strong>Cyprien HAMARD</strong></td><td>Direction IT/QSSE (escalation)</td><td><a href="tel:+33651398797">+33 6 51 39 87 97</a></td><td><a href="mailto:cyprien.hamard@geribgroup.com">cyprien.hamard@geribgroup.com</a></td></tr>
+      </tbody>
+    </table>
+
+    <h3>Procédure en cas d'incident</h3>
+    <ol class="step-list">
+      <li><strong>Accident du travail (chantier ou trajet).</strong><p>1. Sécuriser la zone. 2. Premiers secours / SAMU 15 si besoin. 3. Prévenir le chef de chantier et la Chargée QSE GAT. 4. <strong>Déclaration AT sous 24 h</strong> à la RH avec certificat médical initial.</p></li>
+      <li><strong>Vol / dégradation matériel professionnel.</strong><p>1. Plainte commissariat ou gendarmerie (PV obligatoire pour assurance). 2. Prévenir le chargé d'affaires. 3. Conserver le récépissé pour le remplacement.</p></li>
+      <li><strong>Hospitalisation non programmée.</strong><p>Présenter carte Vitale + carte mutuelle. Prévenir la Direction GAT et un proche. Conserver bulletin d'hospitalisation pour la RH.</p></li>
+      <li><strong>Maladie / arrêt de travail.</strong><p>Consultation médecin (cabinet, SOS Médecins 3624, ou téléconsultation). Arrêt à transmettre : volet 1+2 à la CPAM sous 48 h, volet 3 à la RH GAT sous 48 h également.</p></li>
+      <li><strong>Conflit ou difficulté sur site donneur d'ordre.</strong><p>Ne pas réagir à chaud. Documenter par écrit (mail, photo). Contacter votre chargé d'affaires en priorité avant toute confrontation.</p></li>
+    </ol>
+  </section>
+
+  <!-- ====== SECTION 6 — CLÔTURE MISSION ====== -->
+  <section id="s6" class="return-section">
+    <span class="critical-badge">Étape finale · Mission France</span>
+    <h2><span class="num">6.</span>Clôture de mission</h2>
+    <p class="source">Sources : Charte interne GAT, Code du travail, barèmes URSSAF.</p>
+
+    <p>Vous étiez sous <strong>contrat de travail classique</strong> sans détachement. Aucune démarche administrative santé/social n'est requise à la fin de la mission — votre affiliation Sécu et votre mutuelle d'entreprise sont restées actives et continuent normalement. Les démarches qui suivent sont la clôture opérationnelle de la mission.</p>
+
+    <div class="deadline-card">
+      <div class="deadline-number">5<small>jours</small></div>
+      <div class="deadline-text"><strong>Restitution matériel et retour d'expérience</strong>Ordinateur, outillage, EPI restitués sous 5 jours ouvrés. Entretien retour d'expérience avec la Chargée QSE sous 5 jours.</div>
+    </div>
+
+    <h3>Couverture santé — aucune démarche</h3>
+    <div class="alert green">
+      <strong>Votre couverture santé est restée inchangée</strong>
+      <ul>
+        <li>Affiliation CPAM française maintenue pendant toute la mission. Carte Vitale opérationnelle.</li>
+        <li>Mutuelle d'entreprise active sans interruption.</li>
+        <li>Reprise des soins en France comme d'habitude — aucune attestation à demander.</li>
+        <li>Si vous avez été en arrêt maladie pendant la mission, transmettez le volet 3 employeur à la RH GAT pour gestion des IJSS.</li>
+      </ul>
+    </div>
+
+    <h3>Clôture administrative GAT</h3>
+    <ol class="step-list">
+      <li><strong>Restitution du matériel.</strong><p>Ordinateur portable, téléphone professionnel, outillage, EPI restitués sous 5 jours ouvrés au siège ou au référent GAT désigné. Inventaire signé en présence.</p></li>
+      <li><strong>Retour d'expérience.</strong><p>Entretien avec la <strong>Chargée QSE</strong> (Roxane PORETTI) sous 5 jours pour partager observations terrain, incidents, axes d'amélioration. Indispensable pour la traçabilité QSE et la prévention sur les missions futures.</p></li>
+      <li><strong>Notes de frais.</strong><p>Soumettre les notes de frais (transports, hébergement, restauration, frais professionnels divers) avec justificatifs originaux sous <strong>30 jours</strong> au service comptabilité. Tout retard au-delà de 30 jours peut entraîner le refus du remboursement.</p></li>
+      <li><strong>Feuille d'heures / pointage.</strong><p>Transmettre la feuille d'heures consolidée de la mission au chargé d'affaires pour validation et facturation au donneur d'ordre.</p></li>
+      <li><strong>Bilan technique mission (chantier).</strong><p>Documentation des livrables, photos de fin de chantier, PV de réception si applicable, dossier transmis au chargé d'affaires.</p></li>
+    </ol>
+
+    <h3>Fiscalité — rappel</h3>
+    <div class="alert">
+      <strong>Aucune particularité fiscale</strong>
+      <ul>
+        <li>Vos revenus restent imposables en France selon le régime habituel — déclaration annuelle classique via <a href="https://www.impots.gouv.fr">impots.gouv.fr</a>.</li>
+        <li>Les indemnités de mission (per diem, frais de déplacement) apparaissent sur votre bulletin de salaire ; les remboursements de frais réels sur justificatifs ne sont pas imposables.</li>
+        <li>Indemnités kilométriques véhicule personnel : barème URSSAF, non imposable dans la limite du barème officiel.</li>
+      </ul>
+    </div>
+
+    <div class="alert">
+      <strong>Contacts et liens utiles</strong>
+      <ul>
+        <li><a href="https://www.ameli.fr">Ameli.fr</a> — portail Assurance Maladie · <strong>36 46</strong></li>
+        <li><a href="https://www.urssaf.fr">URSSAF</a> — barème indemnités kilométriques, frais professionnels</li>
+        <li><a href="https://www.legifrance.gouv.fr">Légifrance</a> — Code du travail, accidents du travail</li>
+        <li><a href="https://www.inrs.fr">INRS</a> — Institut national de recherche et de sécurité</li>
+        <li><a href="https://www.oppbtp.com">OPPBTP</a> — Organisme professionnel de prévention BTP</li>
+        <li><a href="https://www.impots.gouv.fr">Impots.gouv.fr</a> — déclaration annuelle des revenus</li>
+      </ul>
+    </div>
+
+    <h3 id="recap-demarches">Récapitulatif des démarches au retour</h3>
+    <table>
+      <thead><tr><th>Démarche</th><th>Délai</th><th>Où ?</th></tr></thead>
+      <tbody>
+        <tr><td>Restitution équipements (ordinateur, outillage, EPI)</td><td>Sous 5 jours ouvrés</td><td>Référent GAT</td></tr>
+        <tr><td>Retour d'expérience auprès de la Chargée QSE</td><td>Sous 5 jours</td><td>Roxane PORETTI</td></tr>
+        <tr><td>Notes de frais avec justificatifs</td><td>Sous 30 jours</td><td>Comptabilité GAT</td></tr>
+        <tr><td>Feuille d'heures consolidée</td><td>Sous 5 jours</td><td>Chargé d'affaires</td></tr>
+        <tr><td>Volet 3 arrêt maladie (si applicable)</td><td>Sous 48 h</td><td>RH GAT</td></tr>
+        <tr><td>Affiliation CPAM</td><td><em>Aucune démarche</em> — affiliation maintenue</td><td>—</td></tr>
+        <tr><td>Mutuelle d'entreprise</td><td><em>Maintenue automatiquement</em></td><td>—</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====== CHECKLIST AVANT DÉPART ====== -->
+  <section id="checklist">
+    <h2>Checklist avant départ — mission France</h2>
+    <h3>Documents</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Pièce d'identité (carte nationale ou passeport)</label>
+      <label><input type="checkbox"> Carte Vitale + carte APICIL d'entreprise</label>
+      <label><input type="checkbox"> Permis de conduire (si déplacement véhicule)</label>
+      <label><input type="checkbox"> Ordre de mission signé</label>
+      <label><input type="checkbox"> Confirmation hébergement et programme</label>
+      <label><input type="checkbox"> Coordonnées chargé d'affaires + Direction GAT</label>
+    </div>
+    <h3>Chantier (si applicable)</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> EPI : casque, chaussures S3, gants, lunettes</label>
+      <label><input type="checkbox"> Vêtements haute visibilité si requis</label>
+      <label><input type="checkbox"> Harnais antichute + formation à jour</label>
+      <label><input type="checkbox"> PPSPS ou plan de prévention lus</label>
+      <label><input type="checkbox"> Outillage personnel ou GAT vérifié</label>
+      <label><input type="checkbox"> Aptitude médicale au poste à jour</label>
+    </div>
+    <h3>Logistique &amp; sécurité</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Vignette Crit'Air (si ZFE traversée)</label>
+      <label><input type="checkbox"> Pneus neige / chaînes (hiver, zones montagne)</label>
+      <label><input type="checkbox"> Trousse de premiers secours dans le véhicule</label>
+      <label><input type="checkbox"> Téléphone chargé + chargeur véhicule</label>
+      <label><input type="checkbox"> Application SNCF Connect / Bison Futé</label>
+    </div>
+  </section>
+
+  <div class="footer-cta"><h3>Bonne mission.</h3>L'équipe GAT International est disponible à tout moment.<br><a href="https://www.gat.fr">www.gat.fr</a></div>
+</main>
+
+<footer>
+  GAT International — Livret de mission France métropole · Créée le 13 mai 2026 · Document interne confidentiel.<br>
+  Sources : INRS, OPPBTP, Ameli.fr, APICIL (mutuelle &amp; prévoyance), Santé Publique France, URSSAF, Sécurité routière, Légifrance, Météo France.
+</footer>
+
+<a href="#s6" class="float-return" title="Voir les démarches de clôture de mission">
+  Clôture de mission <span>→</span>
+</a>
+
+<script>
+  window.addEventListener('beforeprint', function() {
+    var d = new Date();
+    var dateStr = d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' });
+    var el = document.getElementById('print-date');
+    if (el) el.textContent = dateStr;
+  });
+</script>
+
+</body>
+</html>

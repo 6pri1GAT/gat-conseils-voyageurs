@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thaïlande — Livret de Mission GAT International</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #1a1a1a; background: #ffffff; line-height: 1.55; }
+  .topbar { background: #1a1a1a; color: #fff; padding: 10px 32px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: #fff; text-decoration: none; opacity: 0.85; }
+  .topbar a:hover { opacity: 1; }
+  header.cover { background: #ffffff; padding: 32px 32px 24px; border-bottom: 1px solid #e5e5e5; }
+  .cover-grid { display: grid; grid-template-columns: 1fr auto; gap: 32px; max-width: 1100px; margin: 0 auto; align-items: end; }
+  .breadcrumb { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #1a1a1a; }
+  .cover h1 { margin: 0 0 6px; font-size: 32px; font-weight: 600; letter-spacing: -0.5px; }
+  .contract-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 7px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; }
+  .contract-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; }
+  .contract-badge.contract-france { background: #e9f4e2; color: #2f5f12; border: 1px solid #c5e0b1; }
+  .contract-badge.contract-france::before { background: #5d8a3a; }
+  .contract-badge.contract-detachement { background: #e6f1fb; color: #0c447c; border: 1px solid #b3d0e9; }
+  .contract-badge.contract-detachement::before { background: #185fa5; }
+  .contract-badge.contract-expat { background: #fdf0e1; color: #7a3f0d; border: 1px solid #f0d09a; }
+  .contract-badge.contract-expat::before { background: #BA7517; }
+  .contract-detail { font-weight: 400; opacity: 0.85; margin-left: 4px; }
+  .cover .subtitle { margin: 0; font-size: 14px; color: #666; }
+  .cover-flag { width: 120px; height: 80px; background: #f0f0f0; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; }
+  .cover-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .meta-bar { max-width: 1100px; margin: 16px auto 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; border: 1px solid #e5e5e5; border-radius: 4px; overflow: hidden; }
+  .meta-bar > div { padding: 10px 14px; border-right: 1px solid #e5e5e5; }
+  .meta-bar > div:last-child { border-right: none; }
+  .meta-bar .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .meta-bar .value { font-size: 13px; color: #1a1a1a; font-weight: 500; margin-top: 2px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 28px 32px 60px; }
+  .toc { background: #f7f7f5; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px 24px; margin-bottom: 32px; }
+  .toc-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 8px; }
+  .toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; font-size: 14px; }
+  .toc li { padding: 4px 0; break-inside: avoid; }
+  .toc a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; }
+  .toc a:hover { border-bottom-color: #1a1a1a; }
+  section { margin: 0 0 44px; scroll-margin-top: 20px; }
+  section h2 { font-size: 22px; font-weight: 600; margin: 0 0 6px; padding: 0 0 6px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-right: 40px; }
+  section h2 .num { color: #999; margin-right: 12px; font-weight: 400; }
+  section h3 { font-size: 16px; font-weight: 600; margin: 22px 0 10px; }
+  section p { margin: 8px 0; font-size: 14px; }
+  .vigilance-banner { padding: 14px 18px; border-radius: 6px; border-left: 4px solid; margin: 14px 0 22px; font-size: 14px; }
+  .vigilance-Vigilance { background: #fbf0d3; border-color: #d4a23a; color: #5a4307; }
+  .vigilance-banner strong { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+  .alert { padding: 14px 18px; border-radius: 6px; background: #fff8e6; border: 1px solid #f0d680; margin: 14px 0; font-size: 13.5px; }
+  .alert.danger { background: #fdecec; border-color: #e8b1ad; }
+  .alert strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; color: #1a1a1a; }
+  .alert ul { margin: 0; padding-left: 18px; }
+  .alert li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #ececec; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: #555; border-bottom: 1px solid #d5d5d5; }
+  tr:last-child td { border-bottom: none; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+  .col-card { background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px; padding: 14px 18px; }
+  .col-card.do { border-left: 3px solid #5d8a3a; }
+  .col-card.dont { border-left: 3px solid #a83232; }
+  .col-card h4 { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; }
+  .col-card ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .col-card li { margin: 4px 0; }
+  .risk-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 14px 0; }
+  .risk-row { display: grid; grid-template-columns: 240px 1fr 60px; gap: 14px; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+  .risk-bar { height: 6px; background: #ececec; border-radius: 3px; overflow: hidden; position: relative; }
+  .risk-fill { height: 100%; background: linear-gradient(90deg, #5d8a3a 0%, #d4a23a 50%, #a83232 100%); border-radius: 3px; }
+  .risk-score { font-size: 13px; color: #555; text-align: right; }
+  .step-list { counter-reset: step; padding: 0; list-style: none; margin: 14px 0; }
+  .step-list li { counter-increment: step; padding: 12px 14px 12px 50px; position: relative; border-left: 2px solid #e0e0e0; margin-left: 14px; }
+  .step-list li::before { content: counter(step); position: absolute; left: -16px; top: 12px; width: 30px; height: 30px; background: #1a1a1a; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+  .step-list li strong { display: block; font-size: 14px; margin-bottom: 4px; }
+  .step-list li p { margin: 0; font-size: 13px; color: #555; }
+  .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; margin: 14px 0; font-size: 13.5px; }
+  .checklist label { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; cursor: pointer; }
+  .checklist input { margin-top: 3px; }
+  .source { font-size: 11px; color: #888; font-style: italic; margin-top: -4px; margin-bottom: 16px; }
+  .footer-cta { background: #1a1a1a; color: #fff; padding: 22px 28px; border-radius: 6px; margin-top: 32px; font-size: 13px; }
+  .footer-cta h3 { margin: 0 0 6px; font-size: 16px; color: #fff; }
+  .footer-cta a { color: #fff; border-bottom: 1px solid rgba(255,255,255,0.4); text-decoration: none; }
+
+  /* Préambule des obligations en haut de page */
+  .obligations-preamble { max-width: 1100px; margin: 22px auto 0; background: #fffaf5; border: 2px solid #f0d9c5; border-radius: 10px; padding: 24px 28px; }
+  .obligations-header { margin-bottom: 22px; }
+  .obligations-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 10px; }
+  .obligations-header h2 { margin: 0 0 6px; font-size: 22px; font-weight: 600; color: #1a1a1a; border: none; }
+  .obligations-header p { margin: 0; font-size: 13.5px; color: #555; max-width: 800px; line-height: 1.55; }
+  .obligations-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; position: relative; }
+  .obligations-timeline::before { content: ""; position: absolute; top: 24px; left: 14%; right: 14%; height: 2px; background: linear-gradient(90deg, #185FA5 0%, #BA7517 50%, #993C1D 100%); z-index: 0; }
+  .obl-phase { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 18px 20px; position: relative; z-index: 1; }
+  .obl-phase.before { border-top: 3px solid #185FA5; }
+  .obl-phase.during { border-top: 3px solid #BA7517; }
+  .obl-phase.after { border-top: 3px solid #993C1D; }
+  .obl-step { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .obl-phase.before .obl-step { background: #185FA5; }
+  .obl-phase.during .obl-step { background: #BA7517; }
+  .obl-phase.after .obl-step { background: #993C1D; }
+  .obl-phase h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; color: #1a1a1a; }
+  .obl-phase .obl-when { display: block; font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+  .obl-phase ul { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; }
+  .obl-phase ul li { margin: 5px 0; }
+  .obl-phase ul li strong { color: #993C1D; }
+  .obl-phase ul li.priority { background: #fff0eb; border-left: 3px solid #993C1D; padding: 4px 8px; list-style: none; margin-left: -22px; padding-left: 14px; border-radius: 0 4px 4px 0; }
+  .obl-phase ul li a.section-link { display: inline-block; margin-left: 6px; width: 18px; height: 18px; text-align: center; border-radius: 50%; background: #ececec; color: #555; text-decoration: none; font-size: 11px; line-height: 18px; transition: all 0.15s; font-weight: 600; vertical-align: middle; }
+  .obl-phase ul li a.section-link:hover { background: #993C1D; color: #fff; transform: translateX(2px); }
+  .obl-phase ul li.priority a.section-link { background: rgba(153,60,29,0.15); color: #993C1D; }
+  .obl-phase ul li.priority a.section-link:hover { background: #993C1D; color: #fff; }
+
+  /* Sources officielles — CTA France Diplomatie + Ariane */
+  .official-sources { margin: 18px 0 28px; }
+  .sources-title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; font-weight: 600; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5; }
+  .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cta-card { display: block; padding: 18px 22px; border-radius: 8px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; border: 1px solid; }
+  .cta-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .cta-card .cta-tag { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px; }
+  .cta-card .cta-title { display: block; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+  .cta-card p { margin: 0 0 12px; font-size: 13px; line-height: 1.5; }
+  .cta-card .cta-link { font-size: 13px; font-weight: 600; }
+  .cta-card.cta-diplomatie { background: #e6f1fb; border-color: #b5d4f4; color: #0c447c; }
+  .cta-card.cta-diplomatie .cta-tag { background: #185fa5; color: #fff; }
+  .cta-card.cta-diplomatie .cta-link { color: #185fa5; }
+  .cta-card.cta-diplomatie:hover { border-color: #378add; }
+  .cta-card.cta-ariane { background: #fdecec; border-color: #e8b1ad; color: #791f1f; }
+  .cta-card.cta-ariane .cta-tag.cta-tag-priority { background: #a32d2d; color: #fff; }
+  .cta-card.cta-ariane .cta-link { color: #a32d2d; }
+  .cta-card.cta-ariane:hover { border-color: #e24b4a; }
+
+  /* Pourquoi Ariane — bloc pédagogique */
+  .ariane-why { background: #fffaf5; border: 1px solid #f0d9c5; border-radius: 8px; padding: 20px 24px; margin-top: 16px; }
+  .ariane-why h4 { margin: 0 0 10px; font-size: 15px; font-weight: 600; color: #1a1a1a; }
+  .ariane-why > p { margin: 0 0 14px; font-size: 13.5px; line-height: 1.6; color: #444; }
+  .ariane-why > p strong { color: #993C1D; }
+  .ariane-scenarios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 16px; margin: 12px 0; }
+  .ariane-scenarios .scenario { padding: 10px 12px; background: #fff; border-radius: 4px; border-left: 3px solid #c47140; font-size: 12.5px; line-height: 1.5; color: #555; }
+  .ariane-scenarios .scenario .scenario-label { display: block; font-size: 11px; font-weight: 600; color: #993C1D; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
+  .ariane-stat { margin: 14px 0 0 !important; padding: 12px 16px; background: #fff8e6; border-left: 3px solid #BA7517; border-radius: 0 4px 4px 0; font-size: 13px; font-style: italic; color: #5a4307 !important; }
+
+  @media (max-width: 720px) { .cta-grid, .ariane-scenarios { grid-template-columns: 1fr; } }
+
+  /* Bloc visa très visible — encart gradient ambré */
+  .visa-block { background: linear-gradient(135deg, #fdf0e1 0%, #faddb8 100%); border: 2px solid #BA7517; border-radius: 10px; padding: 22px 26px; margin: 18px 0 26px; position: relative; overflow: hidden; }
+  .visa-block::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #BA7517, #D85A30, #BA7517); }
+  .visa-block h3 { margin: 0 0 12px; color: #7a3f0d; font-size: 17px; }
+  .visa-block .visa-pill { display: inline-block; background: #7a3f0d; color: #fff; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 8px; }
+  .visa-block .visa-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px; }
+  .visa-block .visa-card { background: #fff; border-radius: 8px; padding: 14px 18px; border: 1px solid rgba(186,117,23,0.3); }
+  .visa-block .visa-card h4 { margin: 0 0 8px; font-size: 13.5px; color: #7a3f0d; font-weight: 700; }
+  .visa-block .visa-card.tourism { border-left: 4px solid #5d8a3a; }
+  .visa-block .visa-card.business { border-left: 4px solid #a32d2d; }
+  .visa-block .visa-card ul { margin: 0; padding-left: 18px; font-size: 12.5px; line-height: 1.55; color: #1a1a1a; }
+  .visa-block .visa-card li { margin: 3px 0; }
+  .visa-block .visa-card .tag-mandatory { display: inline-block; background: #a32d2d; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 8px; }
+  .visa-block .visa-card .tag-exempt { display: inline-block; background: #5d8a3a; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 8px; }
+  @media (max-width: 720px) { .visa-block .visa-grid { grid-template-columns: 1fr; } }
+
+  /* Bloc monarchie / lèse-majesté — alerte rouge renforcée */
+  .majeste-block { background: #fdecec; border: 2px solid #a32d2d; border-radius: 10px; padding: 22px 26px; margin: 18px 0 26px; }
+  .majeste-block h3 { margin: 0 0 10px; color: #791f1f; font-size: 17px; display: flex; align-items: center; gap: 10px; }
+  .majeste-block h3::before { content: "⚠"; font-size: 22px; }
+  .majeste-block .law-tag { display: inline-block; background: #a32d2d; color: #fff; padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 10px; }
+  .majeste-block p { font-size: 13.5px; color: #1a1a1a; margin: 8px 0; }
+  .majeste-block ul { margin: 10px 0 0; padding-left: 22px; font-size: 13.5px; }
+  .majeste-block li { margin: 4px 0; }
+  .majeste-block strong { color: #791f1f; }
+
+  /* Bouton flottant fixe sur le côté droit */
+  .float-return { position: fixed; right: 22px; bottom: 24px; z-index: 100; background: #993C1D; color: #fff; padding: 12px 18px; border-radius: 999px; text-decoration: none; font-size: 13px; font-weight: 600; box-shadow: 0 4px 14px rgba(153, 60, 29, 0.35); display: flex; align-items: center; gap: 10px; transition: all 0.2s; }
+  .float-return:hover { background: #7a2e15; transform: translateY(-2px); box-shadow: 0 6px 18px rgba(153, 60, 29, 0.45); }
+  .float-return-arrow { font-size: 16px; line-height: 1; }
+
+  /* Section 6 — encadré renforcé */
+  section.return-section { background: linear-gradient(180deg, #fdf3ef 0%, #ffffff 200px); border: 1px solid #e8c5b3; border-radius: 10px; padding: 28px 32px; margin: 30px 0 44px; position: relative; }
+  section.return-section::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #993C1D, #C04A20, #D85A30); border-radius: 10px 10px 0 0; }
+  section.return-section h2 { color: #993C1D; border-bottom-color: #993C1D; }
+  section.return-section h2 .num { color: #c47140; }
+  .critical-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 12px; }
+  .deadline-card { background: #fff; border: 2px solid #993C1D; border-radius: 8px; padding: 18px 22px; margin: 18px 0; display: grid; grid-template-columns: 100px 1fr; gap: 22px; align-items: center; }
+  .deadline-number { font-size: 56px; font-weight: 700; color: #993C1D; line-height: 1; text-align: center; }
+  .deadline-number small { display: block; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; color: #993C1D; }
+  .deadline-text { font-size: 14px; color: #1a1a1a; }
+  .deadline-text strong { display: block; font-size: 15px; margin-bottom: 4px; color: #993C1D; }
+
+  footer { padding: 24px 32px; text-align: center; font-size: 11px; color: #888; border-top: 1px solid #e5e5e5; background: #fafafa; }
+
+  /* Bouton PDF dans la topbar */
+  .topbar-actions { display: flex; align-items: center; gap: 14px; }
+  .btn-pdf { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.35); padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 11.5px; font-family: inherit; transition: all 0.15s; }
+  .btn-pdf:hover { background: rgba(255,255,255,0.28); border-color: rgba(255,255,255,0.6); }
+
+  @media (max-width: 720px) { .meta-bar { grid-template-columns: 1fr 1fr; } .meta-bar > div { border-right: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; } .two-col, .checklist { grid-template-columns: 1fr; } .toc ol { columns: 1; } .cover-grid { grid-template-columns: 1fr; } .obligations-timeline { grid-template-columns: 1fr; } .obligations-timeline::before { display: none; } .deadline-card { grid-template-columns: 1fr; text-align: center; } }
+
+  @media print {
+    .topbar, .float-return, .btn-pdf, .footer-cta a { display: none !important; }
+    body { background: #fff; }
+    main, header.cover { padding: 16px 24px !important; }
+    section { page-break-inside: avoid; }
+    .obligations-preamble { page-break-after: avoid; border-width: 1px; }
+    .obl-phase { break-inside: avoid; }
+    table { page-break-inside: avoid; font-size: 11px; }
+    .obligations-timeline::before { display: none; }
+    .footer-cta { background: #fff !important; color: #000 !important; border: 1px solid #999; }
+    .footer-cta h3 { color: #000 !important; }
+    .pdf-footnote { display: block !important; text-align: center; font-size: 10px; color: #666; margin: 8px 0 16px; padding: 8px; border: 1px dashed #ccc; }
+  }
+  .pdf-footnote { display: none; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><a href="../index.html">← Retour à la carte</a> · Conseils aux voyageurs · GAT International</span>
+  <span class="topbar-actions">
+    <button class="btn-pdf" onclick="window.print()" title="Imprimer ou enregistrer en PDF — choisir 'Enregistrer au format PDF' dans la fenêtre d'impression">Imprimer / PDF</button>
+    Document interne · Version 2026
+  </span>
+</div>
+
+<header class="cover">
+  <div class="cover-grid">
+    <div>
+      <div class="breadcrumb"><a href="../index.html">Conseils aux voyageurs</a> › <span>Thaïlande</span></div>
+      <h1>Thaïlande</h1>
+      <p class="subtitle">ราชอาณาจักรไทย — Ratcha-anachak Thai (Royaume de Thaïlande) — Livret de Mission. Guide pratique à l'attention des collaborateurs en déplacement professionnel en Thaïlande.</p>
+      <span class="contract-badge contract-expat">Expatriation hors UE<span class="contract-detail">· Contrat expatrié · CFE · AXA Complémentaire &amp; Prévoyance via OWELLO · Europ Assistance · Visa Business B</span></span>
+    </div>
+    <div class="cover-flag">
+      <img src="https://flagcdn.com/w320/th.png" alt="Drapeau Thaïlande" onerror="this.style.display='none';">
+    </div>
+  </div>
+  <div class="meta-bar">
+    <div><div class="label">Capitale</div><div class="value">Bangkok (กรุงเทพมหานคร)</div></div>
+    <div><div class="label">Fuseau horaire</div><div class="value">UTC+7</div></div>
+    <div><div class="label">Langue officielle</div><div class="value">Thaï (anglais business)</div></div>
+    <div><div class="label">Monnaie</div><div class="value">Baht thaïlandais (THB, ฿)</div></div>
+    <div><div class="label">Code ISO</div><div class="value">THA</div></div>
+    <div><div class="label">Créée le</div><div class="value">13 mai 2026</div></div>
+  </div>
+
+  <p class="pdf-footnote">Document figé extrait du site dynamique le <span id="print-date"></span> — La version en ligne peut avoir évolué depuis.</p>
+
+  <!-- Préambule des obligations -->
+  <div class="obligations-preamble">
+    <div class="obligations-header">
+      <span class="obligations-badge">À respecter absolument</span>
+      <h2>Vos obligations pour cette mission en Thaïlande</h2>
+      <p>Synthèse des démarches incontournables avant, pendant et après la mission. Le non-respect peut compromettre votre couverture sociale, votre assurance, ou la régularité de votre séjour. Cliquez sur chaque ligne pour aller au détail.</p>
+    </div>
+    <div class="obligations-timeline">
+
+      <div class="obl-phase before">
+        <span class="obl-step">1</span>
+        <h3>Avant le départ</h3>
+        <span class="obl-when">Au moins 6 semaines avant · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li class="priority"><strong>Visa Business B</strong> (Non-Immigrant B) obligatoire pour mission <a class="section-link" href="#s4" title="Voir section Logistique &amp; visa">▸</a></li>
+          <li>Inscription <strong>Ariane</strong> (<a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a>) <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+          <li>Passeport valide <strong>6 mois minimum</strong> après date retour <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Vaccins <strong>Hépatite A &amp; B</strong>, <strong>DTP</strong> à jour <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li><strong>Prophylaxie paludisme</strong> si zones frontalières <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Consultation Centre de Vaccinations Internationales (CVI) <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Lettre d'invitation de l'entreprise thaïlandaise (visa B) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Référent GAT informé des dates et coordonnées <a class="section-link" href="#s5" title="Voir section Contacts d'urgence">▸</a></li>
+          <li>Couverture CFE + complémentaire AXA OWELLO + Europ Assistance vérifiée <a class="section-link" href="#s5" title="Voir section Contacts &amp; assurance">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase during">
+        <span class="obl-step">2</span>
+        <h3>À l'arrivée et pendant la mission</h3>
+        <span class="obl-when">Tout au long du séjour · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li class="priority"><strong>Respect absolu de la monarchie</strong> — lèse-majesté = prison <a class="section-link" href="#s3" title="Voir section Pratiques culturelles">▸</a></li>
+          <li><strong>TM.6</strong> (carte d'arrivée/sortie) à conserver <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Si mission &gt; 90 jours : extension à l'<strong>Immigration Office</strong> <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li><strong>Tolérance zéro drogues</strong> — peine de mort possible <a class="section-link" href="#s1" title="Voir section Sécurité">▸</a></li>
+          <li>Protection anti-moustiques 24h/24 (dengue endémique) <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li>Eau du robinet PROSCRITE — eau en bouteille uniquement <a class="section-link" href="#s2" title="Voir section Santé">▸</a></li>
+          <li><strong>EPI obligatoires</strong> sur chantier (casque, chaussures, gilet) <a class="section-link" href="#s4" title="Voir section Logistique">▸</a></li>
+          <li>Référent GAT informé du check-in / check-out hôtel <a class="section-link" href="#s5" title="Voir section Contacts">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase after">
+        <span class="obl-step">3</span>
+        <h3>Au retour en France</h3>
+        <span class="obl-when">Délais à respecter impérativement · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li class="priority"><strong>Réinscription CPAM + mise à jour carte Vitale sous 8 jours</strong> <a class="section-link" href="#cpam" title="Voir section CPAM">▸</a></li>
+          <li><strong>Portabilité mutuelle</strong> via OWELLO (si ARE France Travail) <a class="section-link" href="#owello" title="Voir section Portabilité OWELLO">▸</a></li>
+          <li>Pendant 3 mois : feuille de soins CERFA sur espace CFE <a class="section-link" href="#cfe" title="Voir section CFE">▸</a></li>
+          <li>Restitution équipements sous <strong>5 jours ouvrés</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Remplir le retour d'expérience sous <strong>5 jours</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Notes de frais sous <strong>30 jours</strong> <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+          <li>Déclaration fiscale revenus étrangers (convention France-Thaïlande 1974) <a class="section-link" href="#recap-demarches" title="Voir récapitulatif">▸</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <ol>
+      <li><a href="#s1">Risques pays &amp; sécurité</a></li>
+      <li><a href="#s2">Santé &amp; recommandations sanitaires</a></li>
+      <li><a href="#s3">Pratiques culturelles &amp; comportement</a></li>
+      <li><a href="#s4">Logistique pratique &amp; visa</a></li>
+      <li><a href="#s5">Contacts d'urgence &amp; procédures</a></li>
+      <li><a href="#s6">Fin de mission &amp; retour en France</a></li>
+      <li><a href="#checklist">Checklist avant départ</a></li>
+    </ol>
+  </div>
+
+  <!-- ====== SECTION 1 — RISQUES PAYS & SÉCURITÉ ====== -->
+  <section id="s1">
+    <h2><span class="num">1.</span>Risques pays &amp; sécurité</h2>
+    <p class="source">Source : France Diplomatie (MEAE) — Conseils aux voyageurs · Mise à jour à vérifier régulièrement.</p>
+
+    <div class="vigilance-banner vigilance-Vigilance">
+      <strong>Niveau de vigilance général : Vigilance normale à renforcée</strong>
+      Vigilance normale à Bangkok et dans les grandes villes (Chiang Mai, Phuket, Pattaya). Vigilance renforcée dans les <strong>provinces du Sud à majorité musulmane</strong> (Yala, Pattani, Narathiwat) en raison d'une insurrection séparatiste active, ainsi que sur la <strong>frontière birmane</strong> (incidents armés sporadiques, trafics).<br>
+      <strong style="display:inline; text-transform:none; letter-spacing:0; font-weight:600;">À éviter sauf raison impérative :</strong> provinces de Yala, Pattani, Narathiwat, certaines zones frontalières birmanes et cambodgiennes. <em>Liste à vérifier sur France Diplomatie avant départ — peut évoluer.</em>
+    </div>
+
+    <div class="official-sources">
+      <h3 class="sources-title">Sources officielles à consulter</h3>
+
+      <div class="cta-grid">
+        <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/thailande/" target="_blank" rel="noopener" class="cta-card cta-diplomatie">
+          <span class="cta-tag">Source officielle MEAE</span>
+          <span class="cta-title">France Diplomatie — Thaïlande</span>
+          <p>Niveau de vigilance officiel à jour, zones précises à risque (Sud musulman, frontière birmane), recommandations sécuritaires en cours. Source unique de référence avant tout départ.</p>
+          <span class="cta-link">Consulter la fiche Thaïlande →</span>
+        </a>
+
+        <a href="https://pastel.diplomatie.gouv.fr" target="_blank" rel="noopener" class="cta-card cta-ariane">
+          <span class="cta-tag cta-tag-priority">Obligatoire avant départ</span>
+          <span class="cta-title">Ariane — Inscription des voyageurs</span>
+          <p>Gratuit, 5 minutes. Permet à l'ambassade de France de vous localiser et de vous contacter immédiatement en cas de crise (mousson, instabilité au Sud, séisme, pandémie).</p>
+          <span class="cta-link">S'inscrire sur Ariane →</span>
+        </a>
+      </div>
+
+      <div class="ariane-why">
+        <h4>Pourquoi Ariane est devenu essentiel</h4>
+        <p>Les dernières années ont montré combien les crises peuvent surgir rapidement et toucher n'importe quel pays, même réputé stable. <strong>Sans inscription Ariane, l'ambassade de France ignore votre présence sur place</strong> — et ne peut donc pas vous prévenir, organiser votre évacuation, ni vous mettre en sécurité.</p>
+
+        <div class="ariane-scenarios">
+          <div class="scenario">
+            <span class="scenario-label">Tsunamis &amp; littoral</span>
+            Tsunami 2004 (Phuket, Krabi, Khao Lak — plus de 5 000 morts en Thaïlande) — système d'alerte côtier renforcé depuis.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Mousson &amp; inondations</span>
+            Inondations Bangkok 2011 (un quart du pays sous l'eau), crues récurrentes Nord et Centre juin-octobre.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Instabilité politique</span>
+            Coups d'État (2006, 2014), manifestations 2020-2021 — couvre-feux et restrictions de circulation.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Insurrection Sud</span>
+            Attentats sporadiques Yala, Pattani, Narathiwat — vigilance renforcée pour les ressortissants étrangers.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Pandémies &amp; épidémies</span>
+            COVID-19 (fermeture frontières 2020-2022), dengue endémique, chikungunya, grippe aviaire.
+          </div>
+          <div class="scenario">
+            <span class="scenario-label">Urgence individuelle</span>
+            Accident, maladie grave, agression, perte de papiers — l'ambassade vous accompagne beaucoup plus vite si elle sait que vous êtes là.
+          </div>
+        </div>
+
+        <p class="ariane-stat">En 2020, l'inscription Ariane a permis à la France d'organiser le plus grand rapatriement de citoyens depuis 1962 : plus de 350 000 personnes ramenées de 180 pays en quelques semaines. Sans inscription, la majorité n'aurait pas pu être contactée à temps.</p>
+      </div>
+    </div>
+
+    <h3>Niveaux de risque par catégorie</h3>
+    <div class="risk-grid">
+      <div class="risk-row"><span>Criminalité urbaine / arnaques</span><div class="risk-bar"><div class="risk-fill" style="width:60%;"></div></div><span class="risk-score">3/5</span></div>
+      <div class="risk-row"><span>Risque terroriste / attentats</span><div class="risk-bar"><div class="risk-fill" style="width:40%;"></div></div><span class="risk-score">2/5</span></div>
+      <div class="risk-row"><span>Instabilité politique</span><div class="risk-bar"><div class="risk-fill" style="width:50%;"></div></div><span class="risk-score">2.5/5</span></div>
+      <div class="risk-row"><span>Insurrection Sud (3 provinces)</span><div class="risk-bar"><div class="risk-fill" style="width:80%;"></div></div><span class="risk-score">4/5</span></div>
+      <div class="risk-row"><span>Risques naturels (mousson, tsunami)</span><div class="risk-bar"><div class="risk-fill" style="width:60%;"></div></div><span class="risk-score">3/5</span></div>
+      <div class="risk-row"><span>Sécurité routière (scooters, bus)</span><div class="risk-bar"><div class="risk-fill" style="width:80%;"></div></div><span class="risk-score">4/5</span></div>
+      <div class="risk-row"><span>Risque sanitaire (dengue, paludisme frontière)</span><div class="risk-bar"><div class="risk-fill" style="width:60%;"></div></div><span class="risk-score">3/5</span></div>
+    </div>
+
+    <!-- Bloc monarchie / lèse-majesté — alerte forte -->
+    <div class="majeste-block">
+      <h3>Lèse-majesté — sujet le plus sensible du pays</h3>
+      <span class="law-tag">Article 112 du Code pénal — 3 à 15 ans de prison par chef</span>
+      <p>La <strong>royauté thaïlandaise est sacrée</strong>. L'article 112 du Code pénal sanctionne tout propos, écrit, image ou geste perçu comme insultant ou diffamatoire à l'égard du Roi, de la Reine, de l'héritier ou du régent. Les condamnations sont fréquentes, y compris pour des étrangers, et peuvent s'appliquer à des publications sur les réseaux sociaux postées hors de Thaïlande.</p>
+      <ul>
+        <li><strong>Ne jamais critiquer, plaisanter ou commenter</strong> publiquement le Roi ou la famille royale — même en privé, même en français.</li>
+        <li><strong>Ne pas piétiner ou déchirer un billet de banque</strong> (effigie royale) ni une photo du Roi.</li>
+        <li><strong>Lever pour l'hymne royal</strong> diffusé chaque jour à 8h et 18h dans les lieux publics, gares, parcs (immobilité totale).</li>
+        <li><strong>Lever pour l'hymne national</strong> avant les projections au cinéma (avec portrait royal).</li>
+        <li>Respecter le portrait royal présent dans les hôtels, restaurants, bureaux — ne pas le détourner pour une photo « drôle ».</li>
+        <li><strong>Aucune nuance possible</strong> : un commentaire considéré comme léger en France peut entraîner une arrestation immédiate.</li>
+      </ul>
+    </div>
+
+    <h3>Drogues — tolérance zéro absolue</h3>
+    <div class="alert danger">
+      <strong>Législation antidrogue : parmi les plus sévères au monde</strong>
+      <ul>
+        <li><strong>Peine de mort possible</strong> pour trafic d'héroïne, méthamphétamine (yaba) — peine effectivement prononcée et exécutée par le passé.</li>
+        <li>Possession simple : longues peines de prison, conditions de détention extrêmement dures.</li>
+        <li><strong>Cannabis</strong> : décriminalisé en 2022 mais cadre légal mouvant — restrictions sur la consommation publique, vente réglementée, débats politiques en cours pour un re-criminalisation partielle. <strong>Pour un collaborateur GAT : abstention totale.</strong></li>
+        <li>Méfiez-vous des « amis » qui proposent ou demandent de transporter un colis : pratique courante de piégeage.</li>
+        <li>Ne laissez jamais votre bagage sans surveillance, en particulier dans les bus de nuit et auberges low-cost.</li>
+      </ul>
+    </div>
+
+    <h3>Règles de comportement essentielles</h3>
+    <div class="alert danger">
+      <strong>Règles absolues à respecter</strong>
+      <ul>
+        <li>Ne jamais critiquer la monarchie thaïlandaise (article 112 — voir bloc ci-dessus).</li>
+        <li>Tolérance zéro envers les drogues, même le cannabis en contexte ambigu.</li>
+        <li>Ne jamais exhiber bijoux, montres, appareils photo coûteux dans les zones touristiques.</li>
+        <li>Utiliser uniquement taxis-meter officiels, Grab, BTS / MRT à Bangkok.</li>
+        <li>Refuser les propositions « gemstones », « jet ski », « tailor » — arnaques classiques.</li>
+        <li>Ne pas s'énerver en public (perte de face — voir section 3).</li>
+        <li>Ne pas mentionner publiquement votre employeur ou mission.</li>
+      </ul>
+    </div>
+
+    <h3>Risques naturels</h3>
+    <p><strong>Mousson (juin-octobre).</strong> Pluies torrentielles, inondations à Bangkok et dans le Nord, glissements de terrain en zones montagneuses (Chiang Mai, Mae Hong Son). Prévoir des marges de sécurité pour les déplacements terrestres.</p>
+    <p><strong>Typhons (Sud-Est, septembre-décembre).</strong> Côte du golfe de Thaïlande exposée — Koh Samui, Koh Phangan, Surat Thani.</p>
+    <p><strong>Tsunamis (côte Andaman).</strong> Mémoire vive du 26 décembre 2004 (plus de 5 000 morts à Phuket, Khao Lak, Krabi). Système d'alerte en place — repérer les itinéraires d'évacuation à l'arrivée à l'hôtel.</p>
+    <p><strong>Pollution Bangkok / Nord (hiver, février-avril).</strong> Pics de PM2.5 liés aux brûlis agricoles dans le Nord (Chiang Mai, Chiang Rai). Masques FFP2 recommandés pour les personnes sensibles. Application AirVisual / IQAir à installer.</p>
+    <p><strong>Séismes.</strong> Faible activité dans la majeure partie du pays, modérée dans le Nord.</p>
+
+    <h3>Sécurité routière</h3>
+    <div class="alert">
+      <strong>L'un des taux d'accidents les plus élevés au monde</strong>
+      <ul>
+        <li>La Thaïlande figure régulièrement dans le top mondial pour la mortalité routière (selon les années, 1<sup>er</sup> à 3<sup>e</sup> rang).</li>
+        <li><strong>Scooters et motos</strong> : à éviter autant que possible. Si indispensable : <strong>casque OBLIGATOIRE</strong> (et requis par la loi), permis international, jamais de nuit, jamais sur les axes urbains denses.</li>
+        <li><strong>Conduite à Bangkok</strong> : déconseillée. Préférer BTS, MRT, Grab. Conduite à gauche, signalisation parfois absente, embouteillages extrêmes.</li>
+        <li><strong>Trajets longue distance</strong> : préférer l'avion ou le train. Les bus de nuit présentent un risque élevé d'accidents.</li>
+        <li>Alcool au volant : tolérance officielle 0,5 g/L mais contrôles aléatoires et sanctions sévères pour les étrangers.</li>
+      </ul>
+    </div>
+
+    <h3>Sécurité sur chantier</h3>
+    <p>Les standards thaïlandais (TIS — Thai Industrial Standards) existent mais leur application varie selon les chantiers. L'encadrement sécurité (HSE) est inégal — il est attendu du collaborateur GAT d'apporter et d'imposer ses propres standards.</p>
+    <ul>
+      <li>Port intégral des EPI fournis par GAT (casque, chaussures S3, gilet haute visibilité, gants, lunettes).</li>
+      <li>Vérification systématique des échafaudages, garde-corps, électricité avant intervention.</li>
+      <li>Climat tropical : pauses fréquentes, hydratation continue, protection solaire — risque réel de coup de chaleur.</li>
+      <li>Refus de tout travail jugé dangereux — escalation immédiate au chargé d'affaires.</li>
+    </ul>
+
+    <h3>Déplacements en ville</h3>
+    <div class="two-col">
+      <div class="col-card do">
+        <h4>À faire</h4>
+        <ul>
+          <li>Utiliser Grab, taxis-meter officiels, BTS, MRT.</li>
+          <li>Partager votre itinéraire au référent GAT.</li>
+          <li>Conserver une copie numérique du passeport et du visa.</li>
+          <li>Payer en bahts (THB) dans les marchés et taxis.</li>
+          <li>Refuser poliment toute proposition non sollicitée.</li>
+        </ul>
+      </div>
+      <div class="col-card dont">
+        <h4>À éviter</h4>
+        <ul>
+          <li>Taxis sans compteur (exigez « meter on » ou Grab).</li>
+          <li>Arnaques « gemstones », « jet ski », « tailor », « Grand Palais fermé ».</li>
+          <li>Quartiers Patpong, Soi Cowboy, Nana la nuit (touristique, racolage, escroqueries).</li>
+          <li>Conduite de scooter sans expérience locale.</li>
+          <li>Photos / commentaires de la famille royale.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 2 — SANTÉ ====== -->
+  <section id="s2">
+    <h2><span class="num">2.</span>Santé &amp; recommandations sanitaires</h2>
+    <p class="source">Sources : Institut Pasteur, Centre de Vaccinations Internationales (CVI), Europ Assistance, CFE, Bumrungrad International Hospital.</p>
+
+    <h3>Vaccinations recommandées</h3>
+    <table>
+      <thead><tr><th>Vaccin</th><th>Statut</th><th>Remarque</th></tr></thead>
+      <tbody>
+        <tr><td>Tétanos / DTP</td><td>Obligatoire</td><td>Mise à jour systématique avant tout départ</td></tr>
+        <tr><td>Hépatite A</td><td>Recommandé fortement</td><td>Risque alimentaire / eau — quasi systématique</td></tr>
+        <tr><td>Hépatite B</td><td>Recommandé</td><td>Mission &gt; 1 mois, contact possible sang/fluides</td></tr>
+        <tr><td>Typhoïde</td><td>Recommandé</td><td>Hygiène alimentaire, séjour &gt; 1 mois</td></tr>
+        <tr><td>Rage</td><td>À évaluer</td><td>Zones rurales, contact possible animaux errants</td></tr>
+        <tr><td>Encéphalite japonaise</td><td>À évaluer</td><td>Mission rurale prolongée dans le Nord</td></tr>
+        <tr><td>Fièvre jaune</td><td>Selon parcours</td><td>Obligatoire UNIQUEMENT si venant d'une zone endémique (Afrique, Amérique du Sud)</td></tr>
+        <tr><td>Covid-19</td><td>Recommandé</td><td>Selon protocole GAT &amp; médecin du travail</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Avant le départ</strong>
+      <ul>
+        <li>Consultez le centre de vaccinations internationales (CVI) au moins 6 semaines avant le départ.</li>
+        <li>Emportez votre carnet de vaccination international.</li>
+        <li>Si mission frontalière (Birmanie, Cambodge, Laos, jungle) : prescription de prophylaxie antipaludéenne (doxycycline ou atovaquone-proguanil) à anticiper.</li>
+        <li>Vérifiez votre couverture santé internationale : CFE + AXA Complémentaire via OWELLO + Europ Assistance pour assistance/rapatriement.</li>
+      </ul>
+    </div>
+
+    <h3>Paludisme — zones frontalières uniquement</h3>
+    <div class="alert">
+      <strong>Risque limité géographiquement</strong>
+      <ul>
+        <li><strong>Pas de risque</strong> à Bangkok, dans les grandes villes, sur les plages touristiques (Phuket, Krabi, Koh Samui, Pattaya), à Chiang Mai et Chiang Rai centre-ville.</li>
+        <li><strong>Risque réel</strong> dans les zones frontalières avec la Birmanie (ouest), le Cambodge (est), le Laos (nord-est) et la jungle profonde — résistance importante à la chloroquine.</li>
+        <li><strong>Prophylaxie</strong> recommandée si mission frontalière : doxycycline (200 mg/j) ou atovaquone-proguanil (Malarone) — sur ordonnance du médecin du voyage.</li>
+        <li>Toujours associer à la protection mécanique anti-moustiques (voir dengue ci-dessous).</li>
+      </ul>
+    </div>
+
+    <h3>Dengue — endémique toute l'année</h3>
+    <div class="alert danger">
+      <strong>Maladie virale présente partout en Thaïlande, sans vaccin ni traitement spécifique</strong>
+      <ul>
+        <li>Transmis par le moustique <em>Aedes aegypti</em>, actif <strong>en journée</strong> (et non la nuit comme le paludisme).</li>
+        <li>Pic épidémique <strong>mai à novembre</strong> (saison des pluies) mais cas signalés toute l'année.</li>
+        <li>Symptômes : fièvre élevée brutale, douleurs articulaires intenses, éruption cutanée, céphalées rétro-orbitaires. Consultation médicale impérative — risque de forme hémorragique grave.</li>
+        <li><strong>Protection mécanique 24h/24</strong> : répulsif DEET 30 % minimum (ou icaridine 20 %), manches longues le matin et le soir, climatisation, chambres avec moustiquaires.</li>
+        <li>Vaccin Dengvaxia : déconseillé sans antécédent de dengue confirmé (peut aggraver une première infection). Vaccin Qdenga (Takeda) plus récent — à discuter avec le médecin.</li>
+      </ul>
+    </div>
+
+    <h3>Chikungunya, Zika et autres arboviroses</h3>
+    <p>Présents en Thaïlande, mêmes vecteurs que la dengue. <strong>Zika</strong> : risque tératogène — femmes enceintes ou en désir de grossesse à orienter en consultation spécialisée avant départ. <strong>Chikungunya</strong> : symptômes proches de la dengue mais douleurs articulaires persistantes parfois plusieurs mois. Pas de traitement spécifique — la prévention anti-moustiques reste l'unique défense efficace.</p>
+
+    <h3>Eau et alimentation</h3>
+    <div class="alert danger">
+      <strong>Eau du robinet à proscrire absolument</strong>
+      <ul>
+        <li><strong>Ne jamais boire l'eau du robinet</strong>, même à Bangkok — eau en bouteille capsulée systématique. Vérifier que la capsule n'est pas re-scellée.</li>
+        <li>Brossage des dents à l'eau en bouteille.</li>
+        <li>Glaçons : OK dans les hôtels et restaurants internationaux (glace industrielle), <strong>prudence dans la rue</strong>.</li>
+        <li>Street food : très bon généralement, choisir les étals fréquentés par les locaux, plats cuits devant vous, éviter les salades crues lavées à l'eau du robinet.</li>
+        <li>Fruits : à peler soi-même. Éviter les fruits déjà découpés vendus sur l'étal.</li>
+      </ul>
+    </div>
+
+    <p><strong>Turista (diarrhée du voyageur).</strong> Très fréquente — norovirus, <em>E. coli</em>, salmonelles. Emporter Imodium + sels de réhydratation (SRO). Consulter si fièvre, sang dans les selles, ou diarrhée &gt; 48 h.</p>
+
+    <h3>Soleil, chaleur et humidité</h3>
+    <p>Climat tropical : chaleur (28-38 °C) et humidité (70-90 %) toute l'année. Risque réel de coup de chaleur sur chantier.</p>
+    <ul>
+      <li>Hydratation : 3 à 4 litres d'eau par jour minimum en activité physique.</li>
+      <li>Crème solaire SPF 50+, chapeau, lunettes UV.</li>
+      <li>Pauses fréquentes à l'ombre. Vêtements clairs et amples en coton ou tissu technique.</li>
+      <li>Signes d'alerte coup de chaleur : céphalées, nausées, peau sèche et chaude, confusion — arrêt immédiat, refroidissement, urgences.</li>
+    </ul>
+
+    <h3>Système de santé</h3>
+    <p><strong>Hôpitaux privés internationaux : excellents.</strong> Standards très élevés à Bangkok, Phuket, Chiang Mai — nombreux médecins formés à l'étranger, anglais courant, prise en charge directe par les assureurs internationaux (Europ Assistance, CFE).</p>
+    <table>
+      <thead><tr><th>Établissement</th><th>Ville</th><th>Téléphone</th></tr></thead>
+      <tbody>
+        <tr><td>Bumrungrad International Hospital</td><td>Bangkok (Sukhumvit)</td><td>+66 2 066 8888</td></tr>
+        <tr><td>Bangkok Hospital</td><td>Bangkok (Phetchaburi)</td><td>+66 2 310 3000</td></tr>
+        <tr><td>Samitivej Sukhumvit</td><td>Bangkok</td><td>+66 2 022 2222</td></tr>
+        <tr><td>BNH Hospital</td><td>Bangkok (Silom)</td><td>+66 2 022 0700</td></tr>
+        <tr><td>Phuket International Hospital</td><td>Phuket</td><td>+66 76 249 400</td></tr>
+        <tr><td>Bangkok Hospital Chiang Mai</td><td>Chiang Mai</td><td>+66 52 089 888</td></tr>
+      </tbody>
+    </table>
+    <p>Le système public est bondé et globalement à éviter pour les expatriés sauf urgence vitale immédiate. Toujours appeler Europ Assistance avant toute hospitalisation pour activer la prise en charge directe.</p>
+
+    <h3>Pharmacie de voyage recommandée</h3>
+    <ul>
+      <li>Antidiarrhéique (Imodium) + sels de réhydratation (SRO).</li>
+      <li>Antipaludéen si mission frontalière (sur ordonnance médecin du voyage).</li>
+      <li>Répulsif anti-moustiques DEET 30 % minimum (ou icaridine 20 %).</li>
+      <li>Crème solaire SPF 50+ et après-soleil.</li>
+      <li>Antihistaminique + crème antihistaminique (piqûres, allergies tropicales).</li>
+      <li>Désinfectant cutané + pansements stériles.</li>
+      <li>Thermomètre, antalgique / antipyrétique (paracétamol).</li>
+      <li>Médicaments personnels en quantité suffisante + ordonnance traduite en anglais.</li>
+      <li>Sérum physiologique, traitement des otites de baignade.</li>
+    </ul>
+  </section>
+
+  <!-- ====== SECTION 3 — PRATIQUES CULTURELLES ====== -->
+  <section id="s3">
+    <h2><span class="num">3.</span>Pratiques culturelles &amp; comportement</h2>
+
+    <p>La culture thaïlandaise est profondément marquée par le bouddhisme theravada (95 % de la population) et le respect absolu de la monarchie. La compréhension fine de ces codes est indispensable pour une mission réussie — un faux pas peut entraîner offense durable, échec commercial, voire conséquences pénales (lèse-majesté, drogues).</p>
+
+    <h3>Royauté — la règle absolue</h3>
+    <p>Voir <a href="#s1">section 1 — Lèse-majesté</a>. <strong>Aucune dérision, aucune critique, aucun second degré</strong> à l'égard du Roi, de la Reine, des héritiers ou du régent — même en privé, même en français, même en commentaire à voix basse. Le portrait royal est omniprésent : ne jamais le détourner, ne jamais s'asseoir devant lui pieds tendus.</p>
+    <p>Lever pour l'<strong>hymne royal</strong> (8h et 18h dans les lieux publics, gares, parcs) et pour l'<strong>hymne national</strong> avant les projections au cinéma (avec portrait royal animé). Immobilité totale jusqu'à la fin.</p>
+
+    <h3>Bouddhisme et lieux de culte</h3>
+    <p>95 % de la population est bouddhiste theravada. Les temples (<em>wat</em>) sont des lieux sacrés.</p>
+    <ul>
+      <li><strong>Chaussures retirées</strong> à l'entrée du temple, du <em>bot</em> (salle d'ordination) et des maisons privées.</li>
+      <li><strong>Tenue couvrante</strong> : épaules et genoux couverts (hommes et femmes). Paréos prêtés à certains temples.</li>
+      <li>Ne pas pointer le doigt ou les pieds vers une statue de Bouddha ou un moine.</li>
+      <li>Ne pas s'asseoir plus haut qu'un moine.</li>
+      <li><strong>Les femmes ne touchent jamais un moine</strong> ni ne lui remettent directement un objet (passer par un homme ou poser l'objet sur un tissu).</li>
+      <li>Photos en général tolérées dans les temples mais pas systématiquement — demander.</li>
+      <li>Image de Bouddha : ne jamais tatouer en bas du corps, ne jamais utiliser à des fins décoratives banalisantes (lampe, motif salle de bain) — fortement offensant.</li>
+    </ul>
+
+    <h3>Codes du corps — pieds, tête, mains</h3>
+    <div class="alert">
+      <strong>Hiérarchie symbolique fondamentale</strong>
+      <ul>
+        <li><strong>Les pieds sont la partie la plus impure</strong> du corps : ne jamais pointer ses pieds vers quelqu'un, vers une statue de Bouddha, vers un portrait royal. S'asseoir en croisant les jambes vers le bas (pas en croisant pied sur genou face à un interlocuteur senior).</li>
+        <li>Ne pas enjamber une personne assise ou couchée — contourner.</li>
+        <li>Ne pas pousser une porte ou ramasser un objet avec le pied.</li>
+        <li><strong>La tête est la partie la plus sacrée</strong> du corps : ne jamais toucher la tête d'autrui, <strong>y compris la tête d'un enfant</strong> (geste affectueux français qui est ici offensant).</li>
+        <li>Passer un objet : à deux mains, ou de la main droite la main gauche soutenant le coude droit.</li>
+      </ul>
+    </div>
+
+    <h3>Salutation — le wai</h3>
+    <p>Le <em>wai</em> (mains jointes devant la poitrine, légère inclinaison de la tête) est la salutation traditionnelle. Quelques règles essentielles :</p>
+    <ul>
+      <li><strong>Ne jamais initier un wai vers une personne plus jeune ou de statut inférieur</strong> (serveur, chauffeur, employé) — vous lui imposeriez un retour gênant.</li>
+      <li><strong>Répondre par un wai</strong> lorsqu'un interlocuteur plus âgé ou senior vous en adresse un.</li>
+      <li>Plus la personne est respectée, plus les mains montent (poitrine pour égal, menton pour senior, front pour moine ou royauté).</li>
+      <li>Une poignée de main est désormais courante en business international — laissez l'initiative à votre interlocuteur thaï.</li>
+      <li>Ne jamais faire le wai en mangeant, en téléphonant, ou en tenant un objet d'une main.</li>
+    </ul>
+
+    <h3>Garder la face — jai yen, cœur frais</h3>
+    <p>Le concept de <em>jai yen</em> (« cœur frais ») est central : maîtrise émotionnelle, sourire, calme apparent en toute circonstance. À l'inverse, <em>jai ron</em> (« cœur chaud ») est une faiblesse honteuse.</p>
+    <ul>
+      <li><strong>Ne JAMAIS s'énerver en public</strong>, ne jamais hausser le ton, ne jamais frapper du poing sur la table, même fâché. Vous perdez immédiatement crédibilité et respect — et vous faites perdre la face à votre interlocuteur, ce qui peut compromettre durablement la relation.</li>
+      <li>Sourire (<em>yim</em>) en toutes circonstances : il existe plus d'une dizaine de sourires thaïlandais (gêne, désaccord, refus, hostilité polie) — observer le contexte.</li>
+      <li>Le « non » direct est très rare. Un « <em>mai pen rai</em> » (« pas de problème ») ou un sourire évasif peut en réalité signifier un refus poli. Reformuler, observer, ne pas insister.</li>
+      <li>Si un différend survient : baisser le ton, sourire, proposer une sortie qui permet à l'autre de sauver la face.</li>
+    </ul>
+
+    <h3>Codes business</h3>
+    <p><strong>Hiérarchie marquée mais cordiale.</strong> Le décideur est rarement le plus volubile en réunion — observer qui hoche la tête, qui regarde quoi. S'adresser en premier au plus âgé ou au plus gradé.</p>
+    <p><strong>Ponctualité.</strong> Valorisée côté étranger — venez à l'heure. Côté thaï, flexibilité possible (embouteillages Bangkok). Ne pas en faire un drame.</p>
+    <p><strong>Cartes de visite (<em>nam bat</em>).</strong> Échange systématique en début de réunion. À donner et recevoir à <strong>deux mains</strong>, étiqueté lisible vers l'interlocuteur. La déposer respectueusement sur la table devant soi pendant la réunion — ne jamais la ranger immédiatement, ne jamais écrire dessus, ne jamais la plier.</p>
+    <p><strong>Cadeaux d'affaires.</strong> Bien perçus mais évitez tout ce qui rappelle la mort (fleurs blanches en bouquet de deuil, mouchoir, cadeau emballé en noir).</p>
+    <p><strong>Décisions.</strong> Lentes — passent par plusieurs niveaux hiérarchiques. Ne pas presser : insistance perçue comme manque de respect.</p>
+
+    <div class="alert danger">
+      <strong>Comportements à proscrire absolument</strong>
+      <ul>
+        <li>Critiquer la monarchie, même en plaisantant (article 112).</li>
+        <li>Critiquer le bouddhisme ou ridiculiser l'image de Bouddha.</li>
+        <li>S'énerver en public, hausser le ton, taper du poing.</li>
+        <li>Toucher la tête de quelqu'un, y compris un enfant.</li>
+        <li>Pointer du pied vers une personne, une statue, un portrait.</li>
+        <li>Embrasser ou avoir des marques d'affection trop démonstratives en public.</li>
+        <li>Refuser de manière abrupte (préférer « peut-être plus tard », <em>na</em>).</li>
+        <li>Faire l'éloge d'un objet personnel à un Thaï trop directement (il peut se sentir obligé de l'offrir).</li>
+      </ul>
+    </div>
+
+    <h3>Repas et table</h3>
+    <ul>
+      <li><strong>Couverts thaïs</strong> : fourchette (main gauche, pour pousser) + cuillère (main droite, pour porter à la bouche). <strong>Pas de baguettes</strong> pour la cuisine thaï standard (sauf pour les soupes de nouilles ou plats chinois).</li>
+      <li>Repas en famille / table partagée : plats au centre, chacun se sert en petite quantité dans son riz. Ne pas se servir des grosses quantités d'un coup — gloutonnerie mal vue.</li>
+      <li>Le plus âgé commence souvent — attendre poliment.</li>
+      <li>Laisser un peu de nourriture dans son assiette pour signifier la satiété.</li>
+      <li><strong>Pourboire</strong> : 10 % en restaurant si le service n'est pas compris ; arrondir au taxi ; non obligatoire dans les petits étals.</li>
+    </ul>
+
+    <h3>Alcool et restrictions</h3>
+    <ul>
+      <li>Vente d'alcool restreinte : <strong>11h-14h et 17h-24h</strong> dans la majorité des points de vente (loi nationale).</li>
+      <li><strong>Jours sans alcool</strong> : journées bouddhistes (Visakha Bucha, Asalha Bucha, Khao Phansa, Ok Phansa), jours d'élection, anniversaire du Roi — vente totalement interdite.</li>
+      <li>Interdit à proximité immédiate des temples, écoles, stations-service.</li>
+      <li>Modération attendue en public, surtout en présence de seniors.</li>
+    </ul>
+
+    <h3>Habillement</h3>
+    <table>
+      <thead><tr><th>Contexte</th><th>Tenue recommandée</th></tr></thead>
+      <tbody>
+        <tr><td>Réunion business / bureau</td><td>Chemise manches longues, pantalon, chaussures fermées — climatisation très forte</td></tr>
+        <tr><td>Chantier terrain</td><td>EPI complets + vêtements couvrants techniques (chaleur, soleil)</td></tr>
+        <tr><td>Repas d'affaires</td><td>Chemise / veste légère — pas de jean ni t-shirt</td></tr>
+        <tr><td>Visite de temple (<em>wat</em>)</td><td>Épaules ET genoux couverts (hommes et femmes), chaussures retirées à l'entrée</td></tr>
+        <tr><td>Visite du Grand Palais</td><td>Code strict : pantalon long, manches couvrant l'épaule, chaussures fermées</td></tr>
+        <tr><td>Plage / piscine</td><td>Maillot OK sur la plage, t-shirt obligatoire en ville et restaurants</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Quelques mots utiles en thaï</h3>
+    <table>
+      <thead><tr><th>Français</th><th>Thaï (translittéré)</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Bonjour</td><td>Sawatdee khrap (homme) / Sawatdee kha (femme)</td><td>Toujours suffixer par khrap / kha</td></tr>
+        <tr><td>Merci</td><td>Khop khun khrap / kha</td><td>—</td></tr>
+        <tr><td>S'il vous plaît</td><td>Karuna</td><td>—</td></tr>
+        <tr><td>Pas de problème / de rien</td><td>Mai pen rai</td><td>Expression centrale de la culture</td></tr>
+        <tr><td>Oui / d'accord</td><td>Chai / Khrap (kha)</td><td>—</td></tr>
+        <tr><td>Non</td><td>Mai chai</td><td>Rarement utilisé seul — préférer une forme polie</td></tr>
+        <tr><td>Combien ?</td><td>Tao rai ?</td><td>—</td></tr>
+        <tr><td>Où est… ?</td><td>… yu thi nai ?</td><td>—</td></tr>
+        <tr><td>À l'aide !</td><td>Chuay duay !</td><td>—</td></tr>
+        <tr><td>Appelez la police</td><td>Riak tamruat</td><td>—</td></tr>
+        <tr><td>Hôpital</td><td>Rong phayaban</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====== SECTION 4 — LOGISTIQUE & VISA ====== -->
+  <section id="s4">
+    <h2><span class="num">4.</span>Logistique pratique &amp; visa</h2>
+
+    <!-- Bloc visa très visible -->
+    <div class="visa-block">
+      <span class="visa-pill">Étape critique avant départ</span>
+      <h3>Visa — exemption tourisme vs Visa Business B</h3>
+      <p style="font-size:13.5px; margin:0 0 6px; color:#1a1a1a;">La Thaïlande distingue strictement le séjour touristique et l'activité professionnelle. <strong>Une mission GAT (intervention technique, audit, expertise, réunion business) nécessite un Visa Business B</strong>, même pour quelques jours. L'exemption de visa touristique ne couvre PAS le travail.</p>
+
+      <div class="visa-grid">
+        <div class="visa-card tourism">
+          <span class="tag-exempt">Tourisme uniquement</span>
+          <h4>Exemption de visa touriste</h4>
+          <ul>
+            <li>Ressortissants français : <strong>60 jours d'exemption</strong> (depuis 2024), multi-entrées.</li>
+            <li>Passeport valide 6 mois minimum à l'entrée.</li>
+            <li>Billet retour ou continuation à présenter.</li>
+            <li><strong>Carte TM.6</strong> (arrivée / sortie) à conserver.</li>
+            <li><strong>NE COUVRE PAS le travail rémunéré</strong>, les missions, les interventions techniques, même brèves.</li>
+          </ul>
+        </div>
+        <div class="visa-card business">
+          <span class="tag-mandatory">Mission GAT</span>
+          <h4>Visa Business B (Non-Immigrant B)</h4>
+          <ul>
+            <li><strong>Obligatoire</strong> pour toute mission technique, business, audit, formation.</li>
+            <li>Demande à l'<strong>Ambassade de Thaïlande à Paris</strong> (ou Aix-en-Provence).</li>
+            <li>Pièces : passeport (6 mois validité), <strong>lettre d'invitation</strong> de l'entreprise thaïlandaise, lettre de mission GAT, formulaire signé, photos d'identité, frais ~70 €.</li>
+            <li>Validité : <strong>90 jours single-entry</strong>, jusqu'à 1 an multi-entrées.</li>
+            <li>Mission &gt; 90 jours : <strong>extension à l'Immigration Office</strong> local OU obtention d'un <strong>Work Permit</strong> (cas long séjour).</li>
+            <li>Délai d'instruction : 2 à 10 jours ouvrés selon ambassade.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="font-size:12.5px; margin:14px 0 0; color:#5a4307; padding:10px 14px; background:rgba(255,255,255,0.6); border-radius:6px;"><strong>Vigilance :</strong> entrer en Thaïlande en exemption touristique pour exercer une activité professionnelle expose à une expulsion immédiate, une amende et l'inscription sur liste noire (interdiction de retour). GAT prend en charge la procédure visa — confirmer le démarrage 6 semaines minimum avant le départ avec votre chargé d'affaires.</p>
+    </div>
+
+    <h3>Formalités d'entrée — récapitulatif</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Visa mission GAT</th><td><strong>Visa Business B obligatoire</strong> (Non-Immigrant B)</td></tr>
+        <tr><th>Exemption touristique</th><td>60 jours pour séjour purement touristique (ne couvre pas le travail)</td></tr>
+        <tr><th>Passeport</th><td>Valide minimum 6 mois après la date de retour, 2 pages vierges</td></tr>
+        <tr><th>TM.6 (carte d'arrivée)</th><td>À conserver — à présenter à la sortie</td></tr>
+        <tr><th>Douane</th><td>Déclaration obligatoire si espèces &gt; 20 000 USD ou équivalent</td></tr>
+        <tr><th>Work Permit</th><td>Requis si activité rémunérée prolongée — anticipation GAT + employeur local</td></tr>
+        <tr><th>Extension de séjour</th><td>Immigration Office local — frais ~1 900 THB — jusqu'à 30 jours supplémentaires</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Vols et accès</h3>
+    <p><strong>Vols directs France-Bangkok :</strong> environ 11 h (Air France, Thai Airways). Aéroports principaux : Suvarnabhumi (BKK) pour les vols internationaux longs courriers, Don Mueang (DMK) pour les low-cost et vols intérieurs.</p>
+    <p><strong>Vols intérieurs :</strong> Bangkok Airways, Thai AirAsia, Nok Air, Thai Vietjet, Thai Smile. Bangkok-Phuket en 1h30, Bangkok-Chiang Mai en 1h10. Très bon rapport prix / temps comparé au train ou bus.</p>
+
+    <h3>Transports en ville et longue distance</h3>
+    <p><strong>Bangkok — BTS Skytrain et MRT.</strong> Réseaux modernes, propres, climatisés. Carte rechargeable Rabbit (BTS) ou MRT. Pratique pour traverser la ville sans subir les embouteillages monstrueux.</p>
+    <p><strong>Taxis-meter.</strong> Disponibles partout mais <strong>exigez l'utilisation du compteur</strong> dès la montée (« meter on please »). Refusez ceux qui proposent un prix forfaitaire. Tarif au compteur très raisonnable.</p>
+    <p><strong>Grab.</strong> Application équivalent Uber, prix affiché à l'avance, paiement carte ou cash. Solution privilégiée pour les missions GAT.</p>
+    <p><strong>Tuk-tuks.</strong> Négocier le prix avant la montée. Plutôt expérience touristique — pour les déplacements pratiques, préférer Grab ou taxi-meter.</p>
+    <p><strong>Trains.</strong> Réseau SRT (State Railway of Thailand) reliant le Nord, le Sud, l'Est. Confortables en classe 1 ou 2 climatisée — solution agréable pour Bangkok-Chiang Mai (nuit) ou Bangkok-Surat Thani.</p>
+    <p><strong>Location de voiture.</strong> Déconseillée à Bangkok (conduite à gauche, embouteillages, signalisation parfois absente). Possible en province pour mission terrain isolée — assurance tous risques obligatoire, permis international.</p>
+
+    <h3>Monnaie &amp; finances</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Monnaie</th><td>Baht thaïlandais (THB, ฿) — 1 EUR ≈ 38-40 THB (2026)</td></tr>
+        <tr><th>Retrait d'espèces</th><td>ATM partout — frais ~220 THB par retrait étranger (banque locale)</td></tr>
+        <tr><th>Carte bancaire</th><td>Visa / Mastercard acceptées dans hôtels, restaurants, malls — prévoir cash en province</td></tr>
+        <tr><th>Change</th><td>Bureaux SuperRich, Vasu Exchange — meilleurs taux qu'aéroport</td></tr>
+        <tr><th>Pourboires</th><td>10 % au restaurant si service non compris, arrondi au taxi</td></tr>
+        <tr><th>Reçus / factures</th><td>Demander <em>bai kep ngeun</em> (reçu) pour notes de frais</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Hébergement &amp; chantier</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Hôtel Bangkok</th><td>Quartiers recommandés : Sukhumvit (Asok, Nana, Phrom Phong), Silom, Sathorn, Ploenchit</td></tr>
+        <tr><th>Standards</th><td>Hôtels 4-5* internationaux très accessibles ; bonne couverture chaînes internationales</td></tr>
+        <tr><th>Confirmation</th><td>Conserver numéro de réservation et adresse en thaï (pour chauffeur)</td></tr>
+        <tr><th>Coffre</th><td>Utiliser le coffre de chambre pour passeport, visa et argent liquide</td></tr>
+        <tr><th>Check-in / out</th><td>Informer systématiquement le référent GAT de votre arrivée</td></tr>
+        <tr><th>Chantier</th><td>Port des EPI obligatoire — veste haute visibilité, casque, chaussures S3, gants</td></tr>
+        <tr><th>Climatisation</th><td>Souvent très forte en intérieur — prévoir une veste légère</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Électricité &amp; connectivité</h3>
+    <div class="alert">
+      <strong>Communication sur place</strong>
+      <ul>
+        <li><strong>Prises électriques</strong> : Type A, B, C et O — 220 V, 50 Hz. Adaptateur universel recommandé.</li>
+        <li><strong>Réseau mobile 4G/5G</strong> : excellente couverture villes et axes touristiques.</li>
+        <li><strong>SIM locale</strong> : AIS, TrueMove, dtac — bornes aux aéroports BKK et DMK. ~10 € pour 30 jours data illimitée (très utile pour Grab, Google Maps, traduction).</li>
+        <li><strong>Wi-Fi</strong> très répandu (hôtels, cafés, malls) — VPN recommandé pour les connexions publiques.</li>
+        <li><strong>WhatsApp et LINE</strong> très utilisés (LINE plus que WhatsApp côté thaï).</li>
+        <li>Roaming international : option possible mais coûteuse ; la SIM locale est plus économique pour les missions &gt; 1 semaine.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 5 — CONTACTS D'URGENCE ====== -->
+  <section id="s5">
+    <h2><span class="num">5.</span>Contacts d'urgence &amp; procédures</h2>
+
+    <div class="alert danger">
+      <strong>En cas d'urgence immédiate</strong>
+      <ul>
+        <li>Mettez-vous en sécurité AVANT tout appel.</li>
+        <li>Appelez le <strong>1669</strong> (SAMU thaï) ou <strong>191</strong> (police) selon la situation.</li>
+        <li>En zone touristique : <strong>1155</strong> (police touristique, anglais courant).</li>
+        <li>Prévenez votre <strong>chargé d'affaires ou référent GAT en priorité</strong> dès que la situation est sous contrôle ; à défaut, contactez la Direction GAT en escalation.</li>
+        <li>Ne négociez JAMAIS directement avec la police ou des tiers — laissez GAT prendre en charge.</li>
+        <li><strong>JAMAIS de propos critiques sur la monarchie</strong> même sous stress ou en garde à vue.</li>
+      </ul>
+    </div>
+
+    <h3>Numéros d'urgence Thaïlande</h3>
+    <table>
+      <thead><tr><th>Service</th><th>Numéro</th><th>Disponibilité</th></tr></thead>
+      <tbody>
+        <tr><td>SAMU / urgences médicales</td><td><strong>1669</strong></td><td>24h/24</td></tr>
+        <tr><td>Police touristique (anglais courant)</td><td><strong>1155</strong></td><td>24h/24</td></tr>
+        <tr><td>Police</td><td>191</td><td>24h/24</td></tr>
+        <tr><td>Pompiers</td><td>199</td><td>24h/24</td></tr>
+        <tr><td>Immigration Office Bangkok</td><td>1178</td><td>Heures ouvrables</td></tr>
+        <tr><td>Office of Tourism (info / assistance)</td><td>1672</td><td>24h/24</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Santé prévoyance — assistance &amp; assurance</h3>
+    <p style="font-size:13.5px; margin-bottom:14px;">En tant qu'expatrié hors UE, votre couverture santé repose sur trois piliers : la <strong>CFE</strong> (sécurité sociale internationale), la <strong>complémentaire santé &amp; prévoyance AXA</strong> souscrite via la plateforme OWELLO, et <strong>Europ Assistance</strong> pour toute assistance médicale, voyage ou rapatriement. L'annuaire complet est maintenu à jour en temps réel par la Direction sur SharePoint.</p>
+
+    <div style="background:#f0f7fc; border:1px solid #c8dcec; border-left:4px solid #185fa5; border-radius:8px; padding:18px 22px; margin-bottom:16px;">
+      <div style="display:flex; flex-wrap:wrap; gap:18px;">
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Assistance, voyage &amp; rapatriement</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">Europ Assistance</div>
+          <a href="tel:+33141858585" style="display:inline-block; background:#1a1a1a; color:#fff; padding:7px 14px; border-radius:5px; text-decoration:none; font-size:14px; font-weight:600;">+33 1 41 85 85 85</a>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">24h/24, 7j/7 — hospitalisation, rapatriement sanitaire, évacuation, bagages, accident, responsabilité civile. <strong>À appeler AVANT toute hospitalisation coûteuse.</strong></div>
+        </div>
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Sécu internationale + mutuelle</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">CFE + AXA Complémentaire &amp; Prévoyance</div>
+          <div style="font-size:12.5px; color:#1a1a1a; margin-bottom:4px;">Gestion via la plateforme <a href="https://login.owello-insurance.com/login" target="_blank">OWELLO</a></div>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">CFE pour la sécu, AXA pour la complémentaire santé et la prévoyance (décès, invalidité). Carte d'assuré à présenter aux praticiens ou à transmettre à Europ Assistance pour prise en charge directe.</div>
+        </div>
+      </div>
+      <div style="margin-top:16px; padding-top:14px; border-top:1px solid #c8dcec;">
+        <a href="https://gerib69.sharepoint.com/sites/GATNET/Lists/Assistance%20et%20assurance/AllItems.aspx" target="_top" style="display:inline-block; background:#185fa5; color:#fff; padding:9px 18px; border-radius:6px; text-decoration:none; font-size:13.5px; font-weight:600;">
+          Voir l'annuaire complet santé prévoyance sur SharePoint →
+        </a>
+        <div style="font-size:11.5px; color:#666; margin-top:8px; font-style:italic;">
+          Authentification SharePoint requise. Source : Liste « Assistance et assurance » maintenue par la Direction.
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:12px; color:#7a3f0d; background:#fdf6ee; border:1px solid #f0d09a; border-left:3px solid #BA7517; border-radius:6px; padding:10px 14px; margin:0 0 16px;"><strong>Indépendants / freelance :</strong> les couvertures ci-dessus sont propres aux salariés sous contrat GAT. Si vous intervenez en tant qu'indépendant, <strong>contactez votre chargé d'affaires ou référent GAT avant tout départ</strong> pour valider ensemble votre situation (assurance santé, assistance, rapatriement, responsabilité civile professionnelle) et les règles de sécurité applicables à la mission.</p>
+
+    <div class="alert">
+      <strong>En cas de rapatriement — conditions de prise en charge par Europ Assistance</strong>
+      <p>Pour que le rapatriement soit pris en charge et que vos frais soient intégralement remboursés, trois étapes sont essentielles. L'assureur conditionne sa prise en charge à leur respect — c'est la seule raison pour laquelle nous insistons sur ces points.</p>
+      <p>Le collaborateur, ou à défaut son chargé d'affaires, doit impérativement :</p>
+      <ul>
+        <li><strong>Obtenir l'accord préalable d'Europ Assistance</strong> avant de prendre toute initiative ou d'engager toute dépense (transport, hospitalisation, hôtel). Un simple appel suffit à activer le dossier — c'est ce qui déclenche la prise en charge directe et évite d'avancer les frais.</li>
+        <li><strong>Se conformer aux solutions préconisées par Europ Assistance</strong> (choix de l'établissement, mode de transport, calendrier). Europ Assistance négocie et prépaye directement auprès des prestataires : c'est ainsi que les sommes — parfois très importantes — sont prises en charge sans avance de votre part.</li>
+        <li><strong>Conserver et transmettre dès que possible tous les justificatifs originaux</strong> des dépenses engagées pour le compte d'Europ Assistance (factures, ordonnances, billets, plaintes de police le cas échéant). Sans ces originaux, le remboursement ne peut pas être instruit.</li>
+      </ul>
+      <p>À noter : si GAT a dû assurer à ses frais un voyage retour qui aurait pu être organisé via les titres de transport déjà détenus par le collaborateur, l'entreprise pourra utiliser ou demander le remboursement de ces titres. Cette disposition évite simplement une double facturation pour un même trajet.</p>
+    </div>
+
+    <h3>Ambassade &amp; consulats de France en Thaïlande</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Ambassade (Bangkok)</th><td>+66 2 657 5100</td></tr>
+        <tr><th>Adresse</th><td>35 Charoenkrung Soi 36, Bangrak, Bangkok 10500</td></tr>
+        <tr><th>Urgence consulaire</th><td>Permanence via standard ambassade</td></tr>
+        <tr><th>Site Ariane (inscription)</th><td><a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a></td></tr>
+        <tr><th>Site officiel ambassade</th><td><a href="https://th.ambafrance.org">th.ambafrance.org</a></td></tr>
+        <tr><th>Consulat honoraire Phuket</th><td>Via ambassade Bangkok pour mise en relation</td></tr>
+        <tr><th>Consulat honoraire Chiang Mai</th><td>Via ambassade Bangkok pour mise en relation</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Inscription Ariane — recommandée (mousson, instabilité Sud)</strong>
+      <ul>
+        <li>Inscrivez-vous sur le portail Ariane avant tout départ (<a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a>).</li>
+        <li>Permet à l'ambassade de vous localiser en cas de mousson sévère, d'attentat dans les provinces du Sud, ou de toute crise.</li>
+        <li>Mentionnez vos dates de séjour, hôtel(s) prévu(s) et coordonnées locales.</li>
+        <li>Mise à jour rapide possible en cas de changement d'itinéraire.</li>
+      </ul>
+    </div>
+
+    <h3>Procédure en cas d'incident</h3>
+    <ol class="step-list">
+      <li><strong>Agression / vol.</strong><p>1. Mettez-vous en sécurité. 2. Appelez le 1155 (police touristique anglophone) ou 191. 3. Appelez votre référent GAT. 4. Déposez plainte (<em>jaeng khwam</em>) au poste de police local — copie écrite indispensable pour assurance. 5. Conservez le numéro de plainte.</p></li>
+      <li><strong>Accident de chantier.</strong><p>1. Stop travaux — sécuriser la zone. 2. Appel 1669 (SAMU) si blessé. 3. Prévenir chef de chantier + référent GAT immédiatement. 4. NE PAS déplacer un blessé grave sans secours qualifiés. 5. Documenter (photos, témoins) pour QSE / assurance.</p></li>
+      <li><strong>Hospitalisation.</strong><p>Faire appeler <strong>Europ Assistance (+33 1 41 85 85 85)</strong> avant tout traitement coûteux pour activer la prise en charge directe. Privilégier les hôpitaux privés internationaux (Bumrungrad, Bangkok Hospital, Samitivej, BNH). Présenter carte CFE + AXA Complémentaire. Conserver TOUS les documents médicaux et factures originaux pour remboursement.</p></li>
+      <li><strong>Perte / vol de passeport ou visa.</strong><p>1. Déposez plainte police (obligatoire pour preuve). 2. Contactez l'ambassade de France à Bangkok. 3. Demandez un laissez-passer consulaire. 4. Si visa B perdu : contacter Immigration Office pour duplicata. 5. Informez GAT RH.</p></li>
+      <li><strong>Problème avec les autorités (drogue, monarchie, conduite).</strong><p>1. <strong>Garder son calme absolu</strong> — pas de protestation, pas de hausse de ton, pas de propos sur le Roi. 2. Demander immédiatement à contacter l'ambassade de France. 3. Ne signer AUCUN document sans interprète et sans assistance consulaire. 4. Prévenir GAT en escalade dès que possible.</p></li>
+      <li><strong>Mousson / catastrophe naturelle.</strong><p>1. Suivre les instructions locales (TV, applications gouvernementales). 2. Se mettre à l'abri en hauteur si tsunami / inondation. 3. Signaler sa position à l'ambassade via Ariane et à GAT. 4. Conserver le passeport et un kit d'urgence (eau, médicaments, papiers) sur soi.</p></li>
+    </ol>
+  </section>
+
+  <!-- ====== SECTION 6 — RETOUR EN FRANCE (CONSTANT) ====== -->
+  <section id="s6" class="return-section">
+    <span class="critical-badge">Étape critique · Identique pour tous les pays</span>
+    <h2><span class="num">6.</span>Fin de mission &amp; retour en France</h2>
+    <p class="source">Sources : Ameli.fr (Assurance Maladie), URSSAF, impots.gouv.fr, CFE, OWELLO, Ambassade de France à Bangkok, MEAE — section commune à tous les livrets, à ne pas modifier sans validation RH.</p>
+
+    <p>Le retour en France marque la fin de votre statut de travailleur expatrié. Plusieurs démarches administratives sont obligatoires dès votre retour pour préserver vos droits sociaux. La <strong>convention fiscale franco-thaïlandaise du 27 décembre 1974</strong> régit la fiscalité des revenus perçus en Thaïlande — votre déclaration française doit en tenir compte.</p>
+
+    <div class="deadline-card">
+      <div class="deadline-number">8<small>jours</small></div>
+      <div class="deadline-text">
+        <strong>Délai maximal pour vous réinscrire à la CPAM</strong>
+        Au-delà de 8 jours, vos soins médicaux ne sont plus remboursés et la régularisation devient longue. Démarche à lancer dès le lendemain de votre retour.
+      </div>
+    </div>
+
+    <h3 id="cpam">Couverture maladie — réinscription à la CPAM et carte Vitale</h3>
+    <div class="alert danger">
+      <strong>Démarche prioritaire à votre retour</strong>
+      <ul>
+        <li>Vous perdez votre couverture maladie internationale dès la fin de mission.</li>
+        <li>Réinscrivez-vous à la CPAM dans les 8 jours suivant votre retour en France.</li>
+        <li><strong>Mettez à jour votre carte Vitale</strong> en borne pharmacie ou CPAM (la mise à jour active vos droits actualisés).</li>
+        <li>Sans réinscription, vos soins médicaux ne seront pas remboursés.</li>
+        <li>Cette démarche est individuelle — GAT ne peut pas la faire à votre place.</li>
+      </ul>
+    </div>
+
+    <h3>Comment se réinscrire à la CPAM</h3>
+    <ol class="step-list">
+      <li><strong>Préparez vos documents.</strong><p>Pièce d'identité, justificatif de domicile (-3 mois), relevé de situation CAF si applicable, RIB, et le cas échéant votre certificat de fin d'expatriation ou attestation de fin de contrat fournie par GAT.</p></li>
+      <li><strong>Rendez-vous sur Ameli.fr.</strong><p>Connectez-vous ou créez votre compte sur ameli.fr. Rubrique « Ma situation » › « Je reprends une activité en France ». Vous pouvez également contacter le 36 46 (service CPAM, gratuit depuis la France).</p></li>
+      <li><strong>Demande d'affiliation.</strong><p>Si vous étiez salarié de GAT en expatriation, votre employeur signale la fin d'expatriation à l'URSSAF. Votre CPAM de rattachement (celle de votre domicile) prend le relai automatiquement sous 8 à 15 jours.</p></li>
+      <li><strong>Attestation de droits + mise à jour carte Vitale.</strong><p>Une fois affilié, téléchargez votre attestation de droits sur Ameli.fr. Mettez à jour votre carte Vitale dans une borne en pharmacie ou à la CPAM (gratuit, 30 secondes).</p></li>
+    </ol>
+
+    <h3 id="cfe">Couverture par la CFE pendant la transition (3 mois)</h3>
+    <div class="alert">
+      <strong>Maintien des droits par la Caisse des Français de l'Étranger</strong>
+      <ul>
+        <li>Pendant les <strong>3 premiers mois après votre retour</strong>, la CFE maintient vos droits (le temps que la Sécurité sociale prenne le relai).</li>
+        <li>Pour chaque consultation ou soin : faire compléter une <strong>feuille de soins CERFA</strong> par le praticien.</li>
+        <li>Déposez ces feuilles de soins sur votre <strong>espace CFE en ligne</strong>.</li>
+        <li>Une fois vos droits Sécu ouverts (sous 8-15 jours après réinscription) : utilisez votre carte Vitale normalement, ou transmettez la feuille de soins à la CPAM.</li>
+      </ul>
+    </div>
+
+    <h3 id="owello">Portabilité de la complémentaire santé (mutuelle AXA via OWELLO)</h3>
+    <div class="alert">
+      <strong>Maintien de votre mutuelle après la fin du contrat de travail</strong>
+      <ul>
+        <li>Vous pouvez bénéficier de la <strong>portabilité</strong> de la complémentaire santé (mutuelle d'entreprise) après la fin de votre contrat de travail GAT.</li>
+        <li><strong>Condition</strong> : France Travail doit vous verser l'allocation d'aide au retour à l'emploi (ARE).</li>
+        <li>Chaque mois, transmettez à <strong>OWELLO</strong> votre attestation de versement des allocations France Travail.</li>
+        <li>Espace en ligne OWELLO : <a href="https://login.owello-insurance.com/login">login.owello-insurance.com/login</a></li>
+      </ul>
+    </div>
+
+    <h3>Remboursement des frais de soins — procédure complète</h3>
+    <ol class="step-list">
+      <li><strong>Pendant les 3 premiers mois (couverture CFE).</strong><p>Faire compléter une feuille de soins CERFA par le praticien. Déposez-la sur votre <strong>espace CFE</strong>. La CFE rembourse selon les taux de la Sécurité sociale.</p></li>
+      <li><strong>Une fois la Sécu ouverte.</strong><p>Utilisez votre <strong>carte Vitale</strong> à jour. Le pharmacien / médecin transmet directement à la CPAM (tiers payant ou télétransmission).</p></li>
+      <li><strong>Pour le complément mutuelle.</strong><p>Téléchargez votre décompte de remboursement CPAM sur Ameli.fr → transmettez-le à <strong>OWELLO</strong> via votre <a href="https://login.owello-insurance.com/login">espace OWELLO</a>. OWELLO complète selon votre contrat.</p></li>
+    </ol>
+
+    <h3>Fiscalité — convention France-Thaïlande</h3>
+    <div class="alert">
+      <strong>Convention fiscale du 27 décembre 1974</strong>
+      <ul>
+        <li>La France et la Thaïlande sont liées par une convention fiscale visant à <strong>éviter la double imposition</strong> des revenus.</li>
+        <li>Les revenus perçus en Thaïlande pendant votre mission doivent être déclarés en France sur le formulaire <strong>2042</strong> (et 2047 pour les revenus étrangers).</li>
+        <li>Selon la durée de mission et votre statut de résidence fiscale, certaines règles spécifiques s'appliquent — consulter la convention ou votre comptable / GAT RH.</li>
+        <li>Conservez tous les justificatifs : bulletins de salaire thaïlandais, certificats de retenue à la source, contrat expatrié.</li>
+      </ul>
+    </div>
+
+    <div class="alert">
+      <strong>Contacts et liens utiles au retour</strong>
+      <ul>
+        <li><a href="https://www.ameli.fr">Ameli.fr</a> — portail Assurance Maladie · <strong>36 46</strong> (lun-ven 8h-20h, sam 9h-12h)</li>
+        <li><a href="https://www.cfe.fr">CFE.fr</a> — Caisse des Français de l'Étranger (couverture 3 mois transition)</li>
+        <li><a href="https://login.owello-insurance.com/login">OWELLO</a> — portabilité mutuelle AXA (transmission attestations France Travail)</li>
+        <li><a href="https://www.francetravail.fr">France Travail</a> — inscription ARE si chômage</li>
+        <li><a href="https://www.impots.gouv.fr">Impots.gouv.fr</a> — déclaration revenus étrangers (convention France-Thaïlande 1974)</li>
+        <li><a href="https://th.ambafrance.org">th.ambafrance.org</a> — ambassade de France à Bangkok</li>
+      </ul>
+    </div>
+
+    <h3 id="recap-demarches">Récapitulatif des démarches administratives au retour</h3>
+    <table>
+      <thead><tr><th>Démarche</th><th>Délai</th><th>Où ?</th></tr></thead>
+      <tbody>
+        <tr><td>Réinscription CPAM</td><td>Sous 8 jours</td><td>ameli.fr / CPAM locale</td></tr>
+        <tr><td>Mise à jour carte Vitale</td><td>Dès droits ouverts</td><td>Borne pharmacie / CPAM</td></tr>
+        <tr><td>Inscription France Travail (si chômage)</td><td>Sous 12 mois</td><td>francetravail.fr</td></tr>
+        <tr><td>Portabilité mutuelle AXA via OWELLO</td><td>Dès fin de contrat</td><td><a href="https://login.owello-insurance.com/login">login.owello-insurance.com</a></td></tr>
+        <tr><td>Transmission attestation France Travail à OWELLO</td><td>Tous les mois</td><td>Espace OWELLO</td></tr>
+        <tr><td>Feuille de soins CERFA → CFE</td><td>Pendant 3 mois après retour</td><td>Espace CFE en ligne</td></tr>
+        <tr><td>Décompte CPAM → OWELLO (complément mutuelle)</td><td>À chaque soin</td><td>Espace OWELLO</td></tr>
+        <tr><td>Déclaration fiscale (revenus thaïlandais)</td><td>Calendrier fiscal (mai-juin)</td><td>impots.gouv.fr (2042 + 2047)</td></tr>
+        <tr><td>Restitution équipements (ordinateur et outillage)</td><td>Sous 5 jours ouvrés</td><td>Référent GAT</td></tr>
+        <tr><td>Remplir le retour d'expérience</td><td>Sous 5 jours</td><td>Chargée QSE GAT</td></tr>
+        <tr><td>Notes de frais en attente</td><td>Sous 30 jours</td><td>Comptabilité GAT</td></tr>
+        <tr><td>Résiliation SIM locale / Wi-Fi pocket</td><td>Avant / dès retour</td><td>Opérateur thaï (AIS / TrueMove / dtac)</td></tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- ====== CHECKLIST ====== -->
+  <section id="checklist">
+    <h2>Checklist avant départ Thaïlande</h2>
+
+    <h3>Documents</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Passeport valide 6+ mois après retour, 2 pages vierges</label>
+      <label><input type="checkbox"> <strong>Visa Business B</strong> obtenu (Ambassade Thaïlande Paris)</label>
+      <label><input type="checkbox"> Lettre d'invitation entreprise thaïlandaise + lettre de mission GAT</label>
+      <label><input type="checkbox"> Copie numérique passeport, visa, billet (email / cloud)</label>
+      <label><input type="checkbox"> Contacts d'urgence imprimés et mémorisés</label>
+      <label><input type="checkbox"> Carnet de vaccination international</label>
+      <label><input type="checkbox"> Coordonnées hôtel et chantier en thaï (pour chauffeur)</label>
+    </div>
+
+    <h3>Santé</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Vaccins à jour (DTP, hépatite A et B, typhoïde)</label>
+      <label><input type="checkbox"> Encéphalite japonaise / rage évaluées si zones rurales</label>
+      <label><input type="checkbox"> Consultation CVI 6 semaines avant départ</label>
+      <label><input type="checkbox"> Prophylaxie antipaludéenne si zones frontalières</label>
+      <label><input type="checkbox"> Pharmacie de voyage complète (Imodium, SRO, DEET 30%)</label>
+      <label><input type="checkbox"> Médicaments personnels + ordonnance traduite anglais</label>
+      <label><input type="checkbox"> Crème solaire SPF 50+ et après-soleil</label>
+    </div>
+
+    <h3>Sécurité &amp; logistique</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Inscription Ariane effectuée (pastel.diplomatie.gouv.fr)</label>
+      <label><input type="checkbox"> Couverture CFE + AXA OWELLO + Europ Assistance vérifiée</label>
+      <label><input type="checkbox"> SIM locale prévue (AIS / TrueMove / dtac) ou roaming activé</label>
+      <label><input type="checkbox"> Référent GAT informé des dates et coordonnées</label>
+      <label><input type="checkbox"> Transfert aéroport Suvarnabhumi (BKK) préparé</label>
+      <label><input type="checkbox"> Espèces THB ou EUR pour les premiers jours</label>
+      <label><input type="checkbox"> Adaptateur secteur Type A/B/C/O (220 V)</label>
+      <label><input type="checkbox"> Veste légère (climatisation forte intérieurs)</label>
+      <label><input type="checkbox"> Briefing culturel : monarchie, drogues, codes du corps</label>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h3>Bon voyage et bonne mission.</h3>
+    L'équipe GAT International est disponible à tout moment pour vous accompagner.<br>
+    <a href="https://www.gat.fr">www.gat.fr</a> — Tous vos documents de mission en ligne.
+  </div>
+
+</main>
+
+<footer>
+  GAT International — Livret de mission Thaïlande · Version 2026 · Document interne confidentiel.<br>
+  Sources : France Diplomatie (MEAE), Europ Assistance, CFE, OWELLO, Ameli.fr, Institut Pasteur, Ambassade de France à Bangkok, convention fiscale France-Thaïlande 1974.
+</footer>
+
+<!-- Bouton flottant fixe — toujours visible -->
+<a href="#s6" class="float-return" title="Voir les démarches CPAM, fiscalité et restitution équipements">
+  Démarches retour France <span class="float-return-arrow">→</span>
+</a>
+
+<script>
+  // Injecte la date d'impression dans le footnote PDF
+  window.addEventListener('beforeprint', function() {
+    var d = new Date();
+    var dateStr = d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' });
+    var el = document.getElementById('print-date');
+    if (el) el.textContent = dateStr;
+  });
+</script>
+
+</body>
+</html>
