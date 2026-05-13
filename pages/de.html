@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allemagne — Livret de Mission GAT International</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1a1a1a; background: #ffffff; line-height: 1.55; }
+  .topbar { background: #1a1a1a; color: #fff; padding: 10px 32px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: #fff; text-decoration: none; opacity: 0.85; }
+  .topbar-actions { display: flex; align-items: center; gap: 14px; }
+  .btn-pdf { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.35); padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 11.5px; font-family: inherit; }
+  .btn-pdf:hover { background: rgba(255,255,255,0.28); }
+  header.cover { background: #ffffff; padding: 32px 32px 24px; border-bottom: 1px solid #e5e5e5; }
+  .cover-grid { display: grid; grid-template-columns: 1fr auto; gap: 32px; max-width: 1100px; margin: 0 auto; align-items: end; }
+  .breadcrumb { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .cover h1 { margin: 0 0 6px; font-size: 32px; font-weight: 600; }
+  .cover .subtitle { margin: 0; font-size: 14px; color: #666; }
+  .contract-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 7px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; }
+  .contract-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; }
+  .contract-badge.contract-france { background: #e9f4e2; color: #2f5f12; border: 1px solid #c5e0b1; }
+  .contract-badge.contract-france::before { background: #5d8a3a; }
+  .contract-badge.contract-detachement { background: #e6f1fb; color: #0c447c; border: 1px solid #b3d0e9; }
+  .contract-badge.contract-detachement::before { background: #185fa5; }
+  .contract-badge.contract-expat { background: #fdf0e1; color: #7a3f0d; border: 1px solid #f0d09a; }
+  .contract-badge.contract-expat::before { background: #BA7517; }
+  .contract-detail { font-weight: 400; opacity: 0.85; margin-left: 4px; }
+  .cover-flag { width: 120px; height: 80px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; }
+  .cover-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .meta-bar { max-width: 1100px; margin: 16px auto 0; display: grid; grid-template-columns: repeat(6, 1fr); border: 1px solid #e5e5e5; border-radius: 4px; overflow: hidden; }
+  .meta-bar > div { padding: 10px 14px; border-right: 1px solid #e5e5e5; }
+  .meta-bar > div:last-child { border-right: none; }
+  .meta-bar .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .meta-bar .value { font-size: 13px; font-weight: 500; margin-top: 2px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 28px 32px 60px; }
+  .toc { background: #f7f7f5; border: 1px solid #e5e5e5; border-radius: 6px; padding: 18px 24px; margin-bottom: 32px; }
+  .toc-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; margin-bottom: 8px; }
+  .toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; font-size: 14px; }
+  .toc a { color: #1a1a1a; text-decoration: none; }
+  .toc a:hover { border-bottom: 1px solid #1a1a1a; }
+  section { margin: 0 0 44px; scroll-margin-top: 20px; }
+  section h2 { font-size: 22px; font-weight: 600; margin: 0 0 6px; padding: 0 0 6px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-right: 40px; }
+  section h2 .num { color: #999; margin-right: 12px; font-weight: 400; }
+  section h3 { font-size: 16px; font-weight: 600; margin: 22px 0 10px; }
+  section p { margin: 8px 0; font-size: 14px; }
+  .vigilance-banner { padding: 14px 18px; border-radius: 6px; border-left: 4px solid; margin: 14px 0 22px; font-size: 14px; }
+  .vigilance-Vigilance { background: #fbf0d3; border-color: #d4a23a; color: #5a4307; }
+  .vigilance-banner strong { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+  .alert { padding: 14px 18px; border-radius: 6px; background: #fff8e6; border: 1px solid #f0d680; margin: 14px 0; font-size: 13.5px; }
+  .alert.danger { background: #fdecec; border-color: #e8b1ad; }
+  .alert strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+  .alert ul { margin: 0; padding-left: 18px; }
+  .alert li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #ececec; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: #555; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+  .col-card { background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px; padding: 14px 18px; }
+  .col-card.do { border-left: 3px solid #5d8a3a; }
+  .col-card.dont { border-left: 3px solid #a83232; }
+  .col-card h4 { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; }
+  .col-card ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .col-card li { margin: 4px 0; }
+  .risk-grid { display: grid; gap: 8px; margin: 14px 0; }
+  .risk-row { display: grid; grid-template-columns: 240px 1fr 60px; gap: 14px; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+  .risk-bar { height: 6px; background: #ececec; border-radius: 3px; overflow: hidden; }
+  .risk-fill { height: 100%; background: linear-gradient(90deg, #5d8a3a 0%, #d4a23a 50%, #a83232 100%); }
+  .risk-score { font-size: 13px; color: #555; text-align: right; }
+  .step-list { counter-reset: step; padding: 0; list-style: none; margin: 14px 0; }
+  .step-list li { counter-increment: step; padding: 12px 14px 12px 50px; position: relative; border-left: 2px solid #e0e0e0; margin-left: 14px; }
+  .step-list li::before { content: counter(step); position: absolute; left: -16px; top: 12px; width: 30px; height: 30px; background: #1a1a1a; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+  .step-list li strong { display: block; font-size: 14px; margin-bottom: 4px; }
+  .step-list li p { margin: 0; font-size: 13px; color: #555; }
+  .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; margin: 14px 0; font-size: 13.5px; }
+  .checklist label { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; cursor: pointer; }
+  .checklist input { margin-top: 3px; }
+  .source { font-size: 11px; color: #888; font-style: italic; margin-top: -4px; margin-bottom: 16px; }
+  .footer-cta { background: #1a1a1a; color: #fff; padding: 22px 28px; border-radius: 6px; margin-top: 32px; font-size: 13px; }
+  .footer-cta h3 { margin: 0 0 6px; font-size: 16px; color: #fff; }
+  .obligations-preamble { max-width: 1100px; margin: 22px auto 0; background: #fffaf5; border: 2px solid #f0d9c5; border-radius: 10px; padding: 24px 28px; }
+  .obligations-header { margin-bottom: 22px; }
+  .obligations-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 10px; }
+  .obligations-header h2 { margin: 0 0 6px; font-size: 22px; font-weight: 600; border: none; }
+  .obligations-header p { margin: 0; font-size: 13.5px; color: #555; max-width: 800px; }
+  .obligations-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; position: relative; }
+  .obligations-timeline::before { content: ""; position: absolute; top: 24px; left: 14%; right: 14%; height: 2px; background: linear-gradient(90deg, #185FA5 0%, #BA7517 50%, #993C1D 100%); z-index: 0; }
+  .obl-phase { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 18px 20px; position: relative; z-index: 1; }
+  .obl-phase.before { border-top: 3px solid #185FA5; }
+  .obl-phase.during { border-top: 3px solid #BA7517; }
+  .obl-phase.after { border-top: 3px solid #993C1D; }
+  .obl-step { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .obl-phase.before .obl-step { background: #185FA5; }
+  .obl-phase.during .obl-step { background: #BA7517; }
+  .obl-phase.after .obl-step { background: #993C1D; }
+  .obl-phase h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; }
+  .obl-phase .obl-when { display: block; font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+  .obl-phase ul { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; }
+  .obl-phase ul li strong { color: #993C1D; }
+  .obl-phase ul li.priority { background: #fff0eb; border-left: 3px solid #993C1D; padding: 4px 8px; list-style: none; margin-left: -22px; padding-left: 14px; border-radius: 0 4px 4px 0; }
+  .obl-phase ul li a.section-link { display: inline-block; margin-left: 6px; width: 18px; height: 18px; text-align: center; border-radius: 50%; background: #ececec; color: #555; text-decoration: none; font-size: 11px; line-height: 18px; font-weight: 600; vertical-align: middle; }
+  .obl-phase ul li a.section-link:hover { background: #993C1D; color: #fff; }
+  .vaccine-cell { position: relative; cursor: help; }
+  .info-marker { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: #888; color: #fff; font-size: 11px; font-weight: 600; font-style: normal; margin-left: 6px; vertical-align: middle; }
+  .vaccine-cell:hover .info-marker { background: #185FA5; }
+  .vaccine-popup { position: absolute; left: 0; top: calc(100% + 10px); background: #1a1a1a; color: #fff; padding: 16px 20px; border-radius: 8px; width: 380px; max-width: 92vw; font-size: 12.5px; line-height: 1.6; opacity: 0; pointer-events: none; transition: opacity 0.18s; z-index: 200; box-shadow: 0 6px 24px rgba(0,0,0,0.25); }
+  .vaccine-popup::before { content: ""; position: absolute; top: -7px; left: 24px; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid #1a1a1a; }
+  .vaccine-cell:hover .vaccine-popup { opacity: 1; pointer-events: auto; }
+  .vaccine-popup .vp-title { display: block; font-size: 14px; font-weight: 600; margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.15); }
+  .vaccine-popup ul { margin: 0; padding: 0; list-style: none; }
+  .vaccine-popup li { padding: 4px 0; }
+  .vaccine-popup li strong { display: inline-block; min-width: 100px; color: #f0d99a; font-weight: 600; }
+  .vaccine-popup .vp-warn { display: block; margin-top: 10px; padding: 8px 10px; background: rgba(216,90,48,0.18); border-left: 3px solid #D85A30; font-size: 12px; color: #ffd0bd; }
+  .vaccine-popup .vp-source { display: block; margin-top: 12px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 11px; color: rgba(255,255,255,0.55); font-style: italic; }
+  .float-return { position: fixed; right: 22px; bottom: 24px; z-index: 100; background: #993C1D; color: #fff; padding: 12px 18px; border-radius: 999px; text-decoration: none; font-size: 13px; font-weight: 600; box-shadow: 0 4px 14px rgba(153,60,29,0.35); display: flex; align-items: center; gap: 10px; }
+  .float-return:hover { background: #7a2e15; }
+  section.return-section { background: linear-gradient(180deg, #fdf3ef 0%, #ffffff 200px); border: 1px solid #e8c5b3; border-radius: 10px; padding: 28px 32px; margin: 30px 0 44px; position: relative; }
+  section.return-section::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #993C1D, #C04A20, #D85A30); border-radius: 10px 10px 0 0; }
+  section.return-section h2 { color: #993C1D; border-bottom-color: #993C1D; }
+  .critical-badge { display: inline-block; background: #993C1D; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 12px; }
+  .deadline-card { background: #fff; border: 2px solid #993C1D; border-radius: 8px; padding: 18px 22px; margin: 18px 0; display: grid; grid-template-columns: 100px 1fr; gap: 22px; align-items: center; }
+  .deadline-number { font-size: 56px; font-weight: 700; color: #993C1D; line-height: 1; text-align: center; }
+  .deadline-number small { display: block; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+  .deadline-text strong { display: block; font-size: 15px; margin-bottom: 4px; color: #993C1D; }
+
+  .official-sources { margin: 18px 0 28px; }
+  .sources-title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #555; font-weight: 600; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5; }
+  .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cta-card { display: block; padding: 18px 22px; border-radius: 8px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; border: 1px solid; }
+  .cta-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .cta-card .cta-tag { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px; }
+  .cta-card .cta-title { display: block; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+  .cta-card p { margin: 0 0 12px; font-size: 13px; line-height: 1.5; }
+  .cta-card .cta-link { font-size: 13px; font-weight: 600; }
+  .cta-card.cta-diplomatie { background: #e6f1fb; border-color: #b5d4f4; color: #0c447c; }
+  .cta-card.cta-diplomatie .cta-tag { background: #185fa5; color: #fff; }
+  .cta-card.cta-diplomatie .cta-link { color: #185fa5; }
+  .cta-card.cta-ariane { background: #fdecec; border-color: #e8b1ad; color: #791f1f; }
+  .cta-card.cta-ariane .cta-tag.cta-tag-priority { background: #a32d2d; color: #fff; }
+  .cta-card.cta-ariane .cta-link { color: #a32d2d; }
+  .ariane-why { background: #fffaf5; border: 1px solid #f0d9c5; border-radius: 8px; padding: 20px 24px; margin-top: 16px; }
+  .ariane-why h4 { margin: 0 0 10px; font-size: 15px; font-weight: 600; }
+  .ariane-why > p { margin: 0 0 14px; font-size: 13.5px; line-height: 1.6; color: #444; }
+  .ariane-why > p strong { color: #993C1D; }
+  .ariane-scenarios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 16px; margin: 12px 0; }
+  .ariane-scenarios .scenario { padding: 10px 12px; background: #fff; border-radius: 4px; border-left: 3px solid #c47140; font-size: 12.5px; line-height: 1.5; color: #555; }
+  .ariane-scenarios .scenario .scenario-label { display: block; font-size: 11px; font-weight: 600; color: #993C1D; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
+  .ariane-stat { margin: 14px 0 0 !important; padding: 12px 16px; background: #fff8e6; border-left: 3px solid #BA7517; border-radius: 0 4px 4px 0; font-size: 13px; font-style: italic; color: #5a4307 !important; }
+
+  /* Encart spécifique Allemagne — Umweltplakette */
+  .info-block { background: #f0f7fc; border: 2px solid #b3d0e9; border-radius: 8px; padding: 18px 22px; margin: 16px 0 22px; }
+  .info-block .ib-tag { display: inline-block; background: #185fa5; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 10px; }
+  .info-block h4 { margin: 0 0 8px; font-size: 16px; color: #0c447c; font-weight: 600; }
+  .info-block p { margin: 4px 0; font-size: 13.5px; color: #1a3a5a; line-height: 1.55; }
+  .info-block ul { margin: 8px 0 0 18px; padding: 0; font-size: 13px; color: #1a3a5a; }
+
+  footer { padding: 24px 32px; text-align: center; font-size: 11px; color: #888; border-top: 1px solid #e5e5e5; background: #fafafa; }
+  .pdf-footnote { display: none; }
+  @media (max-width: 720px) { .meta-bar, .obligations-timeline, .two-col, .checklist, .deadline-card, .cover-grid, .cta-grid, .ariane-scenarios { grid-template-columns: 1fr; } .toc ol { columns: 1; } .obligations-timeline::before { display: none; } }
+  @media print { .topbar, .float-return, .btn-pdf { display: none !important; } .vaccine-popup, .info-marker { display: none !important; } body { background: #fff; } main, header.cover { padding: 16px 24px !important; } section { page-break-inside: avoid; } .pdf-footnote { display: block !important; text-align: center; font-size: 10px; color: #666; margin: 8px 0 16px; padding: 8px; border: 1px dashed #ccc; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><a href="../index.html">← Retour à la carte</a> · Conseils aux voyageurs · GAT International</span>
+  <span class="topbar-actions">
+    <button class="btn-pdf" onclick="window.print()" title="Imprimer ou enregistrer en PDF">Imprimer / PDF</button>
+    Document interne · Version 2026
+  </span>
+</div>
+
+<header class="cover">
+  <div class="cover-grid">
+    <div>
+      <div class="breadcrumb"><a href="../index.html">Conseils aux voyageurs</a> › <span>Allemagne</span></div>
+      <h1>Allemagne</h1>
+      <p class="subtitle">Bundesrepublik Deutschland — Livret de Mission. Guide pratique pour les collaborateurs en déplacement professionnel en Allemagne.</p>
+      <span class="contract-badge contract-detachement">Détachement intra-UE<span class="contract-detail">· Contrat de travail classique + formulaire A1 · Sécu française maintenue · CEAM · APICIL mutuelle · Europ Assistance</span></span>
+    </div>
+    <div class="cover-flag">
+      <img src="https://flagcdn.com/w320/de.png" alt="Drapeau Allemagne">
+    </div>
+  </div>
+  <div class="meta-bar">
+    <div><div class="label">Capitale</div><div class="value">Berlin</div></div>
+    <div><div class="label">Fuseau horaire</div><div class="value">UTC+1 / UTC+2</div></div>
+    <div><div class="label">Langue officielle</div><div class="value">Allemand</div></div>
+    <div><div class="label">Monnaie</div><div class="value">Euro (EUR)</div></div>
+    <div><div class="label">Code ISO</div><div class="value">DEU</div></div>
+    <div><div class="label">Créée le</div><div class="value">13 mai 2026</div></div>
+  </div>
+
+  <p class="pdf-footnote">Document figé extrait du site dynamique le <span id="print-date"></span> — La version en ligne peut avoir évolué depuis.</p>
+
+  <div class="obligations-preamble">
+    <div class="obligations-header">
+      <span class="obligations-badge">À respecter absolument</span>
+      <h2>Vos obligations pour cette mission en Allemagne</h2>
+      <p>Synthèse des démarches incontournables avant, pendant et après la mission. Attention particulière à la <strong>Umweltplakette</strong> (vignette environnementale obligatoire dans les zones urbaines) et aux normes de sécurité chantier (BG BAU).</p>
+    </div>
+    <div class="obligations-timeline">
+
+      <div class="obl-phase before"><span class="obl-step">1</span>
+        <h3>Avant le départ</h3>
+        <span class="obl-when">Au moins 2 semaines avant · Cliquez sur ▸ pour voir le détail</span>
+        <ul>
+          <li>Inscription <strong>Ariane</strong> recommandée <a class="section-link" href="#s5">▸</a></li>
+          <li><strong>Carte d'identité</strong> ou passeport valide <a class="section-link" href="#s4">▸</a></li>
+          <li><strong>Carte européenne d'assurance maladie</strong> (CEAM) <a class="section-link" href="#s2">▸</a></li>
+          <li>Vaccin <strong>Tétanos / DTP</strong> à jour <a class="section-link" href="#s2">▸</a></li>
+          <li><strong>Umweltplakette</strong> si déplacement en voiture (vignette environnement) <a class="section-link" href="#s4">▸</a></li>
+          <li>Référent GAT informé des dates et coordonnées <a class="section-link" href="#s5">▸</a></li>
+          <li>Assurance santé vérifiée (APICIL / Europ Assistance) <a class="section-link" href="#s5">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase during"><span class="obl-step">2</span>
+        <h3>À l'arrivée et pendant la mission</h3>
+        <span class="obl-when">Tout au long du séjour</span>
+        <ul>
+          <li>Pièce d'identité sur soi (contrôles possibles) <a class="section-link" href="#s4">▸</a></li>
+          <li><strong>Ponctualité stricte</strong> en réunion (arriver 5 min en avance) <a class="section-link" href="#s3">▸</a></li>
+          <li>Vigilance pickpockets dans gares et transports publics <a class="section-link" href="#s1">▸</a></li>
+          <li>EPI obligatoires sur chantier (normes BG BAU) <a class="section-link" href="#s4">▸</a></li>
+          <li>Référent GAT informé du check-in / check-out hôtel <a class="section-link" href="#s5">▸</a></li>
+          <li><strong>Chargé d'affaires ou référent GAT</strong> prévenu en priorité (Jean-Marc CERESNE / Christopher LUMBRERAS selon affectation) ; Direction GAT en escalation si non joignable <a class="section-link" href="#s5">▸</a></li>
+        </ul>
+      </div>
+
+      <div class="obl-phase after"><span class="obl-step">3</span>
+        <h3>Au retour en France</h3>
+        <span class="obl-when">Détachement intra-UE — affiliation Sécu maintenue</span>
+        <ul>
+          <li><strong>Vous restez affilié à la CPAM française</strong> pendant toute la mission — aucune réinscription nécessaire au retour <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Si avance de frais médicaux en Allemagne : formulaire <strong>S3125 (CEAM)</strong> à transmettre à votre CPAM avec justificatifs originaux <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Restitution équipements (ordinateur, outillage) sous <strong>5 jours ouvrés</strong> <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Remplir le retour d'expérience auprès de la Chargée QSE sous <strong>5 jours</strong> <a class="section-link" href="#recap-demarches">▸</a></li>
+          <li>Notes de frais sous <strong>30 jours</strong> <a class="section-link" href="#recap-demarches">▸</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <ol>
+      <li><a href="#s1">Risques pays &amp; sécurité</a></li>
+      <li><a href="#s2">Santé &amp; vaccinations</a></li>
+      <li><a href="#s3">Pratiques culturelles &amp; business</a></li>
+      <li><a href="#s4">Logistique pratique</a></li>
+      <li><a href="#s5">Contacts d'urgence</a></li>
+      <li><a href="#s6">Retour en France</a></li>
+      <li><a href="#checklist">Checklist avant départ</a></li>
+    </ol>
+  </div>
+
+  <section id="s1">
+    <h2><span class="num">1.</span>Risques pays &amp; sécurité</h2>
+    <p class="source">Source : France Diplomatie (MEAE), Bundesministerium des Innern (BMI), BG BAU — à vérifier régulièrement.</p>
+
+    <div class="vigilance-banner vigilance-Vigilance">
+      <strong>Niveau de vigilance général : Vigilance normale</strong>
+      L'Allemagne est classée en <strong>vigilance normale</strong> par France Diplomatie. Pays stable, sûr, infrastructures de qualité, services publics efficaces. Le risque sécuritaire global est faible. Les principales précautions concernent la <strong>petite délinquance urbaine</strong> (pickpockets dans les grandes gares et transports publics) et les <strong>conditions climatiques hivernales</strong> dans le sud et l'est du pays.<br>
+      <em>Vérifier les zones précises sur France Diplomatie avant départ.</em>
+    </div>
+
+    <div class="official-sources">
+      <h3 class="sources-title">Sources officielles à consulter</h3>
+
+      <div class="cta-grid">
+        <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/allemagne/" target="_blank" rel="noopener" class="cta-card cta-diplomatie">
+          <span class="cta-tag">Source officielle MEAE</span>
+          <span class="cta-title">France Diplomatie — Allemagne</span>
+          <p>Niveau de vigilance officiel à jour, alertes éventuelles, recommandations sécuritaires. Source de référence avant tout départ.</p>
+          <span class="cta-link">Consulter la fiche Allemagne →</span>
+        </a>
+
+        <a href="https://pastel.diplomatie.gouv.fr" target="_blank" rel="noopener" class="cta-card cta-ariane">
+          <span class="cta-tag cta-tag-priority">Recommandé avant départ</span>
+          <span class="cta-title">Ariane — Inscription des voyageurs</span>
+          <p>Gratuit, 5 minutes. Permet à l'ambassade de France de vous localiser et vous contacter immédiatement en cas de crise (alerte sanitaire, attentat, événement climatique).</p>
+          <span class="cta-link">S'inscrire sur Ariane →</span>
+        </a>
+      </div>
+
+      <div class="ariane-why">
+        <h4>Pourquoi Ariane reste utile même en zone Schengen</h4>
+        <p>L'Allemagne fait partie de l'espace Schengen et présente un environnement très sûr. <strong>Mais les crises ponctuelles existent</strong> et l'inscription Ariane reste un réflexe pertinent pour toute mission de plus de quelques jours.</p>
+        <div class="ariane-scenarios">
+          <div class="scenario"><span class="scenario-label">Tempêtes hivernales</span>Sturmtief réguliers (vents violents, neige, perturbations transport — décembre à mars)</div>
+          <div class="scenario"><span class="scenario-label">Attentats</span>Berlin marché de Noël 2016, Magdebourg 2024 — risque résiduel surveillé</div>
+          <div class="scenario"><span class="scenario-label">Inondations</span>Crues du Rhin, de l'Elbe et de l'Ahr (2021 : 180+ morts en Rhénanie)</div>
+          <div class="scenario"><span class="scenario-label">Urgence individuelle</span>Accident, agression, perte de papiers — l'ambassade accompagne plus vite</div>
+        </div>
+        <p class="ariane-stat">Les inondations de la vallée de l'Ahr en juillet 2021 ont causé plus de 180 morts. Les Français inscrits sur Ariane ont été contactés rapidement par le consulat. L'inscription reste un investissement de 5 minutes pour une couverture utile.</p>
+      </div>
+    </div>
+
+    <h3>Niveaux de risque par catégorie</h3>
+    <div class="risk-grid">
+      <div class="risk-row"><span>Criminalité (pickpockets gares / transports)</span><div class="risk-bar"><div class="risk-fill" style="width:30%;"></div></div><span class="risk-score">2/5</span></div>
+      <div class="risk-row"><span>Risque terroriste</span><div class="risk-bar"><div class="risk-fill" style="width:45%;"></div></div><span class="risk-score">2/5</span></div>
+      <div class="risk-row"><span>Instabilité politique</span><div class="risk-bar"><div class="risk-fill" style="width:15%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Enlèvements / extorsion</span><div class="risk-bar"><div class="risk-fill" style="width:10%;"></div></div><span class="risk-score">1/5</span></div>
+      <div class="risk-row"><span>Risques naturels (tempêtes, inondations)</span><div class="risk-bar"><div class="risk-fill" style="width:45%;"></div></div><span class="risk-score">2/5</span></div>
+      <div class="risk-row"><span>Risque sanitaire</span><div class="risk-bar"><div class="risk-fill" style="width:20%;"></div></div><span class="risk-score">1/5</span></div>
+    </div>
+
+    <h3>Règles de comportement essentielles</h3>
+    <div class="alert danger">
+      <strong>Règles absolues à respecter</strong>
+      <ul>
+        <li><strong>Respect strict des règles civiques</strong> — feux piétons (ne jamais traverser au rouge, même sans voiture), tri sélectif des déchets, calme nocturne après 22 h (<em>Nachtruhe</em>).</li>
+        <li>Vigilance pickpockets dans les grandes gares (Hauptbahnhof) Berlin, Munich, Hambourg, Francfort, Cologne — surtout aux heures de pointe.</li>
+        <li>Sur chantier : respect strict des normes <strong>BG BAU</strong> (organisme professionnel BTP), EPI complets obligatoires, plans de prévention écrits.</li>
+        <li>Pas de photos d'installations militaires ou ferroviaires sensibles.</li>
+        <li>Connaître le numéro d'urgence européen : <strong>112</strong>.</li>
+      </ul>
+    </div>
+
+    <h3>Sécurité chantier — normes BG BAU</h3>
+    <p>L'Allemagne applique des règles particulièrement rigoureuses sur les chantiers, encadrées par la <strong>BG BAU</strong> (<em>Berufsgenossenschaft der Bauwirtschaft</em>, caisse professionnelle BTP). Les contrôles inopinés sont fréquents et sanctionnent immédiatement les manquements.</p>
+    <div class="alert">
+      <strong>À respecter sur chantier</strong>
+      <ul>
+        <li><strong>EPI complets</strong> obligatoires en permanence : casque, chaussures de sécurité S3, gilet haute visibilité, gants, lunettes, protections auditives selon l'activité.</li>
+        <li><strong>Plan de prévention écrit</strong> (<em>Sicherheits- und Gesundheitsschutzplan</em>) avant intervention multi-entreprises.</li>
+        <li>Habilitations / certifications valides pour travaux spécifiques (électricité, travaux en hauteur, espaces confinés).</li>
+        <li>Briefing sécurité (<em>Sicherheitsunterweisung</em>) à l'arrivée — souvent en allemand, demander un traducteur si besoin.</li>
+        <li>Tolérance zéro alcool sur chantier.</li>
+      </ul>
+    </div>
+
+    <h3>Climat &amp; conditions hivernales</h3>
+    <p><strong>Tempêtes hivernales (Sturmtief).</strong> Entre novembre et mars, perturbations climatiques fréquentes : vents violents, fortes pluies, chutes de neige. Peuvent provoquer suspensions de la DB (chemins de fer) et fermetures d'autoroutes.</p>
+    <p><strong>Neige et verglas.</strong> Bavière, Bade-Wurtemberg, zones alpines : pneus hiver obligatoires (<em>Winterreifenpflicht</em>) selon les conditions, équipements chaînes possibles en montagne.</p>
+    <p><strong>Inondations.</strong> Vallées du Rhin, de l'Elbe, de l'Ahr et de l'Oder — risque saisonnier (printemps et automne).</p>
+
+    <h3>Code de la route</h3>
+    <div class="alert">
+      <strong>Conduite en Allemagne</strong>
+      <ul>
+        <li><strong>Autobahn</strong> (autoroutes) : beaucoup de tronçons sans vitesse imposée. <strong>Vitesse recommandée 130 km/h</strong> (<em>Richtgeschwindigkeit</em>) — en cas d'accident au-dessus, votre responsabilité civile peut être engagée.</li>
+        <li><strong>Umweltplakette</strong> (vignette environnement) <strong>OBLIGATOIRE</strong> dans plus de 80 zones environnementales (<em>Umweltzonen</em>) — Berlin, Munich, Hambourg, Francfort, Stuttgart, Cologne, etc. Amende ~80 EUR si absente.</li>
+        <li><strong>Alcool au volant : 0,5 g/L</strong> · <strong>0 g/L</strong> pour les conducteurs de moins de 21 ans ou en période probatoire (2 ans après obtention du permis).</li>
+        <li>Téléphone tenu en main au volant : interdit (amende ~100 EUR + 1 point Flensburg).</li>
+        <li>Feux de croisement obligatoires en cas de mauvaise visibilité, recommandés en permanence.</li>
+        <li>Permis français accepté sans formalité.</li>
+      </ul>
+    </div>
+
+    <h3>Déplacements en ville</h3>
+    <div class="two-col">
+      <div class="col-card do"><h4>À faire</h4>
+        <ul>
+          <li>Utiliser les transports publics (U-Bahn, S-Bahn, tram, bus) — excellents partout.</li>
+          <li>Valider son billet (Entwerter) avant montée — contrôles fréquents.</li>
+          <li>Garder ses papiers d'identité sur soi.</li>
+          <li>Avoir un peu d'espèces sur soi (cash très utilisé hors grandes villes).</li>
+          <li>Respecter les feux piétons même sans voiture.</li>
+        </ul>
+      </div>
+      <div class="col-card dont"><h4>À éviter</h4>
+        <ul>
+          <li>Voyager sans billet ou avec un billet non validé (amende ~60 EUR, considéré comme fraude).</li>
+          <li>Faire du bruit la nuit (Nachtruhe 22h–6h, plaintes voisinage rapides).</li>
+          <li>Traverser au feu rouge (mal vu, dangereux pour l'exemple aux enfants).</li>
+          <li>Jeter ses déchets sans tri sélectif (poubelles couleurs strictes).</li>
+          <li>Conduire en Umweltzone sans vignette Umweltplakette.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="s2">
+    <h2><span class="num">2.</span>Santé &amp; vaccinations</h2>
+    <p class="source">Sources : Institut Pasteur, Santé Publique France, Robert Koch Institut (RKI), Centre européen de prévention et de contrôle des maladies (ECDC), Europ Assistance, APICIL.</p>
+
+    <p>L'Allemagne dispose d'un <strong>système de santé excellent</strong> — hôpitaux modernes, médecins compétents, médicaments largement disponibles. L'accès aux soins se fait sans avance de frais grâce à la <strong>CEAM</strong> dans le secteur public (<em>gesetzliche Krankenversicherung</em>). Attention toutefois : une hospitalisation peut être coûteuse, et certains traitements en secteur privé peuvent dépasser les barèmes français.</p>
+
+    <h3>Vaccinations recommandées</h3>
+    <p style="font-size:12px; color:#888;">Survolez un vaccin pour voir le détail des règles vaccinales.</p>
+    <table>
+      <thead><tr><th>Vaccin</th><th>Statut</th><th>Remarque</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="vaccine-cell">Tétanos / DTP<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Tétanos / DTP — règles vaccinales</span>
+              <ul>
+                <li><strong>Indication</strong>Tous adultes</li>
+                <li><strong>Rappels adulte</strong>25, 45, 65 ans</li>
+                <li><strong>Après 65 ans</strong>Tous les 10 ans (75, 85, 95)</li>
+                <li><strong>Combinaison</strong>DTP (Diphtérie + Tétanos + Polio)</li>
+              </ul>
+              <span class="vp-warn">Si plaie souillée à l'étranger : si dernier rappel &gt; 10 ans, rappel anti-tétanique immédiat impératif.</span>
+              <span class="vp-source">Source : Calendrier vaccinal 2024, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Obligatoire</td>
+          <td>Mise à jour obligatoire</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">ROR (rougeole-oreillons-rubéole)<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">ROR</span>
+              <ul><li><strong>Indication</strong>2 doses pour adultes nés après 1980 non immunisés</li><li><strong>Contexte</strong>Foyers épidémiques récents en Europe</li></ul>
+              <span class="vp-source">Source : Santé Publique France, RKI</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Si non à jour</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">Hépatite A<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Hépatite A</span>
+              <ul><li><strong>Indication</strong>Selon activité (restauration, voyage long)</li><li><strong>Statut Allemagne</strong>Pas indispensable en règle générale (UE)</li></ul>
+              <span class="vp-source">Source : Santé Publique France</span>
+            </div>
+          </td>
+          <td>Selon activité</td>
+          <td>Recommandé si chantier prolongé</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">Hépatite B<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Hépatite B</span>
+              <ul><li><strong>Indication</strong>Si schéma incomplet, professions exposées</li><li><strong>Schéma</strong>3 injections (M0, M1, M6)</li></ul>
+              <span class="vp-source">Source : HAS</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Selon activité (chantier, médico-social)</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">Encéphalite à tiques (FSME)<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">FSME / TBE (encéphalite à tiques)</span>
+              <ul>
+                <li><strong>Indication</strong>Mission en zones boisées Bavière, Bade-Wurtemberg, Saxe, Thuringe — surtout chantier forêt / extérieur prolongé</li>
+                <li><strong>Schéma</strong>3 injections (J0, M1-M3, M5-M12) ; rappel à 3 ans puis tous les 5 ans</li>
+                <li><strong>Source officielle</strong>Robert Koch Institut (RKI) — cartes annuelles des zones à risque</li>
+              </ul>
+              <span class="vp-warn">Bavière et Bade-Wurtemberg sont classés zones à risque par le RKI. Pour toute mission en extérieur prolongé, vaccination à envisager. Protection mécanique (vêtements longs, répulsifs) en complément.</span>
+              <span class="vp-source">Source : Robert Koch Institut, Santé Publique France</span>
+            </div>
+          </td>
+          <td>Selon zone</td>
+          <td>Bavière / Bade-Wurtemberg si chantier forêt</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">Covid-19<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Covid-19</span>
+              <ul><li><strong>Indication</strong>Selon protocole GAT</li><li><strong>Population à risque</strong>Rappel annuel (&gt; 65 ans, comorbidités)</li></ul>
+              <span class="vp-source">Source : HAS</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Selon protocole GAT</td>
+        </tr>
+        <tr>
+          <td class="vaccine-cell">Grippe saisonnière<i class="info-marker">i</i>
+            <div class="vaccine-popup"><span class="vp-title">Grippe</span>
+              <ul><li><strong>Indication</strong>Octobre à mars · Mission longue ou personnes à risque</li><li><strong>Schéma</strong>1 injection annuelle</li></ul>
+              <span class="vp-source">Source : Santé Publique France</span>
+            </div>
+          </td>
+          <td>Recommandé</td>
+          <td>Mission en hiver</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Avant le départ</strong>
+      <ul>
+        <li>Vérifier que votre <strong>Carte européenne d'assurance maladie (CEAM)</strong> est valide — gratuite, demande sur Ameli.fr (délai 10–15 jours).</li>
+        <li>Vérifier la mise à jour DTP, ROR si non immunisé, et l'opportunité du vaccin FSME pour chantier en zone boisée Bavière / Bade-Wurtemberg.</li>
+        <li>Vérifier votre couverture mutuelle APICIL et l'accès à Europ Assistance.</li>
+        <li>Constituer une trousse de pharmacie standard (les médicaments OTC sont vendus uniquement en pharmacie en Allemagne — <em>Apotheke</em>, pas en supermarché).</li>
+      </ul>
+    </div>
+
+    <h3>Risques sanitaires sur place</h3>
+    <p><strong>Système de santé.</strong> Excellent — accès rapide aux soins via la CEAM dans le secteur public (Krankenhaus, médecins conventionnés). Pour les soins courants, présenter la CEAM en début de consultation.</p>
+    <p><strong>Coût des soins.</strong> Une hospitalisation peut atteindre plusieurs milliers d'euros en secteur privé ; la CEAM couvre les soins aux conditions du système allemand (tarifs publics). Pour toute hospitalisation programmée ou grave : prévenir <strong>Europ Assistance</strong> au préalable.</p>
+    <p><strong>Maladies à tiques.</strong> Encéphalite à tiques (FSME) et borréliose de Lyme — zones boisées Bavière, Bade-Wurtemberg, Saxe, Thuringe. Protection : vêtements longs, répulsifs, inspection corporelle après exposition.</p>
+    <p><strong>Eau du robinet.</strong> Potable partout en Allemagne, contrôles très stricts.</p>
+    <p><strong>Source officielle santé.</strong> Le <strong>Robert Koch Institut (RKI)</strong> publie les alertes épidémiologiques en cours et les cartes des zones FSME.</p>
+  </section>
+
+  <section id="s3">
+    <h2><span class="num">3.</span>Pratiques culturelles &amp; business</h2>
+    <p>Culture professionnelle structurée, directe et factuelle. Importance du respect, de la ponctualité, de l'ordre et de la fiabilité (<em>Verlässlichkeit</em>). Les Allemands apprécient les interlocuteurs préparés, qui respectent les engagements et la parole donnée.</p>
+
+    <h3>Codes sociaux fondamentaux</h3>
+    <p><strong>Ponctualité.</strong> <strong>Très importante.</strong> Arriver 5 minutes en avance à une réunion — un retard, même de 5 minutes, est perçu comme un manque de respect. Prévenir immédiatement en cas d'imprévu.</p>
+    <p><strong>Communication.</strong> Directe, structurée, factuelle. Pas de small talk excessif avant d'entrer dans le sujet. Aller droit au but est apprécié, pas considéré comme abrupt. Argumentation par les faits et chiffres.</p>
+    <p><strong>Hiérarchie et titres.</strong> Respectée. Les titres universitaires et professionnels sont utilisés (<em>Herr Doktor Schmidt</em>, <em>Frau Professor Müller</em>). En écrit, lister ses propres titres est normal.</p>
+    <p><strong>Tutoiement / vouvoiement.</strong> Le <strong>vouvoiement (Sie)</strong> est de rigueur en contexte professionnel, même entre collègues longtemps. Le tutoiement (<em>du</em>) est réservé au privé ; il se propose explicitement (<em>« Wollen wir uns duzen ? »</em>).</p>
+    <p><strong>Réunions.</strong> Structurées avec ordre du jour formel (<em>Tagesordnung</em>). Décisions actées par écrit (<em>Protokoll</em>). Distribution préalable des documents. Démarrage ponctuel, conclusion ponctuelle.</p>
+    <p><strong>Repas business.</strong> Modérés. Déjeuner souvent court (~1h), pas systématique. Alcool occasionnel (bière au déjeuner moins courant qu'avant, soyez prudent en milieu professionnel). Pas de prise de décision autour d'un repas — c'est en réunion que ça se passe.</p>
+    <p><strong>Pourboire.</strong> <strong>5 à 10 %</strong> au restaurant — annoncer le montant arrondi en réglant (<em>« Stimmt so »</em> = gardez la monnaie, ou indiquer le total à payer pourboire inclus). 1 EUR par bagage à l'hôtel.</p>
+    <p><strong>Cash encore très utilisé.</strong> Notamment hors des grandes villes et chez les petits commerçants, boulangeries, taxis indépendants. Avoir toujours quelques espèces sur soi.</p>
+
+    <div class="alert danger">
+      <strong>Comportements à proscrire</strong>
+      <ul>
+        <li>Arriver en retard sans prévenir — manque de respect majeur.</li>
+        <li>Faire du bruit après 22h (<em>Nachtruhe</em>) — plaintes voisinage rapides.</li>
+        <li>Travailler ouvertement le dimanche dans le commerce (<em>Ladenschlussgesetz</em> — magasins fermés sauf gares / stations-service).</li>
+        <li>Tutoyer un interlocuteur professionnel sans qu'il l'ait proposé.</li>
+        <li>Faire référence à la période 1933-1945 de façon légère ou humoristique.</li>
+        <li>Interrompre quelqu'un en réunion — laisser finir, puis intervenir.</li>
+        <li>Mélanger les déchets dans le tri sélectif (codes couleurs stricts : jaune, bleu, marron, vert, noir).</li>
+      </ul>
+    </div>
+
+    <h3>Codes vestimentaires</h3>
+    <table>
+      <thead><tr><th>Contexte</th><th>Tenue recommandée</th></tr></thead>
+      <tbody>
+        <tr><td>Réunion client / bureau (industrie, banque)</td><td>Formel — costume cravate / tailleur</td></tr>
+        <tr><td>Réunion client (start-up, tech, Berlin)</td><td>Smart casual acceptable</td></tr>
+        <tr><td>Chantier terrain</td><td>EPI complets BG BAU obligatoires (casque, chaussures S3, gilet, gants, lunettes)</td></tr>
+        <tr><td>Repas d'affaires</td><td>Smart casual à formel selon le contexte</td></tr>
+        <tr><td>Hiver (novembre-mars)</td><td>Manteau chaud, chaussures imperméables, gants — températures parfois &lt; -10°C en Bavière et est du pays</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Quelques mots utiles en allemand</h3>
+    <table>
+      <thead><tr><th>Français</th><th>Allemand</th><th>Prononciation</th></tr></thead>
+      <tbody>
+        <tr><td>Bonjour</td><td>Guten Tag</td><td>Gouten Tak</td></tr>
+        <tr><td>Bonjour (matin)</td><td>Guten Morgen</td><td>Gouten Morgueun</td></tr>
+        <tr><td>Bonsoir</td><td>Guten Abend</td><td>Gouten Abent</td></tr>
+        <tr><td>Merci</td><td>Danke</td><td>Danké</td></tr>
+        <tr><td>S'il vous plaît</td><td>Bitte</td><td>Bité</td></tr>
+        <tr><td>Excusez-moi</td><td>Entschuldigung</td><td>Entchouldigoung</td></tr>
+        <tr><td>Où est… ?</td><td>Wo ist… ?</td><td>Vo ist ?</td></tr>
+        <tr><td>À l'aide !</td><td>Hilfe !</td><td>Hilfé !</td></tr>
+        <tr><td>Appelez la police</td><td>Rufen Sie die Polizei</td><td>Roufen zi di Politsaï</td></tr>
+        <tr><td>Au secours</td><td>Notruf !</td><td>Notrouf !</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="s4">
+    <h2><span class="num">4.</span>Logistique pratique</h2>
+
+    <h3>Visa &amp; formalités d'entrée</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Visa</th><td>Non requis pour ressortissants français (UE / espace Schengen). Pas de contrôle aux frontières terrestres.</td></tr>
+        <tr><th>Document d'identité</th><td>Carte nationale d'identité OU passeport en cours de validité. À conserver sur soi (la police allemande peut demander).</td></tr>
+        <tr><th>CEAM</th><td>Carte européenne d'assurance maladie obligatoire pour soins santé sans avance de frais.</td></tr>
+        <tr><th>Douane</th><td>Déclaration espèces &gt; 10 000 EUR à l'entrée comme à la sortie de l'UE.</td></tr>
+        <tr><th>Permis de travail</th><td>Non requis pour ressortissants UE. Formulaire <strong>A1</strong> à présenter en cas de contrôle (établi par GAT via l'URSSAF avant départ).</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Monnaie &amp; finances</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Monnaie</th><td>Euro (EUR) — pas de change à prévoir</td></tr>
+        <tr><th>Retrait d'espèces</th><td>ATM partout (Sparkasse, Deutsche Bank, Commerzbank). Frais selon votre banque.</td></tr>
+        <tr><th>Carte bancaire</th><td>Visa / Mastercard acceptées dans les grandes enseignes. <strong>Cash encore très utilisé</strong> chez les petits commerçants, restaurants, taxis (prévoyez toujours quelques espèces).</td></tr>
+        <tr><th>Pourboires</th><td>5–10 % au restaurant. Annoncer le montant arrondi à l'addition. 1 EUR par bagage à l'hôtel.</td></tr>
+        <tr><th>Reçus / factures</th><td>Demander <em>Rechnung mit Mehrwertsteuer</em> pour notes de frais (mention de la TVA).</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Transports</h3>
+    <p><strong>Aéroports.</strong> Francfort (FRA, hub principal), Munich (MUC), Berlin (BER), Hambourg (HAM), Düsseldorf (DUS), Stuttgart (STR), Cologne-Bonn (CGN). Liaisons fréquentes depuis Lyon et Paris.</p>
+    <p><strong>Train Deutsche Bahn (DB).</strong> Réseau ferré dense et efficace. <strong>ICE</strong> grande vitesse, <strong>IC/EC</strong> grandes lignes, <strong>RE/RB</strong> régionaux, <strong>S-Bahn</strong> banlieue. La <strong>BahnCard</strong> (25 % / 50 % / 100 %) est très utile pour missions à fréquences multiples.</p>
+    <p><strong>En ville.</strong> U-Bahn (métro), S-Bahn (RER), tramway, bus — tous excellents. Penser à <strong>valider le billet</strong> avant de monter (composteur <em>Entwerter</em>). Apps : DB Navigator, BVG (Berlin), MVV (Munich).</p>
+    <p><strong>Location de voiture.</strong> Permis français accepté. Conduite à droite. Marques courantes (Sixt, Europcar, Hertz, Avis). Autoroutes (Autobahn) souvent sans limitation imposée (130 km/h recommandé). <strong>Umweltplakette obligatoire</strong> pour entrer en zone urbaine (voir encart ci-dessous).</p>
+
+    <div class="info-block">
+      <span class="ib-tag">À ne pas oublier</span>
+      <h4>Umweltplakette — vignette environnement obligatoire</h4>
+      <p>Plus de <strong>80 zones environnementales (Umweltzonen)</strong> sont en place en Allemagne — Berlin, Munich, Hambourg, Francfort, Stuttgart, Cologne, Düsseldorf, Hanovre, Leipzig, et de nombreuses autres villes.</p>
+      <p>La <strong>Umweltplakette</strong> est <strong>obligatoire</strong> pour circuler dans ces zones, y compris avec un véhicule français de location ou personnel. Sans vignette : amende ~80 EUR + retrait possible des points.</p>
+      <ul>
+        <li><strong>Où l'acheter</strong> : auprès des centres de contrôle technique (TÜV, DEKRA), garages agréés, en ligne (~6 EUR).</li>
+        <li><strong>Délai</strong> : à anticiper avant le départ ou dès l'arrivée en Allemagne.</li>
+        <li><strong>Durée</strong> : la vignette est valable tant que la plaque d'immatriculation ne change pas (pas de date d'expiration en pratique).</li>
+        <li><strong>Catégorie</strong> : trois couleurs (rouge / jaune / verte). La <strong>verte</strong> est exigée dans la quasi-totalité des Umweltzonen. Les véhicules diesel récents et les essence sont généralement éligibles.</li>
+      </ul>
+    </div>
+
+    <h3>Hébergement</h3>
+    <p>Hôtels de chaîne fiables (Motel One, NH, IBIS, B&amp;B, Mercure, Steigenberger). En location courte durée, attention aux règles locales (Berlin, Munich : réglementation Airbnb restrictive). Prévoir hébergement à proximité d'une station S-Bahn / U-Bahn pour mobilité urbaine. Chambres individuelles avec petit-déjeuner copieux (<em>Frühstücksbuffet</em>) standard.</p>
+
+    <h3>Électricité &amp; équipement</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Prises</th><td>Type F (Schuko) — identique à la France. <strong>Pas d'adaptateur nécessaire.</strong></td></tr>
+        <tr><th>Tension</th><td>230 V / 50 Hz — identique à la France.</td></tr>
+        <tr><th>Outillage</th><td>Matériel français utilisable sans transformateur ni adaptateur.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Connectivité &amp; téléphonie</h3>
+    <div class="alert">
+      <strong>Communication sur place</strong>
+      <ul>
+        <li><strong>Roaming UE actif automatiquement</strong> (Roam Like at Home) : votre forfait français fonctionne sans surcoût en Allemagne, dans les mêmes conditions qu'en France.</li>
+        <li>Pas besoin de SIM locale pour une mission classique.</li>
+        <li>Réseau 4G / 5G de très bonne qualité dans les grandes villes ; couverture parfois plus faible en zones rurales (Vorpommern, Mecklembourg, est de l'Allemagne).</li>
+        <li>WhatsApp largement utilisé pour les contacts professionnels et privés.</li>
+        <li>Wi-Fi gratuit dans la majorité des hôtels, cafés, gares et trains ICE (Wi-Fi DB).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="s5">
+    <h2><span class="num">5.</span>Contacts d'urgence &amp; procédures</h2>
+
+    <div class="alert danger">
+      <strong>En cas d'urgence immédiate</strong>
+      <ul>
+        <li>Mettez-vous en sécurité AVANT tout appel.</li>
+        <li>Appelez le <strong>112</strong> (numéro d'urgence européen unique — pompiers, SAMU) ou le <strong>110</strong> (police).</li>
+        <li>Prévenez votre <strong>chargé d'affaires ou référent GAT en priorité</strong> dès que la situation est sous contrôle ; Direction GAT en escalation si non joignable.</li>
+        <li>Ne négociez JAMAIS directement — laissez GAT prendre en charge.</li>
+      </ul>
+    </div>
+
+    <h3>Numéros d'urgence Allemagne</h3>
+    <table>
+      <thead><tr><th>Service</th><th>Numéro</th><th>Disponibilité</th></tr></thead>
+      <tbody>
+        <tr><td>Urgences européennes (112)</td><td>112</td><td>24h/24 — pompiers, SAMU, urgences médicales</td></tr>
+        <tr><td>Police</td><td>110</td><td>24h/24</td></tr>
+        <tr><td>Garde médicale (médecin de garde)</td><td>116 117</td><td>Hors urgence vitale</td></tr>
+        <tr><td>Croix-Rouge / dépannage routier ADAC</td><td>+49 89 22 22 22</td><td>24h/24</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Santé prévoyance — assistance médicale</h3>
+    <p style="font-size:13.5px; margin-bottom:14px;">L'Allemagne est un pays de l'Union européenne. Vous partez en <strong>détachement intra-UE</strong> avec votre formulaire A1 : vous restez affilié à la Sécurité sociale française pendant toute la mission. Votre <strong>Carte Européenne d'Assurance Maladie (CEAM)</strong> couvre l'accès aux soins en Allemagne aux mêmes conditions que les assurés locaux. Votre <strong>mutuelle APICIL</strong> (si vous êtes affilié à la mutuelle GAT) prend en charge la complémentaire santé et la prévoyance. Pour tout incident sérieux (hospitalisation, rapatriement) : <strong>Europ Assistance</strong>.</p>
+
+    <div style="background:#f0f7fc; border:1px solid #c8dcec; border-left:4px solid #185fa5; border-radius:8px; padding:18px 22px; margin-bottom:16px;">
+      <div style="display:flex; flex-wrap:wrap; gap:18px;">
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Médical &amp; rapatriement</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">Europ Assistance</div>
+          <a href="tel:+33141858585" style="display:inline-block; background:#1a1a1a; color:#fff; padding:7px 14px; border-radius:5px; text-decoration:none; font-size:14px; font-weight:600;">+33 1 41 85 85 85</a>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">24h/24, 7j/7 — hospitalisation grave, rapatriement sanitaire, évacuation. <strong>À appeler avant toute hospitalisation coûteuse.</strong></div>
+        </div>
+        <div style="flex:1; min-width:240px;">
+          <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#0c447c; font-weight:600; margin-bottom:4px;">Soins courants + mutuelle</div>
+          <div style="font-size:15px; font-weight:600; margin-bottom:6px;">CEAM + mutuelle APICIL</div>
+          <div style="font-size:12.5px; color:#1a1a1a; margin-bottom:4px;">CEAM à demander à votre CPAM avant départ (délai 10–15 jours). APICIL maintenue.</div>
+          <div style="font-size:11.5px; color:#666; margin-top:6px;">CEAM couvre les soins médicalement nécessaires aux conditions du système allemand (gesetzliche Krankenversicherung). APICIL prend en charge la complémentaire santé et la prévoyance (si affilié à la mutuelle GAT).</div>
+        </div>
+      </div>
+      <div style="margin-top:16px; padding-top:14px; border-top:1px solid #c8dcec;">
+        <a href="https://gerib69.sharepoint.com/sites/GATNET/Lists/Assistance%20et%20assurance/AllItems.aspx" target="_top" style="display:inline-block; background:#185fa5; color:#fff; padding:9px 18px; border-radius:6px; text-decoration:none; font-size:13.5px; font-weight:600;">
+          Voir l'annuaire complet santé prévoyance sur SharePoint →
+        </a>
+        <div style="font-size:11.5px; color:#666; margin-top:8px; font-style:italic;">
+          Authentification SharePoint requise. Source : Liste « Assistance et assurance » maintenue par la Direction.
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:12px; color:#7a3f0d; background:#fdf6ee; border:1px solid #f0d09a; border-left:3px solid #BA7517; border-radius:6px; padding:10px 14px; margin:0 0 16px;"><strong>Indépendants / freelance :</strong> les couvertures ci-dessus sont propres aux salariés sous contrat GAT. Si vous intervenez en tant qu'indépendant, <strong>contactez votre chargé d'affaires ou référent GAT avant tout départ</strong> pour valider ensemble votre situation (assurance santé, assistance, rapatriement, responsabilité civile professionnelle) et les règles de sécurité applicables à la mission.</p>
+
+    <div class="alert">
+      <strong>En cas de rapatriement — conditions de prise en charge par Europ Assistance</strong>
+      <p>Pour que le rapatriement soit pris en charge et que vos frais soient intégralement remboursés, trois étapes sont essentielles. L'assureur conditionne sa prise en charge à leur respect — c'est la seule raison pour laquelle nous insistons sur ces points.</p>
+      <p>Le collaborateur, ou à défaut son chargé d'affaires, doit impérativement :</p>
+      <ul>
+        <li><strong>Obtenir l'accord préalable d'Europ Assistance</strong> avant de prendre toute initiative ou d'engager toute dépense (transport, hospitalisation, hôtel). Un simple appel suffit à activer le dossier — c'est ce qui déclenche la prise en charge directe et évite d'avancer les frais.</li>
+        <li><strong>Se conformer aux solutions préconisées par Europ Assistance</strong> (choix de l'établissement, mode de transport, calendrier). Europ Assistance négocie et prépaye directement auprès des prestataires : c'est ainsi que les sommes — parfois très importantes — sont prises en charge sans avance de votre part.</li>
+        <li><strong>Conserver et transmettre dès que possible tous les justificatifs originaux</strong> des dépenses engagées pour le compte d'Europ Assistance (factures, ordonnances, billets, plaintes de police le cas échéant). Sans ces originaux, le remboursement ne peut pas être instruit.</li>
+      </ul>
+      <p>À noter : si GAT a dû assurer à ses frais un voyage retour qui aurait pu être organisé via les titres de transport déjà détenus par le collaborateur, l'entreprise pourra utiliser ou demander le remboursement de ces titres. Cette disposition évite simplement une double facturation pour un même trajet.</p>
+    </div>
+
+    <h3>Ambassade &amp; consulats de France en Allemagne</h3>
+    <table>
+      <tbody>
+        <tr><th style="width: 240px;">Ambassade (Berlin)</th><td>+49 30 590 03 9000</td></tr>
+        <tr><th>Adresse</th><td>Pariser Platz 5, 10117 Berlin</td></tr>
+        <tr><th>Site Ariane</th><td><a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a></td></tr>
+        <tr><th>Consulat général Munich</th><td>Bavière — circonscription Bavière</td></tr>
+        <tr><th>Consulat général Stuttgart</th><td>Bade-Wurtemberg</td></tr>
+        <tr><th>Consulat général Düsseldorf</th><td>Rhénanie-du-Nord-Westphalie</td></tr>
+        <tr><th>Consulat général Francfort</th><td>Hesse, Rhénanie-Palatinat, Sarre — pôle économique</td></tr>
+        <tr><th>Consulat général Hambourg</th><td>Nord de l'Allemagne (Hambourg, Brême, Schleswig-Holstein, Basse-Saxe)</td></tr>
+        <tr><th>Consulat général Sarrebruck</th><td>Sarre — proximité frontalière</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert">
+      <strong>Inscription Ariane — recommandée</strong>
+      <ul>
+        <li>Inscrivez-vous sur <a href="https://pastel.diplomatie.gouv.fr">pastel.diplomatie.gouv.fr</a> avant tout départ.</li>
+        <li>Même en zone Schengen, utile en cas de crise sanitaire, attentat, événement climatique majeur (inondations, tempêtes).</li>
+      </ul>
+    </div>
+
+    <h3>Procédure en cas d'incident</h3>
+    <ol class="step-list">
+      <li><strong>Agression / vol.</strong><p>1. Mettez-vous en sécurité. 2. Appelez le 110 (police) ou le 112. 3. Prévenez votre chargé d'affaires ou référent GAT. 4. Déposez plainte au commissariat (<em>Strafanzeige</em>) — récépissé indispensable pour assurance.</p></li>
+      <li><strong>Accident de chantier.</strong><p>1. Stop travaux. 2. 112 si blessé. 3. Prévenir chef de chantier + référent GAT. 4. NE PAS déplacer un blessé grave. 5. Préserver la zone pour enquête BG BAU si AT grave.</p></li>
+      <li><strong>Hospitalisation.</strong><p>Présenter la CEAM dans le réseau hospitalier public (<em>Krankenhaus</em>) — soins pris en charge directement. Pour un hôpital privé ou un cas grave, appeler <strong>Europ Assistance au +33 1 41 85 85 85</strong> avant tout traitement coûteux pour activer la prise en charge.</p></li>
+      <li><strong>Perte / vol de passeport ou carte d'identité.</strong><p>1. Plainte police (110). 2. Contacter le consulat le plus proche (Berlin, Munich, Stuttgart, Düsseldorf, Francfort, Hambourg, Sarrebruck). 3. Laissez-passer consulaire pour rentrer en France. 4. Informer GAT RH.</p></li>
+      <li><strong>Accident de la route.</strong><p>1. Sécurisation (triangle, gilet jaune obligatoires). 2. 112 si blessés ou dommages importants. 3. Constat européen rempli avec l'autre partie. 4. Prévenir loueur et chargé d'affaires GAT.</p></li>
+    </ol>
+  </section>
+
+  <section id="s6" class="return-section">
+    <span class="critical-badge">Étape critique · Spécifique au détachement intra-UE</span>
+    <h2><span class="num">6.</span>Fin de mission &amp; retour en France</h2>
+    <p class="source">Sources : Ameli.fr (formulaire S3125), CLEISS (détachement intra-UE), URSSAF, impots.gouv.fr — section spécifique aux missions Allemagne / intra-UE.</p>
+
+    <p>Vous étiez en <strong>détachement intra-UE</strong> couvert par le formulaire A1 : votre affiliation à la Sécurité sociale française a été maintenue pendant toute la mission. Le retour en France ne déclenche donc <em>aucune réinscription CPAM</em>, contrairement aux missions hors UE. Les démarches qui suivent concernent essentiellement les remboursements de soins éventuels et la clôture administrative de la mission.</p>
+
+    <div class="deadline-card">
+      <div class="deadline-number">5<small>jours</small></div>
+      <div class="deadline-text"><strong>Délai pour la restitution du matériel et le retour d'expérience</strong>Restitution de l'ordinateur et de l'outillage + entretien retour d'expérience avec la Chargée QSE.</div>
+    </div>
+
+    <h3>Affiliation Sécurité sociale — aucune démarche à faire</h3>
+    <div class="alert">
+      <strong>Vous êtes resté affilié à la CPAM française pendant toute la mission</strong>
+      <ul>
+        <li>Le formulaire A1 (établi par GAT via l'URSSAF avant le départ) atteste de votre maintien à la Sécu française pendant le détachement.</li>
+        <li>Votre carte Vitale est restée active. Aucune réinscription, aucune attestation de droits à demander au retour.</li>
+        <li>Reprise des consultations en France comme d'habitude — carte Vitale, télétransmission, mutuelle d'entreprise.</li>
+      </ul>
+    </div>
+
+    <h3>Remboursement des soins effectués en Allemagne</h3>
+    <p>Si vous avez consulté un médecin, été hospitalisé ou acheté des médicaments en Allemagne avec votre <strong>Carte Européenne d'Assurance Maladie (CEAM)</strong>, deux cas de figure :</p>
+
+    <ol class="step-list">
+      <li><strong>Soins pris en charge directement par le système allemand (réseau public — gesetzliche Krankenversicherung).</strong><p>Vous avez présenté la CEAM, les soins ont été facturés au tarif allemand, vous n'avez rien avancé. <em>Aucune démarche supplémentaire au retour.</em></p></li>
+      <li><strong>Soins avec avance de frais (consultation privée, médicaments, urgence sans CEAM disponible, secteur Privatpraxis).</strong><p>Vous avez payé sur place. Au retour :<br>
+      1. Remplir le formulaire <strong>S3125 « Soins reçus à l'étranger »</strong> (téléchargeable sur ameli.fr).<br>
+      2. Joindre tous les <strong>justificatifs originaux</strong> : factures détaillées (<em>Rechnung</em>), ordonnances (<em>Rezept</em>), comptes rendus médicaux (<em>Arztbericht</em>).<br>
+      3. Envoyer le dossier à votre CPAM par courrier (ou dépôt en agence).<br>
+      4. Remboursement au tarif français de Sécurité sociale (parfois inférieur au coût réel allemand — c'est normal ; la mutuelle APICIL prend le relais si vous y êtes affilié).</p></li>
+    </ol>
+
+    <div class="alert">
+      <strong>Conservez tous les originaux</strong>
+      <p>Sans factures originales (pas de photocopies acceptées par la CPAM), aucun remboursement ne peut être instruit. Gardez-les pendant au moins 6 mois après votre retour. Demande possible jusqu'à 2 ans après les soins.</p>
+    </div>
+
+    <h3>Fiscalité — rappel</h3>
+    <div class="alert">
+      <strong>Vos revenus restent imposables en France</strong>
+      <ul>
+        <li>Pendant un détachement intra-UE, votre salaire reste versé par GAT en France et imposé en France comme d'habitude.</li>
+        <li>Aucune déclaration fiscale particulière liée à l'Allemagne. Déclaration annuelle normale via <a href="https://www.impots.gouv.fr">impots.gouv.fr</a>.</li>
+        <li>Si vous avez perçu des indemnités spécifiques (per diem, prime mission), elles apparaîtront sur votre bulletin de salaire.</li>
+        <li>La convention fiscale franco-allemande évite la double imposition pour les missions de courte durée (règle des 183 jours).</li>
+      </ul>
+    </div>
+
+    <h3>Clôture administrative GAT</h3>
+    <ol class="step-list">
+      <li><strong>Restitution du matériel.</strong><p>Ordinateur portable, téléphone professionnel, outillage, EPI restitués sous 5 jours ouvrés au siège ou au référent GAT désigné.</p></li>
+      <li><strong>Retour d'expérience.</strong><p>Entretien avec la <strong>Chargée QSE</strong> (Roxane PORETTI) sous 5 jours pour partager observations terrain, incidents, axes d'amélioration. Utile pour les missions Allemagne futures.</p></li>
+      <li><strong>Notes de frais.</strong><p>Soumettre les notes de frais (transports, repas, frais professionnels, Umweltplakette éventuelle) avec justificatifs sous <strong>30 jours</strong> au service comptabilité.</p></li>
+      <li><strong>Résiliation services locaux.</strong><p>Carte SIM allemande (le cas échéant, normalement pas nécessaire vu le roaming UE), abonnements locaux à clôturer avant ou dès le retour.</p></li>
+    </ol>
+
+    <div class="alert">
+      <strong>Contacts et liens utiles au retour</strong>
+      <ul>
+        <li><a href="https://www.ameli.fr">Ameli.fr</a> — portail Assurance Maladie · <strong>36 46</strong></li>
+        <li><a href="https://www.ameli.fr/assure/remboursements/etre-bien-rembourse/soins-recus-letranger">Formulaire S3125</a> — Soins reçus à l'étranger</li>
+        <li><a href="https://www.cleiss.fr">CLEISS</a> — Centre des liaisons européennes (détachement, CEAM)</li>
+        <li><a href="https://www.urssaf.fr">URSSAF</a> — formulaire A1 détachement</li>
+        <li><a href="https://www.impots.gouv.fr">Impots.gouv.fr</a> — déclaration annuelle des revenus</li>
+      </ul>
+    </div>
+
+    <h3 id="recap-demarches">Récapitulatif des démarches au retour</h3>
+    <table>
+      <thead><tr><th>Démarche</th><th>Délai</th><th>Où ?</th></tr></thead>
+      <tbody>
+        <tr><td>Restitution équipements (ordinateur et outillage)</td><td>Sous 5 jours ouvrés</td><td>Référent GAT</td></tr>
+        <tr><td>Retour d'expérience auprès de la Chargée QSE</td><td>Sous 5 jours</td><td>Roxane PORETTI</td></tr>
+        <tr><td>Notes de frais en attente</td><td>Sous 30 jours</td><td>Comptabilité GAT</td></tr>
+        <tr><td>Demande de remboursement soins (formulaire S3125)</td><td>Dès retour, sous 2 ans max.</td><td>CPAM (courrier ou dépôt agence)</td></tr>
+        <tr><td>Résiliation abonnements locaux (SIM, etc.)</td><td>Avant / dès retour</td><td>Opérateur allemand</td></tr>
+        <tr><td>Affiliation CPAM</td><td><em>Aucune démarche</em> — affiliation maintenue pendant le détachement</td><td>—</td></tr>
+        <tr><td>Mutuelle d'entreprise (APICIL)</td><td><em>Maintenue automatiquement</em></td><td>—</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="checklist">
+    <h2>Checklist avant départ Allemagne</h2>
+    <h3>Documents</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Carte d'identité OU passeport valide</label>
+      <label><input type="checkbox"> Carte européenne d'assurance maladie (CEAM)</label>
+      <label><input type="checkbox"> Formulaire A1 (détachement intra-UE) — copie sur soi</label>
+      <label><input type="checkbox"> Carte bancaire (Visa / Mastercard) + espèces (~100 EUR)</label>
+      <label><input type="checkbox"> Contacts hôtel et programme imprimés</label>
+      <label><input type="checkbox"> Inscription Ariane effectuée</label>
+    </div>
+    <h3>Santé</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Vaccins à jour (DTP minimum, ROR si non immunisé)</label>
+      <label><input type="checkbox"> Vaccin FSME si chantier zone boisée Bavière / Bade-Wurtemberg</label>
+      <label><input type="checkbox"> Médicaments personnels avec ordonnance</label>
+      <label><input type="checkbox"> Trousse de pharmacie de base (Apotheke uniquement sur place)</label>
+      <label><input type="checkbox"> Répulsif tiques si activité en extérieur prolongée</label>
+    </div>
+    <h3>Sécurité &amp; logistique</h3>
+    <div class="checklist">
+      <label><input type="checkbox"> Roaming UE actif (automatique pour forfaits français)</label>
+      <label><input type="checkbox"> Référent GAT informé des dates et coordonnées</label>
+      <label><input type="checkbox"> Umweltplakette si déplacement en voiture (commande anticipée ~6 EUR)</label>
+      <label><input type="checkbox"> Vêtements adaptés à la saison (manteau, gants, chaussures imperméables en hiver)</label>
+      <label><input type="checkbox"> EPI complets si chantier (normes BG BAU)</label>
+      <label><input type="checkbox"> Prises Type F — pas d'adaptateur nécessaire (identique France)</label>
+    </div>
+  </section>
+
+  <div class="footer-cta"><h3>Bon voyage et bonne mission.</h3>L'équipe GAT International est disponible à tout moment.<br><a href="https://www.gat.fr">www.gat.fr</a></div>
+</main>
+
+<footer>
+  GAT International — Livret de mission Allemagne · Créée le 13 mai 2026 · Document interne confidentiel.<br>
+  Sources : France Diplomatie (MEAE), Robert Koch Institut (RKI), ECDC, Santé Publique France, Europ Assistance, APICIL, Ameli.fr (formulaire S3125), CLEISS (détachement intra-UE), URSSAF, BG BAU.
+</footer>
+
+<a href="#s6" class="float-return" title="Voir les démarches de fin de mission (détachement intra-UE)">
+  Démarches retour France <span>→</span>
+</a>
+
+<script>
+  window.addEventListener('beforeprint', function() {
+    var d = new Date();
+    var dateStr = d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' });
+    var el = document.getElementById('print-date');
+    if (el) el.textContent = dateStr;
+  });
+</script>
+
+</body>
+</html>
